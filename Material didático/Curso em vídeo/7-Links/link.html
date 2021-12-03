@@ -19,14 +19,23 @@
         ‣ _parent similar ao uso do _top em uma referência à janela mãe
         ‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir
     -->
-    <!--COMANDOS PARA O PARÂMETRO 'rel':
+    <!--COMANDOS PARA O PARÂMETRO 'rel': (este parÂmetro é usado apenas como semântica, para informar mecanismos de busca, como o goole)
         ‣next indica que o link é para a próxima parte do documento atual
         ‣prev indica que o link é para a parte anterior do documento atual
         ‣author indica que é um link para o site do autor do artigo atual
         ‣external indica que é um link para outro site que não faz parte do site atual
-        ‣ nofollow indica que é um link para um site não endossado, como um link pago
+        ‣nofollow indica que é um link para um site não endossado, como um link pago. Isto informa o mecanismo de busca para não abrir está página e anexar links nesta página
     -->
+    <p><a href="https://www.w3schools.com/" hreflang="en">Site da W3Schools.</a></p>
+    <!--O atributo 'hreflang' permite avisar ao navegador e a softwares de tradução como lidar caso o visitante
+opte por traduzir automaticamente os conteúdos. -->
 
-    
+    <h1>Link internos:</h1>
+    <p>
+        Está é uma página primária do site, caso queira abrir a segunda página do site, <a href="página_secundária.html" rel="next">click aqui!</a>
+    </p>
+    <p>
+        <a href="arquivos/página_três.html" rel="next">Clique aqui</a> para abrir a página de arquivos.
+    </p>
 </body>
 </html>
