@@ -1,0 +1,1 @@
+Imagens dinâmicas são multiplas imagens que se adaptam à tela de navegação (celular, tv, monitor...)
