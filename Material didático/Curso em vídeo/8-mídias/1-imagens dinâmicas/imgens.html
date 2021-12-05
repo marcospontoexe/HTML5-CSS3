@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir a imagem a baixo em vários dispositivos diferentes. <br>
+        Ou simplesmente autere o tamanho da janela do navegador.
+    </p>
+
+    <picture>   <!--A tag 'picture' permite tornar a imagem flexível-->
+        <!--A tag 'source' carrega uma imagem (srcset), quando o tamanho da tela for menor q o parâmetro máximo de pixel definido pelo parâmetro ' media="(max-width: px)" '-->
+        <source media="(max-width: 750px)" srcset="imagens/imagem_pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_media.png" type="image/png">  <!--o parâmetro 'max-width' está recebendo 1050 para não exibir uma barra de rolagem na tela, já que a imagem tem 1000 pixel-->
+        <img src="imagens/imagem_grande.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>
