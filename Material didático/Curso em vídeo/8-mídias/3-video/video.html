@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Insirindo vídeos hospedado localmente.</h1>
+    <p>Este vídeo está hospedado no meu servidor.</p>
+    <!--Método simples
+    <video src="videos/video.mp4" width="500" controls></video>
+    -->
+    <video width="500" controls>
+        <source src="videos/video.mp4" type="video/mp4">            <!--para reproduzir MP4-->
+        <source src="videos/Video-web.m4v" type="video/mp4">        <!--para reproduzir MP4-->
+        <source src="videos/Video-web1.webm" type="video/webm">     <!--para reproduzir webm-->
+        <p>Seu navegador não tem compartibilidade com reprodução de vídeos.
+            <a href="videos/video.mp4">Clique aqui para baixar o video.</a>
+        </p>
+        <!--
+            alguns atributos importantes da tag <video>:
+                ‣ width vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px.
+                ‣ poster configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo
+                ‣ controls vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra controls na tag <video>.
+                ‣ autoplay diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.
+        -->
+    </video>
+</body>
+</html>
