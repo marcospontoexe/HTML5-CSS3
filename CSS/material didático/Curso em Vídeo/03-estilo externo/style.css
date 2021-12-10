@@ -1,0 +1,13 @@
+@charset "UTF-8";      /*incluindo regra para acentuações*/
+
+<style>     /*configurações de eestilo*/
+        body     /*configurações de estilo do body*/
+        {
+            background-color: aquamarine;
+        }
+        p   /*configurações de estilo do parágrafo*/
+        {
+            color: blueviolet;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
