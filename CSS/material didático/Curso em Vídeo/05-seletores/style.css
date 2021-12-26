@@ -1,0 +1,26 @@
+@charset "utf-8";   /* regra para usar acentos */
+
+body{
+    background-color: rgba(142, 235, 235, 0.801);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: rgba(49, 107, 107, 0.938);
+}
+
+#principal{
+    text-align: center;
+    background-color: rgba(49, 107, 107, 0.938);
+    color: beige;
+}
+
+/*
+HTML    ->  CSS
+id      ->  #
+class   ->  .
+*/
+h2{
+    color: rgba(85, 107, 107, 0.938);
+}
