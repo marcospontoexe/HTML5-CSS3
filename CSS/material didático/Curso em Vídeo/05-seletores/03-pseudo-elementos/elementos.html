@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;      /* tira os sublinhado dos links*/ 
+        }
+
+        a:visited{      /* pseudo classe para links já visitados*/
+            color: darkmagenta;
+        }
+
+        a:hover{     /* pseudo classe quando o mouse passa por cima do link*/ 
+            color: black; 
+            text-decoration: underline;      /* sublinha os links quando o mouse passa por cima*/
+        }
+
+        a:active{       /* pseudo classe para links quando o mouse passa por cima*/
+            color: blue;
+        }
+        /* O pseudo elemento altera diretamente o conteudo do elemento*/
+        a::after{       /* pseudo elemento after inclui coisas após os links. */
+            content: ' (Link)';
+            text-decoration: none;
+            font-weight: normal;
+            color: brown;
+        }
+
+        .especial::before{
+            content: '♦';
+        }
+        /*HTML          ->      CSS
+        id              ->      #
+        class           ->      .
+        pseudo-elemento ->      :
+        pseudo-classe   ->      ::
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/marcospontoexe" target="_blank" rel="external" class="especial">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/marcos-daniel-santana/" target="_blank" rel="external">LinkdIn</a></li>
+        
+    </ul>
+    
+</body>
+</html>
