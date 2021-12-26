@@ -9,18 +9,34 @@ body{
 h1{
     color: rgba(49, 107, 107, 0.938);
 }
-
-#principal{
-    text-align: center;
-    background-color: rgba(49, 107, 107, 0.938);
-    color: beige;
-}
-
 /*
 HTML    ->  CSS
 id      ->  #
 class   ->  .
 */
+#principal{             /* configuração de um idenficador*/
+    text-align: center;
+    background-color: rgba(49, 107, 107, 0.938);
+    color: beige;
+}
+
+
 h2{
     color: rgba(85, 107, 107, 0.938);
+}
+
+.basico{        /* configuração de uma classe*/
+    color: rgba(37, 255, 37, 0.671);
+}
+
+.intermediario{
+    color: rgba(37, 204, 255, 0.671);
+}
+
+.avancado{
+    color: rgba(255, 70, 37, 0.671);
+}
+
+.destaque{
+    background-color: chartreuse;
 }
