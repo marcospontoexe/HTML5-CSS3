@@ -10,12 +10,37 @@
             background-color: aqua;
             height: 200px;       /* altura da box*/
             width: 200px;        /* largura da box*/ 
+
             border-width: 10px;
             border-style: solid;
             border-color: blue;
+
             padding-top: 10px;
             padding-bottom: 10px;
             padding-right: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+        }
+
+        div{
+            background-color: rgb(115, 255, 0);
+            height: 200px;       /* altura da box*/
+            width: 200px;        /* largura da box*/ 
+
+            border: 10px solid rgb(255, 145, 0);        /* short-hand para borda (width-style-color)*/
+
+            padding: 10px 10px 10px 10px;   /* short-hand para pad (top-right-bottom-left). Ou apenas 'padding: 10px' */
+
+            margin: 20px auto 50px auto;           /* centraliza a box automaticamente em relação a esquer e direita */
+
+            outline: 10px dotted red
         }
 
         a{
@@ -27,6 +52,7 @@
 </head>
 <body>
     <h1>Caixa do tipo box level</h1>
+    <div>Box level usando div</div>
     <p>Parágrafos são exemplos de "Box level", mas o <a href="#">links são exemplo de box inline block</a>.</p>
 </body>
 </html>
