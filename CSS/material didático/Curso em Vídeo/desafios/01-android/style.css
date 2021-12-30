@@ -1,15 +1,17 @@
 @charset "utf-8";
 
 @font-face {        /* incluindo uma fonte externa*/
-    font-family: Idroid;
-    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);       
+    font-family: 'Idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf');       
     font-weight: normal;
     font-style: normal;
 }
 body{
-    margin: 0px;
+    font: normal 500 1em Arial, Helvetica, sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    margin: -20px 0px 0px 0px;
     padding-top: 0px;
     background-color: #84E1AD;
+    
 }
 
 header{
@@ -42,6 +44,89 @@ pre > a:hover{
     color: rgba(2, 1, 1, 0.808);
 }
 
-#titulo{
-    font-family: Idroid, sans-serif;
+
+
+main{
+    margin: 0px 0px 0px 0px;
+
+}
+
+section{
+    background-color: white;
+    margin: 0px 100px 0px 100px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 7px 3px #1a5c3879;
+    text-align: justify;    /* alinhamento justificado*/
+    text-indent: 30px;      /* identação do parágrafo*/
+}
+
+article > h1{
+    font: normal 800 1.5em 'Idroid', sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    color: #1A5C38;
+}
+
+article > h2{
+    font: normal 700 1em 'Idroid', sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    color: #1A5C38;
+    background-image: linear-gradient(to right,  #7ad8a47e, white);
+}
+
+.marcador{
+    color: #1A5C38;
+    font-weight: 600;
+}
+
+ul{
+    display: inline-block;        /* modo de caixas inline, para mostrar as caixas de 'ul' na mesma linha */
+    margin: 0px 66px 0px -70px;
+}
+
+li::before{
+    content: '⇒ ';
+}
+
+article > img{
+    margin: auto;
+}
+
+#video{
+    padding: 10px 20px;
+    margin: 0px -10px;
+    background-color: #1A5C38;
+}
+
+#video > iframe{
+    margin: auto;
+}
+
+aside{
+    padding: 0px 10px 10px 10px;
+    background-color: #7ad8a47e;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+
+h3{
+    background-color: #3CD782;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin: 0px -10px;
+    padding: 5px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 0px;
+}
+ 
+footer > p{
+    margin: 0px;
 }
