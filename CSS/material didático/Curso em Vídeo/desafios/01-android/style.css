@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@font-face {        /* incluindo uma fonte externa*/
+    font-family: Idroid;
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);       
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0px;
+    padding-top: 0px;
+    background-color: #84E1AD;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150px;          /*  para o degrade ocupar o header inteiro*/
+    background-image: linear-gradient(to bottom,  #3CD782, #1A5C38);
+    color: white;    
+    text-align: center;
+    margin: 0px;
+    padding-top: 0px;
+    text-shadow: 2px 2px 2px #1a5c3879;          /*cria uma sombra no texto*/
+    box-shadow: 5px 3px 7px 1px #1a5c3879;
+    
+}
+
+nav{
+    height: 0%;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+pre > a{
+    text-decoration: none;
+    color: white;
+}
+
+pre > a:hover{
+    text-decoration: underline;
+    color: rgba(2, 1, 1, 0.808);
+}
+
+#titulo{
+    font-family: Idroid, sans-serif;
+}

@@ -11,7 +11,7 @@ body{
 
 main{   
     background-color: white;
-    border-radius: 5px;    /*deixa as bosrdas arredondadas*/
+    border-radius: 5px;    /*deixa as bordas arredondadas*/
     box-shadow: 5px 5px 15px #a38370b9;       /*para deixar a 'main' flutuando. box-shadow: deslocamento lateral, desloamento inferior, espalhamento da sombra, e cor da sombra; */
     width: 600px;
     padding: 10px;      /*borda extra do lado direito do 'main' */
