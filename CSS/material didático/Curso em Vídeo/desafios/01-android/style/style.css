@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-:root{
-    --fonte_padrão: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* incluindo fonte externa do google fonts*/
 
 @font-face {        /* incluindo uma fonte externa*/
     font-family: 'Idroid';
@@ -10,51 +8,61 @@
     font-weight: normal;
     font-style: normal;
 }
+
+:root{      /* declaração de variáveis*/
+    --fonte_padrão: Arial, Helvetica, sans-serif;
+    --fonte_destaque: 'Bebas Neue', cursive;
+    --fonte_android: 'Idroid';
+
+    --cor_0:  #84E1AD;
+    --cor_1:  #3CD782;
+    --cor_2: #7ad8a47e;
+    --cor_3:  #1A5C38;
+    --cor_4:  #1a5c3879;
+
+
+
+}
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+}
+
 body{
-    font: normal 500 1em var(--fonte_padrão);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
-    margin: -20px 0px 0px 0px;
-    padding-top: 0px;
-    background-color: #84E1AD;
+    font: normal 500 1em var(--fonte_padrão);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/    
+    background-color: var(--cor_0);
     
 }
 
 header{
-    font-family: var(--fonte_padrão);
+    font-family: var(--fonte_destaque);
     height: 150px;          /*  para o degrade ocupar o header inteiro*/
-    background-image: linear-gradient(to bottom,  #3CD782, #1A5C38);
+    background-image: linear-gradient(to bottom, var(--cor_1), var(--cor_3));   /* gradiente do header*/
     color: white;    
     text-align: center;
-    margin: 0px;
-    padding-top: 0px;
-    text-shadow: 2px 2px 2px #1a5c3879;          /*cria uma sombra no texto*/
-    box-shadow: 5px 3px 7px 1px #1a5c3879;
+    text-shadow: 2px 2px 2px var(--cor_4);          /*cria uma sombra no texto*/
+    box-shadow: 5px 3px 7px 1px var(--cor_4);       /* sombra da box header*/
     
 }
 
 nav{
-    height: 0%;
     text-align: left;
-    margin-bottom: 0px;
-    padding-left: 10px;
 }
 
 nav > a{
-    text-decoration: none;
+    text-decoration: none;      /* remove o sublinhado do link*/
     color: white;
     padding: 11px 40px;
-    margin: 0px;
 }
 
-nav > a:hover{
-    text-decoration: underline;
-    color: rgba(2, 1, 1, 0.808);
-    background-color: #84E1AD;
+nav > a:hover{              /* configurações quando o mouse passa por cima do link*/
+    text-decoration: underline;     /* acrescenta sublinhado*/
+    color: black;
+    background-color: var(--cor_0);
 }
-
-
 
 main{
-    margin: 0px 0px 0px 0px;
 
 }
 
@@ -62,30 +70,30 @@ section{
     background-color: white;
     margin: 0px 100px 0px 100px;
     padding: 10px 10px 10px 10px;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 2px 7px 3px #1a5c3879;
+    border-radius: 0px 0px 10px 10px;           /* arredondamento da box section*/
+    box-shadow: 0px 2px 7px 3px var(--cor_4);
     text-align: justify;    /* alinhamento justificado*/
     text-indent: 30px;      /* identação do parágrafo*/
 }
 
 article > h1{
-    font: normal 800 1.5em 'Idroid', sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
-    color: #1A5C38;
+    font: normal 800 1.5em var(--fonte_android), sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    color: var(--cor_3);
 }
 
 article > h2{
-    font: normal 700 1em 'Idroid', sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
-    color: #1A5C38;
-    background-image: linear-gradient(to right,  #7ad8a47e, white);
+    font: normal 700 1em var(--fonte_android), sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    color: var(--cor_3);
+    background-image: linear-gradient(to right, var(--cor_2), white);
 }
 
 strong{
-    color: #1A5C38;
+    color: var(--cor_3);
 }
 
 ul{
     display: inline-block;        /* modo de caixas inline, para mostrar as caixas de 'ul' na mesma linha */
-    margin: 0px 66px 0px -70px;
+    margin: 0px 30px 0px -30px;
 }
 
 li::before{
@@ -99,7 +107,7 @@ article > img{
 #video{
     padding: 10px 20px;
     margin: 0px -10px;
-    background-color: #1A5C38;
+    background-color: var(--cor_3);
 }
 
 #video > iframe{
@@ -108,16 +116,16 @@ article > img{
 
 aside{
     padding: 0px 10px 10px 10px;
-    background-color: #7ad8a47e;
+    background-color: var(--cor_2);
     margin: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 2px 7px 3px #1a5c3879;
+    box-shadow: 0px 2px 7px 3px var(--cor_4);
 }
 
 
 
 h3{
-    background-color: #3CD782;
+    background-color: var(--cor_1);
     color: white;
     font-weight: 600;
     font-size: 0.8em;
@@ -127,13 +135,13 @@ h3{
 }
 
 footer{
-    background-color: #1A5C38;
+    background-color: var(--cor_3);
     color: white;
     text-align: center;
     margin: 10px 0px 0px 0px;
     padding: 5px 0px;
 }
  
-footer > p{
-    margin: 0px;
+#foot{
+    color: white;
 }
