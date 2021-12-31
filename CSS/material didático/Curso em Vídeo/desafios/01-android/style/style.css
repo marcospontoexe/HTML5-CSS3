@@ -2,7 +2,7 @@
 
 @font-face {        /* incluindo uma fonte externa*/
     font-family: 'Idroid';
-    src: url('pacote-projeto-d010/fontes/idroid.otf');       
+    src: url('fontes/idroid.otf');       
     font-weight: normal;
     font-style: normal;
 }
@@ -37,11 +37,14 @@ nav{
 pre > a{
     text-decoration: none;
     color: white;
+    padding: 11px 40px;
+    margin: 0px;
 }
 
 pre > a:hover{
     text-decoration: underline;
     color: rgba(2, 1, 1, 0.808);
+    background-color: #84E1AD;
 }
 
 
@@ -72,9 +75,8 @@ article > h2{
     background-image: linear-gradient(to right,  #7ad8a47e, white);
 }
 
-.marcador{
+strong{
     color: #1A5C38;
-    font-weight: 600;
 }
 
 ul{
@@ -105,6 +107,7 @@ aside{
     background-color: #7ad8a47e;
     margin: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 2px 7px 3px #1a5c3879;
 }
 
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando variáveis em CSS</title>
+    <style>
+        :root{  /* arquivo raíz onde são criadas as variáveis para CSS*/
+            --fonte_padrao : Arial, Helvetica, sans-serif;
+            --fonte_1: 'Times New Roman', Times, serif;
+            --fonte_2: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            font-family: var(--fonte_padrao);
+        }
+        h2{
+            font-family: var(--fonte_1);
+        }
+        p{
+            font-family: var(--fonte_2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de variáveis em CSS</h1>
+    <h2>subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quisquam expedita fugiat at dicta explicabo eum rem alias exercitationem id temporibus, corrupti, et, nam dignissimos vitae nemo. Laboriosam, veniam itaque.</p>
+    
+</body>
+</html>
