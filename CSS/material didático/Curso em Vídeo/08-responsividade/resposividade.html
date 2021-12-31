@@ -32,6 +32,17 @@
             width: 100%;        /* mantém a imagem ocupando 100% da largura da box onde ela está inserida */
         }
 
+        div.video{
+            background-color: rgb(80, 45, 80);
+            padding: 10px;
+            position: relative;
+            padding-bottom: 50%;
+        }
+
+        div.video>iframe{
+            position: absolute;
+        }
+
     </style>
 </head>
 <body>
@@ -45,6 +56,12 @@
             <source media="(max-width: 760px)" srcset="imagens/dan-droids-pq.png">
             <img src="imagens/dan-droids.png" alt="imagem do android">
         </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi possimus neque est deleniti placeat libero accusantium cum, aperiam iusto quaerat consequatur. Nulla esse hic, sequi enim quasi maiores vitae!
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </main>
 </body>
 </html>

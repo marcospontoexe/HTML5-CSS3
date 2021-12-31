@@ -29,8 +29,12 @@
     padding: 0px;       /* elimina o pad de todos os elementos*/
 }
 
+p{
+    margin: 15px 0px;   /* para dar um espaçamento entre um parágrafo e outro*/
+}
+
 body{
-    font: normal 500 1em var(--fonte_padrão);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/    
+    font: normal 400 1em var(--fonte_padrão);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/    
     background-color: var(--cor_0);
     
 }
@@ -85,14 +89,37 @@ main{
 
 }
 
-main img{
+main p{
+    line-height: 1.5em;   /* espaçamento entre as linhas do parágrafo*/
+}
+
+main img{      /* quando não coloca o sinal de filho (>), está configuração é válida para todos as box img dentro do main, em qulquer nível (section, article, div...)*/
     width: 100%;      /* mantém a imagem ocupando 100% da largura da box onde ela está inserida */
 }
 
 main img.pequena{
-    width: 50%;     /* a imagem original é muito grande*/
+    max-width: 350px;     /* a imagem original (400px) é muito grande*/
     display: block ;        /* a box img é do tipo inline-block, e não fica centralizada*/
     margin: auto;           /* para manter a imagem centralizada*/
+}
+
+main strong{
+    color: var(--cor_3);
+}
+
+main  a{
+    color: var(--cor_3);
+    background-color: var(--cor_0);
+    text-decoration: none;    
+} 
+
+main a:hover{
+    text-decoration: underline;
+    background-color: var(--cor_2);
+}
+
+a.externo::after{      /* configuração doque tem após todos os links da classe externo*/
+    content: '\00a0\1F517';
 }
 
 section{
@@ -113,22 +140,8 @@ article > h1{
 article > h2{
     font: normal 700 1em var(--fonte_android), sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
     color: var(--cor_3);
-    background-image: linear-gradient(to right, var(--cor_2), white);
+    background-image: linear-gradient(to right, var(--cor_2), transparent);
 }
-
-strong{
-    color: var(--cor_3);
-}
-
-ul{
-    display: inline-block;        /* modo de caixas inline, para mostrar as caixas de 'ul' na mesma linha */
-    margin: 0px 30px 0px -30px;
-}
-
-li::before{
-    content: '⇒ ';
-}
-
 
 #video{
     padding: 10px 20px;
@@ -150,8 +163,8 @@ aside{
 
 
 
-h3{
-    background-color: var(--cor_1);
+aside > h3{
+    background-color: var(--cor_3);
     color: white;
     font-weight: 600;
     font-size: 0.8em;
@@ -159,6 +172,14 @@ h3{
     padding: 5px 0px;
     border-radius: 10px 10px 0px 0px;
 }
+
+aside > article > ul{
+    columns: 2;                 /* mostra a lista em duas colunas 'display: inline-block;' também funciona*/
+    margin: 0px 30px 0px -30px;
+    list-style-position: inside;    /* deixa os marcadores da lista dentro da box*/
+    list-style-type: '\2714\00a0\00a0';              /* altera o marcador da lista (00a0 é o código utf-8 para espaço)*/
+}
+
 
 footer{
     background-color: var(--cor_3);
@@ -168,6 +189,3 @@ footer{
     padding: 5px 0px;
 }
  
-#foot{
-    color: white;
-}
