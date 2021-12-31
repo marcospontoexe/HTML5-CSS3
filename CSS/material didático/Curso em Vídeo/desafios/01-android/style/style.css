@@ -37,13 +37,27 @@ body{
 
 header{
     font-family: var(--fonte_destaque);
-    height: 150px;          /*  para o degrade ocupar o header inteiro*/
-    background-image: linear-gradient(to bottom, var(--cor_1), var(--cor_3));   /* gradiente do header*/
+    min-height: 150px;          /* tamanho mínimo do header terá 150px*/
+    background-image: linear-gradient(to bottom, var(--cor_1), var(--cor_3) 80%);   /* gradiente do header*/
     color: white;    
     text-align: center;
-    text-shadow: 2px 2px 2px var(--cor_4);          /*cria uma sombra no texto*/
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);          /*cria uma sombra no texto*/
     box-shadow: 5px 3px 7px 1px var(--cor_4);       /* sombra da box header*/
+    padding: 10px 0px 10px 0px;
     
+}
+
+header > h1{
+    margin: 0px 0px 20px 0px;
+    font-size: 3em;
+}
+
+header > p{
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-left: 20px;         /* pad para a letra nao encostar na borda da box quando a tela estiver pequena*/
+    padding-right: 20px;
+    margin: auto;       /* para centralizar o parágrafo. paragrafo é uma box inline-block*/
 }
 
 nav{
@@ -53,7 +67,9 @@ nav{
 nav > a{
     text-decoration: none;      /* remove o sublinhado do link*/
     color: white;
-    padding: 11px 40px;
+    padding: 20px 40px 10px 40px;
+    border-radius: 5px;
+    transition-duration: 1s;    /* efeito de duração visual*/
 }
 
 nav > a:hover{              /* configurações quando o mouse passa por cima do link*/
