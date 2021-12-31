@@ -63,7 +63,20 @@ nav > a:hover{              /* configurações quando o mouse passa por cima do 
 }
 
 main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;       /* configura automaticamente a box main para ficar centralizada na tela*/
 
+}
+
+main img{
+    width: 100%;      /* mantém a imagem ocupando 100% da largura da box onde ela está inserida */
+}
+
+main img.pequena{
+    width: 50%;     /* a imagem original é muito grande*/
+    display: block ;        /* a box img é do tipo inline-block, e não fica centralizada*/
+    margin: auto;           /* para manter a imagem centralizada*/
 }
 
 section{
@@ -100,9 +113,6 @@ li::before{
     content: '⇒ ';
 }
 
-article > img{
-    margin: auto;
-}
 
 #video{
     padding: 10px 20px;
