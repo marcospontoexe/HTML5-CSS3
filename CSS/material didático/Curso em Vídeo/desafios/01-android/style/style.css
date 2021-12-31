@@ -1,13 +1,17 @@
 @charset "utf-8";
 
+:root{
+    --fonte_padrão: Arial, Helvetica, sans-serif;
+}
+
 @font-face {        /* incluindo uma fonte externa*/
     font-family: 'Idroid';
-    src: url('fontes/idroid.otf');       
+    src: url('../fontes/idroid.otf');       
     font-weight: normal;
     font-style: normal;
 }
 body{
-    font: normal 500 1em Arial, Helvetica, sans-serif;     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    font: normal 500 1em var(--fonte_padrão);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
     margin: -20px 0px 0px 0px;
     padding-top: 0px;
     background-color: #84E1AD;
@@ -15,7 +19,7 @@ body{
 }
 
 header{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte_padrão);
     height: 150px;          /*  para o degrade ocupar o header inteiro*/
     background-image: linear-gradient(to bottom,  #3CD782, #1A5C38);
     color: white;    
@@ -34,14 +38,14 @@ nav{
     padding-left: 10px;
 }
 
-pre > a{
+nav > a{
     text-decoration: none;
     color: white;
     padding: 11px 40px;
     margin: 0px;
 }
 
-pre > a:hover{
+nav > a:hover{
     text-decoration: underline;
     color: rgba(2, 1, 1, 0.808);
     background-color: #84E1AD;
