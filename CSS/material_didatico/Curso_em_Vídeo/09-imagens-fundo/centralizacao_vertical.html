@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de imagens.</title>
+    <style>
+        #container{
+            position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
+            height: 96vh;
+
+            border: 2px solid black;
+            background-color: rgb(136, 255, 0);
+
+        }
+
+        #conteudo{
+            position: absolute;     /* posicionamneto absoluto*/
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: cornflowerblue;
+
+;
+            left: 50%;              /* distância da âncora do conteudo em relação à margem esquerda do container*/
+            top: 50%;             /* distância da âncora do conteudo em relação à margem superior do container*/
+
+            /* para alterar a âncora (por padrão é no canto esquerdo superior), reposicionar 50% para a esquerda e 50% para cima, desse maneira a âncora fica centralizada no centro da box*/
+            transform: translate(-50%, -50%)
+   
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
