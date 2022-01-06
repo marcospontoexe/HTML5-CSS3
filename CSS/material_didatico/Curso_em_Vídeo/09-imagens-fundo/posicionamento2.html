@@ -6,17 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posicionameto da imagem de fundo</title>
     <style>
-        body{
-            height: 95vh;          /* torna a altura da box 'body' em 95% da altura da view height (view port)*/
+        span.quadrado{    
+            display: inline-block;       /* para deixar a box span na mesma linha */ 
             border: 2px dashed black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: cadetblue;
+
+        }
+
+        span#q1{
             background-image: url('imagens/pattern003.png');
             background-repeat: no-repeat;
-            background-size: 200px;
+            background-size: 50px;
+            background-position: left top;      /*posicionamento da coluna x linha*/
+        }
+
+        span#q2{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: center top;
+        }
+
+        span#q3{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: right top;
+        }
+
+        span#q4{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: left center;
+        }
+
+        span#q5{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
             background-position: center center;
         }
+
+        span#q6{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: right center;
+        }
+
+        span#q7{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: left bottom;
+        }
+
+        span#q8{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: bottom center;
+        }
+
+        span#q9{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: right bottom;
+        }
+
     </style>
 </head>
 <body>
+    <div>
+        <span class="quadrado" id="q1"></span>
+        <span class="quadrado" id="q2"></span>
+        <span class="quadrado" id="q3"></span>
+    </div>
+    <div>
+        <span class="quadrado" id="q4"></span>
+        <span class="quadrado" id="q5"></span>
+        <span class="quadrado" id="q6"></span>
+    </div>
+    <div>
+        <span class="quadrado" id="q7"></span>
+        <span class="quadrado" id="q8"></span>
+        <span class="quadrado" id="q9"></span>
+    </div>
     
 </body>
 </html>
