@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem de fundo</title>
+    <style>
+        *{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+            margin: 0px;        /* elimina a margem de todos os elementos*/
+            padding: 0px;       /* elimina o pad de todos os elementos*/
+        }
+
+        body{
+            /* caso a imagem de fundo seja muito pesada irá demorar para carrega-la (caso a conexão do usuário seja lenta), por isso sempre deve usar uma cor de fundo, para não ficar com o fundo branco.*/
+            
+            background-color: black; 
+            height: 100vh;      /* faz a box body ocupar 100% da viewport*/           
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;         /* faz uma âncora da imagem no centro da tela*/
+            background-repeat: no-repeat;
+            background-size: cover;          /* faz a imagem ocupar 100% da viewport*/
+            background-attachment: fixed;      /* mantém a imagem de fundo fixa ao rolar a barra de rolagem*/
+            
+
+            /* SHORHAND:
+            background: color > image > position > repeat > /size > attachment;
+            background: black url('imagens/wallpaper002.jpg') center center /cover no-repeat fixed;
+            */
+            background: black url('imagens/wallpaper002.jpg') center center  /cover no-repeat fixed;
+        }
+
+        main{
+            background-color: white; 
+            padding: 20px;
+            border-radius: 20px;  
+            border: 2px solid black;         
+            /* quando a largura da tela for menor que 280px (tamanho da tela de celulares antigos 320px menos 40px de pad) a box main se adapta ao tamanho atual da tela*/
+            min-width: 280px;
+            /* quando a largura da tela for maior que 760px a box main se mantém com tamanho fixo de 600px menos os 20px+20px de pad*/
+            max-width: 560px;
+            margin: auto;
+            text-align: justify;    /* alinhamento justificado*/
+            text-indent: 30px;      /* identação do parágrafo*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore perferendis quod nisi inventore tenetur explicabo, totam in ad est vitae iure adipisci, id eaque reprehenderit? Ullam ab reprehenderit mollitia quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime culpa dolorem perspiciatis inventore vel tempore fugiat pariatur consectetur nemo veniam eveniet, quisquam ipsam placeat necessitatibus veritatis exercitationem commodi. Accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum perspiciatis consectetur labore, nobis maxime ipsa unde distinctio autem saepe ducimus asperiores vero magnam repellendus quas doloremque illum harum, ea dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum fugit odit labore distinctio, amet fugiat explicabo temporibus in fuga! Error nisi ex iste blanditiis eveniet placeat ut maiores quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur deserunt, quisquam laboriosam consequuntur facere. Ipsa libero, exercitationem, autem, nisi assumenda odio explicabo sunt ullam commodi veniam facilis repellendus architecto!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis tempora deserunt necessitatibus vitae soluta sint, laborum corporis doloremque numquam nostrum fugiat animi cupiditate enim saepe voluptatum aperiam dignissimos rem quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur et quia cupiditate vero aliquam a quos error consequuntur corporis dignissimos, explicabo corrupti magnam ab voluptate odit ipsam necessitatibus, iste maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet rerum dolores repudiandae, commodi aliquam quisquam optio maxime excepturi provident soluta atque cupiditate distinctio beatae quae aliquid. Aliquid, est itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum perspiciatis consectetur labore, nobis maxime ipsa unde distinctio autem saepe ducimus asperiores vero magnam repellendus quas doloremque illum harum, ea dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum fugit odit labore distinctio, amet fugiat explicabo temporibus in fuga! Error nisi ex iste blanditiis eveniet placeat ut maiores quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur deserunt, quisquam laboriosam consequuntur facere. Ipsa libero, exercitationem, autem, nisi assumenda odio explicabo sunt ullam commodi veniam facilis repellendus architecto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum perspiciatis consectetur labore, nobis maxime ipsa unde distinctio autem saepe ducimus asperiores vero magnam repellendus quas doloremque illum harum, ea dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum fugit odit labore distinctio, amet fugiat explicabo temporibus in fuga! Error nisi ex iste blanditiis eveniet placeat ut maiores quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur deserunt, quisquam laboriosam consequuntur facere. Ipsa libero, exercitationem, autem, nisi assumenda odio explicabo sunt ullam commodi veniam facilis repellendus architecto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum perspiciatis consectetur labore, nobis maxime ipsa unde distinctio autem saepe ducimus asperiores vero magnam repellendus quas doloremque illum harum, ea dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum fugit odit labore distinctio, amet fugiat explicabo temporibus in fuga! Error nisi ex iste blanditiis eveniet placeat ut maiores quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur deserunt, quisquam laboriosam consequuntur facere. Ipsa libero, exercitationem, autem, nisi assumenda odio explicabo sunt ullam commodi veniam facilis repellendus architecto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum perspiciatis consectetur labore, nobis maxime ipsa unde distinctio autem saepe ducimus asperiores vero magnam repellendus quas doloremque illum harum, ea dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum fugit odit labore distinctio, amet fugiat explicabo temporibus in fuga! Error nisi ex iste blanditiis eveniet placeat ut maiores quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur deserunt, quisquam laboriosam consequuntur facere. Ipsa libero, exercitationem, autem, nisi assumenda odio explicabo sunt ullam commodi veniam facilis repellendus architecto!</p>
+    </main>
+    
+</body>
+</html>
