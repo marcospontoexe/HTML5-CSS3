@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordel</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    :root{      /* declaração de variáveis*/
+    --fonte_padrão: Arial, Helvetica, sans-serif;
+    --fonte_destaque: 'Passion One', cursive;
+    --fonte_main: 'Sriracha', cursive;
+
+}
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+}
+
+    header{
+        font: normal 500 2em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+        background-color: black;
+        color: white;
+        text-align: center;
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    header h1{
+        margin: 20px 0px 0px 0px;
+    }
+
+    nav > p{
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+
+    nav a{
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+    }
+
+    nav a:hover{
+        text-decoration: underline;
+        
+    }
+
+    main{
+        font: normal 800 2em var(--fonte_main);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+
+    }
+    
+    article{
+        position: absolute;     /* posicionamneto absoluto*/
+        width: 400px;
+        top: 20%;             /* distância da âncora do conteudo em relação à margem superior do container*/
+        border: 2px solid black;
+        text-align: left;
+
+    }
+
+    section{
+        position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
+        height: 96vh;
+        padding: 20px;
+
+    }
+
+    section#dois{
+        /* caso a imagem de fundo seja muito pesada irá demorar para carrega-la (caso a conexão do usuário seja lenta), por isso sempre deve usar uma cor de fundo, para não ficar com o fundo branco.*/
+
+        background-color: rgb(6, 34, 10); 
+        height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
+        background-image: url('imagens/background001.jpg');
+        background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
+        background-repeat: no-repeat;
+        background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/
+        background-attachment: fixed;      /* mantém a imagem de fundo fixa ao rolar a barra de rolagem*/
+        
+
+        /* SHORtHAND:
+        background: color > image > position > repeat > /size > attachment;
+        background: black url('imagens/wallpaper002.jpg') center center /cover no-repeat fixed;
+        */
+    }
+
+    section#dois article{
+        background-color: rgba(0, 0, 0, 0.233);
+        color: white;
+    }
+
+
+
+    footer{
+        font-family: var(--fonte_padrão);
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cordel Moderno</h1>
+        <nav>
+            <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external">Milton Duarte</a>  </p>          
+        </nav>
+    </header>
+
+    <main>
+        <section id="um">
+            <article>
+                Estou ficando cansado
+                Da tal tecnologia
+                Só se fala por e-mail
+                Mensagem curta e fria
+                Twitter e Facebook
+                Antes que eu caduque
+                Vou dizer tudo em poesia.
+            </article>
+        </section>
+            
+            
+        <section id="dois">
+            <article>
+                Não é mais como era antes
+                É tudo abreviado
+                "Você" só tem duas letras
+                O "O" e o "E" foi riscado
+                Para declarar o amor
+                Basta botar uma flor
+                E um coração desenhado.
+            </article>
+        </section>
+
+         
+            
+        <section id="tres">
+            <article>
+                Arroba agora não pesa
+                É parte de um endereço
+                Ponto final nem se usa
+                Ou vai até no começo
+                Agora é .com
+                Se o saite é muito bom
+                Ele vale um alto preço.
+            
+                Pra piorar a liguagem
+                O emoticom é um risco
+                Tem símbolo para tudo
+                Ponto e vírgula e um asterisco
+                Um beijo significa
+                Pra entender como fica
+                Decifre esse rabisco.
+            </article>
+        </section>
+            
+            <!--
+            <section class="padrao" id="quatro">
+                Tenho saudade das cartas
+                Escritas com a própria mão
+                Mandava no mês de Junho
+                Só chegava no Verão
+                Mas matava a saudade
+                Era texto de verdade
+                Nas linhas do coração.
+            </section>
+            
+            
+            <section class="padrao" id="cinco">
+                Agora, escrevo e envio
+                Chegando na mesma hora
+                Mas quando vou prosear
+                A pessoa foi embora
+                Abriu outro aplicativo
+                O mundo ficou cativo
+                Da tecnologia do agora.
+            
+                Felizmente, pra orar
+                Não precisa de internet
+                Deus escuta todo mundo
+                Se quiser, faça esse teste
+                Dois pontos são dois joelhos
+                Seus lábios são aparelhos
+                Deixe que Deus interprete.
+            </section>
+            -->
+       
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Marcos Daniel Santana</p>
+    </footer>
+    
+</body>
+</html>
