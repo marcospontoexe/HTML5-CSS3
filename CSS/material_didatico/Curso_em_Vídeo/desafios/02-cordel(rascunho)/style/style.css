@@ -70,7 +70,7 @@ section#dois{
 
     background-color: rgb(6, 34, 10); 
     height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
-    background-image: url('imagens/background001.jpg');
+    background-image: url('../imagens/background001.jpg');
     background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
     background-repeat: no-repeat;
     background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/
@@ -89,7 +89,7 @@ section#quatro{
 
     background-color: grey; 
     height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
-    background-image: url('imagens/background002.jpg');
+    background-image: url('../imagens/background002.jpg');
     background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
     background-repeat: no-repeat;
     background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/

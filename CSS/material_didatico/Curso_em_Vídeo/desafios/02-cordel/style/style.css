@@ -15,31 +15,38 @@ margin: 0px;        /* elimina a margem de todos os elementos*/
 padding: 0px;       /* elimina o pad de todos os elementos*/
 }
 
+html, body{     /* configurações em comum para html e body*/
+    min-height: 100vh;      /* tamanho mínimo da altura (100% da viewport)*/
+    background-color: darkgray;
+}
+
 header{
-    font: normal 500 2em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    font: normal normal 2em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
     background-color: black;
     color: white;
     text-align: center;
     min-height: 150px;
-    padding: 20px;
+    padding: 50px;
 }
 
 header h1{
     margin: 20px 0px 0px 0px;
+    font-variant: small-caps;           /* transforma tudo em letras maiúsculas, mas as letras iniciais ficam maiores*/
+    /*text-transform: uppercase;           transforma tudo em letras maiúsculas*/
 }
 
 nav > p{
-    font-weight: 100;
     font-size: 0.8em;
 }
 
-nav a{
+nav a, footer a{
     text-decoration: none;
+    font-weight: bolder;
     font-weight: 600;
     color: white;
 }
 
-nav a:hover{
+nav a:hover, footer a:hover{
     text-decoration: underline;
     
 }
@@ -49,7 +56,24 @@ main{
 
 }
 
-article{
+section{
+    position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
+    line-height: 2em;       /*espaço entre as frases*/
+   
+    padding-left: 30px;
+    /* para criar um efeito paralax*/
+    padding-top: 10vh;          
+    padding-bottom: 10vh;
+    
+
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section p{
     position: absolute;     /* posicionamneto absoluto*/
     width: 400px;
     top: 20%;             /* distância da âncora do conteudo em relação à margem superior do container*/
@@ -58,19 +82,14 @@ article{
 
 }
 
-section{
-    position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
-    height: 96vh;
-    padding: 20px;
 
-}
 
-section#dois{
+section.imagem1{
     /* caso a imagem de fundo seja muito pesada irá demorar para carrega-la (caso a conexão do usuário seja lenta), por isso sempre deve usar uma cor de fundo, para não ficar com o fundo branco.*/
 
     background-color: rgb(6, 34, 10); 
     height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
-    background-image: url('imagens/background001.jpg');
+    background-image: url('../imagens/background001.jpg');
     background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
     background-repeat: no-repeat;
     background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/
@@ -79,17 +98,17 @@ section#dois{
     
 }
 
-section#dois article{
+section.imagem1 p{
     background-color: rgba(0, 0, 0, 0.315);
     color: white;
 }
 
-section#quatro{
+section.imagem2{
     /* caso a imagem de fundo seja muito pesada irá demorar para carrega-la (caso a conexão do usuário seja lenta), por isso sempre deve usar uma cor de fundo, para não ficar com o fundo branco.*/
 
     background-color: grey; 
     height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
-    background-image: url('imagens/background002.jpg');
+    background-image: url('../imagens/background002.jpg');
     background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
     background-repeat: no-repeat;
     background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/
@@ -98,14 +117,12 @@ section#quatro{
 
 }
 
-section#quatro article{
+section.imagem2 p{
     background-color: rgba(0, 0, 0, 0.315);
     color: white;
 }
 
-section#cinco{
-    height: 100vh;      /* faz a box body ocupar 100% da viewport*/ 
-}
+
 
 footer{
     font-family: var(--fonte_padrão);
