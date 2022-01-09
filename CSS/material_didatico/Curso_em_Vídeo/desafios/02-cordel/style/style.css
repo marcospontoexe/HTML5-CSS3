@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{      /* declaração de variáveis*/
---fonte_padrão: Arial, Helvetica, sans-serif;
+--fonte_padrão: Verdana, Geneva, Tahoma, sans-serif;
 --fonte_destaque: 'Passion One', cursive;
 --fonte_main: 'Sriracha', cursive;
 
@@ -18,10 +18,11 @@ padding: 0px;       /* elimina o pad de todos os elementos*/
 html, body{     /* configurações em comum para html e body*/
     min-height: 100vh;      /* tamanho mínimo da altura (100% da viewport)*/
     background-color: darkgray;
+    
 }
 
 header{
-    font: normal normal 2em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    font: normal normal 1em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
     background-color: black;
     color: white;
     text-align: center;
@@ -30,13 +31,14 @@ header{
 }
 
 header h1{
+    font-size: 10vw;            /* a fonte se adapta à largura da viewport*/
     margin: 20px 0px 0px 0px;
     font-variant: small-caps;           /* transforma tudo em letras maiúsculas, mas as letras iniciais ficam maiores*/
     /*text-transform: uppercase;           transforma tudo em letras maiúsculas*/
 }
 
 nav > p{
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 nav a, footer a{
@@ -53,6 +55,7 @@ nav a:hover, footer a:hover{
 
 main{
     font: normal 800 2em var(--fonte_main);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    font-size: 3.5vw;            /* a fonte se adapta à largura da viewport*/
 
 }
 
@@ -75,7 +78,7 @@ section.normal{
 
 section p{
     position: absolute;     /* posicionamneto absoluto*/
-    width: 400px;
+    display: inline-block;  /* fica adaptável à viewport*/
     top: 20%;             /* distância da âncora do conteudo em relação à margem superior do container*/
     border: 2px solid black;
     text-align: left;
