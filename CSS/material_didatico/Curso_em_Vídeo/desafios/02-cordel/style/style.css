@@ -1,28 +1,28 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{      /* declaração de variáveis*/
---fonte_padrão: Verdana, Geneva, Tahoma, sans-serif;
---fonte_destaque: 'Passion One', cursive;
---fonte_main: 'Sriracha', cursive;
-
+    --fonte_padrão: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte_destaque: 'Passion One', cursive;
+    --fonte_main: 'Sriracha', cursive;
+    
 }
 
 *{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
-margin: 0px;        /* elimina a margem de todos os elementos*/
-padding: 0px;       /* elimina o pad de todos os elementos*/
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+    font-size: 1em;
 }
 
 html, body{     /* configurações em comum para html e body*/
-    min-height: 100vh;      /* tamanho mínimo da altura (100% da viewport)*/
     background-color: darkgray;
+    font-family: var(--fonte_padrão);
+
     
 }
 
 header{
-    font: normal normal 1em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
     background-color: black;
     color: white;
     text-align: center;
@@ -32,14 +32,12 @@ header{
 
 header h1{
     font-size: 10vw;            /* a fonte se adapta à largura da viewport*/
+    font-family: var(--fonte_destaque);
     margin: 20px 0px 0px 0px;
     font-variant: small-caps;           /* transforma tudo em letras maiúsculas, mas as letras iniciais ficam maiores*/
     /*text-transform: uppercase;           transforma tudo em letras maiúsculas*/
 }
 
-nav > p{
-    font-size: 1em;
-}
 
 nav a, footer a{
     text-decoration: none;
@@ -54,20 +52,18 @@ nav a:hover, footer a:hover{
 }
 
 main{
-    font: normal 800 2em var(--fonte_main);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
-    font-size: 3.5vw;            /* a fonte se adapta à largura da viewport*/
+    font-family: var(--fonte_main);
+    font-size: 3vw;            /* a fonte se adapta à largura da viewport*/
 
 }
 
 section{
-    position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
-    line-height: 2em;       /*espaço entre as frases*/
-   
+    
+    line-height: 2em;       /*espaço entre as frases*/   
     padding-left: 30px;
     /* para criar um efeito paralax*/
     padding-top: 10vh;          
-    padding-bottom: 10vh;
-    
+    padding-bottom: 10vh;    
 
 }
 
@@ -77,52 +73,51 @@ section.normal{
 }
 
 section p{
-    position: absolute;     /* posicionamneto absoluto*/
-    display: inline-block;  /* fica adaptável à viewport*/
-    top: 20%;             /* distância da âncora do conteudo em relação à margem superior do container*/
-    border: 2px solid black;
+
     text-align: left;
+    padding-bottom: 2em;        /* distancia entre os parágrafos*/
 
+    
+    
 }
-
 
 
 section.imagem1{
     /* caso a imagem de fundo seja muito pesada irá demorar para carrega-la (caso a conexão do usuário seja lenta), por isso sempre deve usar uma cor de fundo, para não ficar com o fundo branco.*/
-
     background-color: rgb(6, 34, 10); 
-    height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
+
+    text-shadow: 1px 1px 0px black;
+    /*height: 100vh;       faz a box body ocupar 100% da viewport*/          
     background-image: url('../imagens/background001.jpg');
-    background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
+    background-position: right center;         /* faz uma âncora da imagem no centro da tela*/
     background-repeat: no-repeat;
-    background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/
+    background-size: cover;          /* faz a imagem ocupar 100% da viewport e adapta o tamanho da imagem*/
     background-attachment: fixed;      /* mantém a imagem de fundo fixa ao rolar a barra de rolagem*/
     box-shadow: inset 5px 5px 10px 3px rgba(0, 0, 0, 0.274);      /*sombra interna. box-shadow: sombra interna, deslocamento horiz, deslocamento vert, blur (borrão) espalhamento (spread), cor da sombra*/
-    
-}
 
-section.imagem1 p{
-    background-color: rgba(0, 0, 0, 0.315);
-    color: white;
+    
 }
 
 section.imagem2{
     /* caso a imagem de fundo seja muito pesada irá demorar para carrega-la (caso a conexão do usuário seja lenta), por isso sempre deve usar uma cor de fundo, para não ficar com o fundo branco.*/
-
     background-color: grey; 
-    height: 100vh;      /* faz a box body ocupar 100% da viewport*/          
+
+    text-shadow: 1px 1px 0px black;
+    /*height: 100vh;       faz a box body ocupar 100% da viewport*/          
     background-image: url('../imagens/background002.jpg');
-    background-position: right bottom;         /* faz uma âncora da imagem no centro da tela*/
+    background-position: right center;         /* faz uma âncora da imagem no centro da tela*/
     background-repeat: no-repeat;
-    background-size: auto;          /* faz a imagem ocupar 100% da viewport sem adaptar o tamanho da imagem*/
+    background-size: cover;          /* faz a imagem ocupar 100% da viewport e adapta o tamanho da imagem*/
     background-attachment: fixed;      /* mantém a imagem de fundo fixa ao rolar a barra de rolagem*/
     box-shadow: inset 5px 5px 10px 3px rgba(0, 0, 0, 0.274);      /*sombra interna. box-shadow: sombra interna, deslocamento horiz, deslocamento vert, blur (borrão) espalhamento (spread), cor da sombra*/
 
 }
 
-section.imagem2 p{
+section.imagem1 p, section.imagem2 p{
     background-color: rgba(0, 0, 0, 0.315);
     color: white;
+    padding-left: 20px;
+    width: 40vw;
 }
 
 
@@ -135,11 +130,6 @@ footer{
     color: white;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-}
 
-footer a:hover{
-    text-decoration: underline;
-}
+
+
