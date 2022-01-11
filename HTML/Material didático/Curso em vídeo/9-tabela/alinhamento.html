@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de tabela</title>
+    <style>
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td#um{
+            text-align: left;     /* alinhamento horizontal*/
+            vertical-align: top;    /* alinhamento vertical*/
+        }
+
+        td#dois{
+            text-align: center;     /* alinhamento horizontal*/
+            vertical-align: top;    /* alinhamento vertical*/
+        }
+
+        td#tres{
+            text-align: right;     /* alinhamento horizontal*/
+            vertical-align: top;    /* alinhamento vertical*/
+        }
+
+        td#quatro{
+            text-align: left;     /* alinhamento horizontal*/
+            vertical-align: middle;    /* alinhamento vertical*/
+        }
+
+        td#cinco{
+            text-align: center;     /* alinhamento horizontal*/
+            vertical-align: middle;    /* alinhamento vertical*/
+        }
+
+        td#seis{
+            text-align: right;     /* alinhamento horizontal*/
+            vertical-align: middle;    /* alinhamento vertical*/
+        }
+
+        td#sete{
+            text-align: left;     /* alinhamento horizontal*/
+            vertical-align: bottom;    /* alinhamento vertical*/
+        }
+
+        td#oito{
+            text-align: center;     /* alinhamento horizontal*/
+            vertical-align: bottom;    /* alinhamento vertical*/
+        }
+
+        td#nove{
+            text-align: right;     /* alinhamento horizontal*/
+            vertical-align: bottom;    /* alinhamento vertical*/
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="linha1">    <!-- 1° linha-->
+            <td id="um">A1</td>   <!-- dados da tabela-->
+            <td id="dois">B1</td>
+            <td id="tres">C1</td>
+        </tr>
+
+        <tr>    <!-- 2° linha-->
+            <td id="quatro">A2</td>   <!-- dados da tabela-->
+            <td id="cinco">B2</td>
+            <td id="seis">C2</td>
+        </tr>
+
+        <tr>    <!-- 3° linha-->
+            <td id="sete">A3</td>   <!-- dados da tabela-->
+            <td id="oito">B3</td>
+            <td id="nove">C3</td>
+        </tr>
+
+
+    
+</body>
+</html>
