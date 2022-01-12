@@ -32,6 +32,18 @@
             color: white;
         }
 
+        tbody > tr:nth-child(odd){      /* efeito zebrado das linhas ímpares*/
+            background-color: lightpink;
+        }
+
+        tbody > tr:nth-child(even){      /* efeito zebrado das linhas pares*/
+            background-color: rgb(255, 255, 180);
+        }
+
+        tbody > tr:nth-child(3n){      /* efeito zebrado a cada três linhas*/
+            background-color: rgb(247, 40, 71);
+        }
+
         td, th{         /* por padrão o navegador configura o cabeçalho (th) como texto centralizado e negrito*/
             padding: 5px;
             border: 1px solid black;
