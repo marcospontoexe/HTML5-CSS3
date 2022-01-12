@@ -11,6 +11,16 @@
             
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+
+        }
+
         table{
             border: 2px solid black;
             border-collapse: collapse;      /* para tirar o espaço entre as célular (por padrão é separeted)*/
@@ -44,6 +54,7 @@
     <h1>Trabalhando com tabela grande.</h1>
     <!-- ANATOMIA PARA TABELA GRANDE
         TABLE
+            CAPTION (legenda)
             THEAD   (cabeçalho)
                 TR(linha), TH(cabeça), TD(conteudo)
             TBODY   (corpo)
@@ -53,10 +64,12 @@
 
     -->
     <table>         <!-- tabela grande-->
+        <caption>População das unidades federativas</caption>
+
         <thead>     <!-- cabeçalho-->   
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>   <!-- 'scope="col"' significa que ESTADO é um título da coluna-->   
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>     <!-- 'scope="col"' significa que POPULAÇÃO é um título da coluna-->   
             </tr>
             
         </thead>
@@ -114,7 +127,7 @@
 
         <tfoot>     <!-- rodapé-->
             <tr>
-                <td>TOTAL DE HABITANTES</td>
+                <th scope="row">TOTAL DE HABITANTES</th>  <!-- 'scope="row"' significa que TOTAL DE HABITANTES é um título da linha-->          
                 <td class="num">0000</td>
             </tr>
 
