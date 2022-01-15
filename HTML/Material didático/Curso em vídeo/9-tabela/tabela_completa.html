@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+
+        }
+
+        table{
+            border-collapse: collapse;      /* para tirar o espaço entre as célular (por padrão é separeted)*/
+            border: 2px solid black;
+            width: 800px;
+
+        }
+
+        thead{      
+            background-color: grey;
+            color: white;
+        }
+
+        
+        td, th{         /* por padrão o navegador configura o cabeçalho (th) como texto centralizado e negrito*/
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>FILMES FAVORITOS</caption>         
+        
+        <thead>
+            <tr>
+                <th scope="col">grupos</th>            <!-- 'scope="col"' significa que é um título da coluna-->   
+                <th scope="col">nomes</th>
+                <th  scope="col" colspan="3">filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Mulheres</td>
+                <td>Joana se solza</td>
+                <td>Titanic</td>
+                <td>Tróia</td>
+                <td>Branca de neve</td>
+            </tr>
+            <tr>
+                <td>Linda Borceta</td>
+                <td>Chuck</td>
+                <td>Matrix</td>
+                <td>Lagoa Azul</td>
+            </tr>
+            <tr>
+                <td>Cléia Lana</td>
+                <td>Batutinhas</td>
+                <td>frozen</td>
+                <td>2012</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Homens</td>
+                <td>Pedro Souza</td>
+                <td>Exterminador</td>
+                <td>Super man</td>
+                <td>A ilha</td>
+            </tr>
+            <tr>
+                <td>Bombrando Lee</td>
+                <td>Batman</td>
+                <td>X-Man</td>
+                <td>Lost</td>
+            </tr>
+            <tr>
+                <td>Don Pado</td>
+                <td>Odisseia Brazuca</td>
+                <td>Shurek</td>
+                <td>Dark</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
