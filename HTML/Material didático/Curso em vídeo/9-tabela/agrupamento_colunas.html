@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de colunas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(123, 165, 255);
+            color: rgb(5, 1, 1);
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+
+        }
+
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;      /* para tirar o espaço entre as célular (por padrão é separeted)*/
+            
+        }
+
+        td, th{         /* por padrão o navegador configura o cabeçalho (th) como texto centralizado e negrito*/
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        col.cnome{
+            background-color: chartreuse;
+        }
+
+        col.cgrupo{
+            background-color: coral;
+        }
+ 
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>      <!-- para marcar um coluna (deve ter a quantidade total de colunas da tabela)-->
+            <col class="cnome">
+            <col class="cgrupo" span="2">       <!-- span="2" faz mesclagem de duas colunas-->
+            <col class="cprofissao">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">NOME</th>
+            <th scope="col">SEXO</th>
+            <th scope="col">IDADE</th>
+            <th scope="col">PROFISSÃO</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>38</td>
+            <td>Recepcionista</td>
+        </tr>
+        
+        <tr>
+            <td>João Adamastor</td>
+            <td>M</td>
+            <td>58</td>
+            <td>Segurança</td>
+        </tr>
+        
+        <tr>
+            <td>Maria Claudia</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Vendedora</td>
+        </tr>
+        
+        <tr>
+            <td>Roberto Sanremo</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Telefonista</td>
+        </tr>
+        
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>38</td>
+            <td>Recepcionista</td>
+        </tr>
+        
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>38</td>
+            <td>Recepcionista</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
