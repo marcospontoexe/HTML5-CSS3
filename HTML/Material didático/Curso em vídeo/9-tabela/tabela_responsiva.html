@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        caption{
+            font-weight: bold;
+            background-color: rgb(123, 165, 255);
+            color: rgb(5, 1, 1);
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+        }
+
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;      /* para tirar o espaço entre as célular (por padrão é separeted)*/
+            width: 500px;
+            position: relative;           /* para tornar o cabeçalho fixo*/
+        }
+
+        thead{      
+            background-color: grey;
+            color: white;
+        }
+
+        td, th{         /* por padrão o navegador configura o cabeçalho (th) como texto centralizado e negrito*/
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd){      /* efeito zebrado das linhas ímpares*/
+            background-color: rgb(255, 98, 98);
+        }
+
+        div#container{
+            width: 80vw;            /*a tabela fica com 80% da tela*/
+            overflow-x: auto;    /* transbordamento, rolagem lateral (eixo x)*/ 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabela em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto assumenda, nam iste vitae et optio quia, qui voluptate ipsa veniam nostrum? Laboriosam ipsa accusamus laudantium veritatis! Sapiente voluptatum quam quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi perferendis rem laudantium laboriosam, tempora error ratione assumenda voluptates ipsam, odit, eaque quas labore dicta. Repellat illum veniam nemo dolor! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis, placeat veritatis optio, esse consequatur est repellat adipisci, earum expedita recusandae aperiam commodi quo perspiciatis quos distinctio porro et eius.</p>
+    
+    <div id="container">       <!-- para fazer configurações de responsividade-->
+        <table>
+            <Caption>Tabela responsiva</Caption>
+            <thead>
+                <tr>
+                    <th scope="row">PRODUTO</th>
+                    <th scope="row">Jan</th>
+                    <th scope="row">Fev</th>
+                    <th scope="row">Mar</th>
+                    <th scope="row">Abr</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                    <th scope="row">Mai</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>213</td>
+                    <td>220</td>
+                    <td>122</td>
+                    <td>55</td>
+                    <td>421</td>
+                    <td>123</td>
+                    <td>254</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
