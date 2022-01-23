@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do astronauta</title>
+    <style>
+        
+        body{
+            position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
+            background-color: black;
+            background-image: url("imagens/espaco.jpg");
+            background-size: cover;          /* faz a imagem ocupar 100% da viewport*/
+            background-attachment: fixed;      /* mantém o tamanho da imagem de fundo fixa*/
+        }
+        
+
+        main{
+            position: absolute;     /* posicionamneto absoluto*/
+            background-image: url("imagens/astronauta.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 50vh;                   /* usar porcentagem da Viewport tras recursividade*/
+            width: 50vh;
+
+            /* para alterar a âncora (por padrão é no canto esquerdo superior), reposicionar 50% para a esquerda e 50% para baixo, desse maneira a âncora fica centralizada no centro da box*/
+            transform: translate(-50%, 50%);
+            
+            top: 50%;             /* distância da âncora do conteudo em relação à margem superior do container*/
+            left: 50%;              /* distância da âncora do conteudo em relação à margem esquerda do container*/
+
+
+            
+
+
+        }
+
+       
+    </style>
+</head>
+<body>
+    <main> 
+        
+    </main>
+    
+</body>
+</html>
