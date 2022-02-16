@@ -7,6 +7,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">           <!-- adiciona um favicon -->
     link
     <title>Imagens</title>
+    <style>
+        figure{
+            border: 1px solid black;
+            padding: 5px;
+            height: 250px;
+            width: 220px;
+        }
+
+        figcaption{
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando imagens.</h1>
@@ -17,6 +30,13 @@
     <img src="arquivos/images_original_200.jpg" alt="oUTRA IMAGEM DE TESTE." title="imagem em jpg">             <!--CRTL+ESPAÇO mostra os arquivos de imagem dentro da pasta-->
     <P><BR/>Está é uma imagem externa, da internet:</P>
     <img src="https://image.flaticon.com/icons/png/512/1205/1205526.png" alt="Imagem da internet" title="imagem externa">
+
+    <h1>imagem com legenda</h1>
+    <!-- a tah 'figure' pertime adicionar legendas na imagem-->
+    <figure>
+        <img src="arquivos/images_original.jpg" alt="imagem de exemplo" title="imagem em jpg">
+        <figcaption>Foto em jpg usada como exemplo</figcaption>             <!-- legenda da imagem-->
+    </figure>
     
     <!--FAVICON (https://favicon.io/)--> 
 
