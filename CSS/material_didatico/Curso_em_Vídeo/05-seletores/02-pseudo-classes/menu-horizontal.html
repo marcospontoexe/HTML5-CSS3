@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com listas</title>
+    <style>
+        section{
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 10px;
+            width: 800px;
+        }
+        nav{
+            /*width: 400px;*/
+            border: 1px solid black;
+        }
+        .subMenu{      
+            display: none;
+        }
+           
+
+        #menu>a{           /* configura apenas os links contidos dentro das listas pertencentes ao ol#menu*/
+            display: inline-block;
+            text-decoration: none;      /* tira o sublinhado*/
+            text-align: center;
+            /*width: 200px;*/
+            background-color: rgb(52, 52, 255);
+            color: aliceblue;
+            padding: 10px 5px;
+            margin: 0px 1px;
+            border-radius: 5px;
+            
+        }
+
+        .subMenu>a{           /* configura apenas os links contidos dentro das listas pertencentes ao ol#menu*/
+            display: block;
+            /*width: 200px;*/
+            text-decoration: none;      /* tira o sublinhado*/
+            background-color: rgb(52, 52, 255);
+            color: aliceblue;
+            padding: 10px 5px;
+            margin: 0px 1px;
+            border-radius: 5px;
+        }
+
+        #menu>a:hover, .subMenu>a:hover{
+            background-color: rgb(101, 101, 255);
+        }
+        
+        
+        #menu>a:hover .subMenu>a{
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Menu 1</h1> 
+        <nav id="menu">   <!-- possui os links de navegação pela estrutura de páginas que vão compor o website-->
+            <a href="#">OPÇÃO I
+                <div class="subMenu">
+                    <a href="#">Sub-Menu A</a>
+                    <a href="#">Sub-Menu B</a>
+                    <a href="#">Sub-Menu C</a>
+                </div>
+            </a>
+            <a href="#">OPÇÃO II
+                <div class="subMenu">
+                    <a href="#">Sub-Menu A</a>
+                    <a href="#">Sub-Menu B</a>
+                    <a href="#">Sub-Menu C</a>
+                </div>
+            </a>
+            <a href="#">OPÇÃO III
+                <div class="subMenu">
+                    <a href="#">Sub-Menu A</a>
+                    <a href="#">Sub-Menu B</a>
+                    <a href="#">Sub-Menu C</a>
+                </div>
+            </a>
+            <a href="#">OPÇÃO IV
+                <div class="subMenu">
+                    <a href="#">Sub-Menu A</a>
+                    <a href="#">Sub-Menu B</a>
+                    <a href="#">Sub-Menu C</a>
+                </div>
+            </a>
+           
+        </nav>
+                                
+    </section>
+    
+</body>
+</html>
