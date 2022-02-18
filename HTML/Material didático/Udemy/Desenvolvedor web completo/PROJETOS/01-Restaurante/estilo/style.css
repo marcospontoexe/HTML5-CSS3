@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+:root{      /* declaração de variáveis*/
+    --fonte_padrão: Arial, Helvetica, sans-serif;
+    --fonte_destaque: 'Bebas Neue', cursive;
+    --fonte_android: 'Idroid';
+
+    --cor_0:  #84E1AD;
+    --cor_1:  #3CD782;
+    --cor_2: #7ad8a47e;
+    --cor_3:  #1A5C38;
+    --cor_4:  #1a5c3879;
+
+
+
+}
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+}
