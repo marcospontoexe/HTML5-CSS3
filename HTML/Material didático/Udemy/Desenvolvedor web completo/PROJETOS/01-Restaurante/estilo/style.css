@@ -1,9 +1,17 @@
 @charset "utf-8";
+@font-face {        /* incluindo uma fonte externa*/
+    font-family: 'Opti';
+    src: url('../fontes/OPTIWorcesterRoundSLItalic.otf');       
+    font-weight: normal;
+    font-style: normal;
+}
+
+OPTIWorcesterRoundSLItalic
 
 :root{      /* declaração de variáveis*/
     --fonte_padrão: Arial, Helvetica, sans-serif;
-    --fonte_destaque: 'Bebas Neue', cursive;
-    --fonte_android: 'Idroid';
+    --fonte_destaque: 'Opti', sans-serif;
+   
 
     --cor_0:  #84E1AD;
     --cor_1:  #3CD782;
@@ -18,4 +26,27 @@
 *{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
     margin: 0px;        /* elimina a margem de todos os elementos*/
     padding: 0px;       /* elimina o pad de todos os elementos*/
+}
+
+header{
+    width: 954px;
+    height: 140px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+nav{
+
+}
+
+header>img{
+    width: 100%;
+    
+}
+
+
+main{
+    width: 954px;
+    margin: auto;
+    border: 1px solid black;
 }

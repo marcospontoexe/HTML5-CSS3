@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* incluindo fonte externa do google fonts*/
 
 @font-face {        /* incluindo uma fonte externa*/
     font-family: 'Idroid';
@@ -8,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 
 :root{      /* declaração de variáveis*/
     --fonte_padrão: Arial, Helvetica, sans-serif;
