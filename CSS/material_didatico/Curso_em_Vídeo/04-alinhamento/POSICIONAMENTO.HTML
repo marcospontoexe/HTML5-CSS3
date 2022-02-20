@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de box com uso de float:</title>
+    <style>
+        section{
+            border: 1px solid black;
+            width: 800px;
+            background-color: aqua;
+            overflow: hidden;           /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200px;     /* deixa a margem da palavra com 200px */
+            margin: 10px;
+        }
+        #a{
+            float: left;        /* flutua a box à esquerda, e a frente da box pai*/
+            background-color: rgb(255, 0, 76);
+        }   
+        #b{
+            float: right;        /* flutua a box à direita, e a frente da box pai*/
+            background-color: rgb(43, 226, 89);
+        }
+        #c{
+            float: right;        /* flutua a box à esquerda, e a frente da box pai*/
+            background-color: rgb(255, 0, 76);
+            width: 52%;         /* quando os elementos flutuantes excedem o tamanho da box pai, ele ficam um em baixo do outro*/
+        }   
+        #d{
+            float: right;        /* flutua a box à direita, e a frente da box pai*/
+            background-color: rgb(43, 226, 89);
+            width: 50%;
+        }
+        .paragrafo{
+            clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Exemplo de posicionamento de box com uso de 'float:'</h1>
+        <div id="a">DIV A</div>
+        <div id="b">DIV B</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
+        <p class="paragrafoA">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nesciunt libero itaque tempora voluptatum placeat voluptate ducimus cumque, asperiores reiciendis voluptatem quas delectus, voluptatibus architecto, reprehenderit velit expedita molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum ullam quae labore eligendi deserunt praesentium error amet facilis ab! Earum numquam sequi excepturi minus quos, amet hic tempora quod?</p>
+    </section>
+        
+    <section>
+        <h1>Outro exemplo de posicionamento de box com uso de 'float:'</h1>
+        <div id="c">DIV A</div>
+        <div id="d">DIV B</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
+        <p class="paragrafoB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nesciunt libero itaque tempora voluptatum placeat voluptate ducimus cumque, asperiores reiciendis voluptatem quas delectus, voluptatibus architecto, reprehenderit velit expedita molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum ullam quae labore eligendi deserunt praesentium error amet facilis ab! Earum numquam sequi excepturi minus quos, amet hic tempora quod?</p>
+    </section>
+    
+</body>
+</html>

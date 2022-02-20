@@ -62,10 +62,10 @@ main{
     padding: 20px;
 }
 
-#cardapio{
+section#cardapio{
     float: left;
 }
-#apoio{
+section#apoio{
     border: 1px solid black;
     height: 830px; 
     width: 300px;    
@@ -74,13 +74,13 @@ main{
     
 }
 
-.fotos_apoio{
+section.fotos_apoio{
     border: 1px solid black;
     margin-bottom: 20px;
 }
 
 footer{
-    clear:both; 
+    clear:both;  
     width:700px; 
     margin:0 auto; 
     font-size:0.75em; 
