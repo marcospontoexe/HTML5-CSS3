@@ -12,20 +12,27 @@
    
     --cor_0:  #4d2222;
     --cor_1:  #2c0d0d;
+    --cor_3: rgb(219, 219, 219);
+    --cor_4: rgb(131, 131, 131);
+    
    
 }
 
 *{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
     margin: 0px;        /* elimina a margem de todos os elementos*/
     padding: 0px;       /* elimina o pad de todos os elementos*/
+    
 }
-
+h1{
+    text-align: center;
+}
 h1, h2, h3{
     color: var(--cor_0);
 }
 
 body{
     font: normal 400 1em var(--fonte_destaque);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
+    background-color: var(--cor_3);
 }
 
 header{
@@ -39,7 +46,7 @@ nav{
     font: normal 400 1em var(--fonte_padrão);     /* shorthand font: font-style -> font-weight -> font-size -> font-family*/
     background-color: #2c0d0d;;
     padding: 10px;
-    transform: translate(0%, -10%);
+    transform: translate(0%, -15%);
 
 }
 
@@ -56,17 +63,25 @@ header>img{
 
 
 main{
-    width: 1000px;
+    width: 915px;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid var(--cor_4);
     padding: 20px;
+    background-color: white;
 }
 
-section#cardapio{
+#cardapio{
     float: left;
+    width: 60%;
 }
-section#apoio{
-    border: 1px solid black;
+#cardapio>article{
+    margin-bottom: 30px;
+}
+#cardapio ul{
+    margin-left: 30px;
+}
+#apoio{
+    
     height: 830px; 
     width: 300px;    
     text-align: center;
@@ -74,17 +89,21 @@ section#apoio{
     
 }
 
-section.fotos_apoio{
-    border: 1px solid black;
+.fotos_apoio{
+    
     margin-bottom: 20px;
 }
 
-footer{
-    clear:both;  
-    width:700px; 
+.separador{
+    clear:both; 
+}
+
+footer{ 
+    width: 947px;
     margin:0 auto; 
     font-size:0.75em; 
     text-align:center; 
-    background-color:#ECECEC; 
+    background-color: var(--cor_1); 
+    color: white;
     padding:5px
 }
