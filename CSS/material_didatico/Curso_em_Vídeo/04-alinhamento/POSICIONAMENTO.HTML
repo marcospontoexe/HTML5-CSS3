@@ -19,6 +19,8 @@
             text-align: center;
             line-height: 200px;     /* deixa a margem da palavra com 200px */
             margin: 10px;
+            cursor: pointer;        /* muda o ponteiro do mouse quando passa em cima da box*/
+           
         }
         #a{
             float: left;        /* flutua a box à esquerda, e a frente da box pai*/
@@ -37,6 +39,19 @@
             float: right;        /* flutua a box à direita, e a frente da box pai*/
             background-color: rgb(43, 226, 89);
             width: 50%;
+        }
+        #e{
+            position: relative;         /* permite transladar um box sem alterar o posicionamneto das de mais*/
+            background-color: rgb(226, 43, 217);        
+            top: 100px;   /* distância da âncora do conteudo em relação à margem esquerda do container*/
+            left: 50px;
+            
+        }
+        #f{
+            z-index: 1;
+            background-color: rgb(255, 220, 21);
+            z-index: 1;         /* A box fica em primeiro plano (eixo z)*/
+            
         }
         .paragrafo{
             clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
@@ -58,6 +73,11 @@
         <div id="d">DIV B</div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
         <p class="paragrafoB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nesciunt libero itaque tempora voluptatum placeat voluptate ducimus cumque, asperiores reiciendis voluptatem quas delectus, voluptatibus architecto, reprehenderit velit expedita molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum ullam quae labore eligendi deserunt praesentium error amet facilis ab! Earum numquam sequi excepturi minus quos, amet hic tempora quod?</p>
+    </section>
+
+    <section>
+        <div id="e">01</div>
+        <div id="f">02</div>
     </section>
     
 </body>
