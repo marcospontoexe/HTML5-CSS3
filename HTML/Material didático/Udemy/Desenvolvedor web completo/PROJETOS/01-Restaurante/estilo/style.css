@@ -14,6 +14,7 @@
     --cor_1:  #2c0d0d;
     --cor_3: rgb(219, 219, 219);
     --cor_4: rgb(131, 131, 131);
+    --cor_5:  #610d0d;
     
    
 }
@@ -96,6 +97,22 @@ main{
 
 .separador{
     clear:both; 
+}
+aside{
+    float:left;
+    width:230px;
+    border-top:1px solid var(--cor_5);
+    border-bottom:1px solid var(--cor_5);
+    padding:40px 10px 0;
+    font-style: italic;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: url(../imagens/aspas.gif) no-repeat;
+}
+
+aside p {
+    color:var(--cor_4); 
+    padding-left: 30px;  
 }
 
 footer{ 
