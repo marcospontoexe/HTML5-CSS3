@@ -9,7 +9,35 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        main{   
+            width: 400px;
+            border: 1px solid black;
 
+        }
+        main::after{
+            content: '';    /*cria um pseudo-elemento sem conteudo*/
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            display: block;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+        h1{
+            text-align: center;
+        }
+        h1::after{
+            content: '';    /*cria um pseudo-elemento sem conteudo*/
+            text-align: center;
+            height: 5px;
+            width: 200px;
+            background-color: black;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+            
+        }
         a{
             color: red;
             text-decoration: none;      /* tira os sublinhado dos links*/ 
@@ -29,14 +57,14 @@
         }
         /* O pseudo elemento altera diretamente o conteudo do elemento*/
         a::after{       /* pseudo elemento after inclui coisas após os links. */
-            content: ' (Link)';
+            content: ' (Link)';     /* cria um pseudo-elemento com o conteudo ' (link)'*/
             text-decoration: none;
             font-weight: normal;
             color: brown;
         }
 
         .especial::before{
-            content: '♦';
+            content: '♦';      /* cria uma pseudo-elemento*/
         }
         /*HTML          ->      CSS
         id              ->      #
@@ -47,12 +75,14 @@
     </style>
 </head>
 <body>
-    <h1>Personalizando links</h1>
-    <ul>
-        <li><a href="https://github.com/marcospontoexe" target="_blank" rel="external" class="especial">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/marcos-daniel-santana/" target="_blank" rel="external">LinkdIn</a></li>
+    <main>
+        <h1>Personalizando links</h1>
+        <ul>
+            <li><a href="https://github.com/marcospontoexe" target="_blank" rel="external" class="especial">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/marcos-daniel-santana/" target="_blank" rel="external">LinkdIn</a></li>
         
-    </ul>
+        </ul>
+    </main>
     
 </body>
 </html>
