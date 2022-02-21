@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando posicionamento 'fixed'</title>
+    <style>
+        @font-face {        /* incluindo uma fonte externa*/
+        font-family: 'Idroid';
+        src: url('../fontes/idroid.otf');       
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        :root{      /* declaração de variáveis*/
+            --fonte_padrão: Arial, Helvetica, sans-serif;
+            --fonte_destaque: 'Bebas Neue', cursive;
+            --fonte_android: 'Idroid';
+
+            --cor_0:  #84E1AD;
+            --cor_1:  #3CD782;
+            --cor_2: #7ad8a47e;
+            --cor_3:  #1A5C38;
+            --cor_4:  #1a5c3879;
+        }
+
+        *{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+            margin: 0px;        /* elimina a margem de todos os elementos*/
+            padding: 0px;       /* elimina o pad de todos os elementos*/
+        }
+        body{
+            background-color: var(--cor_0);
+            padding-top: 300px;     /* para empurrar a 'main' a baixo do hearder (que esta flutuando)*/
+        }
+
+        header{
+            font-family: var(--fonte_destaque);
+            min-height: 150px;          /* tamanho mínimo do header terá 150px*/
+            background-image: linear-gradient(to bottom, var(--cor_1), var(--cor_3) 80%);   /* gradiente do header*/
+            color: white;    
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);          /*cria uma sombra no texto*/
+            box-shadow: 5px 3px 7px 1px var(--cor_4);       /* sombra da box header*/
+            padding: 10px 0px 10px 0px;
+            position: fixed;        /* mantém o posicionamneto fixo na tela*/
+            width: 100%;    /*ao tornar o posicionamento 'fixed', a largura do header perde referência*/
+            top: 0;         /* cola o header (que está flutuando) no top da tela*/
+        }
+
+        header > h1{
+            margin: 0px 0px 20px 0px;
+            font-size: 3em;
+        }
+
+        header > p{
+            font-size: 1.2em;
+            max-width: 600px;
+            padding-left: 20px;         /* pad para a letra nao encostar na borda da box quando a tela estiver pequena*/
+            padding-right: 20px;
+            margin: auto;       /* para centralizar o parágrafo. paragrafo é uma box inline-block*/
+        }
+
+        nav{
+            text-align: left;
+        }
+
+        nav > a{
+            text-decoration: none;      /* remove o sublinhado do link*/
+            color: white;
+            padding: 20px 40px 10px 40px;
+            border-radius: 5px;
+            transition-duration: 1s;    /* efeito de duração visual*/
+        }
+
+        nav > a:hover{              /* configurações quando o mouse passa por cima do link*/
+            text-decoration: underline;     /* acrescenta sublinhado*/
+            color: black;
+            background-color: var(--cor_0);
+        }
+
+        main{
+            width: 800px;
+            margin: -71px auto 0px auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: white;            
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200px;     /* deixa a margem da palavra com 200px */
+            margin: 10px;
+            cursor: pointer;        /* muda o ponteiro do mouse quando passa em cima da box*/
+           background-color: aqua;
+        }
+        footer{
+            background-color: var(--cor_3);
+            color: white;
+            text-align: center;
+            margin: 10px 0px 0px 0px;
+            padding: 5px 0px;
+            position: fixed;        /* mantém o posicionamneto fixo na tela*/
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>        <!-- cabeçalho do site -->
+        <h1>Curiosidades de Tecnologia</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p> 
+        <br>
+        <br>
+        
+        <nav>       <!-- possui os links de navegação pela estrutura de páginas que vão compor o website-->
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+            
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur eligendi placeat eveniet libero optio natus veritatis similique repellat amet adipisci expedita quod eum, incidunt animi, id odit a velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur adipisci voluptates inventore eos quo fugiat blanditiis. Nulla, obcaecati accusantium. Aperiam, porro libero. Magnam, error. Nostrum adipisci eaque consequuntur eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt quis consequuntur architecto, nisi, quidem esse quia aspernatur fuga, nam eum sunt expedita animi non voluptates voluptas debitis molestiae ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos delectus repellat eius ad, odio totam deleniti a, saepe ipsam eum fuga nobis voluptates facilis aliquid corporis? Necessitatibus id quia quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facere distinctio, voluptatibus similique enim amet provident nobis illum adipisci blanditiis at? Adipisci nam eum qui magnam illum commodi eligendi officiis.</p>
+        <div>DIV</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, eveniet eos. Magni, doloremque exercitationem. Cum recusandae labore eos porro, tempora provident excepturi velit, quo adipisci sint doloremque accusamus praesentium ex.</p>
+        <h2>sub-título</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur eligendi placeat eveniet libero optio natus veritatis similique repellat amet adipisci expedita quod eum, incidunt animi, id odit a velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur adipisci voluptates inventore eos quo fugiat blanditiis. Nulla, obcaecati accusantium. Aperiam, porro libero. Magnam, error. Nostrum adipisci eaque consequuntur eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt quis consequuntur architecto, nisi, quidem esse quia aspernatur fuga, nam eum sunt expedita animi non voluptates voluptas debitis molestiae ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos delectus repellat eius ad, odio totam deleniti a, saepe ipsam eum fuga nobis voluptates facilis aliquid corporis? Necessitatibus id quia quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facere distinctio, voluptatibus similique enim amet provident nobis illum adipisci blanditiis at? Adipisci nam eum qui magnam illum commodi eligendi officiis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, eveniet eos. Magni, doloremque exercitationem. Cum recusandae labore eos porro, tempora provident excepturi velit, quo adipisci sint doloremque accusamus praesentium ex.</p>
+        <h2>sub-título</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur eligendi placeat eveniet libero optio natus veritatis similique repellat amet adipisci expedita quod eum, incidunt animi, id odit a velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur adipisci voluptates inventore eos quo fugiat blanditiis. Nulla, obcaecati accusantium. Aperiam, porro libero. Magnam, error. Nostrum adipisci eaque consequuntur eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt quis consequuntur architecto, nisi, quidem esse quia aspernatur fuga, nam eum sunt expedita animi non voluptates voluptas debitis molestiae ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos delectus repellat eius ad, odio totam deleniti a, saepe ipsam eum fuga nobis voluptates facilis aliquid corporis? Necessitatibus id quia quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facere distinctio, voluptatibus similique enim amet provident nobis illum adipisci blanditiis at? Adipisci nam eum qui magnam illum commodi eligendi officiis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, eveniet eos. Magni, doloremque exercitationem. Cum recusandae labore eos porro, tempora provident excepturi velit, quo adipisci sint doloremque accusamus praesentium ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur eligendi placeat eveniet libero optio natus veritatis similique repellat amet adipisci expedita quod eum, incidunt animi, id odit a velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur adipisci voluptates inventore eos quo fugiat blanditiis. Nulla, obcaecati accusantium. Aperiam, porro libero. Magnam, error. Nostrum adipisci eaque consequuntur eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt quis consequuntur architecto, nisi, quidem esse quia aspernatur fuga, nam eum sunt expedita animi non voluptates voluptas debitis molestiae ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos delectus repellat eius ad, odio totam deleniti a, saepe ipsam eum fuga nobis voluptates facilis aliquid corporis? Necessitatibus id quia quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facere distinctio, voluptatibus similique enim amet provident nobis illum adipisci blanditiis at? Adipisci nam eum qui magnam illum commodi eligendi officiis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, eveniet eos. Magni, doloremque exercitationem. Cum recusandae labore eos porro, tempora provident excepturi velit, quo adipisci sint doloremque accusamus praesentium ex.</p>
+    </main>
+
+    <footer>    <!-- rodapé-->
+        <p><en>Site criado por</en> <strong>Marcos Daniel Santana</strong>.</p>
+    </footer>
+    
+</body>
+</html>
