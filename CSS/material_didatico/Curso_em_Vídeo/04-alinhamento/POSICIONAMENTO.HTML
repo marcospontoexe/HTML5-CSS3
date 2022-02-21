@@ -48,11 +48,33 @@
             
         }
         #f{
-            z-index: 1;
             background-color: rgb(255, 220, 21);
             z-index: 1;         /* A box fica em primeiro plano (eixo z)*/
             
         }
+        #g{
+            position: absolute;         /* se posiciona em relação à tela*/
+            right: 0;                   /* posiciona a box para a direita, em relação à tela*/
+            background-color: rgb(255, 0, 76);
+        }
+        #h{
+            position: relative;                 /* qualquer valor diferente de 'static' irá ancorar o posicionamento de qualquer box filha que tenha posicionamento 'absolute'*/
+            background-color: rgb(255, 220, 21);
+        }
+        #i{            
+            height: 50px;
+            width: 50px;
+            margin: 0px;
+            background-color: rgb(43, 226, 89);
+            line-height: 50px;     /* deixa a margem da palavra com 200px */
+
+            position: absolute;         /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+            left: 50%;                  /* cira uma distância de 50% da posição 'relative' para a âncora do lado esquerdo da div*/
+            top: 50%;       /* cira uma distância de 50% da posição 'relative' para a âncora do lado de cima da div*/
+            /* para alterar a âncora (por padrão é no canto esquerdo superior), reposicionar 50% para a esquerda e 50% para cima, desse maneira a âncora fica centralizada no centro da box*/
+            transform: translate(-50%, -50%);
+        }
+       
         .paragrafo{
             clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
         }
@@ -69,16 +91,23 @@
         
     <section>
         <h1>Outro exemplo de posicionamento de box com uso de 'float:'</h1>
-        <div id="c">DIV A</div>
-        <div id="d">DIV B</div>
+        <div id="c">DIV C</div>
+        <div id="d">DIV D</div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
         <p class="paragrafoB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nesciunt libero itaque tempora voluptatum placeat voluptate ducimus cumque, asperiores reiciendis voluptatem quas delectus, voluptatibus architecto, reprehenderit velit expedita molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum ullam quae labore eligendi deserunt praesentium error amet facilis ab! Earum numquam sequi excepturi minus quos, amet hic tempora quod?</p>
     </section>
 
     <section>
-        <div id="e">01</div>
-        <div id="f">02</div>
+        <div id="e">DIV E</div>
+        <div id="f">DIV F</div>
     </section>
     
+    <section style="height: 800px; width: 500px">
+        <div id="g">DIV G</div>
+        <div id="h">
+            <div id="i">DIV I</div>
+        </div>
+        
+    </section>
 </body>
 </html>
