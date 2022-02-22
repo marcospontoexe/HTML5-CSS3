@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>trabalhando com formulários...</h1>
+    <hr width="100%" size="5" color="red">
+    <form action="destino.html" method="post">   <!-- 'action' determina para qual página irão os dados inseridos no formulário. 'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres)-->
+        <p>
+            <label for="nome">Insira seu nome</label>  <!-- o 'for' recebe p 'id', e indica para qual campo o label está selecionado-->
+            nome: <input type="text" name="nome" id="nome" size="3"> <!-- cria um elemento para o formulário (type="text" para elemento de texto)-->
+            <!-- size determina o tamanho em caracteres-->
+        </p>
+
+        <p>
+            <label for="idade">Digite a idade:</label>
+            <input type="number" name="idade" id="idade">     
+        </p>
+        <p>
+            <label for="telefone">Digite o telefone:</label>
+            <input type="text"  name="telefone" id="telefone" maxlength="10">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos-->
+
+            <p>
+                <input type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
+                <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+            </p>
+        </p>
+    </form>
+
+</body>
+</html>
