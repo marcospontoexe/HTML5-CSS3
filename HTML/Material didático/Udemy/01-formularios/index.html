@@ -15,19 +15,60 @@
             nome: <input type="text" name="nome" id="nome" size="3"> <!-- cria um elemento para o formulário (type="text" para elemento de texto)-->
             <!-- size determina o tamanho em caracteres-->
         </p>
+        <p> 
+            <label for="email">e-mail:</label>
+            <input type="email" name="mail" id="email" autocomplete="on" autofocus>    <!-- o 'autocomplete=off' não permite autocompletar o campo. O 'autofocus' direciona o seletor do mouse para esta 'input'-->
+        </p>
 
         <p>
             <label for="idade">Digite a idade:</label>
-            <input type="number" name="idade" id="idade">     
+            <input type="number" name="idade" id="idade" placeholder="entre 0 e 18">     <!-- o 'placeholder' coloca uma string definida dentro do input, que some quando é digitado algo-->
         </p>
         <p>
             <label for="telefone">Digite o telefone:</label>
-            <input type="text"  name="telefone" id="telefone" maxlength="10">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos-->
-
-            <p>
-                <input type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
-                <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
-            </p>
+            <input type="text" name="telefone" id="telefone" maxlength="10">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos-->
+        <p>
+            <label for="pass">Digite uma senha:</label>
+            <input type="password" name="senha" id="pass" required>     <!-- 'required' torna o preenchimento do campo obrigatório-->
+        </p>
+        <p> <!-- No RadioButton pode haver apenas uma escolha-->
+            <input type="radio" name="radSex" id="masculino" checked>   <!-- input do tipo radio button (quando tem o mesmo 'name', permite a marcação em apenas um radio button)-->
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="radSex" id="feminino">
+            <label for="feminino">Feminino</label>
+        </p>
+        <p><!-- no checkbox pode  haver várias seleções-->
+            liguagens faladas: <br>
+            <input type="checkbox" name="lang" id="brasil">
+            <label for="brasil">Brasileiro</label><br>
+            <input type="checkbox" name="lang" id="eua">
+            <label for="eua">Inglês</label><br>
+            <input type="checkbox" name="lang" id="portugal">
+            <label for="brportugalasil">Português</label><br>
+            <input type="checkbox" name="lang" id="espanha">
+            <label for="espanha">Espanhol</label><br>
+            <input type="checkbox" name="lang" id="russia">
+            <label for="russia">Russo</label><br>
+            <input type="checkbox" name="lang" id="china">
+            <label for="china">Chinês</label><br>
+            <input type="checkbox" name="lang" id="alemanha">
+            <label for="alemanha">Alemão</label><br>
+        </p>
+        <p>Estado: <br> <!-- lista suspensa-->
+            <select name="estado" id="estado">
+                <option value="pr">Paraná</option>
+                <option value="sc" selected>Santa Catarina</option>     <!-- 'selected' faz esta 'option' virar o padrão da lista    -->
+                <option value="bh">Bahia</option>
+                <option value="ac">Acre</option>
+                <option value="am">Amazonas</option>
+            </select>
+         
+            
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
+            <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+        </p>
         </p>
     </form>
 
