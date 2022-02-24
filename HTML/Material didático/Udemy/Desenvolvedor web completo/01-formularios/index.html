@@ -17,7 +17,7 @@
         </p>
         <p> 
             <label for="email">e-mail:</label>
-            <input type="email" name="mail" id="email" autocomplete="on" autofocus>    <!-- o 'autocomplete=off' não permite autocompletar o campo. O 'autofocus' direciona o seletor do mouse para esta 'input'-->
+            <input type="email" name="mail" id="email" autocomplete="on" autofocus>    <!-- o 'autocomplete=off' não permite autocompletar o campo. O 'autofocus' direciona o seletor do mouse para esta 'input'. type="email" quando usado pelo celular é incluido o @ no teclado do celular-->
         </p>
 
         <p>
@@ -26,10 +26,15 @@
         </p>
         <p>
             <label for="telefone">Digite o telefone:</label>
-            <input type="text" name="telefone" id="telefone" maxlength="10">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos-->
+            <input type="tel" name="telefone" id="telefone" maxlength="10">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos. 'type="tel"' quando acessado pelo celular, o teclado do mostra apenas números-->
         <p>
             <label for="pass">Digite uma senha:</label>
             <input type="password" name="senha" id="pass" required>     <!-- 'required' torna o preenchimento do campo obrigatório-->
+        </p>
+        <p>
+            Digite seu webSite:
+            <label for="site">Site:</label>
+            <input type="url" name="link" id="site">    <!-- 'type="url"' quando acessado pelo celular, o teclado do mostra caracteres para url (.com)-->
         </p>
         <p> <!-- No RadioButton pode haver apenas uma escolha-->
             <input type="radio" name="radSex" id="masculino" checked>   <!-- input do tipo radio button (quando tem o mesmo 'name', permite a marcação em apenas um radio button)-->
