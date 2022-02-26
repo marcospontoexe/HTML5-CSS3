@@ -10,16 +10,23 @@
     <h1>Data list é uma lista suspensa com várias opções pré-definidas.</h1>
     <hr width="100%" size="5" color="red">
     <form action="destino.html" method="post">   <!-- 'action' determina para qual página irão os dados inseridos no formulário. 'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres)-->
-        <p>
-            <label for="itens">Selecione um produto:</label>
-            <input type="text" list="produtos" name="itens" id="itens">
+        <label for="itens">Selecione um produto:</label>
+        <input type="text" list="produtos" name="itens" id="itens">
 
-            <datalist id="itens">
-                <option value="tv"></option>
-            </datalist>
+        <datalist id="produtos">
+            <option value="tv"></option>
+            <option value="tambor"></option>
+            <option value="tigela"></option>
+            <option value="aquecedor"></option>
+            <option value="armário"></option>
+            <option value="aspirador"></option>
+            <option value="maçaneta"></option>
+            <option value="martelo"></option>
+            <option value="mixer"></option>
+        </datalist>
 
             
-        </p>
+       
     </form>
 
 </body>
