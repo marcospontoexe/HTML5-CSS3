@@ -41,7 +41,7 @@
         <div>
             <p>input:number</p>
             <label for="idade">Digite a idade:</label>
-            <input type="number" name="idade" id="idade" placeholder="entre 0 e 18" min="1" max="18" value="1">     <!-- o 'placeholder' coloca uma string definida dentro do input, que some quando é digitado algo-->
+            <input type="number" name="idade" id="idade" min="1" max="18" value="1">     <!-- o 'placeholder' coloca uma string definida dentro do input, que some quando é digitado algo-->
         </div>
         <div>
             <p>input:date</p>
@@ -51,7 +51,7 @@
         <div>
             <p>input:tel</p>
             <label for="telefone">Digite o telefone:</label>
-            <input type="tel" name="telefone" id="telefone" maxlength="10">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos. 'type="tel"' quando acessado pelo celular, o teclado do mostra apenas números-->
+            <input type="tel" name="telefone" id="telefone" maxlength="10" placeholder="com ddd">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos. 'type="tel"' quando acessado pelo celular, o teclado do mostra apenas números-->
         </div> 
         <div>
             <p>input:password</p>
@@ -119,11 +119,26 @@
             </datalist>
         </div>
         <div>
+            <p>input:range</p>
+            <label for="pseo"> Digite seu peso:</label>
+            <input type="range" name="peso" id="peso" min="1" max="400" value="1" onmousedown="rangResltado()" onmousemove="rangResltado()">
+            <span id="msg"></span>
+        </div>
+        <div>
             <p>input:submit</p>
             <input type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
             <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+            
         </div> 
     </form>
 
+    <script>
+        function rangResltado(){
+            var mensg = document.getElementById('msg')
+            var n = document.getElementById('peso').value
+            mensg.innerHTML = n
+
+        }
+    </script>
 </body>
 </html>
