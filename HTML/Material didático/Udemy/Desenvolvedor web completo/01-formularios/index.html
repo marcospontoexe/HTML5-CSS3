@@ -121,6 +121,7 @@
         <div>
             <p>input:range</p>
             <label for="pseo"> Digite seu peso:</label>
+            <!-- a barra de range precisa de interatividade com javascript para mostrar seu valor-->
             <input type="range" name="peso" id="peso" min="1" max="400" value="1" onmousedown="rangResltado()" onmousemove="rangResltado()">
             <span id="msg"></span>
         </div>
@@ -128,6 +129,11 @@
             <p>input:color</p>
             <label for="cor">escolha sua cor favorita: </label>
             <input type="color" name="cor" id="cor">
+        </div>
+        <div>
+            <p>input:search</p>         <!-- tipo 'serach' é uma tag semântica-->
+            <label for="pesquisa">pesquise um prato:</label>
+            <input type="search" name="pesquisa" id="pesquisa">
         </div>
         <div>
             <p>input:submit</p>
