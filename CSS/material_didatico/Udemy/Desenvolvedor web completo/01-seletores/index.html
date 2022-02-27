@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de CSS</title>
+    <style>
+        h1, h2{     /* aplica a alteração as tags 'h1' e 'h2'*/
+            color: rgb(255, 0, 119);
+        }
+
+        div p{   /* seletores descentendes. A regra é aplicada para todas as tags 'p' que estejam dentro da tag 'div'*/
+            color: rgb(72, 255, 0);
+
+        }
+        h2+p{   /*seletor adjacente. A regra é aplicada para o primeiro 'p' que vier após o 'h2'*/
+            color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Seletores de CSS</h1>
+    
+    <h2>exemplo</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum fugiat, quasi, quam molestias magni iste, accusamus officiis quaerat consequatur vel tenetur rerum rem ex blanditiis ut! Exercitationem, dolor. Assumenda, perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum odio accusantium at eius, sit eaque atque animi quod eveniet recusandae temporibus dolorum ad doloremque voluptatibus. Veritatis laudantium dolore est aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque eaque distinctio repellendus eum tenetur veniam. Debitis minus aut unde aspernatur sint nobis placeat nihil veritatis iure, qui aliquid facilis.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rem, asperiores quia odio saepe quam eius autem ratione quidem expedita facilis, labore consectetur aspernatur ullam aperiam tempore reprehenderit accusamus possimus.</p>
+    <h3>outro subtítulo</h3>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia quod quasi provident nobis? Adipisci doloribus illum, debitis nihil, perspiciatis, consectetur corporis obcaecati quibusdam aliquam sunt voluptatem dignissimos at totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quasi quisquam amet at totam, accusamus alias hic accusantium, excepturi inventore tempora molestiae suscipit iste. Dolorem quis hic ducimus quas ut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur itaque est pariatur error, quasi dolorem reiciendis omnis voluptatibus voluptatem libero ipsum possimus officia reprehenderit tempora, laboriosam, sed vero rem mollitia.</p>
+    </div>
+</body>
+</html>
