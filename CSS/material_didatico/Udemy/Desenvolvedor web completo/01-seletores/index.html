@@ -10,12 +10,21 @@
             color: rgb(255, 0, 119);
         }
 
-        div p{   /* seletores descentendes. A regra é aplicada para todas as tags 'p' que estejam dentro da tag 'div'*/
+        main p{   /* seletores descentendes. A regra é aplicada para todas as tags 'p' que estejam dentro da tag 'div'*/
             color: rgb(72, 255, 0);
 
         }
         h2+p{   /*seletor adjacente. A regra é aplicada para o primeiro 'p' que vier após o 'h2'*/
             color: brown;
+        }
+        div.um{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        div.dois{
+            font-style: italic;
+
         }
         
     </style>
@@ -27,7 +36,15 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum fugiat, quasi, quam molestias magni iste, accusamus officiis quaerat consequatur vel tenetur rerum rem ex blanditiis ut! Exercitationem, dolor. Assumenda, perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum odio accusantium at eius, sit eaque atque animi quod eveniet recusandae temporibus dolorum ad doloremque voluptatibus. Veritatis laudantium dolore est aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque eaque distinctio repellendus eum tenetur veniam. Debitis minus aut unde aspernatur sint nobis placeat nihil veritatis iure, qui aliquid facilis.</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rem, asperiores quia odio saepe quam eius autem ratione quidem expedita facilis, labore consectetur aspernatur ullam aperiam tempore reprehenderit accusamus possimus.</p>
     <h3>outro subtítulo</h3>
-    <div>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia quod quasi provident nobis? Adipisci doloribus illum, debitis nihil, perspiciatis, consectetur corporis obcaecati quibusdam aliquam sunt voluptatem dignissimos at totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quasi quisquam amet at totam, accusamus alias hic accusantium, excepturi inventore tempora molestiae suscipit iste. Dolorem quis hic ducimus quas ut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur itaque est pariatur error, quasi dolorem reiciendis omnis voluptatibus voluptatem libero ipsum possimus officia reprehenderit tempora, laboriosam, sed vero rem mollitia.</p>
+    </main>
+    <div class="um">   <!-- duas classes podem ser aplicadas a uma mesma tag, basta separar com espaço-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aliquid sapiente quibusdam, harum consequatur ipsa quia odio repellendus quaerat. Velit minus sequi ullam provident consequuntur neque qui magnam sint aut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita iure voluptatibus tenetur sunt magni sed consequuntur autem aut quisquam esse, deserunt aliquid? Quo non, sed pariatur illum eos quae optio.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur necessitatibus non autem iste mollitia eaque doloribus porro, eveniet libero voluptate blanditiis odio provident assumenda repudiandae, itaque ab repellat. Quidem, aperiam.</p>
+    </div>
+    <div class="um dois">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia quod quasi provident nobis? Adipisci doloribus illum, debitis nihil, perspiciatis, consectetur corporis obcaecati quibusdam aliquam sunt voluptatem dignissimos at totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quasi quisquam amet at totam, accusamus alias hic accusantium, excepturi inventore tempora molestiae suscipit iste. Dolorem quis hic ducimus quas ut.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur itaque est pariatur error, quasi dolorem reiciendis omnis voluptatibus voluptatem libero ipsum possimus officia reprehenderit tempora, laboriosam, sed vero rem mollitia.</p>
     </div>
