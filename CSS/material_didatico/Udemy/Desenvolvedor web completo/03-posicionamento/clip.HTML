@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de caixas</title>
+    <style>
+        section{
+            border: 1px solid black;
+            width: 800px;
+            height: 80vh;
+            background-color: aqua;
+            overflow: hidden;           /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
+            position: relative;         /* permite transladar um box sem alterar o posicionamneto das de mais*/
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200px;     /* deixa a margem da palavra com 200px */
+            cursor: pointer;        /* muda o ponteiro do mouse quando passa em cima da box*/
+            position: absolute;         /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+           
+        }
+        
+        #a{
+            background-color: rgb(226, 43, 217);        
+            top: 100px;   /* distância da âncora do conteudo em relação à margem esquerda do container*/
+            left: 50px;
+            clip:rect(0px 200px 200px 0px);   /* mostra apenas oq está dentro da delimitação*/
+        }
+        #b{
+            background-color: rgb(255, 220, 21);
+            top: 50px;   /* distância da âncora do conteudo em relação à margem esquerda do container*/
+            left: 10px;
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <section>
+        <div id="a">DIV A
+            <div id="b">DIV B</div>
+        </div>
+       
+    </section>
+    
+    
+</body>
+</html>
