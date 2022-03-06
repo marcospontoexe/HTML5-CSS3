@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com listas</title>
+    <style>
+        section{
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 10px;
+            width: 800px;
+        }
+                
+        ul{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;       /* tira o sublinhado*/
+        }
+
+        #menu li{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
+            display: inline-block;
+            /*width: 200px;*/
+            background-color: rgb(52, 52, 255);
+            padding: 10px 5px;
+            margin: 0px 1px;
+            border-radius: 5px;
+            
+        }
+
+        #menu li a{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
+            text-align: center;        
+            color: aliceblue;       
+            
+        }
+
+        .subMenu li{           /* configura apenas os links contidos dentro das listas pertencentes a classe .menu*/
+            /*width: 200px;*/
+            display: block;
+            background-color: rgb(52, 52, 255);
+            padding: 10px 5px;
+            margin: 0px 1px;
+            border-radius: 5px;
+        }
+
+        .subMenu li a{           /* configura apenas os links contidos dentro das listas pertencentes a classe .menu*/
+            /*width: 200px;*/
+            text-align: center;           
+            color: aliceblue;
+            padding: 10px 5px;
+
+        }
+
+        .subMenu{      
+            display: none;
+        }
+
+        #menu li:hover, .subMenu li:hover{
+            background-color: rgb(101, 101, 255);
+        }
+        
+        
+        #menu>li:hover .subMenu{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Menu 1</h1> 
+        <ul id="menu">   <!-- possui os links de navegação pela estrutura de páginas que vão compor o website-->
+            <li>
+                <a href="#">OPÇÃO I</a>
+                <ul class="subMenu">
+                    <li><a href="#">Sub-Menu A</a>
+                    <li><a href="#">Sub-Menu B</a>
+                    <li><a href="#">Sub-Menu C</a>
+                </ul>
+                
+            
+            <li>
+                <a href="#">OPÇÃO II</a>
+                <ul class="subMenu">
+                    <li><a href="#">Sub-Menu A</a>
+                    <li><a href="#">Sub-Menu B</a>
+                    <li><a href="#">Sub-Menu C</a>
+                </ul>
+            
+            
+            <li>
+                <a href="#">OPÇÃO III</a>               
+                <ul class="subMenu">
+                    <li><a href="#">Sub-Menu A</a>
+                    <li><a href="#">Sub-Menu B</a>
+                    <li><a href="#">Sub-Menu C</a>
+                </ul>
+               
+            
+            <li>
+                <a href="#">OPÇÃO IV</a>    
+                <ul class="subMenu">
+                    <li><a href="#">Sub-Menu A</a>
+                    <li><a href="#">Sub-Menu B</a>
+                    <li><a href="#">Sub-Menu C</a>
+                </ul>
+             
+            
+           
+        </ul>
+                                
+    </section>
+    
+</body>
+</html>
