@@ -6,59 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu com listas</title>
     <style>
+        *{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+            margin: 0px;        /* elimina a margem de todos os elementos*/
+            padding: 0px;       /* elimina o pad de todos os elementos*/
+        }
+
         section{
             border: 1px solid black;
             border-radius: 3px;
             padding: 10px;
-            width: 800px;
+            width: 80vw;
         }
                 
         ul{
-            list-style: none;
+            list-style: none;               /* tira os seletores das listas*/
+            width: 100%;
         }
 
         a{
             text-decoration: none;       /* tira o sublinhado*/
+            text-align: center;        
+            color: aliceblue;
+    
         }
 
-        #menu li{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
-            display: inline-block;
-            /*width: 200px;*/
+      
+
+        #menu>li{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
+            float: left;
+            position: relative;          /* permite transladar um box sem alterar o posicionamneto das de mais*/
+            width: 200px;
             background-color: rgb(52, 52, 255);
             padding: 10px 5px;
-            margin: 0px 1px;
             border-radius: 5px;
             
         }
 
-        #menu li a{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
-            text-align: center;        
-            color: aliceblue;       
-            
-        }
-
-        .subMenu li{           /* configura apenas os links contidos dentro das listas pertencentes a classe .menu*/
-            /*width: 200px;*/
+        .subMenu>li{           /* configura apenas os links contidos dentro das listas pertencentes a classe .menu*/
+            width: 100%;
             display: block;
             background-color: rgb(52, 52, 255);
             padding: 10px 5px;
-            margin: 0px 1px;
             border-radius: 5px;
-        }
-
-        .subMenu li a{           /* configura apenas os links contidos dentro das listas pertencentes a classe .menu*/
-            /*width: 200px;*/
-            text-align: center;           
-            color: aliceblue;
-            padding: 10px 5px;
-
         }
 
         .subMenu{      
             display: none;
+            position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
         }
 
-        #menu li:hover, .subMenu li:hover{
+        #menu>li:hover, .subMenu>li:hover{
             background-color: rgb(101, 101, 255);
         }
         
