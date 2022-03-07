@@ -16,6 +16,8 @@
             border-radius: 3px;
             padding: 10px;
             width: 80vw;
+            height: 70vh;
+            overflow: hidden;           /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
         }
                 
         ul{
@@ -29,7 +31,7 @@
             color: aliceblue;
     
         }
-
+        
       
 
         #menu>li{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
@@ -53,6 +55,7 @@
         .subMenu{      
             display: none;
             position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+            padding-top: 12px;
         }
 
         #menu>li:hover, .subMenu>li:hover{
