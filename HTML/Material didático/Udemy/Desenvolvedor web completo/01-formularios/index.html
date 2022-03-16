@@ -25,7 +25,7 @@
 <body>
     <h1>trabalhando com formulários...</h1>
     <hr width="100%" size="5" color="red">
-    <form action="destino.html" method="post">   <!-- 'action' determina para qual página irão os dados inseridos no formulário. 'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres)-->
+    <form action="destino.html" method="post">   <!-- Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 'action' determina para qual página irão os dados inseridos no formulário. 'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres)-->
         <div>
             <p>input:text</p>
             <label for="nome">Insira seu nome</label>  <!-- o 'for' recebe p 'id', e indica para qual campo o label está selecionado-->
@@ -135,10 +135,17 @@
             <label for="pesquisa">pesquise um prato:</label>
             <input type="search" name="pesquisa" id="pesquisa">
         </div>
+
         <div>
-            <p>input:submit</p>
+            <p>textarea</p>         <!-- cria uma barra de rolagem automaticamente-->
+            <label for="obs">Observações:<br></label>
+            <textarea name="observacao" id="obs" cols="10" rows="3"></textarea>
+        </div>
+
+        <div>
+            <p>input:submit</p> <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
             <input type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
-            <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+            
             
         </div> 
     </form>
