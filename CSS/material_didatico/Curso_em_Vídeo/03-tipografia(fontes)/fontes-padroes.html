@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipografia</title>
     <style>      /*configurações de estilo*/
+        /* MEDIDAS ABSOLUTAS :
+        cm 
+        mm
+        in (polegada)
+        px (pixel)
+        pt (pointo) - medida usada em editor de texto
+        pc (paica)
+        %
+        */
+
+        /* MEDIDAS RELATIVAS:
+        em (relatiava ao tamanho da fonte da box pai)
+        ex (relatiava à altura x da fonte)
+        rem (relatiava à altura das maiúsculas da fonte raíz (16px))
+        vw (view width - relatiava à largura da view port)
+        vh (view hight -  relatiava à altura da view port)
+        */
+        
         h1{
             font-family: monospace;   /*configuração do tipo de fonte*/
             font-size: 0.1in;                    /*configuração do tamanho da fonte. A w3c recomenda usar px e em */
-            /* MEDIDAS ABSOLUTAS :
-            cm 
-            mm
-            in (polegada)
-            px (pixel)
-            pt (pointo) - medida usada em editor de texto
-            pc (paica)
-            %
-            */
-
-            /* MEDIDAS RELATIVAS:
-            em (relatiava à altura das maiúsculas da fonte = 16px (tamanho padrão das fontes) )
-            ex (relatiava à altura x da fonte)
-            rem (relatiava à altura das maiúsculas da fonte raíz (16px))
-            vw (view width - relatiava à largura da view port)
-            vh (view hight -  relatiava à altura da view port)
-            */
+            
         }
         h2{
             font-family: Arial, Helvetica, sans-serif;      /*caso o dispositivo não tenha a fote 'arial', será usada a 'helvetica', caso não tenha a helvetica, será usado a uma fonte padrão sem serifa*/
@@ -35,14 +37,27 @@
             font-family: serif;
         }
 
+        div{
+            font-size: 16px;        /* tamanho padrão dos navegadores*/
+        }
+        #txt1{
+            font-size: 2em;     /* tamanho relativo ao tamanho da fonte da box pai*/
+        }
+        #txt2{
+            font-size: 1em;
+        }
+
+
     </style>
 </head>
 <body>
     <h1>Testando fontes</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime id, non, sunt ab unde repellendus voluptate mollitia esse vitae placeat dignissimos qui, suscipit corporis aliquid libero minima reiciendis culpa incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorum animi reprehenderit minus veniam autem adipisci, recusandae ratione harum! Eum iure quaerat iste dolore officiis? Rerum inventore quae soluta tempore!
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident eligendi laudantium deserunt consectetur, numquam similique rem voluptatum facere tempora autem hic voluptatibus aliquid cumque temporibus, vero amet aliquam facilis officiis.</p>
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime id, non, sunt ab unde repellendus voluptate mollitia esse vitae placeat dignissimos qui, suscipit corporis aliquid libero minima reiciendis culpa incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorum animi reprehenderit minus veniam autem adipisci, recusandae ratione harum! Eum iure quaerat iste dolore officiis? Rerum inventore quae soluta tempore!</p>
     <h2>subtítulo</h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto odit sint fugiat rem itaque pariatur reiciendis sunt ipsam a quia in aliquid quae voluptas, harum laborum, non asperiores dolore voluptatibus.</p>
+    <div>
+        <p id="txt1">txt1</p>
+        <p id="txt2">txt2</p>
+    </div>
 </body>
 </html>
