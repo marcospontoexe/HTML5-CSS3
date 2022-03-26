@@ -21,10 +21,13 @@
         background-color: aqua;
     }
 
-    article+p{  /* (seletor de irmão adjacente) seleciona apenas o primeiro filho de 'article'*/
+    h2+p{  /* (seletor de irmão adjacente) seleciona apenas o primeiro filho de 'h2'*/
         color: red;
     }
 
+    h3~p{  /* (seletor de irmão geral) seleciona todos irãos de 'h3'*/
+        color: blue;
+    }
 
     </style>
 </head>
@@ -40,13 +43,22 @@
     </section>
 
     <article>
-        <h1>Trabalhando com seletor de irmão adjacente</h1>
+        <h2>Trabalhando com seletor de irmão adjacente</h2>
         <p>este é o primeiro parágrafo</p>
         <p>segundo parágrafo</p>
         <p>terceiro parágrafo</p>
         <p>quato parágrafo</p>
         <p>último parágrafo</p>
     </article>
+
+    <div>
+        <h3>Trabalhando com seletor de irmão geral</h2>
+        <p>este é o primeiro parágrafo</p>
+        <p>segundo parágrafo</p>
+        <p>terceiro parágrafo</p>
+        <p>quato parágrafo</p>
+        <p>último parágrafo</p>
+    </div>
 
     
 </body>
