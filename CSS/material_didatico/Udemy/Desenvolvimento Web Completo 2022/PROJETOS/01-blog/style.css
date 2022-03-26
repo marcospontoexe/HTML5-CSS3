@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+}
+
 :root{      /* declaração de variáveis*/
     --fonte_padrão: Arial, Helvetica, sans-serif;
     --fonte_destaque: 'Bebas Neue', cursive;
@@ -15,7 +20,3 @@
 
 }
 
-*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
-    margin: 0px;        /* elimina a margem de todos os elementos*/
-    padding: 0px;       /* elimina o pad de todos os elementos*/
-}

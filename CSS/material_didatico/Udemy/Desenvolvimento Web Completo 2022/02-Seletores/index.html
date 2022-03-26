@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        
+    *{      /* SELETOR UNIVERSLA - seleciona todos elementos (h1, h2, h3...h8, p, main, footer...) */
+        margin: 0px;        /* elimina a margem de todos os elementos*/
+        padding: 3px;       /* elimina o pad de todos os elementos*/
+        border: 1px solid black;
+    }
+
+    p>span{         /* (seletor filho) seleciona apenas um elemento que seja filho direto*/
+        background-color: yellowgreen;
+    }
+    
+    section span{   /* (seletor descendente) seleciona um elemento que seja descendente de outro*/
+        background-color: aqua;
+    }
+
+    article+p{  /* (seletor de irmão adjacente) seleciona apenas o primeiro filho de 'article'*/
+        color: red;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Trabalhando com seletor filho</h1>
+        <p>Fazendo um exemplo com seletor <span>filho</span></p>
+    </div>
+
+    <section>
+        <h1>Trabalhando com seletor descendente</h1>
+        <p>Fazendo um exemplo com seletor <span>descendente</span></p>
+    </section>
+
+    <article>
+        <h1>Trabalhando com seletor de irmão adjacente</h1>
+        <p>este é o primeiro parágrafo</p>
+        <p>segundo parágrafo</p>
+        <p>terceiro parágrafo</p>
+        <p>quato parágrafo</p>
+        <p>último parágrafo</p>
+    </article>
+
+    
+</body>
+</html>
