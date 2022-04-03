@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 @font-face {        /* incluindo uma fonte externa*/
     font-family: 'Idroid';
     src: url('../fontes/idroid.otf');       
@@ -19,8 +18,6 @@
     --cor_2: #7ad8a47e;
     --cor_3:  #1A5C38;
     --cor_4:  #1a5c3879;
-
-
 
 }
 
