@@ -35,3 +35,28 @@ header{
     background-image: url(../imgens/fundo.png);
     background-repeat: no-repeat;
 }
+
+main{
+    width: 70vw;
+    margin: 0px auto;
+}
+
+div{
+    border: 1px solid black;
+    width: 30%;
+    height: 70vh;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+#janela1{
+    float: left;
+}
+
+#janela2{
+    float: left;
+}
+
+#janela3{
+    float: left;
+}
