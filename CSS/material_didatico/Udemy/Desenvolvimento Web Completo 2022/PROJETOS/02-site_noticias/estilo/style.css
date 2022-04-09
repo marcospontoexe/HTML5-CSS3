@@ -41,22 +41,25 @@ header{
     background-repeat: no-repeat;
     background-size: contain;   /* a imagem ocupa 100% da box pai*/         
     background-repeat: repeat-x;
-    height: 30vh;
+    height: 40vh;
     
 }
 
 header div{
     width: 70vw;
+    height: 100%;
     margin: 0px auto;
     position: relative;
+    border: 1px solid black;
 }
 
 
-header img{
+#cabecalho{
     position: absolute;         /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
     height: 90%;
-    top: 50%;             /* distância da âncora do conteudo em relação à margem superior do container*/
+    top: 10%;             /* distância da âncora do conteudo em relação à margem superior do container*/
     right: 0%;              /* distância da âncora do conteudo em relação à margem esquerda do container*/ 
+    
 }
 
 main{
