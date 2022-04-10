@@ -35,6 +35,9 @@ body{
     font-family: var(--fonte_padrão);
 }
 
+hr{
+    display: inline-block;
+}
 header{
     border: 1px solid black;    
     background-image: url(../imgens/fundo.png);
@@ -42,6 +45,7 @@ header{
     background-size: contain;   /* a imagem ocupa 100% da box pai*/         
     background-repeat: repeat-x;
     height: 40vh;
+    
     
 }
 
