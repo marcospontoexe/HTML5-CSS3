@@ -35,8 +35,20 @@ body{
     font-family: var(--fonte_padrão);
 }
 
-hr{
+#a{
     display: inline-block;
+    margin-left: 5%;
+    width: 30%; 
+    size: 5px;
+    color: white;
+}
+#b{
+    display: inline-block;
+  
+}
+#c{
+    display: inline-block;
+  
 }
 header{
     border: 1px solid black;    
@@ -47,6 +59,10 @@ header{
     height: 40vh;
     
     
+}
+
+header h1{
+    margin-left: 5%;
 }
 
 header div{
