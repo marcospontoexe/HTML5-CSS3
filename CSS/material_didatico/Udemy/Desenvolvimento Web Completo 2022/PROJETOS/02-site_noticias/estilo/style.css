@@ -36,19 +36,17 @@ body{
 }
 
 #a{
-    display: inline-block;
+    display: inline-block;    
+    width: 3%;     
     margin-left: 5%;
-    width: 30%; 
-    size: 5px;
-    color: white;
 }
 #b{
     display: inline-block;
-  
+    margin-left: -6px;
 }
 #c{
     display: inline-block;
-  
+    margin-left: -6px;
 }
 header{
     border: 1px solid black;    
@@ -63,6 +61,10 @@ header{
 
 header h1{
     margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: -3%;
+    size: 100%;
+
 }
 
 header div{
