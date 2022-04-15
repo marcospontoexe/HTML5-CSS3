@@ -87,7 +87,7 @@ header div{
 
 #cabecalho{
     position: absolute;         /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
-    height: 90%;
+    size: 30%;
     top: 10%;             /* distância da âncora do conteudo em relação à margem superior do container*/
     right: 0%;              /* distância da âncora do conteudo em relação à margem esquerda do container*/ 
     
