@@ -2,7 +2,7 @@
 
 :root{      /* declaração de variáveis*/
     
-    --fonte_padrão: 'Trebuchet MS', Helvetica, sans-serif;
+    --fonte_padrão: Helvetica, sans-serif;
     /*
     --fonte_destaque: 'Bebas Neue', cursive;
     --fonte_android: 'Idroid';
@@ -29,7 +29,7 @@ body{
 #a{
     display: inline-block;    
     width: 6px;     
-    margin-left: 36px;
+    margin-left: 38px;
 }
 #b{
     display: inline-block;
@@ -45,7 +45,7 @@ header{
     border: 1px solid black;    
     background-image: url(../imgens/fundo.png);
     background-repeat: no-repeat;
-    background-size: contain;   /* a imagem ocupa 100% da box pai*/         
+    background-size: contain;   /* a imagem ocupa 100% da box pai*/   
     background-repeat: repeat-x;
     height: 40vh;
            
@@ -55,23 +55,47 @@ header h1{
     font-size: 1.5em;
     margin-left: 35px;
     margin-top: 8vh;
-    margin-bottom: -20px;
+    margin-bottom: -12px;
     color: white;
 }
 header h2{
     font-size: 3em;
-    margin-top: -19px;
+    margin-top: -10px;
     color: white;
 
 }
 
 #cabecalho{
-    width: 70%;
-    height: 80%;
+    width: 70vw;
+    height: 75%;
     margin: 0px auto;
     border: 1px solid black;
 }
 
+#cabecalho div#letra{
+    float: left;
+    border: 1px solid black;
+    background-image: url(../imgens/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;   /* a imagem ocupa 100% da box pai*/ 
+    height: 80%;
+    width: 20%;
+
+}
+#cabecalho div#imagem{
+    float: right;
+    border: 1px solid black;
+    background-image: url(../imgens/detalhe-topo.png);
+    background-repeat: no-repeat;
+    background-size: contain;   /* a imagem ocupa 100% da box pai*/ 
+    height: 100%;
+    width: 20%;
+
+}
+
+nav{
+    clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
+}
 
 main{
     width: 70vw;
@@ -83,7 +107,6 @@ main div{
     width: 30%;
     height: 70vh;
     text-align: center;
-    margin: 0px 10px;
 }
 
 #janela1{
@@ -91,15 +114,15 @@ main div{
 }
 
 #janela2{
-    float: left;
+    float: right;
 }
 
 #janela3{
-    float: left;
+    margin: auto;
 }
 
 footer{
-    clear: both;
+    clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
     text-align: center;
     background-color: #294C71;
 }
