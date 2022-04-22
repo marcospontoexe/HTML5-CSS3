@@ -95,7 +95,31 @@ header h2{
 }
 
 nav{
-    clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
+    width: 70vw;
+    border: 1px solid red;
+    margin: auto;
+}
+
+header ul{
+    list-style: none;               /* tira os seletores das listas*/
+    
+   
+}
+
+header li{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
+    display: inline;
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: red;
+    
+}
+
+header a{
+    text-decoration: none;       /* tira o sublinhado*/
+    text-align: center;        
+    color: aliceblue;
+
 }
 
 main{
