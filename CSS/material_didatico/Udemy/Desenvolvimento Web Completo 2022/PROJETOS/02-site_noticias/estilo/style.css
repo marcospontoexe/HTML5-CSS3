@@ -99,22 +99,23 @@ nav{
     height: 30%;
     border: 1px solid red;
     margin: auto;
-    overflow: hidden; /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação */
+    
 }
 
 header ul{
     list-style: none;               /* tira os seletores das listas*/
     width: 100%;
-   
+    margin: auto;
 }
 
 header li{           
     display: inline;
-    width: 100px;
+    width: 80px;    
     padding: 10px 15px;
     margin: 0px -3px;
     background-color: red;
-    border-left: 3px solid rgb(109, 10, 10);
+    border-left: 2px solid rgba(124, 7, 7, 0.308);
+    border-right: 1px solid rgba(80, 4, 4, 0.459);
     
 }
 
@@ -126,6 +127,12 @@ header a{
     text-decoration: none;       /* tira o sublinhado*/
     text-align: center;        
     color: aliceblue;
+    font-size: 0.8em;
+    line-height: 2.1em;
+}
+
+header a:hover{
+    color: rgba(255, 146, 146, 0.781);
 }
 
 main{
