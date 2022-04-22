@@ -96,30 +96,36 @@ header h2{
 
 nav{
     width: 70vw;
+    height: 30%;
     border: 1px solid red;
     margin: auto;
+    overflow: hidden; /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação */
 }
 
 header ul{
     list-style: none;               /* tira os seletores das listas*/
-    
+    width: 100%;
    
 }
 
-header li{           /* configura apenas os links contidos dentro das listas pertencentes ao id #menu*/
+header li{           
     display: inline;
     width: 100px;
     padding: 10px 15px;
-    border-radius: 5px;
+    margin: 0px -3px;
     background-color: red;
+    border-left: 3px solid rgb(109, 10, 10);
     
+}
+
+#primeiro{
+    border: none;
 }
 
 header a{
     text-decoration: none;       /* tira o sublinhado*/
     text-align: center;        
     color: aliceblue;
-
 }
 
 main{
