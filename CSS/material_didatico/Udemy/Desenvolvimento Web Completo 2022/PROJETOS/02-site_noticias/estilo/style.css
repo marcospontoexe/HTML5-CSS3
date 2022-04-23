@@ -131,9 +131,13 @@ header a{
     line-height: 2.1em;
 }
 
-header a:hover{
+header li:hover{
+    color: rgba(255, 109, 109, 0.781);
+}
+header li:hover a{
     color: rgba(255, 146, 146, 0.781);
 }
+
 
 main{
     width: 70vw;
