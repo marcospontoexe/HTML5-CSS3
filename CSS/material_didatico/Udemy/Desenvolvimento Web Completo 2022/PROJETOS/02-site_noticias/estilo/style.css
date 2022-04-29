@@ -131,6 +131,7 @@ main div{
     width: 30%;
     height: 70vh;
     text-align: center;
+    background-image: url(../imgens/fundo-caixa.png);
 }
 
 #janela1{
