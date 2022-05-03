@@ -126,7 +126,6 @@ main{
 
 main div{
     border: 1px solid black;
-    width: 30%;
     height: 70vh;
     background-image: url(../imgens/fundo-caixa.png);
 
@@ -142,14 +141,17 @@ main h1{
 
 #janela1{
     float: left;
+    width: 25%;
 }
 
 #janela2{
     float: right;
+    width: 35%;
 }
 
 #janela3{
     margin: auto;
+    width: 35%;
 }
 
 footer{
