@@ -3,7 +3,7 @@
 :root{      /* declaração de variáveis*/
     
     --fonte_padrão: Helvetica, sans-serif;
-    --cor_0:  #043772;
+    --cor_0:  #294c71;
     /*
     
     --cor_1:  #3CD782;
@@ -157,5 +157,11 @@ main h1{
 footer{
     clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
     text-align: center;
-    background-color: #294C71;
+    background-color: var(--cor_0);
+}
+
+footer h1{
+    padding: 5px;
+    font-size: 1.1em;
+    color: white;
 }
