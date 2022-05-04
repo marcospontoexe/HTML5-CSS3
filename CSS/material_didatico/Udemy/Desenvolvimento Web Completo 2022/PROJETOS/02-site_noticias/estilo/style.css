@@ -24,21 +24,7 @@ body{
     font-size: 1em;
 }
 
-#a{
-    display: inline-block;    
-    width: 6px;     
-    margin-left: 38px;
-}
-#b{
-    display: inline-block;
-    margin-left: -6px;
-    width: 30px;
-}
-#c{
-    display: inline-block;
-    margin-left: -6px;
-    width: 55px;
-}
+
 header{
     border: 1px solid black;    
     background-image: url(../imgens/fundo.png);
@@ -124,7 +110,13 @@ main{
     margin: 0px auto;
 }
 
-main div{
+aside{
+    border: 1px solid black;
+    height: 70vh;
+    background-image: url(../imgens/fundo-caixa.png);
+
+}
+section{
     border: 1px solid black;
     height: 70vh;
     background-image: url(../imgens/fundo-caixa.png);
