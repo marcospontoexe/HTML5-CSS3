@@ -146,6 +146,16 @@ main h1{
     width: 35%;
 }
 
+article{
+    width: 95%;
+    background-color: white;
+    margin: 2px auto;
+    padding: 0px 2px;
+}
+
+article p{
+    padding: 0px 3px;
+}
 footer{
     clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
     text-align: center;
