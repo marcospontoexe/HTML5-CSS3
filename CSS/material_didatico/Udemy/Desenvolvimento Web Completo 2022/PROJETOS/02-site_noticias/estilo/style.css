@@ -25,8 +25,7 @@ body{
 }
 
 
-header{
-    border: 1px solid black;    
+header{    
     background-image: url(../imgens/fundo.png);
     background-repeat: no-repeat;
     background-size: contain;   /* a imagem ocupa 100% da box pai*/   
@@ -40,7 +39,6 @@ header{
     width: 70vw;
     height: 75%;
     margin: 0px auto;
-    border: 1px solid black;
     background-image: url(../imgens/detalhe-topo.png);
     background-repeat: no-repeat;
     background-position: right top;
@@ -51,7 +49,6 @@ header{
 
 #cabecalho div#letra{
     float: left;
-    border: 1px solid black;
     background-position: center center;
     background-image: url(../imgens/logo.png);
     background-repeat: no-repeat;
@@ -65,7 +62,6 @@ header{
 nav{
     width: 70vw;
     height: 30%;
-    border: 1px solid red;
     margin: auto;
     overflow: hidden;          /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
 }
@@ -73,12 +69,14 @@ nav{
 header ul{
     list-style: none;               /* tira os seletores das listas*/
     width: 100%;
+    height: 100%;
    
 }
 
 header li{           
     display: inline;
-    width: 80px;    
+    width: 80px;  
+    height: 100%;  
     padding: 10px 15px;
     margin: 0px -3px;
     background-color: red;
@@ -111,13 +109,11 @@ main{
 }
 
 aside{
-    border: 1px solid black;
     height: 70vh;
     background-image: url(../imgens/fundo-caixa.png);
 
 }
 section{
-    border: 1px solid black;
     height: 70vh;
     background-image: url(../imgens/fundo-caixa.png);
 
@@ -148,10 +144,22 @@ main h1{
 }
 
 aside a{
+    font-size: 0.8em;
+    line-height: 30px;
     list-style: none;               /* tira os seletores das listas*/
     text-decoration: none;       /* tira o sublinhado*/
     display: block;
+    color: black;    
     
+}
+
+aside a:hover{
+    color: #a1a1a1;
+    background-color: #f9f9f9;
+    background-image: url(../imgens/marcador.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
 }
 
 article{
@@ -160,6 +168,7 @@ article{
     margin: 2px auto;
     padding: 0px 2px;
     margin-bottom: 10px;
+    border-bottom: 2px solid #a1a1a1;
 }
 
 article p{
