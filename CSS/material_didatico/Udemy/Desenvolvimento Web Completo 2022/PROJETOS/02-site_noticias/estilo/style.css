@@ -5,6 +5,7 @@
     --fonte_padrão: Helvetica, sans-serif;
     --cor_0:  #294c71;
     --cor_1: red;
+    --cor_2: #dfdfdf;
     /*
     
     --cor_1:  #3CD782;
@@ -93,7 +94,7 @@ header li{
 header a{
     text-decoration: none;       /* tira o sublinhado*/
     text-align: center;        
-    color: aliceblue;
+    color: var(--cor_2);
     font-size: 0.8em;
     line-height: 2.1em;
 }
@@ -138,7 +139,8 @@ main h2{
 }
 
 main img{
-    width: 100%;
+    width: 98%;
+    border: 2px solid var(--cor_2);
 }
 
 #janela1{
@@ -182,7 +184,10 @@ article{
     padding: 0px 2px;
     margin-bottom: 10px;
     border-bottom: 2px solid #c7c7c785;
+    
+    
 }
+
 
 article p{
     padding: 0px 3px;
@@ -191,6 +196,7 @@ footer{
     clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
     text-align: center;
     background-color: var(--cor_0);
+    
 }
 
 footer h1{
