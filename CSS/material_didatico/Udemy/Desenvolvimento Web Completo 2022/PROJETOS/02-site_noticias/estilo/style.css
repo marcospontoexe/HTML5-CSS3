@@ -110,13 +110,31 @@ main{
     margin: 0px auto;
 }
 
+main ul{
+    list-style: none;               /* tira os seletores das listas*/
+}
+
+main a{
+    text-decoration: none;       /* tira o sublinhado*/
+    color: rgb(77, 0, 0);
+}
+
+main a img{
+    float: left;
+    width: 40%;
+}
+
+main a p{
+    font-size: 0.8em;
+}
+
 aside{
-    height: 70vh;
+    
     background-image: url(../imgens/fundo-caixa.png);
 
 }
 section{
-    height: 70vh;
+    
     background-image: url(../imgens/fundo-caixa.png);
 
 }
@@ -134,8 +152,16 @@ main h2{
     background-color: var(--cor_1);
     padding: 5px;
     font-size: 1em;
-    display: inline-block;
+    display: block;
     margin-bottom: 5px;
+}
+
+main h3{
+    font-size: 0.9em;
+    padding: 5px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(58, 58, 255);
 }
 
 main img{
@@ -161,8 +187,6 @@ main img{
 aside a{
     font-size: 0.8em;
     line-height: 30px;
-    list-style: none;               /* tira os seletores das listas*/
-    text-decoration: none;       /* tira o sublinhado*/
     display: block;
     color: black;    
     
