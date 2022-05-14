@@ -149,12 +149,12 @@ main img{
 }
 
 #janela2{
-    float: right;
+    float: left;
     width: 35%;
 }
 
 #janela3{
-    margin-left: 29%;
+    margin-left: 59%;
     width: 35%;
 }
 
