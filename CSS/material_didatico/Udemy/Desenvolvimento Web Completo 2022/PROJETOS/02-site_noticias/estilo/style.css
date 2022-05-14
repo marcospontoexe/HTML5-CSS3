@@ -119,6 +119,16 @@ main a{
     color: rgb(77, 0, 0);
 }
 
+main li{
+    display: inline-block;
+}
+
+main li:hover{
+     background-color: var(--cor_2);
+     cursor: pointer;
+}
+
+
 main a img{
     float: left;
     width: 40%;
@@ -171,17 +181,18 @@ main img{
 
 #janela1{
     float: left;
-    width: 25%;
+    width: 20%;
+    margin-right: 5%;
 }
 
 #janela2{
     float: left;
-    width: 35%;
+    width: 30%;
 }
 
 #janela3{
     margin-left: 59%;
-    width: 35%;
+    width: 30%;
 }
 
 aside a{
