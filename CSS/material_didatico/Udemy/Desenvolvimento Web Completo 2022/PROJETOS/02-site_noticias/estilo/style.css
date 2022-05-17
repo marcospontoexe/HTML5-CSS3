@@ -108,6 +108,8 @@ header li:hover a{
 main{
     width: 70vw;
     margin: 0px auto;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 main ul{
@@ -182,17 +184,17 @@ main img{
 #janela1{
     float: left;
     width: 20%;
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
 #janela2{
     float: left;
-    width: 30%;
+    width: 35%;
 }
 
 #janela3{
-    margin-left: 59%;
-    width: 30%;
+    margin-left: 65%;
+    width: 35%;
 }
 
 aside a{
@@ -223,6 +225,27 @@ article{
     
 }
 
+label{
+    display: block; 
+    cursor: pointer;
+}
+
+input{
+    font-size: 0.8em;
+    padding: 5px;
+    background-color: #f9f9f9;
+
+}
+
+input.enviar{
+    border-radius: 5px;
+    background-color: #294c71;
+    color: #dfdfdf;
+}
+
+.email{
+    width: 80%;
+}
 
 article p{
     padding: 0px 3px;

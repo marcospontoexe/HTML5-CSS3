@@ -13,9 +13,9 @@
             
         }
 
-        #janela2{
-            float: right;
-            width: 65%;
+        #janela3{
+            margin-left: 33%;
+            width: 67%;
     
         }
 
@@ -53,16 +53,60 @@
         <aside id="janela1">                      <!-- O navegador começa lendo de baixo para cima, colocando o conteudo principal no topo, fica melhor para mecanismos de busca-->
             <article>
                 <h1>ENTREVISTAS</h1>
+                <a href="#">José Almeida</a>
+                <a href="#">Felipe Silva</a>
+                <a href="#">Renato ROdrigues</a>
+                <a href="#">Abelardo Silveira</a>
+                <a href="#">Andre Carlos</a>
+                <a href="#">Marcio Mello</a>
+                <a href="#">João Pedro</a>
+                <a href="#">Marcos Daniel</a>
             </article>
-            
+            <article>
+                <h1>NEWS</h1>
+                <form>           
+                    <fieldset>      <!-- Agrupa dados semelhantes-->
+                        <legend>Cadastro</legend>   <!-- legenda do field set-->
+                        <label for="email">E-mail:</label>  <!-- o 'for' recebe o 'id', e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'email'. Se clicar em cima do 'label' o input é selecionado-->
+                        <input class="email" type="email" name="mail" id="email" autocomplete="on" placeholder="E-mail" type="url">    <!-- o 'autocomplete=off' não permite autocompletar o campo. O 'autofocus' direciona o seletor do mouse para esta 'input'. type="email" quando usado pelo celular é incluido o @ no teclado do celular.
+                        'type="url"' quando acessado pelo celular, o teclado do mostra caracteres para url (.com)-->
+                        <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+                        <input class="enviar" type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
+
+                    </fieldset>                             
+                                        
+                </form>
+            </article>
         </aside>
 
-        <section id="janela2">
+        <section id="janela3">
             <article>
-                <h1>Última entrevista</h1>
+                <h1>ÚLTIMA ENTREVISTA</h1>
+                <h2>Entrevista com Fulano de Tals</h2>
+                <img src="imgens/doutor.jpg" alt="Imagem de Fulano de Tals">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto porro atque vero explicabo incidunt vel a expedita aspernatur voluptatum ad, tempore cum cupiditate facilis dolorem, non accusantium tenetur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perspiciatis quisquam natus explicabo ad quas doloremque eligendi dolor iure fugiat corrupti doloribus id, culpa, facere architecto totam, dolores nihil ipsum.</p>
+                <a href="#">Saiba mais...</a>
+            </article>
+            <article class="janela_pequena">
+                <h1>NOTÍCIAS RECENTES</h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="imgens/tecnologia.jpg" alt="">
+                            <h3>NOVAS TECNOLOGIAS</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="imgens/taxi.jpg" alt="">
+                            <h3>NOVAS TECNOLOGIAS</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+                        </a>
+                    </li>
+                </ul>
             </article>
         </section>
-
         
 
     </main>
