@@ -248,6 +248,7 @@ input.enviar{
 
 article p{
     padding: 0px 3px;
+    margin-bottom: 8px;
 }
 footer{
     clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
