@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+:root{      /* declaração de variáveis*/
+    
+    --fonte_padrão: Helvetica, 'Trebuchet MS', sans-serif;
+    --cor_0:  #fff;
+    --cor_1: #ede9cc;
+    --cor_2: #dbcd87;
+    
+}
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/ 
+}
+
+body{
+    font-family: var(--fonte_padrão);
+    background-color: var(--cor_0);
+    background-image: url(../imagens/bg.png);
+}
+
+header{
+    background: var(--cor_1);
+    height: 15.4em;
+    min-height: 250px;
+    border: 1px solid black;
+}
