@@ -24,5 +24,30 @@ header{
     background: var(--cor_1);
     height: 15.4em;
     min-height: 250px;
+    position: relative;
     border: 1px solid black;
+}
+
+header div{
+    border: 1px solid black;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+
+}
+
+nav{
+    border: 1px solid black;
+    float: right;
+    height: 250px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+}
+
+main{
+    clear: both;
 }
