@@ -6,6 +6,10 @@
     --cor_0:  #fff;
     --cor_1: #ede9cc;
     --cor_2: #dbcd87;
+    --cor_3: #b5ab56;
+    --cor_4: #8b8448;
+    --cor_5: #a29750;
+    --cor_6: #fff5b0;
     
 }
 
@@ -24,19 +28,17 @@ header{
     background: var(--cor_1);
     height: 15.4em;
     min-height: 250px;
-    position: relative;
+    position: relative;      /* qualquer valor diferente de 'static' (posicionamento padrão das caixas) irá ancorar o posicionamento de qualquer box filha que tenha posicionamento 'absolute'*/
     min-width: 600px;
     max-width: 1180px;
     margin: 0px auto;
-    border: 1px solid black;
 
 }
 
 div#logo{
-    border: 1px solid black;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: absolute;         /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
     background: url(../imagens/topo-imagem-principal.png) no-repeat;
     z-index: 1;
 
@@ -45,7 +47,7 @@ div#logo{
 div#logo a{
     top: 15px;
     left: 15px;
-    position: relative;
+    position: relative;             /* permite transladar um box sem alterar o posicionamneto das de mais*/
     z-index: 3;
 }
 
@@ -55,26 +57,50 @@ div#logo img{
 }
 
 nav{
-    border: 1px solid black;
     float: right;
     height: 100%;
     width: 450px;
-    position: absolute;
+    position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
     top: 0;
     right: 0px;
     background: url(../imagens/topo-imagem-lateral.png) no-repeat;
     z-index: 2;
+    
 }
 
 section#conteudo{
-    position: absolute;
+    position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
     transform: translate(0%, 0%);
     right: 0px;
     height: 90%;
     width: 355px;
     margin-top: 15px;
     border: 1px solid black;
-    background-color: aqua;
+    
+}
+
+#conteudo p:first-child{     /* alterações apenas para a primeira box filha*/
+    
+    font-size: 0.8em;
+    border-top: 1px solid var(--cor_3);
+    border-bottom: 1px solid var(--cor_3);
+    color: var(--cor_4);
+    padding: 10px 0px;
+}
+
+#conteudo span{
+    
+
+}
+ 
+#conteudo a{
+    position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    background-color: var(--cor_5);
+    color: var(--cor_6);
+    padding: 11px 10px;
 }
 
 main{

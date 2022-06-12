@@ -10,7 +10,7 @@
             border: 1px solid black;
             width: 800px;
             background-color: aqua;
-            overflow: hidden;           /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
+                       
         }
         div{
             height: 200px;
@@ -21,6 +21,10 @@
             margin: 10px;
             cursor: pointer;        /* muda o ponteiro do mouse quando passa em cima da box*/
            
+        }
+        #box{
+            background-color: rgb(243, 108, 108);
+            overflow: hidden;   /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
         }
         #a{
             float: left;        /* flutua a box à esquerda, e a frente da box pai*/
@@ -85,7 +89,7 @@
         <h1>Exemplo de posicionamento de box com uso de 'float:'</h1>
         <div id="a">DIV A</div>
         <div id="b">DIV B</div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
+        <p id="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
         <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nesciunt libero itaque tempora voluptatum placeat voluptate ducimus cumque, asperiores reiciendis voluptatem quas delectus, voluptatibus architecto, reprehenderit velit expedita molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum ullam quae labore eligendi deserunt praesentium error amet facilis ab! Earum numquam sequi excepturi minus quos, amet hic tempora quod?</p>
     </section>
         
