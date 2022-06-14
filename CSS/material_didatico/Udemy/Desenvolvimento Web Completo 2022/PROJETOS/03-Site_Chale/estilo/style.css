@@ -10,6 +10,8 @@
     --cor_4: #8b8448;
     --cor_5: #a29750;
     --cor_6: #fff5b0;
+    --cor_7: #6e672c;
+    --cor_8: #fdf6d8;
     
 }
 
@@ -75,7 +77,6 @@ section#conteudo{
     height: 90%;
     width: 355px;
     margin-top: 15px;
-    border: 1px solid black;
     
 }
 
@@ -86,14 +87,11 @@ section#conteudo{
     border-bottom: 1px solid var(--cor_3);
     color: var(--cor_4);
     padding: 10px 0px;
-}
-
-#conteudo span{
+    margin-bottom: 30px;
     
-
 }
  
-#conteudo a{
+#conteudo span #reserva{
     position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
     top: 0px;
     right: 0px;
@@ -101,6 +99,48 @@ section#conteudo{
     background-color: var(--cor_5);
     color: var(--cor_6);
     padding: 11px 10px;
+}
+
+#conteudo span a{
+    text-decoration: none;
+    color: var(--cor_4);
+}
+
+#conteudo #reserva{
+    position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    background-color: var(--cor_5);
+    color: var(--cor_6);
+    padding: 11px 10px;
+}
+
+#nav{
+    width: 130px;
+    list-style: none;           /* apaga os marcadores*/
+}
+
+#nav a{
+    text-decoration: none;
+    color: var(--cor_7);
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+#nav a:hover{
+    background-color: var(--cor_8);
+    padding: 5px;
+}
+
+
+#conteudo img{
+    position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+    right: 0px;
+    top: 50px;
+    width: 266;
+    height: 164;
 }
 
 main{
