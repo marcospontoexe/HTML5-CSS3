@@ -144,5 +144,42 @@ section#conteudo{
 }
 
 main{
+    background-color: #FDF4BE;
+    min-width: 600px;
+    max-width: 1180px;
+    margin: 0px auto;
+    overflow: hidden;   /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
+    position: relative; /* qualquer valor diferente de 'static' (posicionamento padrão das caixas) irá ancorar o posicionamento de qualquer box filha que tenha posicionamento 'absolute'*/
+}
+
+article{
+    padding: 15px;
+}
+
+article#principal{ 
+    width: 47%;
+    background-color: #FDF4BE;
+
+}
+
+article#anexo{
+    position: absolute;     /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
+    top: 0px;
+    right: 0px;
+    width: 47%;    
+    background-color: #DFD393;
+}
+
+#anexo img{
+    width: 150px;
+    height: 150px;
+
+}
+
+#anexo ul{
+    list-style: none;           /* apaga os marcadores*/
+}
+
+footer{
     clear: both;
 }
