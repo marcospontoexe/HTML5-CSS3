@@ -11,7 +11,8 @@
     --cor_5: #a29750;
     --cor_6: #fff5b0;
     --cor_7: #6e672c;
-    --cor_8: #fdf6d8;
+    --cor_8: #ede9d9;
+    --cor_9: #e1d7ac;
     
 }
 
@@ -144,21 +145,30 @@ section#conteudo{
 }
 
 main{
-    background-color: #FDF4BE;
+    background-color: var(--cor_8);
     min-width: 600px;
     max-width: 1180px;
     margin: 0px auto;
     overflow: hidden;   /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
     position: relative; /* qualquer valor diferente de 'static' (posicionamento padrão das caixas) irá ancorar o posicionamento de qualquer box filha que tenha posicionamento 'absolute'*/
+    background-image: url(../imagens/bg-area-principal.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+    margin-bottom: 5px;
+
 }
 
 article{
     padding: 15px;
+    height: 100%;
 }
 
 article#principal{ 
     width: 47%;
-    background-color: #FDF4BE;
+    background-color: var(--cor_8);
+    background-image: url(../imagens/bg-area-principal.png);
+    background-position: top left;
+    background-repeat: repeat-x;
 
 }
 
@@ -167,7 +177,10 @@ article#anexo{
     top: 0px;
     right: 0px;
     width: 47%;    
-    background-color: #DFD393;
+    background-color: var(--cor_9);
+    background-image: url(../imagens/bg-area-lateral.png);
+    background-position: top left;
+    background-repeat: repeat-x;
 }
 
 #anexo img{
@@ -181,5 +194,9 @@ article#anexo{
 }
 
 footer{
-    clear: both;
+    min-width: 600px;
+    max-width: 1180px;
+    margin: 0px auto;
+    background-color: var(--cor_2);
+    color: var(--cor_4);
 }
