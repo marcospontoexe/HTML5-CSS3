@@ -13,6 +13,8 @@
     --cor_7: #6e672c;
     --cor_8: #ede9d9;
     --cor_9: #e1d7ac;
+    --cor_10: #7d7640;
+
     
 }
 
@@ -20,12 +22,14 @@
     margin: 0px;        /* elimina a margem de todos os elementos*/
     padding: 0px;       /* elimina o pad de todos os elementos*/ 
 }
-
 body{
     font-family: var(--fonte_padrão);
     background-color: var(--cor_0);
     background-image: url(../imagens/bg.png);
 }
+
+
+/*INÍCIO HEADER*/
 
 header{
     background: var(--cor_1);
@@ -143,7 +147,21 @@ section#conteudo{
     width: 266;
     height: 164;
 }
+/*FIM HEADER*/
+/************/
+/*INÍCIO MAIN*/
+h2{
+    color: var(--cor_10);
+    font-size: 1.1em;
+    line-height: 30px;
 
+}
+
+main p{
+    font-size: 1em;
+    padding-bottom: 10px;
+
+}
 main{
     background-color: var(--cor_8);
     min-width: 600px;
@@ -154,7 +172,7 @@ main{
     background-image: url(../imagens/bg-area-principal.png);
     background-position: top left;
     background-repeat: repeat-x;
-    margin-bottom: 5px;
+   
 
 }
 
@@ -192,11 +210,15 @@ article#anexo{
 #anexo ul{
     list-style: none;           /* apaga os marcadores*/
 }
-
+/*FIM MAIN*/
+/*************/
+/*INÍCIO FOOTER*/
 footer{
-    min-width: 600px;
-    max-width: 1180px;
     margin: 0px auto;
-    background-color: var(--cor_2);
-    color: var(--cor_4);
+    background-image: url(../imagens/bg-rodape.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    text-align: center;
+    padding: 5px;
 }
+/*FIM FOOTER*/
