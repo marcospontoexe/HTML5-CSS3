@@ -14,6 +14,8 @@
     --cor_8: #ede9d9;
     --cor_9: #e1d7ac;
     --cor_10: #7d7640;
+    --cor_11: #f3efcb;
+    --cor_12: #615b2d;
 
     
 }
@@ -150,8 +152,14 @@ section#conteudo{
 /*FIM HEADER*/
 /************/
 /*INÍCIO MAIN*/
-h2{
+h1{
     color: var(--cor_10);
+    line-height: 30px;
+
+}
+
+h2{
+    color: var(--cor_12);
     font-size: 1.1em;
     line-height: 30px;
 
@@ -203,13 +211,30 @@ article#anexo{
 
 #anexo img{
     width: 150px;
-    height: 150px;
-
+    margin-right: 8px;
+    float: left;
 }
 
 #anexo ul{
     list-style: none;           /* apaga os marcadores*/
 }
+
+#anexo li{
+    border-bottom: 1px solid var(--cor_11);
+    padding: 8px;
+    height: 6em;   
+    background-image: url(../imagens/ornamento.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    overflow: hidden;           /* não deixa o conteudo vazar da box*/
+}
+
+#anexo li:hover{
+    background-color: var(--cor_11);
+    cursor: pointer;
+   
+}
+
 /*FIM MAIN*/
 /*************/
 /*INÍCIO FOOTER*/
