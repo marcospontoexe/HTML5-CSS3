@@ -1,0 +1,2 @@
+normalize serve para fazer uma normalização de exibição para os navegadores,
+eliminando as diferenças de exibição entre os diversos navegadores.
