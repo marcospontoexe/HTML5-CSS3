@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        p{
+            line-height: 10px;
+        }
+        #box1{
+            width: 100px;
+            height: 100px;
+            padding: 50px;
+            background-color: aqua;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <p>box de 100x100px</p>
+        <p>com padding de 50px</p>
+        <p>com boxsizing</p>
+    </div>
+    <div id="box2">
+        <p>box de 100x100px</p>
+        <p>com padding de 50px</p>
+        <p>sem boxsizing</p>
+    </div>
+    <div id="box3">
+        <p>box de 100x100 px</p>
+    </div>
+</body>
+</html>
