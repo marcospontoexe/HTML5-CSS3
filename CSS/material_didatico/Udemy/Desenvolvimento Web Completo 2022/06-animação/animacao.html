@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando animação</title>
+    <style>
+        @keyframes animacao{        /*para criar uma animação*/
+            from{   /*início da animação*/
+                background-color: aqua;
+                border-radius: 0%;
+                top: 0px;
+                left: 0px;
+            }
+            to{         /*final da animação*/
+                background-color: rgb(1, 0, 65);
+                border-radius: 100%;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, 50%);
+            }
+            
+        }
+
+        div{
+            height: 50px;
+            width: 50px;
+            animation-name: animacao;       /*chama a nimação*/
+            animation-duration: 5s;         /*tempo da duração*/
+            animation-delay: 1s;            /*tempo antes de iniciar a animação*/
+            animation-iteration-count: 2;   /*quatas vezes a animação vai se repetir*/
+            animation-direction: alternate; /*alterna a animação para ir do início ao fim e voltar do fim ao início*/
+            /*animation-direction: inverse;           alterna a animação para começão ao contrário
+            */
+            position: relative;             /*para manipular a posição na tela*/
+            border: 1px solid black;        
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+
+    </div>
+    
+</body>
+</html>
