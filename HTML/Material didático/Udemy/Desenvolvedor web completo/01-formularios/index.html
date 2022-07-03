@@ -41,7 +41,7 @@
         <div>
             <p>input:number</p>
             <label for="idade">Digite a idade:</label>
-            <input type="number" name="idade" id="idade" min="1" max="18" value="1">     <!-- o 'placeholder' coloca uma string definida dentro do input, que some quando é digitado algo-->
+            <input type="number" name="idade" id="idade" min="1" max="15" value="1" step="5">     <!-- o 'step' altera o valor de 5 em 5-->
         </div>
         <div>
             <p>input:date</p>
@@ -120,10 +120,15 @@
         </div>
         <div>
             <p>input:range</p>
-            <label for="pseo"> Digite seu peso:</label>
+            <label for="peso"> Digite seu peso:</label>
             <!-- a barra de range precisa de interatividade com javascript para mostrar seu valor-->
             <input type="range" name="peso" id="peso" min="1" max="400" value="1" onmousedown="rangResltado()" onmousemove="rangResltado()">
-            <span id="msg"></span>
+            <span id="msg1"></span>
+            <br>
+            <label for="opcao"> Escolha uma opção:</label>
+            <!-- a barra de range precisa de interatividade com javascript para mostrar seu valor-->
+            <input type="range" name="opcao" id="opcao" min="1" max="3" value="2" onmousedown="rangOpcao()" onmousemove="rangOpcao()">
+            <span id="msg2"></span>
         </div>
         <div>
             <p>input:color</p>
@@ -152,10 +157,14 @@
 
     <script>
         function rangResltado(){
-            var mensg = document.getElementById('msg')
+            var mensg = document.getElementById('msg1')
             var n = document.getElementById('peso').value
             mensg.innerHTML = n
-
+        }
+        function rangOpcao(){
+            var mensg = document.getElementById('msg2')
+            var n = document.getElementById('opcao').value
+            mensg.innerHTML = n
         }
     </script>
 </body>
