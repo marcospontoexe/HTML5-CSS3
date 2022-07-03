@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando Flex-Box</title>
+    <style>
+        section{
+            background-color: grey;
+            height: 500px;
+            display: flex;              /*configura as box filhas para ficar com visualização flexível*/
+            /*flex-direction define o alinhamento das box*/
+            flex-direction: row;    /* column | column-reverse | row | row-reverse*/
+
+            flex-wrap: wrap;    /*define quebra de layout*/
+
+            justify-content: center;      /*alinhamento horizontal das box*/
+            /* flex-start | flex-end | space | space-between | space-around*/
+             
+            align-items: center;      /*alinhamento vertical das box*/
+            /*stretch | center | flex-star | flex-end | baseline(alinha as box em relação à linha base) */
+
+             
+             
+        }
+        div{
+            background-color: white;
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
     <section>
