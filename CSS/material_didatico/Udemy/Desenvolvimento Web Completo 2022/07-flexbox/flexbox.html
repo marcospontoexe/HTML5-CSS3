@@ -20,10 +20,9 @@
              
             align-items: center;      /*alinhamento vertical das box*/
             /*stretch | center | flex-star | flex-end | baseline(alinha as box em relação à linha base) */
-
-             
              
         }
+
         div{
             background-color: white;
             border: 1px solid black;
@@ -31,14 +30,31 @@
             height: 150px;
             margin: 5px;
         }
+
+        #um{
+            flex-grow: 1;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
+            /*flex-shrink -> define uma proporção de encolhimento das box filhas*/
+
+        }
+
+        #tres{
+            flex-grow: 2;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
+
+        }
+
+        #quatro{
+            order: -1;  /*define a ordem de exibição do layout (por padrão é zero)*/
+            
+        }
+
     </style>
 </head>
 <body>
     <section>
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <div>04</div>
+        <div id="um">01</div>
+        <div id="dois">02</div>
+        <div id="tres">03</div>
+        <div id="quatro">04</div>
     </section>
     
 </body>
