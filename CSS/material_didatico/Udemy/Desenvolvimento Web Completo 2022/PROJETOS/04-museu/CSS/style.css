@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+:root{      /* declaração de variáveis*/
+    
+    --fonte_header: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+    --cor_0:  #262217;
+    --cor_1: #B5873F;
+    --cor_2: #227115;
+        
+
+    
+}
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/ 
+}
+/*INÍCIO HEADER*/
+header{
+    background-color: var(--cor_0);
+    height: 100px;
+    padding: 10px 80px 0px 80px;
+    font-family: var(--fonte_header);
+}
+
+header img{
+    float: left;
+    border: 1px solid black;
+    
+}
+
+header ul{
+    float: right;
+    display: flex;
+    list-style: none;           /* apaga os marcadores*/
+    flex-wrap: wrap;    /*define quebra de layout*/
+}
+
+header li{
+    flex-direction: row;
+    margin-left: 15px;
+    flex-grow: 1;       /*define um crescimento da box filha proporcional ao tamanho da box pai*/
+    
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor_1);
+}
+
+
+header a:hover{
+    color: var(--cor_2);
+    border-bottom: 1px solid var(--cor_2);
+}
+
+/*FIM HEADER*/
