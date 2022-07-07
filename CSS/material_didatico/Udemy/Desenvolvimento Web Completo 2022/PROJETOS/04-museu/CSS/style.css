@@ -54,4 +54,26 @@ header a:hover{
     border-bottom: 1px solid var(--cor_2);
 }
 
+header div{
+    clear: both;
+    height: 200px;
+    display: flex;
+    flex-direction: row;    /* column | column-reverse | row | row-reverse*/
+    flex-wrap: wrap;    /*define quebra de layout*/
+    justify-content: space-around;      /*alinhamento horizontal das box*/
+            /* flex-start | flex-end | space | space-between | space-around*/
+    border: 1px solid black;
+}
+
+#foto{
+    flex-grow: 2;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
+    background-image: url(../img/museu.png);
+    background-repeat: no-repeat;
+}
+
+#comentario{
+    flex-grow: 1;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
+    
+
+}
 /*FIM HEADER*/
