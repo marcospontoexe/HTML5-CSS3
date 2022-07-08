@@ -19,21 +19,29 @@
 header{
     background-color: var(--cor_0);
     height: 100px;
-    padding: 10px 80px 0px 80px;
     font-family: var(--fonte_header);
 }
 
-header img{
+#cabecalho{
+    padding: 15px 15px 0px 15px;
+    
+   
+
+}
+
+#cabecalho img{
     float: left;
     border: 1px solid black;
     
 }
 
 header ul{
+    width: 50%;
     float: right;
     display: flex;
     list-style: none;           /* apaga os marcadores*/
     flex-wrap: wrap;    /*define quebra de layout*/
+    justify-content: center;      /*alinhamento horizontal das box*/
 }
 
 header li{
@@ -54,7 +62,7 @@ header a:hover{
     border-bottom: 1px solid var(--cor_2);
 }
 
-header div{
+#imagens{
     clear: both;
     height: 200px;
     display: flex;
@@ -62,13 +70,13 @@ header div{
     flex-wrap: wrap;    /*define quebra de layout*/
     justify-content: space-around;      /*alinhamento horizontal das box*/
             /* flex-start | flex-end | space | space-between | space-around*/
+    padding-top: 20px;
     border: 1px solid black;
 }
 
 #foto{
     flex-grow: 2;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
-    background-image: url(../img/museu.png);
-    background-repeat: no-repeat;
+    
 }
 
 #comentario{
