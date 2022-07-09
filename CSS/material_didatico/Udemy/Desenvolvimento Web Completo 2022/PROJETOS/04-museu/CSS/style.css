@@ -62,26 +62,33 @@ header a:hover{
     border-bottom: 1px solid var(--cor_2);
 }
 
-#imagens{
-    clear: both;
-    height: 200px;
+
+/*FIM HEADER*/
+
+/*INÍCIO MAIN*/
+main{
+    
     display: flex;
     flex-direction: row;    /* column | column-reverse | row | row-reverse*/
     flex-wrap: wrap;    /*define quebra de layout*/
-    justify-content: space-around;      /*alinhamento horizontal das box*/
+    justify-content: space-between;      /*alinhamento horizontal das box*/
             /* flex-start | flex-end | space | space-between | space-around*/
-    padding-top: 20px;
-    border: 1px solid black;
+    padding: 20px 15px 0px 15px;
+    border: 1px dashed black;
 }
 
-#foto{
+
+#conteudo img{
     flex-grow: 2;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
-    
+    flex-shrink: 1;
+    border: 1px dashed black;
 }
 
-#comentario{
+aside img{
     flex-grow: 1;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
-    
-
+    flex-shrink: 1;
+    background-color: #ebe7dd;
+    border: 1px dashed black;
 }
-/*FIM HEADER*/
+
+/*FIM MAIN*/
