@@ -34,8 +34,13 @@ header{
 
 }
 
-#cabecalho img{
+#logo{
     float: left;
+    height: 21px;
+    width: 248px;
+    text-indent: -9999px;       /*o texto é mostrado apenas se o .CSS não for carregado*/
+    display: block;
+    background-image: url(../img/logo.png);
     border: 1px solid black;
     
 }
@@ -92,6 +97,7 @@ aside{
     float: right;
     background-color: #ebe7dd;
     width: 30vw;
+    padding-bottom: 30px;
     border: 1px dashed black;
 }
 
@@ -105,10 +111,31 @@ aside img{
     padding: 10px 30px 30px 30px;
 }
 
-#visita h2{
+aside h2{
     color: #86521a;
     text-transform: uppercase;
     font-size: 1.2em;
+}
+
+#fotos{
+    margin: 20px;
+    
+}
+
+#fotos img{
+    margin: auto;
+    
+}
+
+#fotos a{
+    height: 93px;
+    width: 93px;
+    display: block;
+    background-image: url(../img/fundo-foto.png);
+    background-repeat: no-repeat;
+    float: left;
+    padding: 15px;
+
 }
 
 /*FIM MAIN*/
