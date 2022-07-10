@@ -15,6 +15,11 @@
     margin: 0px;        /* elimina a margem de todos os elementos*/
     padding: 0px;       /* elimina o pad de todos os elementos*/ 
 }
+
+body{
+    
+}
+
 /*INÍCIO HEADER*/
 header{
     background-color: var(--cor_0);
@@ -67,28 +72,43 @@ header a:hover{
 
 /*INÍCIO MAIN*/
 main{
-    
-    display: flex;
-    flex-direction: row;    /* column | column-reverse | row | row-reverse*/
-    flex-wrap: wrap;    /*define quebra de layout*/
-    justify-content: space-between;      /*alinhamento horizontal das box*/
-            /* flex-start | flex-end | space | space-between | space-around*/
+   
     padding: 20px 15px 0px 15px;
     border: 1px dashed black;
 }
 
 
+#conteudo{
+    float: left;
+    width: 60vw;
+    border: 1px dashed black;
+}
+
 #conteudo img{
-    flex-grow: 2;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
-    flex-shrink: 1;
+    width: 100%;
+}
+
+aside{
+    float: right;
+    background-color: #ebe7dd;
+    width: 30vw;
     border: 1px dashed black;
 }
 
 aside img{
-    flex-grow: 1;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
-    flex-shrink: 1;
-    background-color: #ebe7dd;
-    border: 1px dashed black;
+    width: 100%;
+}
+
+#visita{
+    background-color: #cdc8b1;
+    margin-top: 10px;
+    padding: 10px 30px 30px 30px;
+}
+
+#visita h2{
+    color: #86521a;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
 /*FIM MAIN*/
