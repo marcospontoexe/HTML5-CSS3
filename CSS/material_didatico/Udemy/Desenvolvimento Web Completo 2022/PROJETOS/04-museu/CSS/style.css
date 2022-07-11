@@ -89,6 +89,10 @@ main{
     border: 1px dashed black;
 }
 
+#postagem article{
+    float: left;
+}
+
 #conteudo img{
     width: 100%;
 }
@@ -137,5 +141,6 @@ aside h2{
     padding: 15px;
 
 }
+
 
 /*FIM MAIN*/
