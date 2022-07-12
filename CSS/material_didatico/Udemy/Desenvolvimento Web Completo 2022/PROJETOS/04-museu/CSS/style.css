@@ -17,7 +17,7 @@
 }
 
 body{
-    
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*INÍCIO HEADER*/
@@ -29,8 +29,7 @@ header{
 
 #cabecalho{
     padding: 15px 15px 0px 15px;
-    
-   
+     
 
 }
 
@@ -41,7 +40,6 @@ header{
     text-indent: -9999px;       /*o texto é mostrado apenas se o .CSS não for carregado*/
     display: block;
     background-image: url(../img/logo.png);
-    border: 1px solid black;
     
 }
 
@@ -69,7 +67,7 @@ header a{
 
 header a:hover{
     color: var(--cor_2);
-    border-bottom: 1px solid var(--cor_2);
+    
 }
 
 
@@ -79,30 +77,54 @@ header a:hover{
 main{
    
     padding: 20px 15px 0px 15px;
-    border: 1px dashed black;
+    margin-bottom: 10px;
+    
 }
 
 
 #conteudo{
     float: left;
     width: 60vw;
-    border: 1px dashed black;
+    
 }
 
 #postagem article{
     float: left;
+    margin-left: 25px;
+    width: 310px;
+   
+}
+
+#postagem p{
+    margin-bottom: 10px;
+}
+#postagem h1{
+    color: #227115;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 #conteudo img{
     width: 100%;
 }
 
+#conteudo ul{
+    list-style-position: inside;    /* deixa os marcadores da lista dentro da box*/
+}
+
+#conteudo a{
+    text-decoration: none;
+    color: #86521a;
+}
+
+
 aside{
     float: right;
     background-color: #ebe7dd;
     width: 30vw;
     padding-bottom: 30px;
-    border: 1px dashed black;
+    
 }
 
 aside img{
@@ -139,8 +161,36 @@ aside h2{
     background-repeat: no-repeat;
     float: left;
     padding: 15px;
+    text-decoration: none;
 
 }
 
-
 /*FIM MAIN*/
+/*INÍCIO FOOTER*/
+footer{
+    clear: both;
+    background-image: url(../img/fundo-rodape.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer p{
+    color: var(--cor_1);
+    margin: 10px 0px;  
+}
+
+footer a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: var(--cor_1);
+}
+
+
+footer a:hover{
+    color: var(--cor_2);
+    border-bottom: 1px solid var(--cor_2);
+
+/*FIM FOOTER*/
