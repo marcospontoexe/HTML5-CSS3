@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
     <style>
-        iframe{
+        #blog{
             display: block;
             margin: auto;
         }
@@ -15,7 +15,7 @@
 <body>
     <h1>Usando Iframe</h1>
     <P>Este é um Iframe
-    <iframe src="https://eletronslab.wordpress.com/" frameborder="0"></iframe> <!-- frameborder="0" deixa o iframe sem borda -->
+    <iframe id="blog" src="https://eletronslab.wordpress.com/" frameborder="0"></iframe> <!-- frameborder="0" deixa o iframe sem borda -->
     com a página do meu blog</P>
     <p>Pena que iframe não funciona com o alguns sites
         <iframe src="https://www.linkedin.com/in/marcos-daniel-santana/" frameborder="0">   
@@ -27,6 +27,23 @@
         Usando Iframe como arquivo html:
         <br>
         <iframe src="teste.html" frameborder="0"></iframe>
+    </p>
+    <h1>escolha uma tela:</h1>
+    <p>
+        <ul>
+            <li>
+                <a href="tela1.html" target="frame">tela 1</a>  <!--O 'target' permite abrir o link em outro alvo-->
+            </li>
+            <li>
+                <a href="tela2.html" target="frame">tela 2</a>
+            </li>
+            <li>
+                <a href="tela3.html" target="frame">tela 3</a>
+            </li>
+        </ul>
+    </p>
+    <p>esta é a tela escolhida:
+        <iframe name="frame" src="" frameborder="0"></iframe>
     </p>
 </body>
 </html>
