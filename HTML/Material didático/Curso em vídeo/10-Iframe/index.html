@@ -10,42 +10,73 @@
             display: block;
             margin: auto;
         }
+        div{
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <h1>Usando Iframe</h1>
-    <P>Este é um Iframe
-    <iframe id="blog" src="https://eletronslab.wordpress.com/" frameborder="0"></iframe> <!-- frameborder="0" deixa o iframe sem borda -->
-    com a página do meu blog</P>
-    <p>Pena que iframe não funciona com o alguns sites
-        <iframe src="https://www.linkedin.com/in/marcos-daniel-santana/" frameborder="0">   
-            <!-- Caso o navegado não seja compatível com Iframe, aparece o link a baixo-->
-            <a href="https://www.linkedin.com/in/marcos-daniel-santana/" target="_blank">Meu LinkedIn</a>
+    <div>
+        <p>DIV 1</p>
+        <P>Este é um Iframe
+        <iframe id="blog" src="https://eletronslab.wordpress.com/"></iframe> <!-- frameborder="0" deixa o iframe sem borda -->
+        com a página do meu blog</P>
+        <p>Pena que iframe não funciona com o alguns sites
+            <iframe src="https://www.linkedin.com/in/marcos-daniel-santana/">
+                <!-- Caso o navegado não seja compatível com Iframe, aparece o link a baixo-->
+                <a href="https://www.linkedin.com/in/marcos-daniel-santana/" target="_blank">Meu LinkedIn</a>
+            </iframe>
+        </p>
+    </div>
+    <div>
+        <p>DIV 2</p>
+        <p>
+            Usando Iframe como arquivo html:
+            <br>
+            <iframe src="teste.html"></iframe>
+        </p>
+    </div>
+    <div>
+        <p>DIV 3</p>
+        <h1>escolha uma tela:</h1>
+        <p>
+            <ul>
+                <li>
+                    <a href="tela1.html" target="frame">tela 1</a>  <!--O 'target' permite abrir o link em outro alvo-->
+                </li>
+                <li>
+                    <a href="tela2.html" target="frame">tela 2</a>
+                </li>
+                <li>
+                    <a href="tela3.html" target="frame">tela 3</a>
+                </li>
+            </ul>
+        </p>
+        <p>esta é a tela escolhida:
+            <br>
+            <iframe name="frame" src="" srcdoc="
+            <h1>Escolha uma das opções a cima</h1>
+            "></iframe>
+        </p>
+    </div>
+    <div>
+        <p>DIV 4</p>
+        <H2>BLOQUEANDO ACESSO EXTERNO A PARTIR DE SITES DE TERCEIROS:</H2>
+        <P>Bloqueio desativado. Ao enviar o formulário o acesso a sites de terceiros está desbloqueado no Iframe:</P>
+        <iframe src="cadastrar.html"> </iframe>
+        <lr>
+        <p>bloquuio ativado. Não é possível enviar dados à pagina de terceiro no Iframe</p>
+        <iframe src="cadastrar.html" sandbox="sandbox" referrerpolicy="no-referrer"> 
+        <!--sandbox bloqueia qualquer acesso a site externo via iframe
+        outras opções: allow-same-origin | allow-forms | allow-scripts
+        -->
+        <!--política de segurança para não ter coleta de dados por sites dentro do iframe-->
         </iframe>
-    </p>
-    <p>
-        Usando Iframe como arquivo html:
-        <br>
-        <iframe src="teste.html" frameborder="0"></iframe>
-    </p>
-    <h1>escolha uma tela:</h1>
-    <p>
-        <ul>
-            <li>
-                <a href="tela1.html" target="frame">tela 1</a>  <!--O 'target' permite abrir o link em outro alvo-->
-            </li>
-            <li>
-                <a href="tela2.html" target="frame">tela 2</a>
-            </li>
-            <li>
-                <a href="tela3.html" target="frame">tela 3</a>
-            </li>
-        </ul>
-    </p>
-    <p>esta é a tela escolhida:
-        <iframe name="frame" src="" frameborder="0" srcdoc="
-        <h1>Escolha uma das opções a cima</h1>
-        "></iframe>
-    </p>
+         
+
+
+    </div>
 </body>
 </html>
