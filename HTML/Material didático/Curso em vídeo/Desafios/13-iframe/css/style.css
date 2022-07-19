@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+:root{      /* declaração de variáveis*/
+    --fonte_padrão: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte_destaque: 'Passion One', cursive;
+    --fonte_main: 'Sriracha', cursive;
+    
+}
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+    font-size: 1em;
+}
+
+html, body{     /* configurações em comum para html e body*/
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+section{
+    height: 100vh;
+    position: relative;
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    height: 627px;
+    width: 311px;
+    
+}
