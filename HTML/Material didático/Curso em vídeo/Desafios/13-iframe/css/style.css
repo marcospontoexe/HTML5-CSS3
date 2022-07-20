@@ -48,3 +48,34 @@ iframe{
     width: 269px;
     height: 471px;
 }
+
+aside{
+    text-align: right;
+    margin-right: 15px;
+}
+
+aside a{
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+
+aside img{
+    width: 100%;  
+    border-radius: 50%;  
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+    box-sizing: border-box;         /* a borda passa a fazer parte do objeto. Isso melhora a configuração CSS do 'a:hover'*/
+
+}
+
+aside a:hover img{
+    border: 2px solid rgba(255, 255, 255, 0.753);
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.541);
+    transition: transform 0.3s;         /* cria uma animação de 0.3s no objeto 'transform'*/
+    transition: border 0.2s;
+}
+
