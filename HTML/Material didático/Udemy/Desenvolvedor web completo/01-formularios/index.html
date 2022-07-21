@@ -25,11 +25,19 @@
 <body>
     <h1>trabalhando com formulários...</h1>
     <hr width="100%" size="5" color="red">
-    <form action="destino.html" method="post">   <!-- Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 'action' determina para qual página irão os dados inseridos no formulário. 'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres)-->
+    <form action="destino.php" method="post" autocomplete="on">   <!-- Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 
+    'action' determina para onde sera enviado o formulário. 
+    'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres).
+    autocomplet="off" desliga preenchimento automático
+    -->
         <div>
             <p>input:text</p>
-            <label for="nome">Insira seu nome</label>  <!-- o 'for' recebe o 'id', e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'nome'. Se clicar em cima do 'label' o input é selecionado-->
-            nome: <input type="text" name="nome" id="nome" size="3"> <!-- cria um elemento para o formulário (type="text" para elemento de texto)-->
+            <label for="nome">Insira seu nome</label>  <!-- o 'for' recebe o 'id' do input, e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'nome'. Se clicar em cima do 'label' o input é selecionado.
+            -->
+            nome: <input type="text" name="nome" id="nome" size="3"> <!-- cria um elemento para o formulário (type="text" para elemento de texto).
+                O 'name' é usado para o html ou php se relacionar com o 'input' 
+                O 'id' é usado pelo javascript.    
+            -->
             <!-- size determina o tamanho em caracteres-->
         </div>
         <div> 
