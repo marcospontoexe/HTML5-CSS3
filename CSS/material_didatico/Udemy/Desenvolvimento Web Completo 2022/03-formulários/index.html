@@ -32,14 +32,16 @@
         input.nascimento{
             color: aqua;
         }
+
+        
     </style>
 </head>
 <body>
     <h1>trabalhando com formulários...</h1>
     <hr width="100%" size="5" color="red">
-    <form action="destino.html" method="post">   <!--Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 
+    <form action="destino.php" method="post">   <!--Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 
         'action' determina para onde sera enviado o formulário. 
-        'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador; post = dados enviados de forma escondida, não tem limitação de caracteres).
+        'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador (maximos de 3 mil caracteres); post = dados enviados de forma escondida, não tem limitação de caracteres, e da p enviar arquivos).
         autocomplet="off" desliga preenchimento automático-->
         
         <fieldset>      <!-- Agrupa dados semelhantes-->
@@ -49,14 +51,22 @@
                 O 'id' é usado pelo javascript.    
             -->
                 <!-- size determina o tamanho em caracteres-->
-            <input type="text" name="nome" id="nome" size="3"> <!-- cria um elemento para o formulário (type="text" para elemento de texto)-->
+            <input type="text" name="nome" id="nome" size="3" autocomplete="username"> <!-- cria um elemento para o formulário (type="text" para elemento de texto)
+            'autocomplete="username"' sugere apenas nome de usuário
+            -->
             <!-- size determina o tamanho em caracteres-->
             <br>
-            <label for="pais">Nacionalidade:</label>
-            <input type="text" name="pais" id="pais">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required autocomplete="current-password">  <!-- ' required' não permite enviar o formulario com o campo vazio.
+            'autocomplete="current-password"' permite preenchimento automático apenas com senhas.
+            -->
             <br>
             <label for="nasc">Data de nascimento:</label>
             <input class="nascimento" type="date" name="nasc" id="nasc">
+            <br>
+            <!-- ao apertar o botão, as informações são enviadas para a página 'destino.php'-->
+            <input type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
+            <input type="reset" value="limpar">     <!-- apaga as informações dos formulários-->
 
         </fieldset>
         
