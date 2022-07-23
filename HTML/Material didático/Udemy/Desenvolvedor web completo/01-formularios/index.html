@@ -63,18 +63,22 @@
         </div> 
         <div>
             <p>input:time</p>
-            <label for="ihora">período:</label>
+            <label for="ihora">hora:</label>
             <input type="time" name="hora" id="ihora" value="23:30">   <!-- 'value' mostra o horário informado-->
         </div>
         <div>
             <p>input:tel</p>
             <label for="telefone">Digite o telefone:</label>
-            <input type="tel" name="telefone" id="telefone" maxlength="10" placeholder="E-mail">   <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos. 'type="tel"' quando acessado pelo celular, o teclado do mostra apenas números-->
+            <input type="tel" name="telefone" id="telefone" maxlength="10" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}$" required>   
+            <!-- 'maxlength' determina a quantidade máxima de caracteres que podem ser insiridos. 'type="tel"' quando acessado pelo celular, o teclado do mostra apenas números.
+            'pattern' configura uma expressão regular (RegEx).
+            autocomplete="tel" completa com os contatos do celular.
+        -->
         </div> 
         <div>
             <p>input:password</p>
             <label for="pass">Digite uma senha:</label>
-            <input type="password" name="senha" id="pass" required>     <!-- 'required' torna o preenchimento do campo obrigatório-->
+            <input type="password" name="senha" id="pass" required placeholder="senha">     <!-- 'required' torna o preenchimento do campo obrigatório-->
         </div> 
         <div>
             <p>input:url</p>
