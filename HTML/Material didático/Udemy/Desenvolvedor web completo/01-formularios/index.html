@@ -155,7 +155,7 @@
         <div>
             <p>input:color</p>
             <label for="cor">escolha sua cor favorita: </label>
-            <input type="color" name="cor" id="cor">
+            <input type="color" name="cor" id="cor" value="#008000">
         </div>
         <div>
             <p>input:search</p>         <!-- tipo 'serach' é uma tag semântica-->
@@ -167,6 +167,12 @@
             <p>textarea</p>         <!-- cria uma barra de rolagem automaticamente-->
             <label for="obs">Observações:<br></label>
             <textarea name="observacao" id="obs" cols="10" rows="3"></textarea>
+        </div>
+
+        <div>
+            <p>File</p>                 <!-- para usar esse formulário, 'method' precisa ser POST, e não GET.-->    
+            <label for="ifoto">Escolha uma foto;</label>
+            <input type="file" name="foto" id="ifoto">
         </div>
 
         <div>
