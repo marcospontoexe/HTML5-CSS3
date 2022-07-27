@@ -115,29 +115,33 @@
             <p>select</p>
             Estado: <br> <!-- lista suspensa-->
             <select name="estado" id="estado">
-                <option value="pr">Paraná</option>
-                <option value="sc" selected>Santa Catarina</option>     <!-- 'selected' faz esta 'option' virar o padrão da lista    -->
-                <option value="bh">Bahia</option>
-                <option value="ac">Acre</option>
-                <option value="am">Amazonas</option>
+                <optgroup label="Região Sul">
+                    <option value="pr">Paraná</option>
+                    <option value="sc" selected>Santa Catarina</option>
+                </optgroup>     <!-- 'selected' faz esta 'option' virar o padrão da lista    -->
+                <optgroup label="Região Norte">
+                    <option value="bh">Bahia</option>
+                    <option value="ac">Acre</option>
+                    <option value="am">Amazonas</option>
+                </optgroup>
             </select>       
             
         </div> 
         <div>
-            <p>list</p>
+            <p>data list</p>
             <label for="itens">Selecione um produto:</label>
             <input type="text" list="produtos" name="itens" id="itens">
 
             <datalist id="produtos">
-                <option value="tv"></option>
-                <option value="tambor"></option>
-                <option value="tigela"></option>
-                <option value="aquecedor"></option>
-                <option value="armário"></option>
-                <option value="aspirador"></option>
-                <option value="maçaneta"></option>
-                <option value="martelo"></option>
-                <option value="mixer"></option>
+                <option value="eletro-doméstico">tv</option>
+                <option value="instrumento musical">tambor</option>
+                <option value="cozinha">tigela</option>
+                <option value="eletro-doméstico">aquecedor</option>
+                <option value="móveis">armário</option>
+                <option value="eletro-doméstico">aspirador</option>
+                <option value="construção">maçaneta</option>
+                <option value="ferramenta">martelo</option>
+                <option value="eletro-doméstico">mixer</option>
             </datalist>
         </div>
         <div>
@@ -166,7 +170,7 @@
         <div>
             <p>textarea</p>         <!-- cria uma barra de rolagem automaticamente-->
             <label for="obs">Observações:<br></label>
-            <textarea name="observacao" id="obs" cols="10" rows="3"></textarea>
+            <textarea name="observacao" id="obs" cols="10" rows="3"></textarea>     <!-- Usar method="post", quando usar mais de 3 mil caracteres-->
         </div>
 
         <div>
