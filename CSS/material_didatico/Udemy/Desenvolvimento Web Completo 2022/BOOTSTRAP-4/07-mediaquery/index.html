@@ -21,7 +21,8 @@
 
       }
       p{
-        
+        text-align: center;
+        line-height: 50vh;
         color: antiquewhite;
       }
       /************************************************/ 
@@ -35,21 +36,33 @@
           background-color: #ff6060;
       
         } 
+        #small, #medium, #extraLarge, #large{
+          display: none;
+        }
       }
 
       
       @media (min-width: 576px) and (max-width: 767.98px)   /* Small devices (landscape phones, 576px and up) */
-      { body{
+      { 
+        body{
           background-color: #550e0e;
 
         } 
+        #extraSmall, #medium, #extraLarge, #large{
+          display: none;
+        }
       }
 
       @media (min-width: 768px) and (max-width: 991.98px)     /* Medium devices (tablets, 768px and up)   */
-      { body{
+      { 
+        body{
           background-color: #080622;
 
-        } }
+        } 
+        #extraSmall, #small, #extraLarge, #large{
+          display: none;
+        }
+      }
 
      
       @media (min-width: 992px) and (max-width: 1199.98px)         /* Large devices (desktops, 992px and up) */
@@ -58,6 +71,9 @@
           background-color: #0e0863;
 
         } 
+        #extraSmall, #small, #medium, #extraLarge{
+          display: none;
+        }
       }
 
       
@@ -67,6 +83,9 @@
           background-color: #1e1599;
 
         } 
+        #extraSmall, #small, #medium, #large{
+          display: none;
+        }
       }
 
     </style>
@@ -74,7 +93,12 @@
   </head>
 
   <body>
-  
+    <p id="extraSmall">Tela menor que 576 pixel!</p>
+    <p id="small">Tela maior que 576 pixel e moner que 767 pixe!</p>
+    <p id="medium">Tela maior que 767 pixel e moner que 992 pixe!</p>
+    <p id="large">Tela maior que 992 pixel e moner que 1200 pixe!</p>
+    <p id="extraLarge">Tela maior que 1200 pixel!</p>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
