@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
 
-    <title>Bootstrap - breakpoints</title>
+    <title>Breakpoints</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,60 +11,70 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <style type="text/css">
+    <style>   /* CSS padrão*/
+      body{
+        width: 600px;
+        height: 80vh;
+        margin: auto;
+        border: 1px solid black;
+        background-color: #ff0000;
+
+      }
+      p{
         
-        /*Small devices (landscape phones)*/
-        @media () {}
+        color: antiquewhite;
+      }
+      /************************************************/ 
+      /* CONFIGURAÇÃO DE BREAKPOINTS*/
+      /* Breakpoints são pontos onde ocorrem mudanças*/
+      /*************************************************/
+      
+      @media (max-width: 575.98px)  /* Extra small devices (portrait phones, less than 576px) */
+      { 
+        body{
+          background-color: #ff6060;
+      
+        } 
+      }
 
-        /*Medium devices (tablets, 768px e superior)*/
-        @media () {}
+      
+      @media (min-width: 576px) and (max-width: 767.98px)   /* Small devices (landscape phones, 576px and up) */
+      { body{
+          background-color: #550e0e;
 
-        /*Large devices (desktops, 992px e superior)*/
-        @media () {}
+        } 
+      }
 
-        /*Extra large devices (large desktops, 1200px e superior)*/
-        @media () {}
+      @media (min-width: 768px) and (max-width: 991.98px)     /* Medium devices (tablets, 768px and up)   */
+      { body{
+          background-color: #080622;
 
+        } }
 
+     
+      @media (min-width: 992px) and (max-width: 1199.98px)         /* Large devices (desktops, 992px and up) */
+      { 
+        body{
+          background-color: #0e0863;
 
-        /**************************/
-        /* Extra small devices (portraint phones) */
-        @media () {}
+        } 
+      }
 
-        /* Small devices (Landscape Phones) */
-        @media () {}
+      
+      @media (min-width: 1200px)    /* Extra large devices (large desktops, 1200px and up) */
+      { 
+        body{
+          background-color: #1e1599;
 
-        /* Medium devices (Tablets) */
-        @media () {}
-
-        /* Large devices (Desktops) */
-        @media () {}
-
-
-
-        /******************************************/
-        /*Extra small devices (portrait phones, menor que 576px)*/
-        @media () {}
-
-        /*Small devices (landscape phones, 576px e maiores)*/
-        @media () and () {}
-
-        /*Medium devices (tablets, 768px e maiores)*/
-        @media () and () {}
-
-        /*Large devices (desktops, 992px e maiores)*/
-        @media () and () {}
-
-        /*Extra large devices (large desktops, 1200px  e maiores)*/
-        @media () {}
+        } 
+      }
 
     </style>
 
   </head>
 
-  <body style="margin-bottom: 200px; width: 600px; margin: 0 auto;">
-
-
+  <body>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
