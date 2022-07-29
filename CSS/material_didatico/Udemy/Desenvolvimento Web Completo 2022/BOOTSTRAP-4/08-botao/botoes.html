@@ -22,15 +22,24 @@
     btn-warning, btn-danger, btn-light, btn-dark, btn-link
     -->
     <h3>Botões</h3>
-    <button class="btn btn-dark" type="button">Clique</button>
+    <button class="btn btn-primary text-danger" type="button">btn-primary</button>
+    <button class="btn btn-secondary" type="button">btn-secondary</button>
+    <button class="btn btn-success" type="button">btn-success</button>
+    <button class="btn btn-info" type="button">btn-info</button>
+    <button class="btn btn-warning" type="button">btn-warning</button>
+    <button class="btn btn-danger" type="button">btn-danger</button>
+    <button class="btn btn-light" type="button">btn-light</button>
+    <button class="btn btn-dark" type="button">btn-dark</button>
+    <button class="btn btn-link" type="button">btn-link</button>
+
 
     <h3>Botões com diferentes tags</h3>
     <a class="btn btn-info" href="#">Link</a>
     <button class="btn btn-info" type="submit">Submit</button>
-    <input class="btn btn-info" type="button" value="Button">
-    <input class="btn btn-info" type="submit" value="Input Submit">
-    <input class="btn btn-info" type="reset" value="Reset">
-
+    <input class="btn btn-info" type="button" value="input:button">
+    <input class="btn btn-info" type="submit" value="input:Submit">
+    <input class="btn btn-info" type="reset" value="input:reset">
+   
     <!-- Botoes com contorno
     btn-outline-<formato>
     -->
@@ -58,7 +67,7 @@
     <button class="btn btn-success" type="button" data-toggle="button">Alternar</button>
 
     <h3>Grupos de botões - horizontal</h3>
-    <div class="btn-group">
+    <div class="btn-group">     <!-- cria um grupo de botões -->
         <button class="btn btn-info" type="button">Esquerda</button>
         <button class="btn btn-info" type="button">Centro</button>
         <button class="btn btn-info" type="button">Direita</button>
@@ -92,8 +101,9 @@
         </button>
         <div class="dropdown-menu">
             <a href="#" class="dropdown-item">Link 1</a>
-            <div class="dropdown-divider"></div>
+            <div class="dropdown-divider"></div>            <!-- cria uma linha divisória entre os botões -->
             <a href="#" class="dropdown-item">Link 2</a>
+            <div class="dropdown-divider"></div>            <!-- cria uma linha divisória entre os botões -->
             <a href="#" class="dropdown-item">Link 3</a>
         </div>
     </div>
