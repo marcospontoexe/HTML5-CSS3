@@ -24,6 +24,7 @@
         text-align: center;
         line-height: 50vh;
         color: antiquewhite;
+        display: none;
       }
       /************************************************/ 
       /* CONFIGURAÇÃO DE BREAKPOINTS*/
@@ -36,8 +37,8 @@
           background-color: #ff6060;
       
         } 
-        #small, #medium, #extraLarge, #large{
-          display: none;
+        #extraSmall{
+          display: block;
         }
       }
 
@@ -48,8 +49,8 @@
           background-color: #550e0e;
 
         } 
-        #extraSmall, #medium, #extraLarge, #large{
-          display: none;
+        #small{
+          display: block;
         }
       }
 
@@ -59,8 +60,8 @@
           background-color: #080622;
 
         } 
-        #extraSmall, #small, #extraLarge, #large{
-          display: none;
+        #medium{
+          display: block;
         }
       }
 
@@ -71,8 +72,8 @@
           background-color: #0e0863;
 
         } 
-        #extraSmall, #small, #medium, #extraLarge{
-          display: none;
+        #large{
+          display: block;
         }
       }
 
@@ -83,8 +84,8 @@
           background-color: #1e1599;
 
         } 
-        #extraSmall, #small, #medium, #large{
-          display: none;
+        #extraLarge{
+          display: block;
         }
       }
 
@@ -94,9 +95,9 @@
 
   <body>
     <p id="extraSmall">Tela menor que 576 pixel!</p>
-    <p id="small">Tela maior que 576 pixel e moner que 767 pixe!</p>
-    <p id="medium">Tela maior que 767 pixel e moner que 992 pixe!</p>
-    <p id="large">Tela maior que 992 pixel e moner que 1200 pixe!</p>
+    <p id="small">Tela maior que 576 pixel e menor que 767 pixe!</p>
+    <p id="medium">Tela maior que 767 pixel e menor que 992 pixe!</p>
+    <p id="large">Tela maior que 992 pixel e menor que 1200 pixe!</p>
     <p id="extraLarge">Tela maior que 1200 pixel!</p>
 
 
