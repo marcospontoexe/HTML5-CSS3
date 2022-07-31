@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário com javascript</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>      <!-- Agrupa dados semelhantes-->
+            <legend>Usando JavaScrip para atualizar o "output"</legend>          <!-- legenda do field set-->
+            <p>
+                <label for="in1">Número 1:</label>
+                <input type="number" name="n1" id="in1" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">  <!-- quando inserir um valor no input:number, o output "isoma" recebe a soma de n1 e n2-->
+            </p>
+            <p>
+                <label for="in2">Número 2:</label>
+                <input type="number" name="n2" id="in2" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">  <!-- quando inserir um valor no input:number, o output "isoma" recebe a soma de n1 e n2-->
+            </p>
+            <p>
+                <label for="isoma">soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+    <form action="valorRange.php" method="get">
+        <fieldset>
+            <legend>Usando JS para atualizar o output do "input:range"</legend>
+            <p>
+                <label for="inum">Selecione um valor:</label>
+                <input type="range" name="num" id="inum" value="0"
+                oninput="ivalorRange.innerHTML = Number(inum.value)">
+                <output name="valorRange" id="ivalorRange">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar"
+                onclick="ivalorRange.innerHTML = 0">
+            </p>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
