@@ -16,21 +16,60 @@
   <body>
 
     <!-- Navegação
-    Tipos de navegação:
-        nav-pills
-        nav-tabs
-    opções de alinhamento: 
-        justify-content-center 
-        justify-content-end
-        flex-column
-    -->
-    <h2>Navegação simples / abas</h2>
-    
+    Tipos de navegação (usada na tag ul):
+        nav-pills   (junto com 'active', deixa a aba selecionada arredondada )
+        nav-tabs    (altera o modo da aba selecionada)
+    opções de alinhamento  (usada na tag ul): 
+        justify-content-center  (centraliza o menu de navegação)
+        justify-content-end     (posiciona o menu de navegação para a direita)
+        flex-column             (deixa as abas na vertical)
+    configurações das abas (asada na tag li)
+        active   (deixa a aba ativada)
+    configurações do link (asada na tag a)
+        disabled    (desativa o link)
+    -->  
 
     <h2>Barra de navegação simples</h2>
+
+    <ul class="nav nav-tabs justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Serviçoes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contato</a>
+      </li>
+    </ul>
     
 
     <h2>Barra de navegação com menu responsivo</h2>
+    <!--
+      OPÇÕES PARA A TAG nav:
+        navbar-expand: sm, md, lg, xl
+        navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
+        bg-dark define a cor de fundo da tag nav (light ou dark)
+    -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">   
+      <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
+      <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+
+      </ul>
+
+    </nav>
     
 
 
