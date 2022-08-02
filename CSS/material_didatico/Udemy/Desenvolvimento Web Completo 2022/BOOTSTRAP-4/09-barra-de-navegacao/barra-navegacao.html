@@ -61,8 +61,12 @@
           navbar-expand: sm, md, lg, xl
           navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
           bg-dark define a cor de fundo da tag nav (light ou dark)
+        Cores
+          opções: bg-primary, bg-secondary, bg-success, bg-info,
+          bg-warning, bg-danger, bg-light, bg-dark
+    
       -->
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
         <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
           <li class="nav-item">
@@ -163,24 +167,88 @@
     <div class="tela">
       <h2>Barra de navegação com menu dropdown</h2>
 
-    </div>
-    
-    
-    <!--Cores
-    opções: bg-primary, bg-secondary, bg-success, bg-info,
-    bg-warning, bg-danger, bg-light, bg-dark
-    -->
-    <h2>Cores</h2>
-    
+      <!--
+        OPÇÕES PARA A TAG nav:
+          navbar-expand: sm, md, lg, xl
+          navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
+          bg-dark define a cor de fundo da tag nav (light ou dark)
+      -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- LOGOTIPO -->
+        <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
+        <!-- MENU HAMBURGUER -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo2">  <!-- Menu hamburguer-->
+          <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
+          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav-->
+        </button>
+        <!-- NAVEGAÇÃO -->
+        <div class="collapse navbar-collapse" id="alvo2">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
+          <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+            <li class="nav-item dropdown">    <!-- o 'dropdown' cria submenus-->
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home</a>   <!-- o dropdown-toggle ativa a opção (flexa) para mostrar ou esconder os submenus.
+              data-toggle="dropdown" faz mostrar ou esconder os submenus.
+              -->
+              <div class="dropdown-menu">     <!-- configura a exibição dos submenus dropdown-->
+                <a class="dropdown-item" href="#">Home 1</a>
+                <a class="dropdown-item" href="#">Home 2</a>
+                <a class="dropdown-item" href="#">Home 3</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Contato</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Contato 1</a>
+                <a class="dropdown-item" href="#">Contato 2</a>
+                <a class="dropdown-item" href="#">Contato 3</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+         
+        </div>
+        
+      </nav>
+
+
+    </div>    
 
     <!--Alinhamentos
     opções: fixed-top, fixed-bottom, sticky
     -->
     <h2>Alinhamentos</h2>
+     
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">  <!-- fixed-top fixa a barra no topo (fixed-bottom fixa no rodapé)-->
+      <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
+      <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+      </ul>
+    </nav>
     
 
     <h1>Lorem ipsum dolor sit amet</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
 
 
     <!-- Optional JavaScript -->
