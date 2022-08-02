@@ -87,11 +87,14 @@
           bg-dark define a cor de fundo da tag nav (light ou dark)
       -->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- LOGOTIPO -->
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
+        <!-- MENU HAMBURGUER -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo">  <!-- Menu hamburguer-->
           <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
           <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav-->
         </button>
+        <!-- NAVEGAÇÃO -->
         <div class="collapse navbar-collapse" id="alvo">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
           <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
             <li class="nav-item">
@@ -104,13 +107,54 @@
               <a class="nav-link" href="#">Sobre</a>
             </li>
           </ul>
+          
         </div>
+        
       </nav>
 
     </div>
 
     <div class="tela">
       <h2>Barra de navegação com formulário</h2>
+
+      <!--
+        OPÇÕES PARA A TAG nav:
+          navbar-expand: sm, md, lg, xl
+          navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
+          bg-dark define a cor de fundo da tag nav (light ou dark)
+      -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- LOGOTIPO -->
+        <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
+        <!-- MENU HAMBURGUER -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo2">  <!-- Menu hamburguer-->
+          <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
+          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav-->
+        </button>
+        <!-- NAVEGAÇÃO -->
+        <div class="collapse navbar-collapse" id="alvo2">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
+          <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+          <!-- FORMULÁRIO -->
+          <form class="form-inline">
+            <input type="text" class="form-control" placeholder="Pesquisar">
+            <button class="btn btn-outline-success">ok</button>
+
+          </form>
+        </div>
+        
+      </nav>
+
+      
 
     </div>
     
