@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* estilo usado para impressoras */
+
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 10px;        /* elimina a margem de todos os elementos*/
+    padding: 10px;       /* elimina o pad de todos os elementos*/
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;         /* Fonte mono espaçada e com serifa é melhor para ler no papel*/
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;          /* não faz sentido ter links na folha de papel */
+}
+
+
+article::after{
+    content: 'Esse artigo foi impresso atraves do site noticias.com.br';
+}
