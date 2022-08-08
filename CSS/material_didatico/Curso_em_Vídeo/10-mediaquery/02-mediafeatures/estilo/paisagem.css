@@ -7,3 +7,12 @@
     margin: 0px;        /* elimina a margem de todos os elementos*/
     padding: 0px;       /* elimina o pad de todos os elementos*/
 }
+
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
+
+#paisagem{
+    display: inline;
+}
