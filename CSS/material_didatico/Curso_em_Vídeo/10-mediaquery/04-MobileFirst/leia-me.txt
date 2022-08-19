@@ -1,0 +1,2 @@
+técnica usada em que o projeto é desenvolvido primeiramente para telas de smartphone, 
+e depois para telas maiores

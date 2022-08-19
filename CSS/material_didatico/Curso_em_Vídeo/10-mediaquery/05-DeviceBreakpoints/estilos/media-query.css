@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* estilo para todas as demais mídias */
+
+/* TYpical Devices Breakpoints
+recomendações do W3C;
+Telas pequenas: até 600px
+Smartphone:     de 601px até 768px
+Tablet:         de 769 até 992px 
+Desktop:        de 993 até 1200px
+Telas Grandes:  acima de 1200px
+
+*/
+
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+    
+
+/* as configurações para pequenas telas e smartphone já foram criadas na CSS 'Mobile First'*/
+
+@media print{   /* Media feature para impressão*/
+    /* desnecessário usar imagem de background, no papel não funciona*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    #print{    display: block;  }
+    #phone{    display: none;  }
+    #tablet{    display: none;  }
+    #pc{    display: none;  }
+    #tv{    display: none;  }
+
+    main{
+        width: 90vw;    /* impressão com 90% da largura do papel */
+    }
+
+    main::after{
+        content: "Impressão feita pelo site www.site.com.br";
+        text-decoration: overline;
+        font-size: 0.5em;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){    /* Media feature para tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    
+    }
+
+    #print{    display: none;  }
+    #phone{    display: none;  }
+    #tablet{    display: block;  }
+    #pc{    display: none;  }
+    #tv{    display: none;  }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){    /* Media feature para desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    
+    }
+
+    #print{    display: none;  }
+    #phone{    display: none;  }
+    #tablet{    display: none;  }
+    #pc{    display: block;  }
+    #tv{    display: none;  }
+    
+}
+
+@media screen and (min-width: 1200px){    /* Media feature para telas grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    
+    }
+
+    #print{    display: none;  }
+    #phone{    display: none;  }
+    #tablet{    display: none;  }
+    #pc{    display: none;  }
+    #tv{    display: block;  }
+    
+}

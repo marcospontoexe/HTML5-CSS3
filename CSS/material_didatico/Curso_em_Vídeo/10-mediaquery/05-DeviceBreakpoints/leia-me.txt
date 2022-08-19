@@ -1,0 +1,1 @@
+Usado para definir o tamanho de telas (smarphone, tablet, tv, pc...)
