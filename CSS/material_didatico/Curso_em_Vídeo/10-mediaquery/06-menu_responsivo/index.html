@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
+    <!-- https://fonts.google.com/icons?selected=Material+Icons&icon.style=Sharp -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  <!-- google icons -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="hamburguer" class="material-icons" onclick="clickMenu()">menu</span>        <!-- ícone de menu, importado do google icons -->
+        <menu id="itens">
             <ul>
                 <li>
                     <a href="#">Opção 1</a>
@@ -46,6 +49,17 @@
     <footer>
 
     </footer>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == "block"){
+                itens.style.display = "none"
+            }
+            else{
+                itens.style.display = "block"
+            }
+        }
+    </script>
 
 </body>
 </html>

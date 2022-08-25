@@ -20,8 +20,23 @@ header > h1{
     text-align: center;
 }
 
-menu{
+#hamburguer{
+    background-color: rgb(71, 71, 71);
+    color: white;
     display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#hamburguer:hover{
+    background-color: rgb(107, 107, 107);
+    color: black;
+}
+
+menu{
+    display: none;
 }
 
 menu li{
