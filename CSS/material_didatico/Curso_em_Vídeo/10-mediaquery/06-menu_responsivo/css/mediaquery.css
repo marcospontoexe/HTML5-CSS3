@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* estilo genérico, para demais telas */
+
+
+/* TYpical Devices Breakpoints
+recomendações do W3C;
+Telas pequenas: até 600px
+Smartphone:     de 601px até 768px
+Tablet:         de 769 até 992px 
+Desktop:        de 993 até 1200px
+Telas Grandes:  acima de 1200px
+
+*/
+
+
+*{      /* siguinifica todos elementos (h1, h2, h3...h8, p, main, footer...) */
+    margin: 0px;        /* elimina a margem de todos os elementos*/
+    padding: 0px;       /* elimina o pad de todos os elementos*/
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+    
+
+/* as configurações para pequenas telas e smartphone já foram criadas na CSS 'Mobile First'*/
+
+@media screen and (min-width: 768px) {  /* media features para telas acima de 768px (tela de tablet )*/
+    #hamburguer{
+        display: none;          /* esconde o menu hamburguer */
+    }
+
+    #itens{
+        display: block;         /* mostra os menus */
+    }
+
+    #itens li{
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+    
+}
