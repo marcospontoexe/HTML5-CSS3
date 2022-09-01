@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilo para Mobile First */
+
+:root{      /* declaração de variáveis*/
+    --cor_1: #49a09d;
+    --cor_2: #5f2c82;   
+    
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
