@@ -9,8 +9,49 @@
 }
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;         /* a borda faz parte da conta de largura da tela*/
 }
 
+body, html{
+    background-color: var(--cor_2);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;   /* não deixa vazar coisas das boxes filhas*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+}
+
+#imagem{
+    background-color: var(--cor_2);
+    background-image: url(../imagens/akyurt.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+#formulario{
+    display: block;
+    padding: 10px;
+
+}
