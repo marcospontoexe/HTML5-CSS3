@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-/* Estilo para Mobile First */
+/* Estilo para Mobile */
 
 :root{      /* declaração de variáveis*/
-    --cor_1: #49a09d;
-    --cor_2: #5f2c82;   
+    --cor_1: rgb(44, 44, 44);
+    --cor_2: rgb(94, 94, 94);   
     
 }
 
@@ -13,10 +13,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;         /* a borda faz parte da conta de largura da tela*/
+    
 }
 
 body, html{
-    background-color: var(--cor_2);
+    background-color: var(--cor_1);
     height: 100vh;
     width: 100vw;
 }
@@ -39,6 +40,9 @@ main{
     border-radius: 20px;
     overflow: hidden;   /* não deixa vazar coisas das boxes filhas*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+
+    transition: width .3s, height .3s;          /* causa uma transição (animação) na variação da temanho da box*/
+    transition-timing-function: ease;           /* deixa a transição mais suave */
 }
 
 #imagem{
