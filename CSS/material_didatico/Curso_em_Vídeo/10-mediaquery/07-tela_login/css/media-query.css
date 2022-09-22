@@ -66,6 +66,15 @@ Telas Grandes:  acima de 1200px
         width: 50vw;
         
     }
+
+    #formulario h1{
+        font-size: 2em;
+    
+    }
+    
+    #formulário p{
+        font-size: 1.2em;
+    }
     
 }
 
