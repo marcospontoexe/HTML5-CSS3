@@ -61,6 +61,10 @@ main{
 
 }
 
+fieldset{
+    padding: 10px;
+}
+
 #formulario h1{
     text-align: center;
     margin-bottom: 10px;
@@ -69,4 +73,52 @@ main{
 
 #formulário p{
     font-size: 0.8em;
+}
+
+form input[type=submit]{       /* configurações do botão submit do formulário*/
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: var(--cor_1);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+form input[type=submit]:hover{
+    background-color: var(--cor_2);
+    
+}
+
+#ilogin{
+    width: 60%;
+}
+
+#isenha{
+    width: 60%;
+}
+
+#esqueciSenha{
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--cor_2);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#esqueciSenha i{ /* alterações no ícone do google icons*/
+    font-size: 0.8em;
+}
+
+#esqueciSenha:hover{
+    background-color: var(--cor_1);
 }
