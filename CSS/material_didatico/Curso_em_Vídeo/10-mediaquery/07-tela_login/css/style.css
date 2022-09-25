@@ -4,7 +4,9 @@
 
 :root{      /* declaração de variáveis*/
     --cor_1: rgb(44, 44, 44);
-    --cor_2: rgb(94, 94, 94);   
+    --cor_2: rgb(94, 94, 94);  
+    --cor_3: rgba(116, 116, 116, 0.658); 
+    
     
 }
 
@@ -36,7 +38,7 @@ main{
     transform: translate(-50%, -50%);    
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 480px;
     border-radius: 20px;
     overflow: hidden;   /* não deixa vazar coisas das boxes filhas*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
@@ -63,6 +65,8 @@ main{
 
 fieldset{
     padding: 10px;
+    background-color: var(--cor_3);
+    border-radius: 10px;
 }
 
 #formulario h1{
@@ -71,8 +75,22 @@ fieldset{
 
 }
 
-#formulário p{
+#formulario p{
     font-size: 0.8em;
+    margin-bottom: 10px;
+    
+}
+#formulario fieldset p{
+    background-color: var(--cor_3);
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+#formulario form span{ /* alterações no ícone do google icons*/
+    font-size: 1em;
+    
 }
 
 form input[type=submit]{       /* configurações do botão submit do formulário*/
@@ -95,11 +113,14 @@ form input[type=submit]:hover{
 }
 
 #ilogin{
-    width: 60%;
+    width:auto;
+    border-radius: 10px none;
+   
 }
 
 #isenha{
-    width: 60%;
+    width: auto;
+    border-radius: 10px none;
 }
 
 #esqueciSenha{
@@ -112,12 +133,11 @@ form input[type=submit]:hover{
     color: black;
     background-color: var(--cor_2);
     margin-top: 10px;
+    padding-top: 5px;
     border-radius: 5px;
 }
 
-#esqueciSenha i{ /* alterações no ícone do google icons*/
-    font-size: 0.8em;
-}
+
 
 #esqueciSenha:hover{
     background-color: var(--cor_1);
