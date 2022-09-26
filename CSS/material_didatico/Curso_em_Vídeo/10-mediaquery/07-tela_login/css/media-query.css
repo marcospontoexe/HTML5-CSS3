@@ -31,6 +31,7 @@ Telas Grandes:  acima de 1200px
 
     #login{
         width: 80vw;
+        height: 265px;
     }
 
     #imagem{
@@ -45,6 +46,8 @@ Telas Grandes:  acima de 1200px
         
     }
 
+    
+
 }
 
 @media screen and (min-width: 993px){    /* Media feature para telas maiores q 990px*/
@@ -54,6 +57,7 @@ Telas Grandes:  acima de 1200px
 
     #login{
         width: 990px;
+        height: 290px;
     }
     #imagem{
         float: left;
