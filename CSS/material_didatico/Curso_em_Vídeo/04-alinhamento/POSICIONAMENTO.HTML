@@ -22,9 +22,16 @@
             cursor: pointer;        /* muda o ponteiro do mouse quando passa em cima da box*/
            
         }
-        #box{
+        #p1{
             background-color: rgb(243, 108, 108);
             overflow: hidden;   /* elimina a distinção entre a flutuação das caixas fultuantes e sua box pai, mantendo tudo numa mesma delimitação*/
+        }
+        #p2{
+            background-color: rgb(243, 108, 108);
+            
+        }
+        .paragrafo{
+            clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
         }
         #a{
             float: left;        /* flutua a box à esquerda, e a frente da box pai*/
@@ -35,7 +42,7 @@
             background-color: rgb(43, 226, 89);
         }
         #c{
-            float: right;        /* flutua a box à esquerda, e a frente da box pai*/
+            float: right;        /* flutua a box à direita, e a frente da box pai*/
             background-color: rgb(255, 0, 76);
             width: 52%;         /* quando os elementos flutuantes excedem o tamanho da box pai, ele ficam um em baixo do outro*/
         }   
@@ -45,7 +52,7 @@
             width: 50%;
         }
         #e{
-            position: relative;         /* permite transladar um box sem alterar o posicionamneto das de mais*/
+            position: relative;         /* permite transladar um box sem alterar o posicionamneto das de mais itens (posicionamneto não flutuante)*/
             background-color: rgb(226, 43, 217);        
             top: 100px;   /* distância da âncora do conteudo em relação à margem esquerda do container*/
             left: 50px;
@@ -57,12 +64,12 @@
             
         }
         #g{
-            position: absolute;         /* se posiciona em relação à tela*/
+            position: absolute;         /* se posiciona em relação à tela (posicionamneto flutuante)*/
             right: 0;                   /* posiciona a box para a direita, em relação à tela*/
             background-color: rgb(255, 0, 76);
         }
         #h{
-            position: relative;                 /* qualquer valor diferente de 'static' irá ancorar o posicionamento de qualquer box filha que tenha posicionamento 'absolute'*/
+            position: relative;   /* qualquer valor diferente de 'static' irá ancorar o posicionamento de qualquer box filha que tenha posicionamento 'absolute'*/
             background-color: rgb(255, 220, 21);
         }
         #i{            
@@ -70,7 +77,7 @@
             width: 50px;
             margin: 0px;
             background-color: rgb(43, 226, 89);
-            line-height: 50px;     /* deixa a margem da palavra com 200px */
+            line-height: 50px;     /* deixa a margem da palavra com 50px */
 
             position: absolute;         /* se posiciona em relação à tela, ou à box pai caso essa seja position: relative;*/
             left: 50%;                  /* cira uma distância de 50% da posição 'relative' para a âncora do lado esquerdo da div*/
@@ -79,9 +86,7 @@
             transform: translate(-50%, -50%);
         }
        
-        .paragrafo{
-            clear: both;        /* caso tenha algum elemento flutuando à esquerda ou direita, limpa o contexto e fica a baixo dos elementos flutuantes*/
-        }
+        
     </style>
 </head>
 <body>
@@ -89,7 +94,8 @@
         <h1>Exemplo de posicionamento de box com uso de 'float:'</h1>
         <div id="a">DIV A</div>
         <div id="b">DIV B</div>
-        <p id="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
+        <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
+        <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nobis cum unde fugit a ipsum suscipit in soluta asperiores! Consequatur fugiat, porro possimus accusantium odio soluta animi vel esse ad? Lorem ipsum dolor.</p>
         <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nesciunt libero itaque tempora voluptatum placeat voluptate ducimus cumque, asperiores reiciendis voluptatem quas delectus, voluptatibus architecto, reprehenderit velit expedita molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum ullam quae labore eligendi deserunt praesentium error amet facilis ab! Earum numquam sequi excepturi minus quos, amet hic tempora quod?</p>
     </section>
         
