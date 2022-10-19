@@ -21,7 +21,7 @@
         }
 
         table{
-            border-collapse: collapse;      /* para tirar o espaço entre as célular (por padrão é separeted)*/
+            border-collapse: collapse;      /* para tirar o espaço entre as célula (por padrão é separeted)*/
             border: 2px solid black;
             width: 800px;
 
@@ -46,6 +46,7 @@
         
         <thead>
             <tr>
+                <!-- th é sempre título da linha ou coluna-->
                 <th scope="col">grupos</th>            <!-- 'scope="col"' significa que é um título da coluna-->   
                 <th scope="col">nomes</th>
                 <th  scope="colgroup" colspan="3">filmes</th>   <!-- 'scope="colgroup"' significa que é um título de um grupo de colunas mescladas-->  
@@ -54,7 +55,8 @@
 
         <tbody>
             <tr>
-                <td rowspan="3">Mulheres</td>       <!-- 'scope="row"' significa que 'Mulheres' é um título da linha-->  
+                <!-- td é sempre os dados da tabela-->
+                <th rowspan="3" scope="rowgroup">Mulheres</th>       <!-- 'scope="rowgroup"' significa que 'Mulheres' é um título das linhas mescladas-->  
                 <td>Joana se solza</td>
                 <td>Titanic</td>
                 <td>Tróia</td>
@@ -74,7 +76,7 @@
             </tr>
 
             <tr>
-                <td rowspan="3">Homens</td>  
+                <th rowspan="3" scope="rowgroup">Homens</th>  
                 <td>Pedro Souza</td>
                 <td>Exterminador</td>
                 <td>Super man</td>

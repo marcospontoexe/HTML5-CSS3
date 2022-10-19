@@ -25,7 +25,7 @@
         com a página do meu blog</P>
         <p>Pena que iframe não funciona com o alguns sites
             <iframe src="https://www.linkedin.com/in/marcos-daniel-santana/">
-                <!-- Caso o navegado não seja compatível com Iframe, aparece o link a baixo-->
+                <!-- Caso o navegado não seja compatível com Iframe, aparece o link a baixo-->                
                 <a href="https://www.linkedin.com/in/marcos-daniel-santana/" target="_blank">Meu LinkedIn</a>
             </iframe>
         </p>
@@ -56,23 +56,24 @@
         </p>
         <p>esta é a tela escolhida:
             <br>
-            <iframe name="frame" src="" srcdoc="
-            <h1>Escolha uma das opções a cima</h1>
-            "></iframe>
+            <!-- srcdoc permite usar tag de html-->
+            <iframe name="frame" srcdoc="<h1>Escolha uma das opções a cima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique impedit aut sit rerum itaque maiores, accusamus, ullam harum quibusdam quia odit non quidem sapiente laborum ipsum iusto? Debitis, optio.</p>">
+            </iframe>
         </p>
     </div>
     <div>
+        <!-- caso seja colocado um site de terceiro dentro do iframe, e este site foi invadido e está capturando dados dos usuários (ataques cross sites, e xss), essa captura de dados vai capturar dados do seu site também-->
         <p>DIV 4</p>
         <H2>BLOQUEANDO ACESSO EXTERNO A PARTIR DE SITES DE TERCEIROS:</H2>
         <P>Bloqueio desativado. Ao enviar o formulário o acesso a sites de terceiros está desbloqueado no Iframe:</P>
         <iframe src="cadastrar.html"> </iframe>
         <lr>
-        <p>bloquuio ativado. Não é possível enviar dados à pagina de terceiro no Iframe</p>
+        <p>bloquuio ativado. Não é possível enviar dados à pagina de terceiro através do Iframe</p>
         <iframe src="cadastrar.html" sandbox="sandbox" referrerpolicy="no-referrer"> 
         <!--sandbox bloqueia qualquer acesso a site externo via iframe
         outras opções: allow-same-origin | allow-forms | allow-scripts
         -->
-        <!--política de segurança para não ter coleta de dados por sites dentro do iframe-->
+        <!-- "referrerpolicy" é a política de referÊncia para não ter coleta de dados por sites dentro do iframe-->
         </iframe>
          
 
