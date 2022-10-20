@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links </title>
     <style>
+         /*HTML          ->      CSS
+        id              ->      #
+        class           ->      .
+        pseudo-classe   ->      :  (relacionado ao estado de um determinado elemento -> ativo, marcado, desabilitado, vazio...)
+        pseudo-elemento ->      :: (altera o conteudo dos elementos)
+        */
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         main{   
             width: 400px;
-            border: 1px solid black;
+            border: 1px solid rgb(182, 23, 23);
 
         }
         main::after{
@@ -19,7 +25,7 @@
             text-align: center;
             height: 50px;
             width: 50px;
-            background-color: black;
+            background-color: rgba(38, 212, 61, 0.356);
             display: block;
             margin: 10px auto;
             border-radius: 50%;
@@ -66,12 +72,8 @@
         .especial::before{
             content: '♦';      /* cria uma pseudo-elemento*/
         }
-        /*HTML          ->      CSS
-        id              ->      #
-        class           ->      .
-        pseudo-elemento ->      :
-        pseudo-classe   ->      ::
-        */
+        
+        
     </style>
 </head>
 <body>
