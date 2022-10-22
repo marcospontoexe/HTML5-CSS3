@@ -19,6 +19,6 @@ menu{
 }
 
 
-article::after{
+article::after{     /* pseudo elemento do article */
     content: 'Esse artigo foi impresso atraves do site noticias.com.br';
 }
