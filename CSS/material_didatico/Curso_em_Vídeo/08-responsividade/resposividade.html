@@ -21,7 +21,7 @@
             border-radius: 10px;
             margin: auto;           /* configura automaticamente a box main para ficar centralizada na tela*/
 
-            /* quando a largura da tela for menor que 280px (tamanho da tela de celulares antigos 320px menos 40px de pad) a box main se adapta ao tamanho atual da tela*/
+            /* Quando a largura da tela for menor doque "min-widt", a box para de diminuir e aparece a barra de rolagem horizontal*/
             min-width: 280px;
             /* quando a largura da tela for maior que 760px (largura da imagem) a box main se mantém com tamanho fixo de 800px menos os 20px+20px de pad*/
             max-width: 760px;
@@ -29,7 +29,7 @@
         }
 
         img{
-            width: 100%;        /* mantém a imagem ocupando 100% da largura da box onde ela está inserida */
+            width: 100%;        /* mantém a imagem ocupando 100% da largura da box mãe */
         }
 
         div.video{
