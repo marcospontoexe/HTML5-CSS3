@@ -10,66 +10,22 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: darkgray;
             margin: 0px;
-        }
-    
-        h1{
-            box-shadow: inset 5px 3px 7px 1px rgba(63, 124, 255, 0.397);      /*sombra interna. box-shadow: deslocamento horiz, deslocamento vert, blur (borrão) espalhamento (spread), cor da sombra*/
-        }
-
-        header{
-            background-color: white;
-            padding: 10px;
-            margin: 10px;
-        }
-
-        nav{
-            background-color: lightslategray;
-            padding: 10px;
-            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.397);      /*box-shadow: deslocamento horiz, deslocamento vert, blur (borrão) espalhamento (spread), cor da sombra*/
-        }
-
-        nav > a{        /* configuração para todo link (Âncora) contido dentro de nav */
-            text-decoration: none;          /* remove a decoração*/
-            color: white;
-            font-weight: 800;
-        }
-
-        nav > a:hover{      /*config para quando o mouse passa por cima dos links*/
-            text-decoration: underline;
-            margin-right: 30px;     /* cria uma margem para cada box de link (âncora)*/
-        }
-
-        footer > p{    /* configuração apenas para o parágrafo dentro do footer*/
-            margin: 0px;
-        }
-
+        }   
+        
+       
         main{
             background-color: white;
             padding: 10px;
             margin: 10px;
-        }
+        }        
 
-        article{
-            background-color: lightgray;
-            padding: 5px;
-        }
-
-        aside{
-            background-color: rgb(143, 143, 143);
-        }
         
         #asunto{
             background-color: rgb(99, 98, 98);
             border-radius: 3px 15px 3px 15px;            /* configuração de vértices*/
         }
 
-        footer{
-            background-color: black;
-            color: blanchedalmond;
-            padding: 4px;
-            margin: 0px;
-            text-align: center;
-        }
+        
 
         div#bola{
             height: 200px;
@@ -81,52 +37,17 @@
 
     </style>
 </head>
-<body>
-    <!-- As tag <div> e <span> são caixas block-level e inline-level respectivamente, porem não são tags semânticas -->
-    <header>    <!-- conteudo de cabeçalho (busca, menu, apresentação, configuração, login)-->
-        <h1>Título do site</h1>
-        <nav>   <!-- possui os links de navegação pela estrutura de páginas que vão compor o website-->
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-        </nav>
-
-    </header>
-        
+<body>           
     
     <main>      <!-- conteudo principal do site-->
         <section id="asunto">  <!-- Cria seções para sua página-->
             <h2>Esporte | Política | Religião | Putaria</h2>
                        
-        </section>
-
-        <section id="conteudo">
-            <article>
-                <!-- Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um <article> para delimitar um post de blog ou fórum, uma notícia, etc.-->
-                    <h3>ARTIGO</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore libero est doloremque. Reprehenderit tempora dolorem cupiditate hic assumenda, quisquam minus delectus suscipit atque quis aliquam vitae nihil eligendi tenetur.</p>
-
-                <aside>
-                    <!-- Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um determinado texto ou até mesmo no meio dele-->
-                        <h3>ASIDE</h3>
-                        <p>
-                            ASIDE Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo possimus dicta aliquid eos provident, doloribus dolorem saepe ullam quam! In eius perferendis laboriosam non veritatis quae nulla voluptatibus fugit tenetur.
-                        </p>
-
-                </aside>
-            </article>
-
-        </section>
+        </section>      
 
     </main>
 
-    <footer>    <!-- rodapé do site (endereço, telefone, desenvolvedor, links extras)-->
-        <p>Desenvolvido por Marcos Daniel Santana</p>
-
-    </footer>
-
+   
     <div id="bola"></div>
 </body>
 </html>
