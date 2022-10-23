@@ -21,7 +21,7 @@ Telas Grandes:  acima de 1200px
 }
     
 
-/* as configurações para pequenas telas e smartphone já foram criadas na CSS 'Mobile First'*/
+/* as configurações para pequenas telas e smartphone já foram criadas na CSS para 'Mobile First' */
 
 @media print{   /* Media feature para impressão*/
     /* desnecessário usar imagem de background, no papel não funciona*/
