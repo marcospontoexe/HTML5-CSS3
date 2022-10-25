@@ -9,6 +9,9 @@
         p{
             line-height: 10px;
         }
+        div{
+            margin: 10px;
+        }
         #box1{
             width: 300px;
             height: 300px;
@@ -18,8 +21,9 @@
         #box2{
             width: 300px;
             height: 300px;
+            padding: 50px;
             background-color: aqua;
-            box-sizing: border-box;     /*box-sizing */
+            box-sizing: border-box;     /*box-sizing mantém o tamenho da largura e altura fixa, mesma com padding incluso*/
         }
         #box3{
             width: 300px;
@@ -32,15 +36,17 @@
     <div id="box1">
         <p>box de 300x300 px</p>
         <p>com padding de 50px</p>
-        <p>com boxsizing</p>
+        <p>sem boxsizing</p>
     </div>
     <div id="box2">
         <p>box de 300x300 px</p>
         <p>com padding de 50px</p>
-        <p>sem boxsizing</p>
+        <p>com boxsizing</p>
     </div>
     <div id="box3">
         <p>box de 300x300 px</p>
+        <p>sem padding</p>
+        <p>sem boxsizing</p>
     </div>
 </body>
 </html>

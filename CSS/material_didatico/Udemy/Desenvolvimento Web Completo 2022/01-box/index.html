@@ -7,20 +7,25 @@
     <title>Inline, Block, Inline-block</title>
     <style>
         div{
-            width: 600px;
+            min-width: 400px;
+            max-width: 800px;
             border: 1px solid black;
+            margin: 10px auto;
+        }
+        p{
+            margin: 5px;
         }
         .linha{
             border: 1px solid red;
-            display: inline;
+            display: inline;    /* coloca as box na mesma linha*/
         }
         .bloco{
             border: 1px solid red;
-            display: block;
+            display: block;     /* as box ficam uma em baixo da outra, e cada box ocupa 100% da largura da box mãe*/
         }
         .linha-bloco{
             border: 1px solid red;
-            display: inline-block;
+            display: inline-block;     /* tende a deixar as boxes uma em baixo da outra. Caso a box não ocupe 100% da largura da box mãe, ela fica não mesma linha das de mais*/
         }
     </style>
 </head>

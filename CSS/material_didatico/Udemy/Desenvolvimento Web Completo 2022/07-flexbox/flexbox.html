@@ -16,10 +16,10 @@
             flex-wrap: wrap;    /*define quebra de layout*/
 
             justify-content: center;      /*alinhamento horizontal das box*/
-            /* flex-start | flex-end | space | space-between | space-around*/
+            /* center | flex-start | flex-end | space | space-between | space-around*/
              
             align-items: center;      /*alinhamento vertical das box*/
-            /*stretch | center | flex-star | flex-end | baseline(alinha as box em relação à linha base) */
+            /*stretch | center | flex-start | flex-end | baseline(alinha as box em relação à linha base) */
              
         }
 
@@ -33,8 +33,11 @@
 
         #um{
             flex-grow: 1;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
-            /*flex-shrink -> define uma proporção de encolhimento das box filhas*/
+            /*flex-shrink -> define uma proporção de encolhimento das box filhas (funciona com -> flex-wrap: nowrap) */
 
+        }
+        #dois{
+            flex-grow: 3;   /*define um crescimento da box filha proporcional ao tamanho da box pai*/
         }
 
         #tres{
