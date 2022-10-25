@@ -56,6 +56,8 @@ header{
     background-repeat: no-repeat;
     background-size: contain;   /* a imagem ocupa 100% da box pai*/ 
     height: 80%;
+    min-width: 100px;
+    max-width: 150px;
     width: 20%;
 
 }
@@ -70,15 +72,12 @@ nav{
 
 header ul{
     list-style: none;               /* tira os seletores das listas*/
-    width: 100%;
-    height: 100%;
-   
+       
 }
 
 header li{           
     display: inline;
-    width: 80px;  
-    height: 100%;  
+    width: 80px;        
     padding: 10px 15px;
     margin: 0px -3px;
     background-color: red;
@@ -93,7 +92,7 @@ header li{
 
 header a{
     text-decoration: none;       /* tira o sublinhado*/
-    text-align: center;        
+    text-align: center;   
     color: var(--cor_2);
     font-size: 0.8em;
     line-height: 2.1em;
