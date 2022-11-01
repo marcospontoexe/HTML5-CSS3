@@ -31,7 +31,7 @@
         justify-content-center  (centraliza o menu de navegação)
         justify-content-end     (posiciona o menu de navegação para a direita)
         flex-column             (deixa as abas na vertical)
-    configurações das abas (asada na tag li)
+    configurações das abas (usada na tag li)
         active   (deixa a aba ativada)
     configurações do link (asada na tag a)
         disabled    (desativa o link)
@@ -39,7 +39,7 @@
       <h2>Navegação simples / abas</h2>
       <ul class="nav nav-tabs justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sobre</a>
@@ -58,7 +58,7 @@
       
       <!--
         OPÇÕES PARA A TAG nav:
-          navbar-expand: sm, md, lg, xl
+          navbar-expand: sm, md, lg, xl (determina a resposividade em função do tamanho da tela)
           navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
           bg-dark define a cor de fundo da tag nav (light ou dark)
         Cores
@@ -67,8 +67,10 @@
     
       -->
       <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <!-- logo -->
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
-        <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+        <!-- abas -->
+        <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente à direita-->
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -86,7 +88,7 @@
       <h2>Barra de navegação com menu responsivo</h2>
       <!--
         OPÇÕES PARA A TAG nav:
-          navbar-expand: sm, md, lg, xl
+          navbar-expand: sm, md, lg, xl   (determina a resposividade em função do tamanho da tela)
           navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
           bg-dark define a cor de fundo da tag nav (light ou dark)
       -->
@@ -96,7 +98,7 @@
         <!-- MENU HAMBURGUER -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo">  <!-- Menu hamburguer-->
           <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
-          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav-->
+          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav. É o ícone hamburguer-->
         </button>
         <!-- NAVEGAÇÃO -->
         <div class="collapse navbar-collapse" id="alvo">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
@@ -123,7 +125,7 @@
 
       <!--
         OPÇÕES PARA A TAG nav:
-          navbar-expand: sm, md, lg, xl
+          navbar-expand: sm, md, lg, xl   (determina a resposividade em função do tamanho da tela)
           navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
           bg-dark define a cor de fundo da tag nav (light ou dark)
       -->
@@ -133,7 +135,7 @@
         <!-- MENU HAMBURGUER -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo2">  <!-- Menu hamburguer-->
           <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
-          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav-->
+          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav. É o ícone hamburguer -->
         </button>
         <!-- NAVEGAÇÃO -->
         <div class="collapse navbar-collapse" id="alvo2">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
@@ -177,12 +179,12 @@
         <!-- LOGOTIPO -->
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
         <!-- MENU HAMBURGUER -->
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo2">  <!-- Menu hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo3">  <!-- Menu hamburguer-->
           <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
-          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav-->
+          <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav.  É o ícone hamburguer-->
         </button>
         <!-- NAVEGAÇÃO -->
-        <div class="collapse navbar-collapse" id="alvo2">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
+        <div class="collapse navbar-collapse" id="alvo3">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
           <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
             <li class="nav-item dropdown">    <!-- o 'dropdown' cria submenus-->
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home</a>   <!-- o dropdown-toggle ativa a opção (flexa) para mostrar ou esconder os submenus.
@@ -216,11 +218,14 @@
     </div>    
 
     <!--Alinhamentos
-    opções: fixed-top, fixed-bottom, sticky
+    opções:  
+      fixed-top: fixa a barra no topo
+      fixed-bottom: fixa no rodapé
+      sticky-top: deixa a barra de navegação fixa, apenas quando a barra atingue a extremidade superior da tela
     -->
     <h2>Alinhamentos</h2>
      
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">  <!-- fixed-top fixa a barra no topo (fixed-bottom fixa no rodapé)-->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">  
       <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
       <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
         <li class="nav-item">
