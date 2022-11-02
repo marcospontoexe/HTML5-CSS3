@@ -10,6 +10,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        section{
+            width: 400px;
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
 
   </head>
 
@@ -17,13 +24,17 @@
 
     <form>
        
-       <h2>Grupo prepend</h2>
-       <div class="input-group">
-           <div class="input-group-prepend">
-               <span class="input-group-text">@</span>
+       <section>
+           <h2>Grupo prepend</h2>
+           <div class="input-group">
+               <div class="input-group-prepend">
+                   <span class="input-group-text">@</span>
+               </div>
+               <input class="form-control" type="text" placeholder="e-mail">
            </div>
-           <input class="form-control" type="text" placeholder="e-mail">
-       </div> 
+       </section>
+
+       
        <div class="input-group">
         <div class="input-group-prepend">
            <span class="input-group-text">
@@ -33,6 +44,9 @@
        <input class="form-control" type="text" placeholder="Digite seu usuário">
     </div>
 
+        <br>
+       <br>
+
        <h2>Grupo append</h2>
        <div class="input-group">
             <input class="form-control" type="text" placeholder="e-mail">
@@ -41,8 +55,10 @@
            </div>
        </div> 
 
-       
-        <h2>Moeda</h2>
+       <br>
+       <br>
+
+        <h2>Grupo append junto com prepend</h2>
         <div class="input-group">
             <div class="input-group-prepend">
                <span class="input-group-text">$</span>
@@ -54,6 +70,8 @@
                <span class="input-group-text">,00</span>
            </div>
         </div>
+        <br>
+        <br>
 
         <!--
         type: checkbox / radio
@@ -75,6 +93,8 @@
             <input type="text" class="form-control">
         </div>
 
+        <br>
+        <br>
 
         <h2>Múltiplos inputs</h2>
         <div class="input-group">
@@ -85,6 +105,8 @@
            <input class="form-control" type="password" placeholder="senha">
        </div> 
 
+        <br>
+       <br>
 
        <h2>Pesquisas</h2>
        <div class="input-group">
