@@ -30,6 +30,7 @@
 
     <h3 class="border-bottom">Cartão com imagem</h3>
     <div class="card">
+      <!-- a classe card-img-top deixa a imagem na parte superior, apenas com os cantos superiores arredondados -->
       <img class="card-img-top" src="imagem.jpg" alt="" style="width: 100%; height: 400px;">
       <div class="card-body">
         <h4 class="card-title">Título do cartão</h4>
@@ -42,40 +43,76 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com imagem sobreposta</h3>
-    
+    <div class="card">
+      <!-- a classe card-img deixa a imagem com os quatro cantos arredondados, seja na parte superio do card ou na parte inferior-->
+      <img class="card-img" src="imagem.jpg" alt="" style="width: 100%; height: 400px;">
+      <!-- a classe card-img-overlay fica sobreposta a cima da classe card-img-->
+      <div class="card-img-overlay text-white">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="#">Leia mais</a>
+      </div>
+    </div>
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com cabeçalho</h3>
-    
+    <h3 class="border-bottom">Cartão com cabeçalho e rodapé</h3>
+    <div class="card">      
+      <div class="card-header text-center">   <!-- cabeçalho (tag semântica) da estrutura 'card'-->
+        cabeçalho do cartão
+      </div>      
+      <div class="card-body"><!-- corpo (tag semântica) da estrutura 'card'-->
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-danger" href="#">Leia mais</a>
+      </div>
+      <div class="card-footer"><!-- roda-pé (tag semântica) da estrutura 'card'-->
+        roda-pé do cartão
+      </div>
+    </div>
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3>
-    
+    <h3 class="border-bottom"> Alinhamento</h3>
+    <div class="card">      
+      <div class="card-header text-center">   <!-- cabeçalho (tag semântica) da estrutura 'card'-->
+        cabeçalho do cartão
+      </div>      
+      <div class="card-body"><!-- corpo (tag semântica) da estrutura 'card'-->
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-danger" href="#">Leia mais</a>
+      </div>
+      <div class="card-footer"><!-- roda-pé (tag semântica) da estrutura 'card'-->
+        roda-pé do cartão
+      </div>
+    </div>
 
     <br><br>
 
     <h3 class="border-bottom">Cartão com navegação</h3>
-    <div>
-      <div>
-        <ul>
-          <li>
-            <a href="">Link 1</a>
+    <div class="card">
+      <div class="card-header card-header-tabs">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="">Link 1</a>
           </li>
           <li>
-            <a href="">Link 2</a>
+            <a class="nav-link" href="">Link 2</a>
           </li>
           <li>
-            <a href="">Link 3</a>
+            <a class="nav-link" href="">Link 3</a>
           </li>
         </ul>
       </div>
-      <div>
+      <div class="body">
         <h4>Título do cartão</h4>
         <h6>Subtítulo do cartão</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a href="">Leia mais</a>
+        <a class="btn btn-outline-danger btn-block" href="">Leia mais</a>
       </div>
     </div>
 
