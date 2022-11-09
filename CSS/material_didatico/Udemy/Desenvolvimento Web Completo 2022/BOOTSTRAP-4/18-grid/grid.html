@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+      
+      .marcador {
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+      }    
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container" style="background-color: #5bf946; border: 1px solid #36ae26;">
+      
+      <div class="row"> <!-- as box filhas comportan-se como flex-box -->
+        <!--
+          tamanho das colunas - 
+          class col-<tela>-<n° de colunas>               
+              tela < 576px = extra samll (col-)
+              tela >= 576px =   small: (col-sm-)
+              tela >= 768px =   medium: (col-md-)
+              tela >= 992px =   large: (col-lg-)
+              tela >= 1200px =   extra large: (col-xl-)
+              n° de colunas: até 12
+        -->
+
+
+        <div class="marcador col-1 col-sm-2 col-md-5 col-lg-10">
+          área 1
+        </div>
+
+        <div class="marcador col-10 col-sm-10 col-md-5 col-lg-2">
+          área 2
+        </div>
+
+        <div class="marcador col-md-6 col-xl-4">
+
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper lorem eu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+
+        </div>
+
+        <div class="marcador col-md-6 col-xl-4">
+
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper lorem eu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+
+        </div>
+
+        <div class="marcador col-md-6 col-xl-4">
+
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper lorem eu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+          
+        </div>
+
+      </div>      
+
+    </div>
+
+    <div class="container-fluid" style="background-color: #23b111; border: 1px solid #18610e;">           
+      <h1>Largura fixa (.col)</h1>   
+         
+      <div class="row">
+        <div class="marcador col">área 1</div>
+        <div class="marcador col">área 2</div>
+        <div class="marcador col">área 3</div>
+        <div class="marcador col">área 4</div>
+      </div>
+      <br><br>
+      <h1>Largura automática (.alto-layout)</h1>
+      <div class="row">
+        <div class="marcador col-2">área 1</div>
+        <div class="marcador col-2">área 2</div>
+        <div class="marcador col">área 3</div>
+      </div>
+            
+
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
