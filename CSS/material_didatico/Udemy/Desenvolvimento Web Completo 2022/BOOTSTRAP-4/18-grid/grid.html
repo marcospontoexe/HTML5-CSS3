@@ -28,7 +28,7 @@
       
       <div class="row"> <!-- as box filhas comportan-se como flex-box -->
         <!--
-          tamanho das colunas - 
+          tamanho das colunas: 
           class col-<tela>-<n° de colunas>               
               tela < 576px = extra samll (col-)
               tela >= 576px =   small: (col-sm-)
@@ -75,9 +75,10 @@
 
     </div>
 
-    <div class="container-fluid" style="background-color: #23b111; border: 1px solid #18610e;">           
+    <div class="container-fluid" style="background-color: #23b111; border: 1px solid #18610e;">   
+      <!-- a classe 'container-fluid' ocupa todo o espaço da tela -->        
       <h1>Largura fixa (.col)</h1>   
-         
+         <!-- a larguara fixa mantém a mesma proporção para as box filhas da classe 'row'-->
       <div class="row">
         <div class="marcador col">área 1</div>
         <div class="marcador col">área 2</div>
@@ -85,11 +86,55 @@
         <div class="marcador col">área 4</div>
       </div>
       <br><br>
+
       <h1>Largura automática (.alto-layout)</h1>
       <div class="row">
         <div class="marcador col-2">área 1</div>
         <div class="marcador col-2">área 2</div>
         <div class="marcador col">área 3</div>
+      </div>
+      <br>
+      <br>
+
+      <h2>Largura igual empilhada</h2>
+      <div class="row">
+        <div class="marcador col-sm">área 1</div>
+        <div class="marcador col-sm">área 2</div>
+        <div class="marcador col-sm">área 3</div>
+      </div>
+      <br><br>
+
+      <h2>Ordenando</h2>
+      <!-- a classe 'order' configura a ordem das box -->
+      <div class="row">
+        <div class="marcador col-md-4 order-2">área 1</div>
+        <div class="marcador col-md-4 order-3">área 2</div>
+        <div class="marcador col-md-4 order-1">área 3</div>
+      </div>
+      <br><br>
+
+      <h2>offset</h2>
+      <!-- a classe 'offset' faz a box pular uma quantidade de colunas-->
+      <div class="row">
+        <div class="marcador col-md-6 offset-md-3">Login...</div>
+      </div>
+
+      <h2>offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="marcador col-md-3 offset-md-3">Conteúdo 1</div>
+        <div class="marcador col-md-3 offset-md-2">Conteúdo 2</div>
+      </div>
+
+      <h2>Aninhamento</h2>
+      <!-- é possível colocar um classe 'row' dentro de outra classe 'row' -->
+      <div class="row">
+        <div class="col-md-6" style="border: 1px solid blue">
+          col-md-6
+          <div class="row">
+            <div class="col-md-9 marcador">Conteúdo 1</div>
+            <div class="col-md-3 marcador">Conteúdo 2</div>
+          </div>
+        </div>
       </div>
             
 
