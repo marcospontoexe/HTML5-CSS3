@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
 
-    <title>Bootstrap - botões</title>
+    <title>Bootstrap - barra de navegação</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -37,12 +37,12 @@
         disabled    (desativa o link)
     -->
       <h2>Navegação simples / abas</h2>
-      <ul class="nav nav-tabs justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+      <ul class="nav nav-tabs justify-content-end"  style="border: 1px solid blue;">
+        <li class="nav-item" style="border: 1px solid red;">
+          home
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
+          <a class="nav-link active" href="#">Sobre</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Serviçoes</a>
@@ -58,7 +58,7 @@
       
       <!--
         OPÇÕES PARA A TAG nav:
-          navbar-expand: sm, md, lg, xl (determina a resposividade em função do tamanho da tela)
+          navbar-expand: sm, md, lg, xl (ativa o 'navbar' apenas para o tamanho especificado)
           navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
           bg-dark define a cor de fundo da tag nav (light ou dark)
         Cores
@@ -66,11 +66,11 @@
           bg-warning, bg-danger, bg-light, bg-dark
     
       -->
-      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <!-- logo -->
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
         <!-- abas -->
-        <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente à direita-->
+        <ul class="navbar-nav ml-auto">         <!-- ml-auto define uma margem esquerda automatica. -->
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -86,12 +86,7 @@
     
     <div class="tela">
       <h2>Barra de navegação com menu responsivo</h2>
-      <!--
-        OPÇÕES PARA A TAG nav:
-          navbar-expand: sm, md, lg, xl   (determina a resposividade em função do tamanho da tela)
-          navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
-          bg-dark define a cor de fundo da tag nav (light ou dark)
-      -->
+      
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <!-- LOGOTIPO -->
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
