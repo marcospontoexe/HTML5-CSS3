@@ -92,12 +92,12 @@
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
         <!-- MENU HAMBURGUER -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo">  <!-- Menu hamburguer-->
-          <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
+          <!-- O data-toggle="collapse" exibe a tag de destino (data-target) -->
           <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav. É o ícone hamburguer-->
         </button>
         <!-- NAVEGAÇÃO -->
         <div class="collapse navbar-collapse" id="alvo">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
-          <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+          <ul class="navbar-nav ml-auto">         <!-- ml-auto define uma margem esquerda automaticamente -->
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
@@ -129,12 +129,12 @@
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
         <!-- MENU HAMBURGUER -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#alvo2">  <!-- Menu hamburguer-->
-          <!-- O data-toggle="collapse" exibe a tag alvo (data-target) -->
+          <!-- O data-toggle="collapse" exibe a tag de destino (data-target) -->
           <span class="navbar-toggler-icon"></span>       <!-- aparece apenas quando a tela atinge o tamanho definido pelo "navbar-expand" da tag nav. É o ícone hamburguer -->
         </button>
         <!-- NAVEGAÇÃO -->
-        <div class="collapse navbar-collapse" id="alvo2">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
-          <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+        <div class="collapse navbar-collapse" id="alvo2" style="border: 1px solid blueviolet;">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
+          <ul class="navbar-nav ml-auto" style="border: 1px solid pink;">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
@@ -153,9 +153,7 @@
           </form>
         </div>
         
-      </nav>
-
-      
+      </nav>    
 
     </div>
     
@@ -164,12 +162,7 @@
     <div class="tela">
       <h2>Barra de navegação com menu dropdown</h2>
 
-      <!--
-        OPÇÕES PARA A TAG nav:
-          navbar-expand: sm, md, lg, xl
-          navbar-dark define a cor das letras de acordo com a cor do back ground da tag nav(light ou dark)
-          bg-dark define a cor de fundo da tag nav (light ou dark)
-      -->
+     
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <!-- LOGOTIPO -->
         <a class="navbar-brand" href="#">LogoTipo do site</a>   <!-- navbar-brand, é o link para o logotipo do site-->
@@ -180,7 +173,7 @@
         </button>
         <!-- NAVEGAÇÃO -->
         <div class="collapse navbar-collapse" id="alvo3">  <!-- o navbar-collapse faz as abas aparecerem quando a tela é maior que o tamanho definido pelo "navbar-expand" da tag nav -->
-          <ul class="navbar-nav ml-auto">         <!-- ml-auto define a margem esquerda automaticamente para à direita-->
+          <ul class="navbar-nav ml-auto">         <!-- ml-auto define uma margem esquerda automaticamente -->
             <li class="nav-item dropdown">    <!-- o 'dropdown' cria submenus-->
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home</a>   <!-- o dropdown-toggle ativa a opção (flexa) para mostrar ou esconder os submenus.
               data-toggle="dropdown" faz mostrar ou esconder os submenus.
