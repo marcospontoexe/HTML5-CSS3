@@ -32,7 +32,7 @@
             <img src="imagens/spotify.svg" width="142">
           </a>
 
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" id="hamburg">
             <i class="fas fa-bars text-white"></i>
           </button>
 
@@ -64,8 +64,8 @@
     </header><!--/fim Cabecalho -->
 
     <section id="home" class="d-flex"><!--home -->
-      <div class="container align-self-center"><!--container -->
-        <div class="row"><!--row -->
+      <div class="container align-self-center"> <!-- alinhamento vertical-->
+        <div class="row">
           <div class="col-md-12 capa">
             
             <h1>Música para todos</h1>
@@ -81,6 +81,80 @@
         </div><!--/row -->
       </div><!--/container -->
     </section><!--/home -->
+
+    <section id="servicos" class="caixa">
+      <div class="container">
+        <div class="row">   <!-- 6 colunas para imagens e 6 colunas para textos -->
+          <div class="col-md-6">  <!-- imagens -->
+            <div class="row albuns">  <!-- a classe "row" cria outro grid com 12 colunas -->
+              <div class="col-md-6">
+                <img src="imagens/img1.jpg" class="img-fluid d-none d-md-block">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/img2.jpg" class="img-fluid d-none d-md-block">
+              </div>
+            </div>
+            <div class="row albuns">
+              <div class="col-md-6">
+                <img src="imagens/img3.jpg" class="img-fluid d-none d-md-block">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/img4.jpg" class="img-fluid d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">  <!-- textos -->
+            
+            <h2>O que o Spotify tem?</h2>
+
+            <h3>Músicas</h3>
+            <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+
+            <h3>Playlists</h3>
+            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+
+            <h3>Novos lançamentos</h3>
+            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="recursos" class="caixa">
+      <div class="container">
+        <div class="row">  <!-- 4 colunas para textos e 8 colunas para imagens -->
+          <div class="col-md-4">
+
+            <h2>Fácil</h2>
+            <h3>Buscar</h3>
+            <p>Já sabe o que quer escutar? É só procurar e apertar o play.
+            </p>
+
+            <h3>Navegar</h3>
+            <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.
+            </p>
+
+            <h3>Descobrir</h3>
+            <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.
+            </p>
+
+          </div>
+          <div class="col-md-8">
+            <div class="row rotacionar">    <!-- a classe "rotacionar" rotaciona a imagem -->
+              <!-- a classe "row" cria outro grid com 12 colunas -->
+              <div class="col-md-6  d-none d-md-block">
+                <img src="imagens/iphone1.png" class="img-fluid">
+              </div>
+              <div class="col-md-6  d-none d-md-block">
+                <img src="imagens/iphone2.png" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
