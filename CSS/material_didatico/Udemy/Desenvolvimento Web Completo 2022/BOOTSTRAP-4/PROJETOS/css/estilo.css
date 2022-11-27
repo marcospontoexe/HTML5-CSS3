@@ -1,17 +1,16 @@
 /*
 * 
-* @author Marcos Daniel
+* @author Jamilton Damasceno
 */
 
 /* Layout
 -----------------------------*/
 html, body, #home {
 	height: 100%;
-	overflow-x: hidden;		/* esconde a barra de rolagem horizontal */
+	overflow-x: hidden;
 }
 
 body {
-	/*	 Aplicando três imagens de fundo sobrepostas no body */
 	background: url(../imagens/capa.png),
 				url(../imagens/ruido.png),
 				linear-gradient(50deg,#ff4169,#7c26f8);
@@ -26,15 +25,15 @@ nav.navbar-transparente {
 	background: rgba(0,0,0,0.6);
 }
 
-#nav-principal .nav-link {
+.navbar-light .navbar-nav .nav-link {
 	color: white;
 }
 
-#nav-principal .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover {
 	color: #9bf0e1;
 }
 
-#hamburg{
+.navbar-light .navbar-toggler {
     color: rgba(255,255,255,.5);
     border-color: rgba(255,255,255,0.5);
 }
@@ -47,7 +46,7 @@ nav.navbar-transparente {
 
 /* Capa
 -----------------------------*/
-.capa {	/* alinhamento horizontal */
+.capa {
 	text-align: center;
 }
 
@@ -78,6 +77,7 @@ nav.navbar-transparente {
 	background-color: white;
 	color: black;
 }
+
 /* Estrutura conteúdos
 -----------------------------*/
 .caixa {
@@ -112,7 +112,7 @@ nav.navbar-transparente {
 .rotacionar {
 	-ms-transform: rotate(30deg); /* IE 9 */
     -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
-    transform: rotate(30deg);		/* rotaciona a box */
+    transform: rotate(30deg);
 	padding-left: 80px;
 }
 
@@ -171,11 +171,12 @@ h3 {
 }
 
 
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	.btn-custom {
 		margin: 10px 15px;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 }
 
@@ -209,3 +210,5 @@ h3 {
 		font-size: 6em;
 	}
 }
+
+
