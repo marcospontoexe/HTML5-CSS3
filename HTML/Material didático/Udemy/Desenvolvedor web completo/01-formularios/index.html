@@ -25,10 +25,11 @@
 <body>
     <h1>trabalhando com formulários...</h1>
     <hr width="100%" size="5" color="red">
-    <form action="destino.php" method="post" autocomplete="on">   <!-- Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 
+    <form action="destino.php" method="post" autocomplete="on" target="_blank">   <!-- Ao apertar o botão de enviar formulário (submit), os dados da tag (form) são enviados. 
     'action' determina para onde sera enviado o formulário. 
     'method' é o método de envio de variáveis (get = os dados aparecem na url do navegador (maximos de 3 mil caracteres); post = dados enviados de forma escondida, não tem limitação de caracteres, e da p enviar arquivos).
     autocomplet="off" desliga preenchimento automático
+    'target' Identifica onde abrir o documento vinculado; '_self' Abre o documento na mesma janela/guia em que foi clicado. '_blank' Abre o documento em uma nova janela ou guia.
     -->
         <div>
             <p>input:text</p>
