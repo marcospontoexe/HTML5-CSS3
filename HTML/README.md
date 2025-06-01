@@ -462,8 +462,7 @@ Veja o exemplo a seguir:
   * Nunca devem ser usadas ao lidar com dados confidenciais.
   * Têm restrições de comprimento, pois devem caber na URL.
 
-
-*  Método **POST**: utilizado para enviar dados de **solicitação-resposta** de
+* Método **POST**: utilizado para enviar dados de **solicitação-resposta** de
 um *cliente* para um servidor. Os dados enviados na solicitação são
 armazenados no corpo da mensagem HTTP, e não na URL!
 
