@@ -427,18 +427,127 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-| Atributo     | Descrição                                                                 |
-|--------------|---------------------------------------------------------------------------|
-| `action`     | Define a ação a ser executada quando o formulário for enviado.            |
-| `target`     | Identifica onde abrir o documento vinculado. Pode ter os valores:        |
-|              | • `_self`  → Abre o documento na mesma janela/guia em que foi clicado.   |
-|              | • `_blank` → Abre o documento em uma nova janela ou guia.                |
-| `method`     | Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário: |
-|              | • `GET`  → Os dados do formulário são enviados como variáveis de URL.    |
-|              | • `POST` → Os dados do formulário são enviados como transação de postagem HTTP. |
-| `autocomplete` | Indica se o formulário deve ter o preenchimento automático.            |
-|              | • `on`  → Ativa o preenchimento automático.                              |
-|              | • `off` → Desativa o preenchimento automático.                           |
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><code>action</code></td>
+    <td>Define a ação a ser executada quando o formulário for enviado.</td>
+  </tr>
+  <tr>
+    <td><code>target</code></td>
+    <td>
+      Identifica onde abrir o documento vinculado. Pode ter os valores:<br>
+      <strong>_self</strong>: Abre o documento na mesma janela/guia em que foi clicado.<br>
+      <strong>_blank</strong>: Abre o documento em uma nova janela ou guia.
+    </td>
+  </tr>
+  <tr>
+    <td><code>method</code></td>
+    <td>
+      Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário:<br>
+      <strong>GET</strong>: Os dados do formulário são enviados como variáveis de URL.<br>
+      <strong>POST</strong>: Os dados do formulário são enviados como transação de postagem HTTP.
+    </td>
+  </tr>
+  <tr>
+    <td><code>autocomplete</code></td>
+    <td>
+      Indica se formulário deve ter o preenchimento automático.<br>
+      <strong>on</strong>: Ativa o preenchimento automático.<br>
+      <strong>off</strong>: Desativa o preenchimento automático.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>&lt;input&gt; - Elemento pode ser exibido de várias maneiras, dependendo do atributo type.</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>&lt;input type="checkbox"&gt;</td>
+    <td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="color"&gt;</td>
+    <td>Define um campo de entrada para escolha de cor.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="date"&gt;</td>
+    <td>Define um campo de entrada do tipo data.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="datetime-local"&gt;</td>
+    <td>Define um campo de entrada do tipo data e hora.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="email"&gt;</td>
+    <td>Define um campo de entrada do tipo endereço de e-mail.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="file"&gt;</td>
+    <td>Define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="hidden"&gt;</td>
+    <td>Define um campo de entrada não visível ao usuário.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="image"&gt;</td>
+    <td>Define uma imagem como botão de envio.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="month"&gt;</td>
+    <td>Permite que o usuário selecione um mês e ano.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="number"&gt;</td>
+    <td>Define um campo de entrada numérica.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="password"&gt;</td>
+    <td>Define um campo de entrada de senha.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="radio"&gt;</td>
+    <td>Define um botão de escolha, do tipo rádio, para seleção de ÚNICO valor.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="range"&gt;</td>
+    <td>Define um campo de entrada do tipo deslizante.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="reset"&gt;</td>
+    <td>Define um botão para limpar todos os campos do formulário.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="submit"&gt;</td>
+    <td>Define um botão para enviar dados de formulário.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="search"&gt;</td>
+    <td>Define um campo de entrada de texto de finalidade específica para busca.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="tel"&gt;</td>
+    <td>Campo de entrada do tipo telefone.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="text"&gt;</td>
+    <td>Campo de entrada de texto (linha única).</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="time"&gt;</td>
+    <td>Permite que o usuário selecione um horário.</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="url"&gt;</td>
+    <td>Campo de entrada que deve conter um endereço de URL.</td>
+  </tr>
+</table>
 
 
 ### Métodos para envio de dados de formulário
