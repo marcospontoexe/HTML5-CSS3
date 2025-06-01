@@ -427,43 +427,23 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-<table style="width: 60%; border-collapse: collapse;">
-  <tr style="border: 1px solid black;">
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Itens/Mês</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Janeiro</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Fevereiro</th>
-  </tr>
-  <tr style="border: 1px solid black;">
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Usuários</th>
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">80</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">93</td>
-  </tr>
-  <tr style="border: 1px solid black;">
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Linhas</th>
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">9</td>
-  </tr>
-</table>
 
-<table style="width: 30%; border-collapse: collapse;">
-  <tr style="border: 1px solid black;">
-    <th rowspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Meses</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Mês</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: left;">Economia</th>
-  </tr>
-  <tr style="border: 1px solid black;">
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">Janeiro</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">R$ 100,00</td>
-  </tr>
-  <tr style="border: 1px solid black;">
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">Fevereiro</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">R$ 80,00</td>
-  </tr>
-  <tr style="border: 1px solid black;">
-    <td style="border: 1px solid black; padding: 8px; text-align: left;">Total</td>
-    <td colspan="2" style="border: 1px solid black; padding: 8px; text-align: left;">R$ 180,00</td>
-  </tr>
-</table>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Alguns atributos da <i>tag form</i>&gt;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>action</strong></td>
+      <td>Define a ação a ser executada quando o formulário for enviado</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>target</strong></td>
+      <td>Identifica onde abrir o documento vinculado. Pode ter os valores:</td>
+   
+
 
 ### Métodos para envio de dados de formulário
 
