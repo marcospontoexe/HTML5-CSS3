@@ -2,6 +2,10 @@
 
 O HTML é a linguagem fundamental para construção de um site. Ela está presente em qualquer site ou sistema baseado na web. Vamos conhecer um pouquinho mais sobre ele? Veja a seguir os seus pontos de destaque.
 
+A internet, criada pelo cientista britânico Tim Berners-Lee, é uma grande rede que conecta computadores do mundo inteiro. A conexão global entre computadores permitiu o compartilhamento de documentos que ganharam uma nova forma de organização, conhecida como hipertexto. A principal característica de um hipertexto é que ele tem uma leitura não linear, pois possui ligações, ou links, com outros textos, imagens, vídeos e áudios.
+
+A conexão global possibilita o desenvolvimento de sistemas distribuídos, em uma estrutura conhecida como modelo cliente-servidor.
+
 * Não é linguagem de programação, pois não conseguimos realizar comandos condicionais (if/else), laços de repetição (for/while) ou funções, por exemplo.
 * É uma linguagem de marcação (Hypertext Markup Language = HTML) para documentos do tipo hipertexto, como são as páginas web que visualizamos em navegadores, ou browsers.
 * Um hipertexto, por sua vez, é um texto de leitura não linear, pois podemos acessar diferentes partes do documento por meio de links para outros textos ou documentos, além de incluir imagens, gráficos, vídeos, animações e áudios nesse tipo de documento.
@@ -19,14 +23,6 @@ Neste documento falará sobre a linguagem HTML, apresentando suas marcações, o
 
 ---
 
-## Apresentação geral da disciplina e trabalhando com HTML
-
-[Vídeo: Apresentação geral da disciplina e trabalhando com HTML](https://www.youtube.com/watch?v=Xw4zrI5rBrQ)
-
-A internet, criada pelo cientista britânico Tim Berners-Lee, é uma grande rede que conecta computadores do mundo inteiro. A conexão global entre computadores permitiu o compartilhamento de documentos que ganharam uma nova forma de organização, conhecida como hipertexto. A principal característica de um hipertexto é que ele tem uma leitura não linear, pois possui ligações, ou links, com outros textos, imagens, vídeos e áudios.
-
-A conexão global possibilita o desenvolvimento de sistemas distribuídos, em uma estrutura conhecida como modelo cliente-servidor.
-
 ## Estrutura do documento HTML
 
 Um documento HTML é basicamente um arquivo texto, com elementos que são marcados utilizando tags (tag = etiquetas).
@@ -35,13 +31,12 @@ Um documento HTML é basicamente um arquivo texto, com elementos que são marcad
 
 As tags são delimitadas com os sinais `<` e `>`. Entre esses sinais, está o nome da tag, que é uma palavra reservada, para indicar um elemento HTML.
 
-Logo, um elemento HTML é apresentado com uma tag de abertura e uma tag de fechamento, como exibido na Figura 2 a seguir.
+Logo, um elemento HTML é apresentado com uma tag de abertura e uma tag de fechamento, como exibido na Figura a seguir.
 
 ![1](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/1.jpeg)
 
-> **Figura 2:** Elemento HTML. Fonte: Autora (2023).
 
-A Figura 3, a seguir, apresenta a estrutura fundamental de um documento HTML, que nada mais é do que um arquivo texto com extensão `.html`, em que encontramos tags de organização.
+A Figura a seguir, apresenta a estrutura fundamental de um documento HTML, que nada mais é do que um arquivo texto com extensão `.html`, em que encontramos tags de organização.
 
 ![Figura 3: Estrutura fundamental de um documento HTML](figure_page5_1.jpeg)
 
