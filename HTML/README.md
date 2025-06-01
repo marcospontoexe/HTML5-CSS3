@@ -427,35 +427,39 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-<table style="width:100%; border-collapse: collapse; text-align: left; font-family: sans-serif; font-size: 14px;">
+<table style="width:100%; border-collapse: collapse; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <thead>
-        <tr style="background-color: #f2f2f2;">
-            <th style="padding: 8px; border: 1px solid #ddd;">Método</th>
-            <th style="padding: 8px; border: 1px solid #ddd;">Características</th>
+        <tr style="background-color: #e0e0e0; border-bottom: 2px solid #ccc;">
+            <th style="padding: 10px; text-align: left; font-weight: bold; font-size: 1.1em;">Seletor CSS</th>
+            <th style="padding: 10px; text-align: left; font-weight: bold; font-size: 1.1em;">Exemplo</th>
+            <th style="padding: 10px; text-align: left; font-weight: bold; font-size: 1.1em;">Descrição</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">GET</td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <ul>
-                    <li style="margin-bottom: 5px;">Os dados do formulário são visíveis na URL.</li>
-                    <li style="margin-bottom: 5px;">Não deve ser usado para dados sensíveis.</li>
-                    <li style="margin-bottom: 5px;">Limitação no comprimento dos dados.</li>
-                    <li>Pode ser "bookmarkado" (salvo nos favoritos).</li>
-                </ul>
-            </td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`elemento`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`p`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos `&lt;p&gt;`</td>
         </tr>
         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">POST</td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <ul>
-                    <li style="margin-bottom: 5px;">Os dados do formulário não são visíveis na URL.</li>
-                    <li style="margin-bottom: 5px;">Adequado para dados sensíveis.</li>
-                    <li style="margin-bottom: 5px;">Sem limitação significativa no comprimento dos dados.</li>
-                    <li>Não pode ser "bookmarkado".</li>
-                </ul>
-            </td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`#id`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`#nome`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona o elemento com `id="nome"`</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`.classe`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`.texto-vermelho`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos com `class="texto-vermelho"`</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`*`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`*`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`sel1, sel2`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`h1, h2, p`</td>
+            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos `&lt;h1&gt;`, `&lt;h2&gt;` e `&lt;p&gt;`</td>
         </tr>
     </tbody>
 </table>
