@@ -135,11 +135,31 @@ Links são elementos HTML que permitem a ligação com outros documentos web. El
 
 A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 
-|  Alguns atributos da tag <a> |
-|----------|-----------|
-| `href`   | O mais importante da tag `<a>`, pois identifica o destino do link. |
-| `title`  | Texto “dica” que aparece quando o mouse se move sobre o elemento. |
-| `target` | Identifica onde abrir o documento vinculado. Pode ter os valores:<br>• `_self`: Abre o documento na mesma janela/guia em que foi clicado.<br>• `_blank`: Abre o documento em uma nova janela ou guia. |
+<table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: left;">Alguns atributos da <em>tag</em> <code>&lt;a&gt;</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>href</code></td>
+      <td>O mais importante da <em>tag</em> <code>&lt;a&gt;</code>, pois identifica o destino do <em>link</em>.</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>Texto “dica” que aparece quando o <em>mouse</em> se move sobre o elemento.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code>target</code></td>
+      <td><code>_self</code> : Abre o documento na mesma janela/guia em que foi clicado.</td>
+    </tr>
+    <tr>
+      <td><code>_blank</code> : Abre o documento em uma nova janela ou guia.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ```html
 <!DOCTYPE html>
