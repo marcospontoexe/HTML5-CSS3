@@ -70,38 +70,6 @@ Vamos comentar as tags iniciais da Figura apresentada:
 
 ---
 
-## PRÁTICA: visualizando um documento web no navegador
-
-1. Crie uma pasta de trabalho, como, por exemplo: `C:/Teste-HTML`.
-2. Dentro da pasta, crie um documento texto com o nome `index.html` – atenção para a extensão do arquivo: precisa ser `.html`!
-3. Copie o texto a seguir para o seu arquivo `index.html`.
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Minha primeira página HTML</title>
-</head>
-<body>
-    <h1>Primeiro cabeçalho da página</h1>
-    <p>Primeiro parágrafo.</p>
-    <p>Segundo parágrafo.</p>
-</body>
-</html>
-```
-
-4. Abra o seu `index.html` no navegador (browser): copie o caminho completo do arquivo e cole na barra de endereços, ou barra de navegação.
-5. Verifique como o navegador interpretou o seu `index.html`: ache o título da página, ou documento web, e verifique como o navegador pode inspecionar o HTML de todos os elementos da sua página na janela de inspeção.
-
-![Figura 4: Visualização do documento HTML no navegador, com janela de inspeção](figure_page7_1.jpeg)
-
-> **Figura 4:** Visualização do documento HTML no navegador, com janela de inspeção. Fonte: Autora (2023).
-
-Você pode utilizar um ambiente integrado de desenvolvimento, ou IDE – do inglês Integrated Development Environment –, como o Visual Studio Code da Microsoft ([https://code.visualstudio.com](https://code.visualstudio.com)).
-
----
-
 # HTML básico
 
 Utilizando o ambiente de desenvolvimento VS Code para criar páginas HTML
@@ -114,9 +82,6 @@ Como acabamos de mencionar, um documento HTML é um arquivo-texto, que pode ser 
 
 Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `<h1>` ao `<h6>`. Sendo que o `<h1>` define o cabeçalho de maior nível, ou mais importante, e o `<h6>` define o cabeçalho de menor nível, ou o menos importante.
 
-### PRÁTICA: cabeçalhos
-
-1. Copie o texto a seguir para o seu arquivo `headings.html`. Após, abra o arquivo no navegador.
 
 ```html
 <!DOCTYPE html>
@@ -132,21 +97,15 @@ Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `
 </html>
 ```
 
-![Figura 5: HTML headings](figure_page9_1.jpeg)
+![Figura 3: HTML headings](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/3.jpeg)
 
-> **Figura 5:** HTML headings. Fonte: Autora (2023).
+> **Figura 3:** HTML headings.
 
 ---
 
 ## HTML imagens
 
 As imagens podem melhorar o design e a aparência de uma página da web. Elas são apresentadas em um documento web com a tag `<img>` e possuem alguns atributos, como exemplificado a seguir.
-
-### PRÁTICA: imagens
-
-1. Crie uma pasta com o nome `Figuras`, subordinada à sua pasta de trabalho, como no exemplo: `C:/Teste-HTML/Figuras`.
-2. Na pasta `Figuras`, recém-criada, salve duas imagens, do tipo `.jpg` com os nomes `cavalos.jpg` e `praia.jpg`.
-3. Copie o texto a seguir para o seu arquivo `images.html`. Após, abra o arquivo no navegador.
 
 ```html
 <!DOCTYPE html>
@@ -160,9 +119,9 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 </html>
 ```
 
-![Figura 6: HTML imagem: formato](figure_page11_1.jpeg)
+![Figura 4: HTML imagem: formato](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/4.jpeg)
 
-> **Figura 6:** HTML imagem: formato. Fonte: Autora (2023).
+> **Figura 6:** HTML imagem: formato.
 
 ---
 
@@ -171,10 +130,6 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 Links são elementos HTML que permitem a ligação com outros documentos web. Eles são definidos com a tag `<a>` de âncora, ou anchor, em inglês. Ao serem acionados ou clicados, os links redirecionam a página atual para outro documento referenciado na tag.
 
 A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
-
-### PRÁTICA: links
-
-1. Copie o texto a seguir para o seu arquivo `links.html`. Após, abra o arquivo no navegador, garantindo que as páginas `images.html` e `headings.html`, da prática anterior, já existam em `C:/Teste-HTML`.
 
 ```html
 <!DOCTYPE html>
@@ -192,9 +147,9 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 </html>
 ```
 
-![Figura 7: HTML links](figure_page13_1.jpeg)
+![Figura 5: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/5.jpeg)
 
-> **Figura 7:** HTML links. Fonte: Autora (2023).
+> **Figura 5:** HTML links.
 
 ---
 
@@ -205,10 +160,6 @@ Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que
 * **Unordered HTML list**, ou lista não ordenada, definida com as tags `<ul>` e `</ul>`, sendo cada item identificado com as tags `<li>` e `</li>`.
 * **Ordered HTML list**, ou lista ordenada, definida com as tags `<ol>` e `</ol>`, sendo cada item identificado com as tags `<li>` e `</li>`.
 * **HTML description lists**, ou lista de descrição, definida com as tags `<dl>` e `</dl>`, sendo cada item identificado com as tags `<dt>` e `</dt>`, com sua descrição delimitada pelas tags `<dd>` e `</dd>`.
-
-### PRÁTICA: listas
-
-1. Copie o texto a seguir para o seu arquivo `lists.html`. Após, abra o arquivo no navegador.
 
 ```html
 <!DOCTYPE html>
@@ -239,9 +190,9 @@ Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que
 </html>
 ```
 
-![Figura 9: HTML listas](figure_page15_1.jpeg)
+![Figura 6: HTML listas](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
 
-> **Figura 9:** HTML listas. Fonte: Autora (2023).
+> **Figura 6:** HTML listas. 
 
 ---
 
