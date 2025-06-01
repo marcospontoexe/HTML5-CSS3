@@ -139,7 +139,7 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 |----------|-----------|
 | `href`   | O mais importante da tag `<a>`, pois identifica o destino do link. |
 | `title`  | Texto “dica” que aparece quando o mouse se move sobre o elemento. |
-| `target` | Identifica onde abrir o documento vinculado. Pode ter os valores:<br>• |`_self`: Abre o documento na mesma janela/guia em que foi clicado.<br>• |`_blank`: Abre o documento em uma nova janela ou guia. |
+| `target` | Identifica onde abrir o documento vinculado. Pode ter os valores:<br>• `_self`: Abre o documento na mesma janela/guia em que foi clicado.<br>• `_blank`: Abre o documento em uma nova janela ou guia. |
 
 ```html
 <!DOCTYPE html>
