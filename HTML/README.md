@@ -426,14 +426,71 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 ![Figura 11: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/11.jpeg)
 
 > **Figura 11:** HTML tables.
----
-
-### Alguns atributos da tag `<form>`
 
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: left;">Alguns atributos da <em>tag</em> <code>form</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>action</code></td>
+      <td>Define a ação a ser executada quando o formulário for enviado</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code>target</code></td>
+      <td><code>_self</code> : Abre o documento na mesma janela/guia em que foi clicado.</td>
+    </tr>
+    <tr>
+      <td><code>_blank</code> : Abre o documento em uma nova janela ou guia.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code>method</code></td>
+      <td><code>GET</code> : Os dados do formulário são enviados como variáveis de URL.</td>
+    </tr>
+    <tr>
+      <td><code>POST</code> : Os dados do formulário são enviados como transação de postagem HTTP.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code>autocomplete</code></td>
+      <td><code>on</code> : Ativa o preenchimento automático.</td>
+    </tr>
+    <tr>
+      <td><code>off</code> : Desativa o preenchimento automático.</td>
+    </tr>
+  </tbody>
+</table>
 
-### Alguns elementos subordinados à tag `<form>`
-
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: left;">Alguns elementos subordinados à <em>tag</em> <code>form</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>&lt;input type="checkbox"&gt;</code></td><td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td></tr>
+    <tr><td><code>&lt;input type="color"&gt;</code></td><td>Define um campo de entrada para escolha de cor.</td></tr>
+    <tr><td><code>&lt;input type="date"&gt;</code></td><td>Define um campo de entrada do tipo data.</td></tr>
+    <tr><td><code>&lt;input type="datetime-local"&gt;</code></td><td>Define um campo de entrada do tipo data e hora.</td></tr>
+    <tr><td><code>&lt;input type="email"&gt;</code></td><td>Define um campo de entrada do tipo endereço de e-mail.</td></tr>
+    <tr><td><code>&lt;input type="file"&gt;</code></td><td>Define um campo de seleção de arquivo e um botão "Procurar".</td></tr>
+    <tr><td><code>&lt;input type="hidden"&gt;</code></td><td>Define um campo de entrada não visível ao usuário.</td></tr>
+    <tr><td><code>&lt;input type="image"&gt;</code></td><td>Define uma imagem como botão de envio.</td></tr>
+    <tr><td><code>&lt;input type="month"&gt;</code></td><td>Permite que o usuário selecione um mês e ano.</td></tr>
+    <tr><td><code>&lt;input type="number"&gt;</code></td><td>Campo de entrada do tipo número.</td></tr>
+    <tr><td><code>&lt;input type="password"&gt;</code></td><td>Campo de entrada de senha.</td></tr>
+    <tr><td><code>&lt;input type="radio"&gt;</code></td><td>Botão de escolha do tipo rádio (único valor).</td></tr>
+    <tr><td><code>&lt;input type="range"&gt;</code></td><td>Campo de entrada do tipo controle deslizante.</td></tr>
+    <tr><td><code>&lt;input type="reset"&gt;</code></td><td>Botão para limpar todos os campos do formulário.</td></tr>
+    <tr><td><code>&lt;input type="submit"&gt;</code></td><td>Botão para enviar dados do formulário.</td></tr>
+    <tr><td><code>&lt;input type="tel"&gt;</code></td><td>Campo de entrada para número de telefone.</td></tr>
+    <tr><td><code>&lt;input type="text"&gt;</code></td><td>Campo de entrada de texto de linha única.</td></tr>
+    <tr><td><code>&lt;input type="time"&gt;</code></td><td>Campo que permite ao usuário selecionar um horário.</td></tr>
+    <tr><td><code>&lt;input type="url"&gt;</code></td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
+  </tbody>
+</table>
 
 ### Métodos para envio de dados de formulário
 
@@ -450,7 +507,6 @@ O lado **servidor** da aplicação recebe solicitações via HTTP quando acionam
 Esses dados podem ser enviados de duas formas, denominadas **métodos GET** e **POST**.
 
 * O método **GET**: utilizado para enviar dados de **solicitação-resposta** de um *cliente* para um servidor. Os dados enviados na solicitação serão acrescentados no final do endereço da URL, no formato de pares *nome/valor*. 
-
 Veja o exemplo a seguir:
 `/test/demo_form.php?name1=value1&name2=value2`
   Algumas observações sobre solicitações **GET**:
@@ -461,7 +517,6 @@ Veja o exemplo a seguir:
 * Método **POST**: utilizado para enviar dados de **solicitação-resposta** de
 um *cliente* para um servidor. Os dados enviados na solicitação são
 armazenados no corpo da mensagem HTTP, e não na URL!
-
 Veja o exemplo a seguir:
 `POST /teste/demo_form.php HTTP/1.1`
 Host: 
