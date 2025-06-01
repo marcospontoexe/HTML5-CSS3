@@ -473,7 +473,7 @@ name1=value1&name2=value2
   Algumas observações sobre solicitações **POST**:
   * Não permanecem no histórico do navegador.
   * Indicadas para lidar com dados confidenciais.
-  *  Não têm restrições de comprimento, pois são enviadas no corpo da mensagem, e não na URL
+  * Não têm restrições de comprimento, pois são enviadas no corpo da mensagem, e não na URL
 
 
 
