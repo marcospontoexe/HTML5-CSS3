@@ -427,23 +427,38 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="2">Alguns atributos da <i>tag form</i>&gt;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>action</strong></td>
-      <td>Define a ação a ser executada quando o formulário for enviado</td>
-    </tr>
-    <tr>
-      <td rowspan="3"><strong>target</strong></td>
-      <td>Identifica onde abrir o documento vinculado. Pode ter os valores:</td>
-   
-
+<table style="width:100%; border-collapse: collapse; text-align: left; font-family: sans-serif; font-size: 14px;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="padding: 8px; border: 1px solid #ddd;">Método</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Características</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;">GET</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">
+                <ul>
+                    <li style="margin-bottom: 5px;">Os dados do formulário são visíveis na URL.</li>
+                    <li style="margin-bottom: 5px;">Não deve ser usado para dados sensíveis.</li>
+                    <li style="margin-bottom: 5px;">Limitação no comprimento dos dados.</li>
+                    <li>Pode ser "bookmarkado" (salvo nos favoritos).</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;">POST</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">
+                <ul>
+                    <li style="margin-bottom: 5px;">Os dados do formulário não são visíveis na URL.</li>
+                    <li style="margin-bottom: 5px;">Adequado para dados sensíveis.</li>
+                    <li style="margin-bottom: 5px;">Sem limitação significativa no comprimento dos dados.</li>
+                    <li>Não pode ser "bookmarkado".</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Métodos para envio de dados de formulário
 
