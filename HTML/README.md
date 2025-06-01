@@ -430,71 +430,52 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 ### Alguns atributos da tag `<form>`
 
-* **action**: Define a ação a ser executada quando o formulário for enviado.
-* **target**: Identifica onde abrir o documento vinculado. Pode ter os valores:
 
-  * `_self`: Abre o documento na mesma janela/guia em que foi clicado.
-  * `_blank`: Abre o documento em uma nova janela ou guia.
-* **method**: Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário:
 
-  * `GET`: Os dados do formulário são enviados como variáveis de URL.
-  * `POST`: Os dados do formulário são enviados como transação de postagem HTTP.
-* **autocomplete**: Indica se formulário deve ter o preenchimento automático:
+### Alguns elementos subordinados à tag `<form>`
 
-  * `on`: Ativa o preenchimento automático.
-  * `off`: Desativa o preenchimento automático.
 
-#### Alguns elementos subordinados à tag `<form>`
+### Métodos para envio de dados de formulário
 
-* `<input>`: Elemento pode ser exibido de várias maneiras, dependendo do atributo `type`.
-* `<input type="checkbox">`: Define um botão de escolha, do tipo caixa, para seleção de vários valores.
-* `<input type="color">`: Define um campo de entrada para escolha de cor.
-* `<input type="date">`: Define um campo de entrada do tipo data.
-* `<input type="datetime-local">`: Define um campo de entrada do tipo data e hora.
-* `<input type="email">`: Define um campo de entrada do tipo endereço de e-mail.
-* `<input type="file">`: Define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos.
-* `<input type="hidden">`: Define um campo de entrada não visível ao usuário.
-* `<input type="image">`: Define uma imagem como botão de envio.
-* `<input type="month">`: Permite que o usuário selecione um mês e ano.
-* `<input type="number">`: Define um campo de entrada numérico.
-* `<input type="password">`: Define um campo de entrada de senha.
-* `<input type="radio">`: Define um botão de escolha, do tipo rádio, para seleção de único valor.
-* `<input type="range">`: Define um campo de entrada do tipo controle deslizante.
-* `<input type="reset">`: Define um botão para limpar todos os campos do formulário.
-* `<input type="submit">`: Define um botão para enviar dados de formulário.
-* `<input type="text">`: Define um campo de entrada de texto de linha única.
-* `<input type="time">`: Permite que o usuário selecione um horário.
-* `<input type="url">`: Campo de entrada que deve conter um endereço de URL.
+Para entender o envio de dados via formulário HTML, precisamos saber o que é **HTTP** e o que são **métodos de envio**. Veja as descrições a seguir.
 
-A tabela a seguir traz um resumo de atributos da tag `<form>` e uma relação de elementos HTML subordinados à tag `<form>`, que são campos de entrada.
+* **HTTP**, do inglês *Hypertext Transfer Protocol*, é um protocolo de comunicação da internet que controla a transferência de hipertextos, ou documentos web. Quando inserimos uma URL na barra de endereços do navegador, estamos solicitando um documento web, via protocolo HTTP, ao site web da URL.
 
-![Figura 12: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/12.jpeg)
+* **HTTPS** acrescenta a palavra “*secure*” (“segurança”, em inglês) à sigla do HTTP. Isso significa que será utilizado um certificado **SSL** (*Secure Sockets Layer*, ou camada de segurança de socket) para **criptografar**, ou codificar, todas as trocas de mensagens que trafegam pela internet, garantindo a **confidencialidade** e **autenticidade** dessas mensagens. Ou seja, o SSL mantém a segurança das conexões via HTTP e impede que criminosos leiam ou modifiquem as informações transferidas entre dois sistemas, de um modelo de aplicação cliente-servidor.
 
-> **Figura 12:** HTML tables.
+> **Resumindo**: o HTTP funciona como um protocolo de **solicitação-resposta** entre um cliente e um servidor.
 
----
+O lado **servidor** da aplicação recebe solicitações via HTTP quando acionamos o botão **submit** para “envio” de dados em um formulário HTML.
 
-# Conclusão
+Esses dados podem ser enviados de duas formas, denominadas **métodos GET** e **POST**.
 
-Olá!
+* O método **GET**: utilizado para enviar dados de **solicitação-resposta** de
+um *cliente* para um servidor. Os dados enviados na solicitação serão
+acrescentados no final do endereço da URL, no formato de
+pares *nome/valor*. 
+Veja o exemplo a seguir:
+`/test/demo_form.php?name1=value1&name2=value2`
 
-Acabamos de ter o primeiro contato com o desenvolvimento web. Vimos que teremos duas frentes de trabalho:
+  lgumas observações sobre solicitações **GET**:
+  * Permanecem no histórico do navegador.
+  * Nunca devem ser usadas ao lidar com dados confidenciais.
+  * Têm restrições de comprimento, pois devem caber na URL.
 
-1. Desenvolvimento web front-end, em que trabalharemos com HTML, CSS e JavaScript.
-2. Desenvolvimento web back-end, em que, dentre as várias tecnologias alternativas, trabalharemos com PHP e SQL.
 
-Assim, nesta unidade, começamos com HTML, que não é linguagem de programação, mas, sim, linguagem de marcação.
+*  Método **POST**: utilizado para enviar dados de **solicitação-resposta** de
+um *cliente* para um servidor. Os dados enviados na solicitação são
+armazenados no corpo da mensagem HTTP, e não na URL!
+Veja o exemplo a seguir:
+`POST /teste/demo_form.php HTTP/1.1`
+Host: 
+www.acme.com
+name1=value1&name2=value2
+  Algumas observações sobre solicitações **POST**:
+  * Não permanecem no histórico do navegador.
+  * Indicadas para lidar com dados confidenciais.
+  *  Não têm restrições de comprimento, pois são enviadas no corpo da mensagem, e não na URL
 
-Na próxima unidade, continuaremos no front-end, mas trabalhando para estilizar HTML com CSS.
 
-Realize as práticas indicadas aqui para HTML, pois assim você aproveitará melhor nossa próxima unidade!
 
-Até!
 
-# Referências Bibliográficas
 
-* ALVES, W. P. *Desenvolvimento e design de sites.* São Paulo: Erica, 2014.
-* MILETTO, E. M.; BERTAGNOLLI, S. C. *Desenvolvimento de software II: Introdução ao desenvolvimento web com HTML, CSS, JavaScript e PHP.* Porto Alegre: Bookman, 2014.
-* TERUEL, E. C. *HTML 5: Guia prático.* 2. ed. Porto Alegre: Bookman, 2014.
-
-© PUCPR - Todos os direitos reservados.
