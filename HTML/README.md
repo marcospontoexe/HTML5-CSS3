@@ -147,7 +147,7 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 </html>
 ```
 
-![Figura 5: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/5.jpeg)
+![Figura 5: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/7.jpeg)
 
 > **Figura 5:** HTML links.
 
