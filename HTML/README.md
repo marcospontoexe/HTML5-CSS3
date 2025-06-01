@@ -135,6 +135,10 @@ Links são elementos HTML que permitem a ligação com outros documentos web. El
 
 A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 
+![Figura 6: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
+
+> **Figura 6:** HTML links.
+
 <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
@@ -177,9 +181,9 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 </html>
 ```
 
-![Figura 6: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
+![Figura 7: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/7.jpeg)
 
-> **Figura 6:** HTML links.
+> **Figura 7:** HTML links.
 
 ---
 
@@ -220,9 +224,9 @@ Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que
 </html>
 ```
 
-![Figura 7: HTML listas](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
+![Figura 8: HTML listas](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/8.jpeg)
 
-> **Figura 7:** HTML listas. 
+> **Figura 8:** HTML listas. 
 
 ---
 
