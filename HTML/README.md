@@ -1,559 +1,523 @@
-# Fundamentos de Programação Web [cite: 186]
+# HTML 
+O HTML é a linguagem fundamental para construção de um site. Ela está presente em qualquer site ou sistema baseado na web. Vamos conhecer um pouquinho mais sobre ele? Veja a seguir os seus pontos de destaque.
 
-## UNIDADE 01: Introdução ao desenvolvimento web [cite: 186]
+* Não é linguagem de programação, pois não conseguimos realizar comandos condicionais (if/else), laços de repetição (for/while) ou funções, por exemplo.
+* É uma linguagem de marcação (Hypertext Markup Language = HTML) para documentos do tipo hipertexto, como são as páginas web que visualizamos em navegadores, ou browsers.
+* Um hipertexto, por sua vez, é um texto de leitura não linear, pois podemos acessar diferentes partes do documento por meio de links para outros textos ou documentos, além de incluir imagens, gráficos, vídeos, animações e áudios nesse tipo de documento.
+* No contexto do hipertexto, o HTML foi desenvolvido para estruturar o layout de um documento, ou seja, estruturar os elementos visuais de um documento, organizando como textos, imagens, áudios, vídeos etc. serão apresentados ao usuário de um site ou sistema web.
+* Por fim, é o navegador que interpreta o HTML e renderiza seus elementos (ou exibe conteúdos visuais) na tela do usuário. Em resumo, o navegador transforma o código HTML em uma exibição visual estruturada, para interagir com o usuário do site ou aplicação web.
 
-O HTML é a linguagem fundamental para a construção de um site, estando presente em qualquer site ou sistema baseado na web[cite: 187].
+Nesta unidade, iniciaremos os trabalhos com a linguagem HTML, apresentando suas marcações, ou tags, e como utilizá-las para criar diferentes tipos de estruturação de documentos web, com formatação de textos e imagens, criação de links, tabelas, listas e formulários.
 
-### Pontos de destaque do HTML:
+**Em resumo: HTML**
 
-* Não é uma linguagem de programação, pois não permite a realização de comandos condicionais (if/else), laços de repetição (for/while) ou funções[cite: 188].
-* É uma linguagem de marcação (Hypertext Markup Language = HTML) para documentos do tipo hipertexto, como as páginas web visualizadas em navegadores[cite: 189].
-* Um hipertexto é um texto de leitura não linear, possibilitando o acesso a diferentes partes do documento por meio de links para outros textos ou documentos, além de incluir imagens, gráficos, vídeos, animações e áudios[cite: 190].
-* No contexto do hipertexto, o HTML foi desenvolvido para estruturar o layout de um documento, organizando como textos, imagens, áudios, vídeos, etc., serão apresentados ao usuário de um site ou sistema web[cite: 191, 192].
-* O navegador interpreta o HTML e renderiza seus elementos, exibindo conteúdos visuais na tela do usuário[cite: 193]. Ou seja, o navegador transforma o código HTML em uma exibição visual estruturada para interação com o usuário do site ou aplicação web[cite: 194].
+* Pesquise mais sobre os temas a seguir.
+* Não é linguagem de programação.
+* É linguagem de marcação (tag) para estruturar hipertexto.
+* É interpretada e renderizada em um navegador web.
 
-Nesta unidade, iniciaremos o trabalho com a linguagem HTML, apresentando suas marcações (tags) e como utilizá-las para criar diferentes tipos de estruturação de documentos web, incluindo formatação de textos e imagens, criação de links, tabelas, listas e formulários[cite: 195].
+---
 
-### Em resumo: HTML [cite: 196]
+## Apresentação geral da disciplina e trabalhando com HTML
 
-* Não é linguagem de programação[cite: 197].
-* É linguagem de marcação (tag) para estruturar hipertexto[cite: 197].
-* É interpretada e renderizada em um navegador web[cite: 197].
+[Vídeo: Apresentação geral da disciplina e trabalhando com HTML](https://www.youtube.com/watch?v=Xw4zrI5rBrQ)
 
-Antes de ler o material, vamos conhecer melhor a proposta da disciplina e como iniciaremos nossos trabalhos com HTML[cite: 198, 199]!
+A internet, criada pelo cientista britânico Tim Berners-Lee, é uma grande rede que conecta computadores do mundo inteiro. A conexão global entre computadores permitiu o compartilhamento de documentos que ganharam uma nova forma de organização, conhecida como hipertexto. A principal característica de um hipertexto é que ele tem uma leitura não linear, pois possui ligações, ou links, com outros textos, imagens, vídeos e áudios.
 
-## Modelo Cliente-Servidor [cite: 207]
+A conexão global possibilita o desenvolvimento de sistemas distribuídos, em uma estrutura conhecida como modelo cliente-servidor (Figura 1). Nele, uma máquina remota atua como servidor de documentos do tipo hipertexto e uma outra máquina atua local como cliente, que solicita hipertextos, fornecendo sua localização por meio do seu endereço de rede, também conhecido como URL, do inglês Uniform Resource Locator, ou “localização uniforme de recurso”.
 
-A internet, criada por Tim Berners-Lee, é uma grande rede que conecta computadores globalmente[cite: 200]. Essa conexão permitiu o compartilhamento de documentos organizados como hipertexto[cite: 201]. A principal característica de um hipertexto é sua leitura não linear, com links para outros textos, imagens, vídeos e áudios[cite: 202].
+De forma geral, a URL é passada na barra de endereços de um programa do tipo navegador web, ou browser, para obter documentos do tipo hipertexto. O navegador é conhecido, portanto, como o lado cliente de uma requisição de documentos, sendo que o computador remoto, em que estão as informações desejadas, é o lado servidor de um sistema ou aplicação web.
 
-A conexão global possibilita o desenvolvimento de sistemas distribuídos, como o modelo cliente-servidor (Figura 1)[cite: 203]. Neste modelo, uma máquina remota atua como servidor de documentos hipertexto, e uma máquina local atua como cliente, solicitando hipertextos por meio de seu endereço de rede, a URL (Uniform Resource Locator)[cite: 204]. Geralmente, a URL é inserida na barra de endereços de um navegador web para obter documentos hipertexto[cite: 205]. O navegador é o lado cliente da requisição de documentos, enquanto o computador remoto com as informações é o lado servidor de um sistema ou aplicação web[cite: 206].
+Para desenvolver uma aplicação web, construiremos um sistema distribuído que possui:
 
-Para desenvolver uma aplicação web, constrói-se um sistema distribuído com:
+1. Uma interface de usuário, executada a partir de um navegador em um computador local, que representa o lado cliente da aplicação, também conhecido como front-end.
+2. Uma aplicação executada no computador remoto, que representa o lado servidor da aplicação, também conhecido como back-end, que se encarrega de enviar ao cliente as informações solicitadas, baseadas nos dados de um banco de dados.
 
-1.  Uma interface de usuário executada em um navegador local, que é o lado cliente (front-end) da aplicação[cite: 208].
-2.  Uma aplicação executada no computador remoto, que é o lado servidor (back-end), responsável por enviar as informações solicitadas ao cliente, com base em dados de um banco de dados[cite: 209].
+> **Figura 1:** Modelo cliente-servidor. Fonte: ©sergeyvasutin/Adobe Stock.
 
-### Para começar a desenvolver para a web [cite: 210]
+### Para começar a desenvolver para a web
 
-Nesta unidade, começaremos com o desenvolvimento web do lado cliente (front-end), focando na criação de uma interface visual que oriente a navegação do usuário para que ele encontre e obtenha o que precisa[cite: 210]. O ponto de partida para o desenvolvimento front-end é a formatação da estrutura de hipertextos (páginas web) usando HTML[cite: 211].
+Nesta unidade, iniciaremos o desenvolvimento web pelo lado cliente, ou front-end, em que a principal preocupação é criar uma interface visual que oriente a navegação do usuário na aplicação, para permitir que ele encontre e obtenha o que precisa.
 
-## Estrutura do documento HTML [cite: 212]
+Portanto, o ponto de partida para o desenvolvimento front-end é saber realizar a formatação da estrutura de hipertextos, ou páginas web, feita com a linguagem HTML, a ser trabalhada a seguir.
 
-Um documento HTML é um arquivo de texto com elementos marcados usando tags[cite: 212].
+---
 
-### Tags [cite: 213]
+## Estrutura do documento HTML
 
-As tags são delimitadas por `<` e `/>`[cite: 213]. Entre esses sinais, há o nome da tag, uma palavra reservada que indica um elemento HTML[cite: 214]. Um elemento HTML é composto por uma tag de abertura e uma tag de fechamento (Figura 2)[cite: 215].
+Um documento HTML é basicamente um arquivo texto, com elementos que são marcados utilizando tags (tag = etiquetas).
 
-```html
-<nome elemento>Conteúdo</nome do elemento>
-```
+**Tags**
 
-### Documento HTML, com suas tags iniciais [cite: 217]
+As tags são delimitadas com os sinais `<` e `>`. Entre esses sinais, está o nome da tag, que é uma palavra reservada, para indicar um elemento HTML.
 
-A Figura 3 mostra a estrutura fundamental de um documento HTML, que é um arquivo de texto com extensão `.html` contendo tags de organização[cite: 218].
+Logo, um elemento HTML é apresentado com uma tag de abertura e uma tag de fechamento, como exibido na Figura 2 a seguir.
+
+> **Figura 2:** Elemento HTML. Fonte: Autora (2023).
+
+A Figura 3, a seguir, apresenta a estrutura fundamental de um documento HTML, que nada mais é do que um arquivo texto com extensão `.html`, em que encontramos tags de organização.
+
+Vamos comentar as tags iniciais da Figura apresentada:
+
+* `<!DOCTYPE html>`: o Document Type Definition (DTD, ou simplesmente Doctype) é uma tag que informa ao navegador qual é o tipo do documento em questão, e deve ser declarado antes da tag `<html>`.
+* `<html>` e `</html>`: respectivamente, abertura e fechamento do documento HTML; são tags que abrangem todas as demais tags do documento.
+* `<head>` e `</head>`: respectivamente, abertura e fechamento da seção de cabeçalho do documento HTML. A seção cabeçalho deve ser declarada após a tag `<html>`.
+* `<meta charset="utf-8">`: a tag de metadados indica informações a respeito da página e do conteúdo nela publicado no navegador, sendo invisíveis para os usuários. Todos os metadados ficam contidos dentro da seção de cabeçalho, delimitada pelas tags `<head>` e `</head>`. A metatag `charset` é usada para indicar o conjunto de caracteres que nossa página está utilizando. No caso, indicamos uma codificação de caracteres do tipo `utf-8`: ou UCS Transformation Format 8, a mais comum da web.
+* `<title>` e `</title>`: define o título da página, que é exibido na barra de título dos navegadores. Também é usada pelas ferramentas de busca da internet, para indexar e encontrar páginas web. São tags de metadados, logo ficam contidos nas tags `<head>` e `</head>`.
+* `<body>` e `</body>`: respectivamente, abertura e fechamento do corpo do documento HTML; a tag `</body>` deve ser declarada imediatamente antes da tag de fechamento de documento `</html>`.
+* `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Minha Página HTML</title>
+    <meta charset="UTF-8">
+    <title>Minha primeira página HTML</title>
   </head>
   <body>
-    <p>Meu 1º. parágrafo</p>
-    <p>Meu 2º. parágrafo</p>
+    <h1>Primeiro cabeçalho da página</h1>
+    <p>Primeiro parágrafo.</p>
+    <p>Segundo parágrafo.</p>
   </body>
 </html>
 ```
 
-Vamos comentar as tags iniciais da Figura 3[cite: 222]:
+> **Figura 3:** Estrutura fundamental de um documento HTML. Fonte: Autora (2023).
 
-* `<!DOCTYPE html>`: O Document Type Definition (DTD, ou Doctype) é uma tag que informa ao navegador o tipo do documento e deve ser declarada antes da tag `<html>`[cite: 222].
-* `<html>` e `</html>`: Tags de abertura e fechamento do documento HTML, abrangendo todas as outras tags[cite: 223, 224].
-* `<head>` e `</head>`: Tags de abertura e fechamento da seção de cabeçalho do documento HTML, declarada após a tag `<html>`[cite: 225, 226].
-* `<meta charset="utf-8">`: A tag de metadados fornece informações sobre a página e seu conteúdo para o navegador, sendo invisível para os usuários[cite: 227]. Todos os metadados ficam dentro da seção de cabeçalho, delimitada pelas tags `<head>` e `</head>`[cite: 228]. A metatag `charset` é usada para indicar o conjunto de caracteres da página[cite: 229]. `utf-8` (UCS Transformation Format 8) é a codificação de caracteres mais comum na web[cite: 230].
-* `<title>` e `</title>`: Definem o título da página, que é exibido na barra de título dos navegadores[cite: 231]. Também são usadas por ferramentas de busca para indexar e encontrar páginas web[cite: 232]. São tags de metadados, contidas dentro das tags `<head>` e `</head>`[cite: 233].
-* `<body>` e `</body>`: Tags de abertura e fechamento do corpo do documento HTML[cite: 234]. A tag `</body>` deve ser declarada imediatamente antes da tag de fechamento do documento `</html>`[cite: 235, 236].
-* `<p>` e `</p>`: Tags de abertura e fechamento de um parágrafo no documento HTML[cite: 236].
+---
 
-## EXPERIMENTE
+## PRÁTICA: visualizando um documento web no navegador
 
-### PRÁTICA: visualizando um documento web no navegador [cite: 237]
-
-Vamos criar um documento HTML e visualizar sua interpretação (renderização) em um navegador. Além disso, vamos encontrar a ferramenta de inspeção de página do navegador Google Chrome.
-
-Siga os passos indicados a seguir[cite: 238].
-
-1.  Crie uma pasta de trabalho, por exemplo: `C:/Teste-HTML`[cite: 239].
-2.  Dentro da pasta, crie um documento de texto com o nome `index.html`. Atenção para a extensão do arquivo: precisa ser `.html`[cite: 240]!
-3.  Copie o texto a seguir para o seu arquivo `index.html`[cite: 241]:
-
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="UTF-8" />
-        <title>Minha primeira página HTML</title>
-      </head>
-      <body>
-        <h1>Primeiro cabeçalho da página</h1>
-        <p>Primeiro parágrafo.</p>
-        <p>Segundo parágrafo.</p>
-      </body>
-    </html>
-    ```
-
-4.  Abra o seu `index.html` no navegador (browser): copie o caminho completo do arquivo e cole na barra de endereços, ou barra de navegação[cite: 245].
-5.  Verifique como o navegador interpretou o seu `index.html`: encontre o título da página (documento web) e verifique como o navegador pode inspecionar o HTML de todos os elementos da sua página na janela de inspeção[cite: 251].
-
-## Utilizando o ambiente de desenvolvimento VS Code para criar páginas HTML [cite: 252]
-
-Como mencionado, um documento HTML é um arquivo de texto que pode ser criado em qualquer editor básico de texto, como o Microsoft Notepad[cite: 252]. No entanto, para desenvolver uma aplicação web, é necessário trabalhar com várias linguagens, como JavaScript, PHP e SQL, além de HTML e CSS[cite: 253]. Com um ambiente de desenvolvimento integrado (IDE - Integrated Development Environment), há ferramentas para escrever, atualizar e depurar códigos, entre outras facilidades[cite: 254]. É recomendado trabalhar com um ambiente de desenvolvimento para codificar as primeiras páginas HTML[cite: 255]. O indicado é o VS Code, da Microsoft[cite: 256].
-
-## HTML headings [cite: 257]
-
-Headings são elementos HTML para cabeçalhos[cite: 257]. Eles são definidos com as tags `<h1>` a `<h6>`[cite: 257]. O `<h1>` define o cabeçalho de maior nível (mais importante), e o `<h6>` define o cabeçalho de menor nível (menos importante)[cite: 257].
-
-### EXPERIMENTE
-
-### PRÁTICA: cabeçalhos [cite: 258]
-
-1.  Copie o texto a seguir para o seu arquivo `headings.html`. Depois, abra o arquivo no navegador[cite: 258].
-
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h1>Este é o heading 1</h1>
-        <h2>Este é o heading 2</h2>
-        <h3>Este é o heading 3</h3>
-        <h4>Este é o heading 4</h4>
-        <h5>Este é o heading 5</h5>
-        <h6>Este é o heading 6</h6>
-      </body>
-    </html>
-    ```
-
-## HTML imagens [cite: 261]
-
-As imagens podem melhorar o design e a aparência de uma página da web[cite: 261]. Elas são apresentadas em um documento web com a tag `<img>` e possuem alguns atributos, como exemplificado na Figura 6[cite: 262]:
+1. Crie uma pasta de trabalho, como, por exemplo: `C:/Teste-HTML`.
+2. Dentro da pasta, crie um documento texto com o nome `index.html` – atenção para a extensão do arquivo: precisa ser `.html`!
+3. Copie o texto a seguir para o seu arquivo `index.html`.
 
 ```html
-<img src="figura.jpg" alt="Exemplo de figura." width="200" height="100" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minha primeira página HTML</title>
+</head>
+<body>
+    <h1>Primeiro cabeçalho da página</h1>
+    <p>Primeiro parágrafo.</p>
+    <p>Segundo parágrafo.</p>
+</body>
+</html>
 ```
 
-* **Atributo src**: especifica o caminho para a imagem[cite: 263].
-* **Atributo alt**: especifica um texto alternativo para a imagem[cite: 264].
-* **Atributos width e height**: especificam, respectivamente, largura e altura de uma imagem, em pixels[cite: 264].
+4. Abra o seu `index.html` no navegador (browser): copie o caminho completo do arquivo e cole na barra de endereços, ou barra de navegação.
+5. Verifique como o navegador interpretou o seu `index.html`: ache o título da página, ou documento web, e verifique como o navegador pode inspecionar o HTML de todos os elementos da sua página na janela de inspeção.
 
-### EXPERIMENTE
+> **Figura 4:** Visualização do documento HTML no navegador, com janela de inspeção. Fonte: Autora (2023).
 
-### PRÁTICA: imagens [cite: 265]
+Você pode utilizar um ambiente integrado de desenvolvimento, ou IDE – do inglês Integrated Development Environment –, como o Visual Studio Code da Microsoft ([https://code.visualstudio.com](https://code.visualstudio.com)).
 
-1.  Crie uma pasta com o nome `Figuras`, subordinada à sua pasta de trabalho, como no exemplo: `C:/Teste-HTML/Figuras`[cite: 265].
-2.  Na pasta `Figuras`, recém-criada, salve duas imagens do tipo `.jpg` com os nomes "cavalos.jpg" e "praia.jpg"[cite: 266].
-3.  Copie o texto a seguir para o seu arquivo `images.html`. Depois, abra o arquivo no navegador[cite: 267].
+---
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h2>HTML Image</h2>
-        <img src="figuras/cavalos.jpg" alt="Passeio a cavalo." width="289" />
-        <h2>HTML Image</h2>
-        <img src="figuras/praia.jpg" alt="Férias na praia." width="289" />
-      </body>
-    </html>
-    ```
+# HTML básico
 
-## HTML Links [cite: 269]
+Utilizando o ambiente de desenvolvimento VS Code para criar páginas HTML
 
-Links são elementos HTML que permitem a ligação com outros documentos web[cite: 269]. Eles são definidos com a tag `<a>` de âncora, ou *anchor*[cite: 270]. Ao serem acionados ou clicados, os links redirecionam a página atual para outro documento referenciado na tag[cite: 271]. A tag `<a>` também possui alguns atributos, como exemplificado na Figura 8[cite: 272]:
+Como acabamos de mencionar, um documento HTML é um arquivo-texto, que pode ser criado em qualquer editor básico de texto, como Microsoft Notepad. Contudo, para desenvolver uma aplicação web, precisamos trabalhar várias linguagens, como JavaScript, PHP e SQL, além do HTML e CSS. Com um ambiente de desenvolvimento (IDE, do inglês Integrated Development Environment), temos ajuda para escrever, atualizar e depurar códigos, dentre outras facilidades. Então, fica a dica: vamos trabalhar desde já com um ambiente de desenvolvimento para codificar nossas primeiras páginas HTML! O indicado é VS Code, da Microsoft.
+
+---
+
+## HTML headings
+
+Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `<h1>` ao `<h6>`. Sendo que o `<h1>` define o cabeçalho de maior nível, ou mais importante, e o `<h6>` define o cabeçalho de menor nível, ou o menos importante.
+
+### PRÁTICA: cabeçalhos
+
+1. Copie o texto a seguir para o seu arquivo `headings.html`. Após, abra o arquivo no navegador.
 
 ```html
-<a href="https://google.com/" title="Google" target="_blank">Site do Google</a>
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>Este é o heading 1</h1>
+      <h2>Este é o heading 2</h2>
+      <h3>Este é o heading 3</h3>
+      <h4>Este é o heading 4</h4>
+      <h5>Este é o heading 5</h5>
+      <h6>Este é o heading 6</h6>
+   </body>
+</html>
 ```
 
-* **href**: O atributo mais importante da tag `<a>`, pois identifica o destino do link[cite: 273].
-* **title**: Texto "dica" que aparece quando o mouse se move sobre o elemento[cite: 274].
-* **target**: Identifica onde abrir o documento vinculado. Pode ter os valores:
-    * `_self`: Abre o documento na mesma janela/guia em que foi clicado[cite: 277].
-    * `_blank`: Abre o documento em uma nova janela ou guia[cite: 278].
+> **Figura 5:** HTML headings. Fonte: Autora (2023).
 
-### EXPERIMENTE
+---
 
-### PRÁTICA: links [cite: 275]
+## HTML imagens
 
-1.  Copie o texto a seguir para o seu arquivo `links.html`. Depois, abra o arquivo no navegador, garantindo que as páginas `images.html` e `headings.html` da prática anterior já existam em `C:/Teste-HTML`[cite: 276].
+As imagens podem melhorar o design e a aparência de uma página da web. Elas são apresentadas em um documento web com a tag `<img>` e possuem alguns atributos, como exemplificado a seguir.
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h2>URLs absolutas</h2>
-        <p><a href="https://google.com/" target="_blank" title="Google">Site Google</a></p>
-        <p></p>
-        <a href="https://pucpr.br/" target="_blank" title="PUCPR">Site PUCPR</a>
-        <h2>URL relativas</h2>
-        <p></p>
-        <a href="images.html" title="Teste de imagens">Images</a>
-        <p></p>
-        <a href="headings.html" title="Teste de cabeçalhos">Headings</a>
-        <h2>Link para e-mail</h2>
-        <p></p>
-        <a href="mailto:nome.sobrenome@site_examplo.com">Envie um e-mail</a>
-      </body>
-    </html>
-    ```
+### PRÁTICA: imagens
 
-## HTML lists [cite: 280]
+1. Crie uma pasta com o nome `Figuras`, subordinada à sua pasta de trabalho, como no exemplo: `C:/Teste-HTML/Figuras`.
+2. Na pasta `Figuras`, recém-criada, salve duas imagens, do tipo `.jpg` com os nomes `cavalos.jpg` e `praia.jpg`.
+3. Copie o texto a seguir para o seu arquivo `images.html`. Após, abra o arquivo no navegador.
 
-É possível agrupar um conjunto de itens relacionados em uma estrutura de lista, que possui três tipos possíveis[cite: 280]:
+```html
+<!DOCTYPE html>
+<html>
+   <body>
+      <h2>HTML Image</h2>
+      <img src="figuras/cavalos.jpg" alt="Passeio a cavalo." width="289" height="">
+      <h2>HTML Image</h2>
+      <img src="figuras/praia.jpg" alt="Férias na praia." width="289" height="">
+   </body>
+</html>
+```
 
-* **Unordered HTML list (Lista não ordenada)**: Definida com as tags `<ul>` e `</ul>`, com cada item identificado pelas tags `<li>` e `</li>`[cite: 280].
-* **Ordered HTML list (Lista ordenada)**: Definida com as tags `<ol>` e `</ol>`, com cada item identificado pelas tags `<li>` e `</li>`[cite: 281].
-* **HTML description lists (Lista de descrição)**: Definida com as tags `<dl>` e `</dl>`, com cada item identificado pelas tags `<dt>` e `</dt>`, e sua descrição delimitada pelas tags `<dd>` e `</dd>`[cite: 282].
+> **Figura 6:** HTML imagem: formato. Fonte: Autora (2023).
 
-### EXPERIMENTE
+---
 
-### PRÁTICA: listas [cite: 283]
+## HTML Links
 
-1.  Copie o texto a seguir para o seu arquivo `lists.html`. Após, abra o arquivo no navegador[cite: 283].
+Links são elementos HTML que permitem a ligação com outros documentos web. Eles são definidos com a tag `<a>` de âncora, ou anchor, em inglês. Ao serem acionados ou clicados, os links redirecionam a página atual para outro documento referenciado na tag.
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h2>Lista Não Ordenadas</h2>
-        <ul>
-          <li>Café</li>
-          <li>Chá</li>
-          <li>Leite</li>
-        </ul>
-        <h2>Lista Ordenadas</h2>
-        <ol>
-          <li>Café</li>
-          <li>Chá</li>
-          <li>Leite</li>
-        </ol>
-        <h2>Lista de Definição</h2>
-        <dl>
-          <dt>Café</dt>
-          <dd>- Bebida quente, produzida a partir dos grãos torrados do cafe</dd>
-          <dt>Chá</dt>
-          <dd>- Bebida quente, preparada pela infusão de folhas.</dd>
-          <dt>Leite</dt>
-          <dd>- Bebida gelada branca.</dd>
-        </dl>
-      </body>
-    </html>
-    ```
+A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 
-## IMPORTANTE
+### PRÁTICA: links
 
-### HTML tables [cite: 287]
+1. Copie o texto a seguir para o seu arquivo `links.html`. Após, abra o arquivo no navegador, garantindo que as páginas `images.html` e `headings.html`, da prática anterior, já existam em `C:/Teste-HTML`.
 
-É possível organizar um conjunto de dados em uma estrutura de tabela, com linhas e colunas[cite: 287]. Para isso, são usadas as seguintes tags:
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>URLs absolutas</h2>
+    <p><a href="https://google.com/" target="_blank" title="Google">Site Google</a></p>
+    <p><a href="https://pucpr.br/" target="_blank" title="PUCPR">Site PUCPR</a></p>
+    <h2>URL relativas</h2>
+    <p><a href="images.html" title="Teste de imagens">Images</a></p>
+    <p><a href="headings.html" title="Teste de cabeçalhos">Headings</a></p>
+    <h2>Link para e-mail</h2>
+    <p><a href="mailto:nome.sobrenome@site_exemplo.com">Envie um e-mail</a></p>
+  </body>
+</html>
+```
 
-* `<table>` e `</table>`: Tags de início e fim de tabela[cite: 288].
-* `<tr>` e `</tr>`: Tags de início e fim de linha[cite: 289].
-* `<th>` e `</th>`: Tags de início e fim de coluna do tipo cabeçalho[cite: 290].
-* `<td>` e `</td>`: Tags de início e fim de coluna simples[cite: 291].
+> **Figura 7:** HTML links. Fonte: Autora (2023).
 
-### COMENTÁRIOS NOS CÓDIGOS HTML, CSS E JAVASCRIPT [cite: 292]
+---
 
-Comentários servem para explicar um código sem interferir na codificação, pois não são interpretados como comandos ou palavras reservadas da linguagem[cite: 292]. Para isso, precisam estar sinalizados com caracteres especiais:
+## HTML lists
 
-* No HTML, comentários são delimitados pelos caracteres: ``[cite: 294].
-* No CSS e no JavaScript, os comentários são delimitados pelos caracteres: `/*` e `*/`[cite: 295].
+Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que possui três tipos possíveis:
 
-### A FORMATAÇÃO DE TABELAS HTML É FEITA COM CSS [cite: 296]
+* **Unordered HTML list**, ou lista não ordenada, definida com as tags `<ul>` e `</ul>`, sendo cada item identificado com as tags `<li>` e `</li>`.
+* **Ordered HTML list**, ou lista ordenada, definida com as tags `<ol>` e `</ol>`, sendo cada item identificado com as tags `<li>` e `</li>`.
+* **HTML description lists**, ou lista de descrição, definida com as tags `<dl>` e `</dl>`, sendo cada item identificado com as tags `<dt>` e `</dt>`, com sua descrição delimitada pelas tags `<dd>` e `</dd>`.
 
-A formatação visual de tabelas no HTML (cores, bordas, textos, etc.) é feita com estilos CSS (Cascading Style Sheets, ou folha de estilos em cascata)[cite: 296]. O CSS é uma linguagem de formatação de conteúdo que será abordada na próxima unidade[cite: 297]. Por enquanto, será usado um pequeno trecho de CSS para formatar as bordas das tabelas de exemplo, para que sejam desenhadas na cor preta e em linha cheia de 1 pixel de largura[cite: 298]:
+### PRÁTICA: listas
+
+1. Copie o texto a seguir para o seu arquivo `lists.html`. Após, abra o arquivo no navegador.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Lista Não Ordenadas</h2>
+    <ul>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+    </ul>
+    <h2>Lista Ordenadas</h2>
+    <ol>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+    </ol>
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>Café</dt>
+        <dd>- Bebida quente, produzida a partir dos grãos torrados do café.</dd>
+        <dt>Chá</dt>
+        <dd>- Bebida quente, preparada pela infusão de folhas.</dd>
+        <dt>Leite</dt>
+        <dd>- Bebida gelada branca.</dd>
+    </dl>
+</body>
+</html>
+```
+
+> **Figura 9:** HTML listas. Fonte: Autora (2023).
+
+---
+
+## HTML tables
+
+Podemos organizar um conjunto de dados em uma estrutura de tabela, com linhas e colunas. Para tanto, usamos as seguintes tags:
+
+* `<table>` e `</table>`: Tags de início e fim de tabela.
+* `<tr>` e `</tr>`: Tags de início e fim de linha.
+* `<th>` e `</th>`: Tags de início e fim de coluna do tipo cabeçalho.
+* `<td>` e `</td>`: Tags de início e fim de coluna simples.
+
+### COMENTÁRIOS NOS CÓDIGO HTML, CSS E JAVASCRIPT
+
+Comentários servem para explicar um código, sem interferir na codificação propriamente dita, pois não são interpretados como comandos ou palavras reservadas da linguagem.
+
+* No HTML, comentários ficam delimitados pelos caracteres: `<!--` e `-->`.
+* No CSS e no JavaScript, os comentários são delimitados pelos caracteres: `/*` e `*/`.
+
+> **Figura 10:** HTML listas. Fonte: Autora (2023).
+
+A formatação de tabelas HTML é feita com CSS. A formatação visual de tabelas no HTML (cores, bordas, textos etc.) é feita com estilos CSS, de Cascading Style Sheets, ou folha de estilos em cascata.
+
+Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de CSS para desenhar bordas na cor preta e em linha cheia de 1 pixel de largura:
 
 ```html
 <head>
+  <!-- Comentário HTML: Abre seção <head> -->
   <style>
     /* Comentário CSS: tags "table", "th" e "td" */
-    table,
-    th,
-    td {
-      border: 1px solid black; /* borda de 1 pixel, em l */
+    table, th, td {
+      border: 1px solid black; /* borda de 1 pixel, em linha cheia e na cor preta */
     }
   </style>
-  </head>
+  <!-- Fecha a seção </style> -->
+</head>
 ```
 
-### EXPERIMENTE
+### PRÁTICA: tabelas
 
-### PRÁTICA: tabelas [cite: 298]
+1. Copie o texto a seguir para o seu arquivo `tables.html`. Após, abra o arquivo no navegador.
 
-1.  Copie o texto a seguir para o seu arquivo `tables.html`. Após, abra o arquivo no navegador[cite: 299].
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Comentário HTML: Abre seção <head> -->
+  <style>
+    /* Comentário CSS: Formatação visual de uma tabela */
+    table, th, td {
+      border: 1px solid black; /* borda de 1 pixel, em linha cheia e na cor preta */
+    }
+  </style>
+  <!-- Fecha a seção </style>, dentro da seção de cabeçalho do HTML -->
+</head>
+<body>
+  <h2>Tabela Exemplo 1</h2>
+  <table width="60%">
+    <tr>
+      <th>Itens/Mês</th>
+      <th>Janeiro</th>
+      <th>Fevereiro</th>
+    </tr>
+    <tr>
+      <th>Usuarios</th>
+      <td>80</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>Linhas</th>
+      <td>3</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <h2>Tabela Exemplo 2: atributos colspan e rowspan</h2>
+  <table>
+    <tr>
+      <th rowspan="3">Meses</th> <!-- Faz a união de 3 LINHAS (row) -->
+      <th>Mês</th>
+      <th>Economia</th>
+    </tr>
+    <tr>
+      <td>Janeiro</td>
+      <td>R$ 100,00</td>
+    </tr>
+    <tr>
+      <td>Fevereiro</td>
+      <td>R$ 80,00</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td colspan="2">R$ 180,00</td> <!-- Faz a união de 2 COLUNAS (col) -->
+    </tr>
+  </table>
+</body>
+</html>
+```
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <style>
-          /* Comentário CSS: Os elementos HTML: */
-          table,
-          /* "table" (tag para iniciar tabela), */
-          th,
-          /* "th" (tag para coluna cabeçalho) e */
-          td {
-            /* "td (tag para coluna), terão como fo */
-            border: 1px solid black; /* borda de 1 pixel, em linha cheia e na co */
-          }
-        </style>
-        </head>
-      <body>
-        <h2>Tabela Exemplo 1</h2>
-        <table width="60%">
-          <tr>
-            <th>Itens/Mês</th>
-            <th>Janeiro</th>
-            <th>Fevereiro</th>
-          </tr>
-          <tr>
-            <th>Usuarios</th>
-            <td>80</td>
-            <td>93</td>
-          </tr>
-          <tr>
-            <th>Linhas</th>
-            <td>3</td>
-            <td>9</td>
-          </tr>
-        </table>
-        <h2>Tabela Exemplo 2: atributos colspan e rowspan</h2>
-        <table>
-          <tr>
-            <th rowspan="3">Meses</th>
-            <th>Mês</th>
-            <th>Economia</th>
-          </tr>
-          <tr>
-            <td>Janeiro</td>
-            <td>R$ 100,00</td>
-          </tr>
-          <tr>
-            <td>Fevereiro</td>
-            <td>R$ 80,0</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td colspan="2">R$ 180,00</td>
-            </tr>
-        </table>
-      </body>
-    </html>
-    ```
+> **Figura 11:** HTML tables. Fonte: Autora (2023).
 
-Alguns atributos para as tags `<td>` e `<th>`:
+---
 
-* `colspan="valor"`: Define quantas células uma coluna poderá ter[cite: 305].
-* `rowspan="valor"`: Define quantas células uma linha poderá ter[cite: 306].
-
-## HTML formating [cite: 303]
+## HTML formating
 
 O HTML define alguns elementos de formatação para exibir tipos especiais de textos:
 
-* `<b>`: Texto em negrito[cite: 303].
-* `<strong>`: Texto importante[cite: 304].
+* `<b>`: Texto em negrito.
+* `<strong>`: Texto importante.
 * `<i>`: Texto em itálico.
-* `<em>`: Texto em destaque[cite: 304].
-* `<small>`: Texto menor[cite: 307].
-* `<sub>`: Texto subscrito[cite: 307].
-* `<sup>`: Texto sobrescrito[cite: 307].
+* `<em>`: Texto em destaque.
+* `<small>`: Texto menor.
+* `<sub>`: Texto subscrito.
+* `<sup>`: Texto sobrescrito.
 
-### EXPERIMENTE
+### PRÁTICA: formating
 
-### PRÁTICA: formating [cite: 308]
+1. Copie o texto a seguir para o seu arquivo `formating.html`. Após, abra o arquivo no navegador.
 
-1.  Copie o texto a seguir para o seu arquivo `formating.html`. Após, abra o arquivo no navegador[cite: 308].
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Formatação básica de texto</h2>
+    <p>Este é um texto normal.</p>
+    <p><b>Este é um texto negrito.</b></p>
+    <p><strong>Este é um texto importante!</strong></p>
+    <p><i>Este é um texto em itálico.</i></p>
+    <p><em>Este é um texto enfatizado.</em></p>
+    <p><small>Este é um texto em uma fonte menor.</small></p>
+    <p>Este é um texto <sub>subscrito</sub>.</p>
+    <p>Este é um texto <sup>sobrescrito</sup>.</p>
+</body>
+</html>
+```
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h2>Formatação básica de texto</h2>
-        <p>Este é um texto normal.</p>
-        <p><b>Este é um texto negrito.</b></p>
-        <p><strong>Este é um texto importante!</strong></p>
-        <p><i>Este é um texto em itálico.</i></p>
-        <p><em>Este é um texto enfatizado.</em></p>
-        <p><small>Este é um texto em uma fonte menor.</small></p>
-        <p>Este é um texto <sub>subscrito</sub>.</p>
-        <p>Este é um texto <sup>sobrescrito</sup>.</p>
-      </body>
-    </html>
-    ```
+---
 
-## HTML forms [cite: 310]
+## HTML forms
 
-O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrada do usuário[cite: 310]. Ele é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc. [cite: 311]
+O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrada do usuário. Ele é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio etc.
 
-### EXPERIMENTE
+### PRÁTICA: forms
 
-### PRÁTICA: forms [cite: 311]
+1. Copie o texto a seguir para o seu arquivo `forms.html`. Após, abra o arquivo no navegador.
 
-1.  Copie o texto a seguir para o seu arquivo `forms.html`. Após, abra o arquivo no navegador[cite: 312].
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Campos de entrada do tipo TEXT</h2>
+    <form>
+        <label for="pnome">Primeiro nome:</label><br>
+        <input type="text" id="pnome" name="pnome" value="João"><br>
+        <label for="unome">Último nome:</label><br>
+        <input type="text" id="lnome" name="unome" value="Silva">
+    </form><br>
+    <b>Observe 1</b>: o formulário em si não é visível.<br>
+    <b>Observe 2</b>: a largura padrão do campo de texto = **20** caracteres.
+    <br><hr>
+    <h2>Campos de entrada do tipo RADIO BUTTON</h2>
+    <p>Escolha sua linguagem web favorita:</p>
+    <form>
+        <input type="radio" id="html" name="fav_linguagem" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_linguagem" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_linguagem" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+    <br><hr>
+    <h2>Campos de entrada do tipo CHECKBOX</h2>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+    <br><hr>
+    <h2>Campos de entrada do tipo SUBMIT BUTTON</h2>
+    <form action="https://www.w3schools.com/action_page.php" target="_self">
+        <label for="pnome">Primeiro nome:</label><br>
+        <input type="text" id="pnome" name="pnome" value="Maria"><br>
+        <label for="lnome">Último nome:</label><br>
+        <input type="text" id="lnome" name="lnome" value="Flores"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Ao clicar no botão "Submit", os dados do formulário serão enviados.</p>
+</body>
+</html>
+```
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h2>Campos de entrada do tipo TEXT</h2>
-        <form>
-          <label for="pname">Primeiro nome:</label><br />
-          <input type="text" id="pnome" name="pnome" value="João" /><br />
-          <label for="uname">Último nome:</label><br />
-          <input type="text" id="lnome" name="unome" value="Silva" />
-        </form>
-        <br />
-        <b>Observe 1</b>: o formulário em si não é visível. <br />
-        <b>Observe 2</b>: a largura padrão do campo de texto = <b>20</b> carac <br />
-        <br />
-        <hr />
-        <h2>Campos de entrada do tipo RADIO BUTTON</h2>
-        <p>Escolha sua linguagem web favorita:</p>
-        <form>
-          <input type="radio" id="html" name="fav_linguagem" value="HTML" />
-          <label for="html">HTML</label><br />
-          <input type="radio" id="css" name="fav_linguagem" value="CSS" />
-          <label for="css">CSS</label><br />
-          <input type="radio" id="javascript" name="fav_linguagem" value="Ja" />
-          <label for="javascript">JavaScript</label>
-        </form>
-        <br />
-        <hr />
-        <h2>Campos de entrada do tipo CHECKBOX</h2>
-        <form>
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-          <label for="vehicle1">I have a bike</label><br />
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-          <label for="vehicle2">I have a car</label><br />
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-          <label for="vehicle3">I have a boat</label>
-        </form>
-        <br />
-        <hr />
-        <h2>Campos de entrada do tipo SUBMIT BUTTON</h2>
-        <form action="https://www.w3schools.com/action_page.php" target="_self">
-          <label for="pname">Primeiro nome:</label><br />
-          <input type="text" id="pnome" name="pnome" value="Maria" /><br />
-          <label for="uname">Último nome:</label><br />
-          <input type="text" id="lnome" name="unome" value="Flores" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-        <p>Ao clicar no botão "Submit", os dados do formulário serão enviados</p>
-      </body>
-    </html>
-    ```
+---
 
-### Alguns atributos da tag `<form>` [cite: 318]
+### Alguns atributos da tag `<form>`
 
-* **action**: Define a ação a ser executada quando o formulário for enviado[cite: 318].
-* **target**: Identifica onde abrir o documento vinculado[cite: 319]. Pode ter os valores:
-    * `_self`: Abre o documento na mesma janela/guia em que foi clicado[cite: 319].
-    * `_blank`: Abre o documento em uma nova janela ou guia[cite: 320].
-* **method**: Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário[cite: 321]:
-    * `GET`: Os dados do formulário são enviados como variáveis de URL[cite: 321].
-    * `POST`: Os dados do formulário são enviados como transação de postagem HTTP[cite: 322].
-* **autocomplete**: Indica se o formulário deve ter o preenchimento automático[cite: 323].
-    * `on`: Ativa o preenchimento automático[cite: 323].
-    * `off`: Desativa o preenchimento automático[cite: 324].
+* **action**: Define a ação a ser executada quando o formulário for enviado.
+* **target**: Identifica onde abrir o documento vinculado. Pode ter os valores:
 
-### Alguns elementos subordinados à tag `<form>` [cite: 324]
+  * `_self`: Abre o documento na mesma janela/guia em que foi clicado.
+  * `_blank`: Abre o documento em uma nova janela ou guia.
+* **method**: Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário:
 
-* `<input>`: Elemento que pode ser exibido de várias maneiras, dependendo do atributo `type`[cite: 325].
-    * `<input type="checkbox">`: Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores[cite: 325].
-    * `<input type="color">`: Define um campo de entrada para escolha de cor[cite: 326].
-    * `<input type="date">`: Define um campo de entrada do tipo data[cite: 327].
-    * `<input type="datetime-local">`: Define um campo de entrada do tipo data e hora[cite: 328].
-    * `<input type="email">`: Define um campo de entrada do tipo endereço de e-mail[cite: 329].
-    * `<input type="file">`: Define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos[cite: 330].
-    * `<input type="hidden">`: Define um campo de entrada não visível ao usuário[cite: 331].
+  * `GET`: Os dados do formulário são enviados como variáveis de URL.
+  * `POST`: Os dados do formulário são enviados como transação de postagem HTTP.
+* **autocomplete**: Indica se formulário deve ter o preenchimento automático:
 
-## SAIBA MAIS
+  * `on`: Ativa o preenchimento automático.
+  * `off`: Desativa o preenchimento automático.
 
-* `<input type="image">`: Define uma imagem como botão de envio[cite: 332].
-* `<input type="month">`: Permite que o usuário selecione um mês e ano[cite: 333].
-* `<input type="number">`: Define um campo de entrada numérico[cite: 334].
-* `<input type="password">`: Define um campo de entrada de senha[cite: 334].
-* `<input type="radio">`: Define um botão de escolha, do tipo rádio, para seleção de ÚNICO valor[cite: 335].
-* `<input type="range">`: Define um campo de entrada do tipo controle deslizante[cite: 336].
-* `<input type="reset">`: Define um botão para limpar todos os campos do formulário[cite: 337].
-* `<input type="submit">`: Define um botão para enviar dados de formulário[cite: 337].
-* `<input type="text">`: Define um campo de entrada de texto de linha única[cite: 338].
-* `<input type="time">`: Permite que o usuário selecione um horário[cite: 338].
-* `<input type="url">`: Campo de entrada que deve conter um endereço de URL[cite: 339].
+#### Alguns elementos subordinados à tag `<form>`
 
-A tabela apresenta um resumo textual para exemplificar a sintaxe de utilização do HTML para criação de formulários[cite: 339]. Ela apresenta um conjunto de atributos para a tag `<form>` e uma relação de elementos HTML subordinados à tag `<form>`, que são campos de entrada[cite: 340].
+* `<input>`: Elemento pode ser exibido de várias maneiras, dependendo do atributo `type`.
+* `<input type="checkbox">`: Define um botão de escolha, do tipo caixa, para seleção de vários valores.
+* `<input type="color">`: Define um campo de entrada para escolha de cor.
+* `<input type="date">`: Define um campo de entrada do tipo data.
+* `<input type="datetime-local">`: Define um campo de entrada do tipo data e hora.
+* `<input type="email">`: Define um campo de entrada do tipo endereço de e-mail.
+* `<input type="file">`: Define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos.
+* `<input type="hidden">`: Define um campo de entrada não visível ao usuário.
+* `<input type="image">`: Define uma imagem como botão de envio.
+* `<input type="month">`: Permite que o usuário selecione um mês e ano.
+* `<input type="number">`: Define um campo de entrada numérico.
+* `<input type="password">`: Define um campo de entrada de senha.
+* `<input type="radio">`: Define um botão de escolha, do tipo rádio, para seleção de único valor.
+* `<input type="range">`: Define um campo de entrada do tipo controle deslizante.
+* `<input type="reset">`: Define um botão para limpar todos os campos do formulário.
+* `<input type="submit">`: Define um botão para enviar dados de formulário.
+* `<input type="text">`: Define um campo de entrada de texto de linha única.
+* `<input type="time">`: Permite que o usuário selecione um horário.
+* `<input type="url">`: Campo de entrada que deve conter um endereço de URL.
 
-### Para você praticar mais – HTML forms [cite: 341]
+A tabela a seguir traz um resumo de atributos da tag `<form>` e uma relação de elementos HTML subordinados à tag `<form>`, que são campos de entrada.
 
-Acesse: `https://www.w3schools.com/html/html_forms.asp`
+> **Figura 13:** HTML forms. Fonte: Autora (2023).
 
-### Métodos para envio de dados de formulário [cite: 341]
-
-Para entender o envio de dados via formulário HTML, é preciso saber o que é HTTP e o que são métodos de envio[cite: 341].
-
-* **HTTP (Hypertext Transfer Protocol)**: É um protocolo de comunicação da internet que controla a transferência de hipertextos, ou documentos web[cite: 342]. Ao inserir uma URL na barra de endereços do navegador, está-se solicitando um documento web, via protocolo HTTP, ao site web da URL[cite: 343].
-* **HTTPS**: Adiciona a palavra "secure" (segurança) à sigla do HTTP[cite: 344]. Isso significa que um certificado SSL (Secure Sockets Layer) será usado para criptografar (codificar) todas as trocas de mensagens que trafegam pela internet, garantindo a confidencialidade e autenticidade dessas mensagens[cite: 345]. Ou seja, o SSL mantém a segurança das conexões via HTTP e impede que criminosos leiam ou modifiquem as informações transferidas entre dois sistemas, em um modelo de aplicação cliente-servidor[cite: 346].
-
-Em resumo, o HTTP funciona como um protocolo de solicitação-resposta entre um cliente e um servidor[cite: 347]. O lado servidor da aplicação recebe solicitações via HTTP quando o botão "submit" é acionado para o "envio" de dados em um formulário HTML[cite: 348]. Esses dados podem ser enviados de duas formas, denominadas métodos GET e POST[cite: 349].
-
-* **Método GET**: Utilizado para enviar dados de solicitação-resposta de um cliente para um servidor[cite: 350]. Os dados enviados na solicitação são adicionados ao final do endereço da URL, no formato de pares nome/valor[cite: 351]. Exemplo: `/test/demo_form.php?name1=value1&name2=value2`[cite: 352].
-    * **Observações sobre solicitações GET**:
-        * Permanecem no histórico do navegador[cite: 353].
-        * Nunca devem ser usadas ao lidar com dados confidenciais[cite: 353].
-        * Têm restrições de comprimento, pois devem caber na URL[cite: 354].
-* **Método POST**: Utilizado para enviar dados de solicitação-resposta de um cliente para um servidor[cite: 354]. Os dados enviados na solicitação são armazenados no corpo da mensagem HTTP, e não na URL[cite: 355]! Exemplo:
-    ```
-    POST /teste/demo_form.php HTTP/1.1
-    Host: www.acme.com
-    name1=value1&name2=value2
-    ```
-    * **Observações sobre solicitações POST**:
-        * Não permanecem no histórico do navegador[cite: 357].
-        * Indicadas para lidar com dados confidenciais[cite: 357].
-        * Não têm restrições de comprimento, pois são enviadas no corpo da mensagem, e não na URL[cite: 357].
+---
 
 ## SAIBA MAIS
 
-### PARA PRATICAR MAIS: `https://www.w3schools.com/html/html_forms.asp` [cite: 358]
+* [Tutorial HTML (W3Schools)](https://www.w3schools.com/html)
+* [HTML Forms (W3Schools)](https://www.w3schools.com/html/html_forms.asp)
+* [HTML Vídeo (W3Schools)](https://www.w3schools.com/html/html5_video.asp)
+* [HTML Áudio (W3Schools)](https://www.w3schools.com/html/html5_audio.asp)
+* [HTML YouTube (W3Schools)](https://www.w3schools.com/html/html_youtube.asp)
 
-### HTML no W3School [cite: 358]
+---
 
-O `https://www.w3schools.com/` é um site educacional voltado ao aprendizado de tecnologias web[cite: 359]. Seu conteúdo inclui tutoriais e referências relacionados a HTML, CSS, Javascript, dentre outras tecnologias[cite: 359].
+# Conclusão
 
-Pesquise mais sobre os temas indicados a seguir:
+Olá!
 
-* Tutorial HTML: `https://www.w3schools.com/html`
-* HTML Forms (formulários): `https://www.w3schools.com/html/html_forms.asp`
-* HTML Vídeo: `https://www.w3schools.com/html/html5_video.asp`
-* HTML Áudio: `https://www.w3schools.com/html/html5_audio.asp`
-* HTML YouTube: `https://www.w3schools.com/html/html_youtube.asp`
+Acabamos de ter o primeiro contato com o desenvolvimento web. Vimos que teremos duas frentes de trabalho:
 
-## Conclusão [cite: 361]
+1. Desenvolvimento web front-end, em que trabalharemos com HTML, CSS e JavaScript.
+2. Desenvolvimento web back-end, em que, dentre as várias tecnologias alternativas, trabalharemos com PHP e SQL.
 
-Acabamos de ter o primeiro contato com o desenvolvimento web[cite: 361]. Vimos que teremos duas frentes de trabalho:
+Assim, nesta unidade, começamos com HTML, que não é linguagem de programação, mas, sim, linguagem de marcação.
 
-* Desenvolvimento web front-end, em que trabalharemos com HTML, CSS e Javascript[cite: 362].
-* Desenvolvimento web back-end, em que, dentre as várias tecnologias alternativas, trabalharemos com PHP e SQL[cite: 363].
+Na próxima unidade, continuaremos no front-end, mas trabalhando para estilizar HTML com CSS.
 
-Assim, nesta unidade, começamos com HTML, que não é linguagem de programação, mas, sim, linguagem de marcação[cite: 364]. Na próxima unidade, continuaremos no front-end, mas trabalhando para estilizar HTML com CSS[cite: 365]. Realize as práticas indicadas aqui para HTML, pois assim você aproveitará melhor nossa próxima unidade[cite: 366]!
+Realize as práticas indicadas aqui para HTML, pois assim você aproveitará melhor nossa próxima unidade!
 
 Até!
 
-## Referências Bibliográficas [cite: 367]
+# Referências Bibliográficas
 
-ALVES, W. P. Desenvolvimento e design de sites. São Paulo: Erica, 2014[cite: 367].
-
-MILETTO, E. M.; BERTAGNOLLI, S. C. Desenvolvimento de software II: Introdução ao desenvolvimento web com HTML, CSS, Java Script e PHP. Porto Alegre: Bookman, 2014[cite: 368].
-
-TERUEL, E. C. HTML 5: Guia prático. 2. ed. Porto Alegre: Bookman, 2014[cite: 369].
+* ALVES, W. P. *Desenvolvimento e design de sites.* São Paulo: Erica, 2014.
+* MILETTO, E. M.; BERTAGNOLLI, S. C. *Desenvolvimento de software II: Introdução ao desenvolvimento web com HTML, CSS, JavaScript e PHP.* Porto Alegre: Bookman, 2014.
+* TERUEL, E. C. *HTML 5: Guia prático.* 2. ed. Porto Alegre: Bookman, 2014.
 
 © PUCPR - Todos os direitos reservados.
