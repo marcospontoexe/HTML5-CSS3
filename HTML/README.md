@@ -23,6 +23,13 @@ Neste documento falará sobre a linguagem HTML, apresentando suas marcações, o
 
 ---
 
+## COMENTÁRIOS NOS CÓDIGO HTML, CSS E JAVASCRIPT
+
+Comentários servem para explicar um código, sem interferir na codificação propriamente dita, pois não são interpretados como comandos ou palavras reservadas da linguagem.
+
+* No HTML, comentários ficam delimitados pelos caracteres: `<!--` e `-->`.
+* No CSS e no JavaScript, os comentários são delimitados pelos caracteres: `/*` e `*/`.
+
 ## Estrutura do documento HTML
 
 Um documento HTML é basicamente um arquivo texto, com elementos que são marcados utilizando tags (tag = etiquetas).
@@ -239,14 +246,6 @@ Podemos organizar um conjunto de dados em uma estrutura de tabela, com linhas e 
 * `<th>` e `</th>`: Tags de início e fim de coluna do tipo cabeçalho.
 * `<td>` e `</td>`: Tags de início e fim de coluna simples.
 
-### COMENTÁRIOS NOS CÓDIGO HTML, CSS E JAVASCRIPT
-
-Comentários servem para explicar um código, sem interferir na codificação propriamente dita, pois não são interpretados como comandos ou palavras reservadas da linguagem.
-
-* No HTML, comentários ficam delimitados pelos caracteres: `<!--` e `-->`.
-* No CSS e no JavaScript, os comentários são delimitados pelos caracteres: `/*` e `*/`.
-
-> **Figura 10:** HTML listas. Fonte: Autora (2023).
 
 A formatação de tabelas HTML é feita com CSS. A formatação visual de tabelas no HTML (cores, bordas, textos etc.) é feita com estilos CSS, de Cascading Style Sheets, ou folha de estilos em cascata.
 
@@ -265,9 +264,7 @@ Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de 
 </head>
 ```
 
-### PRÁTICA: tabelas
-
-1. Copie o texto a seguir para o seu arquivo `tables.html`. Após, abra o arquivo no navegador.
+### Exemplo de tabelas
 
 ```html
 <!DOCTYPE html>
@@ -325,9 +322,16 @@ Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de 
 </html>
 ```
 
-![Figura 11: HTML tables](figure_page17_1.jpeg)
+![Figura 9: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/9.jpeg)
 
-> **Figura 11:** HTML tables. Fonte: Autora (2023).
+> **Figura 9:** HTML tables.
+
+**Alguns atributos para as _tags_: `<td>` e `<td>`**
+
+| Atributo        | Descrição                                                         |
+|-----------------|-------------------------------------------------------------------|
+| `colspan="valor"` | Define quantas células uma **coluna** poderá ter.                |
+| `rowspan="valor"` | Define quantas células uma **linha** poderá ter.                 |
 
 ---
 
