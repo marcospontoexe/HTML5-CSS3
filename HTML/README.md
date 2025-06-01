@@ -427,42 +427,64 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-<table style="width:100%; border-collapse: collapse; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <thead>
-        <tr style="background-color: #e0e0e0; border-bottom: 2px solid #ccc;">
-            <th style="padding: 10px; text-align: left; font-weight: bold; font-size: 1.1em;">Seletor CSS</th>
-            <th style="padding: 10px; text-align: left; font-weight: bold; font-size: 1.1em;">Exemplo</th>
-            <th style="padding: 10px; text-align: left; font-weight: bold; font-size: 1.1em;">Descrição</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`elemento`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`p`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos `&lt;p&gt;`</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`#id`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`#nome`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona o elemento com `id="nome"`</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`.classe`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`.texto-vermelho`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos com `class="texto-vermelho"`</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`*`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`*`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`sel1, sel2`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">`h1, h2, p`</td>
-            <td style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">Seleciona todos os elementos `&lt;h1&gt;`, `&lt;h2&gt;` e `&lt;p&gt;`</td>
-        </tr>
-    </tbody>
+<h3>Alguns atributos da tag &lt;form&gt;</h3>
+<table>
+  <tr><th>Atributo</th><th>Descrição</th></tr>
+  <tr><td><code>action</code></td><td>Define a ação a ser executada quando o formulário for enviado</td></tr>
+  <tr>
+    <td><code>target</code></td>
+    <td>
+      Identifica onde abrir o documento vinculado. Pode ter os valores:<br>
+      <strong>_self</strong> : Abre o documento na mesma janela/guia em que foi clicado.<br>
+      <strong>_blank</strong> : Abre o documento em uma nova janela ou guia.
+    </td>
+  </tr>
+  <tr>
+    <td><code>method</code></td>
+    <td>
+      Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário:<br>
+      <strong>GET</strong> Os dados do formulário são enviados como variáveis de URL.<br>
+      <strong>POST</strong> Os dados do formulário são enviados como transação de postagem HTTP.
+    </td>
+  </tr>
+  <tr>
+    <td><code>autocomplete</code></td>
+    <td>
+      Indica se formulário deve ter o preenchimento automático.<br>
+      <strong>on</strong> : Ativa o preenchimento automático.<br>
+      <strong>off</strong> : Desativa o preenchimento automático.
+    </td>
+  </tr>
 </table>
+
+<h3>Alguns elementos subordinados à tag &lt;form&gt;</h3>
+<table>
+  <tr>
+    <th>&lt;input&gt; - Elemento pode ser exibido de várias maneiras, dependendo do atributo type.</th>
+    <th>Descrição</th>
+  </tr>
+  <tr><td>&lt;input type="checkbox"&gt;</td><td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td></tr>
+  <tr><td>&lt;input type="color"&gt;</td><td>Define um campo de entrada para escolha de cor.</td></tr>
+  <tr><td>&lt;input type="date"&gt;</td><td>Define um campo de entrada do tipo data.</td></tr>
+  <tr><td>&lt;input type="datetime-local"&gt;</td><td>Define um campo de entrada do tipo data e hora.</td></tr>
+  <tr><td>&lt;input type="email"&gt;</td><td>Define um campo de entrada do tipo endereço de e-mail.</td></tr>
+  <tr><td>&lt;input type="file"&gt;</td><td>Define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos.</td></tr>
+  <tr><td>&lt;input type="hidden"&gt;</td><td>Define um campo de entrada não visível ao usuário.</td></tr>
+  <tr><td>&lt;input type="image"&gt;</td><td>Define uma imagem como botão de envio.</td></tr>
+  <tr><td>&lt;input type="month"&gt;</td><td>Permite que o usuário selecione um mês e ano.</td></tr>
+  <tr><td>&lt;input type="number"&gt;</td><td>Define um campo de entrada de número.</td></tr>
+  <tr><td>&lt;input type="password"&gt;</td><td>Define um campo de entrada de senha.</td></tr>
+  <tr><td>&lt;input type="radio"&gt;</td><td>Define um botão de escolha, do tipo rádio, para seleção de ÚNICO valor.</td></tr>
+  <tr><td>&lt;input type="range"&gt;</td><td>Define um campo de entrada do tipo deslizante.</td></tr>
+  <tr><td>&lt;input type="reset"&gt;</td><td>Define um botão para limpar todos os campos do formulário.</td></tr>
+  <tr><td>&lt;input type="submit"&gt;</td><td>Define um botão para enviar dados de formulário.</td></tr>
+  <tr><td>&lt;input type="search"&gt;</td><td>Define um campo de entrada de texto com finalidade de busca.</td></tr>
+  <tr><td>&lt;input type="tel"&gt;</td><td>Campo de entrada do tipo telefone.</td></tr>
+  <tr><td>&lt;input type="text"&gt;</td><td>Campo de entrada de texto de linha única.</td></tr>
+  <tr><td>&lt;input type="time"&gt;</td><td>Permite que o usuário selecione um horário.</td></tr>
+  <tr><td>&lt;input type="url"&gt;</td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
+</table>
+
 
 ### Métodos para envio de dados de formulário
 
