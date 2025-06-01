@@ -35,12 +35,13 @@ Logo, um elemento HTML é apresentado com uma tag de abertura e uma tag de fecha
 
 ![1](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/1.jpeg)
 
+> **Figura 1:** Elemento HTML.
 
 A Figura a seguir, apresenta a estrutura fundamental de um documento HTML, que nada mais é do que um arquivo texto com extensão `.html`, em que encontramos tags de organização.
 
-![Figura 3: Estrutura fundamental de um documento HTML](figure_page5_1.jpeg)
+!2](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/2.jpeg)
 
-> **Figura 3:** Estrutura fundamental de um documento HTML. Fonte: Autora (2023).
+> **Figura 3:** Estrutura fundamental de um documento HTML.
 
 Vamos comentar as tags iniciais da Figura apresentada:
 
