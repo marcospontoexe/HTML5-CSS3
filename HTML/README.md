@@ -453,6 +453,7 @@ Esses dados podem ser enviados de duas formas, denominadas **métodos GET** e **
 um *cliente* para um servidor. Os dados enviados na solicitação serão
 acrescentados no final do endereço da URL, no formato de
 pares *nome/valor*. 
+
 Veja o exemplo a seguir:
 `/test/demo_form.php?name1=value1&name2=value2`
 
@@ -465,11 +466,13 @@ Veja o exemplo a seguir:
 *  Método **POST**: utilizado para enviar dados de **solicitação-resposta** de
 um *cliente* para um servidor. Os dados enviados na solicitação são
 armazenados no corpo da mensagem HTTP, e não na URL!
+
 Veja o exemplo a seguir:
 `POST /teste/demo_form.php HTTP/1.1`
 Host: 
 www.acme.com
 name1=value1&name2=value2
+
   Algumas observações sobre solicitações **POST**:
   * Não permanecem no histórico do navegador.
   * Indicadas para lidar com dados confidenciais.
