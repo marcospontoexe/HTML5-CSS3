@@ -1,4 +1,11 @@
-# HTML 
+**Materiais Online**
+
+**Fundamentos de Programação Web**
+
+# UNIDADE 01
+
+## Introdução ao desenvolvimento web
+
 O HTML é a linguagem fundamental para construção de um site. Ela está presente em qualquer site ou sistema baseado na web. Vamos conhecer um pouquinho mais sobre ele? Veja a seguir os seus pontos de destaque.
 
 * Não é linguagem de programação, pois não conseguimos realizar comandos condicionais (if/else), laços de repetição (for/while) ou funções, por exemplo.
@@ -24,14 +31,9 @@ Nesta unidade, iniciaremos os trabalhos com a linguagem HTML, apresentando suas 
 
 A internet, criada pelo cientista britânico Tim Berners-Lee, é uma grande rede que conecta computadores do mundo inteiro. A conexão global entre computadores permitiu o compartilhamento de documentos que ganharam uma nova forma de organização, conhecida como hipertexto. A principal característica de um hipertexto é que ele tem uma leitura não linear, pois possui ligações, ou links, com outros textos, imagens, vídeos e áudios.
 
-A conexão global possibilita o desenvolvimento de sistemas distribuídos, em uma estrutura conhecida como modelo cliente-servidor (Figura 1). Nele, uma máquina remota atua como servidor de documentos do tipo hipertexto e uma outra máquina atua local como cliente, que solicita hipertextos, fornecendo sua localização por meio do seu endereço de rede, também conhecido como URL, do inglês Uniform Resource Locator, ou “localização uniforme de recurso”.
+A conexão global possibilita o desenvolvimento de sistemas distribuídos, em uma estrutura conhecida como modelo cliente-servidor.
 
-De forma geral, a URL é passada na barra de endereços de um programa do tipo navegador web, ou browser, para obter documentos do tipo hipertexto. O navegador é conhecido, portanto, como o lado cliente de uma requisição de documentos, sendo que o computador remoto, em que estão as informações desejadas, é o lado servidor de um sistema ou aplicação web.
-
-Para desenvolver uma aplicação web, construiremos um sistema distribuído que possui:
-
-1. Uma interface de usuário, executada a partir de um navegador em um computador local, que representa o lado cliente da aplicação, também conhecido como front-end.
-2. Uma aplicação executada no computador remoto, que representa o lado servidor da aplicação, também conhecido como back-end, que se encarrega de enviar ao cliente as informações solicitadas, baseadas nos dados de um banco de dados.
+![Figura 1: Modelo cliente-servidor](figure_page3_1.jpeg)
 
 > **Figura 1:** Modelo cliente-servidor. Fonte: ©sergeyvasutin/Adobe Stock.
 
@@ -53,9 +55,15 @@ As tags são delimitadas com os sinais `<` e `>`. Entre esses sinais, está o no
 
 Logo, um elemento HTML é apresentado com uma tag de abertura e uma tag de fechamento, como exibido na Figura 2 a seguir.
 
+![Figura 2: Elemento HTML](figure_page4_1.jpeg)
+
 > **Figura 2:** Elemento HTML. Fonte: Autora (2023).
 
 A Figura 3, a seguir, apresenta a estrutura fundamental de um documento HTML, que nada mais é do que um arquivo texto com extensão `.html`, em que encontramos tags de organização.
+
+![Figura 3: Estrutura fundamental de um documento HTML](figure_page5_1.jpeg)
+
+> **Figura 3:** Estrutura fundamental de um documento HTML. Fonte: Autora (2023).
 
 Vamos comentar as tags iniciais da Figura apresentada:
 
@@ -82,8 +90,6 @@ Vamos comentar as tags iniciais da Figura apresentada:
 </html>
 ```
 
-> **Figura 3:** Estrutura fundamental de um documento HTML. Fonte: Autora (2023).
-
 ---
 
 ## PRÁTICA: visualizando um documento web no navegador
@@ -109,6 +115,8 @@ Vamos comentar as tags iniciais da Figura apresentada:
 
 4. Abra o seu `index.html` no navegador (browser): copie o caminho completo do arquivo e cole na barra de endereços, ou barra de navegação.
 5. Verifique como o navegador interpretou o seu `index.html`: ache o título da página, ou documento web, e verifique como o navegador pode inspecionar o HTML de todos os elementos da sua página na janela de inspeção.
+
+![Figura 4: Visualização do documento HTML no navegador, com janela de inspeção](figure_page7_1.jpeg)
 
 > **Figura 4:** Visualização do documento HTML no navegador, com janela de inspeção. Fonte: Autora (2023).
 
@@ -146,6 +154,8 @@ Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `
 </html>
 ```
 
+![Figura 5: HTML headings](figure_page9_1.jpeg)
+
 > **Figura 5:** HTML headings. Fonte: Autora (2023).
 
 ---
@@ -172,6 +182,8 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 </html>
 ```
 
+![Figura 6: HTML imagem: formato](figure_page11_1.jpeg)
+
 > **Figura 6:** HTML imagem: formato. Fonte: Autora (2023).
 
 ---
@@ -192,7 +204,7 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
   <body>
     <h2>URLs absolutas</h2>
     <p><a href="https://google.com/" target="_blank" title="Google">Site Google</a></p>
-    <p><a href="https://pucpr.br/" target="_blank" title="PUCPR">Site PUCPR</a></p>
+    <p><a href="https://pucpr.br/" target="_blank" title="PUCPR">Site <u>PUCPR</u></a></p>
     <h2>URL relativas</h2>
     <p><a href="images.html" title="Teste de imagens">Images</a></p>
     <p><a href="headings.html" title="Teste de cabeçalhos">Headings</a></p>
@@ -201,6 +213,8 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
   </body>
 </html>
 ```
+
+![Figura 7: HTML links](figure_page13_1.jpeg)
 
 > **Figura 7:** HTML links. Fonte: Autora (2023).
 
@@ -246,6 +260,8 @@ Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que
 </body>
 </html>
 ```
+
+![Figura 9: HTML listas](figure_page15_1.jpeg)
 
 > **Figura 9:** HTML listas. Fonte: Autora (2023).
 
@@ -346,6 +362,8 @@ Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de 
 </html>
 ```
 
+![Figura 11: HTML tables](figure_page17_1.jpeg)
+
 > **Figura 11:** HTML tables. Fonte: Autora (2023).
 
 ---
@@ -354,13 +372,13 @@ Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de 
 
 O HTML define alguns elementos de formatação para exibir tipos especiais de textos:
 
-* `<b>`: Texto em negrito.
-* `<strong>`: Texto importante.
-* `<i>`: Texto em itálico.
-* `<em>`: Texto em destaque.
-* `<small>`: Texto menor.
-* `<sub>`: Texto subscrito.
-* `<sup>`: Texto sobrescrito.
+* `<b>`: Texto em **negrito**.
+* `<strong>`: Texto <em>importante</em>.
+* `<i>`: Texto em *itálico*.
+* `<em>`: Texto em *destaque*.
+* `<small>`: Texto <small>menor</small>.
+* `<sub>`: Texto <sub>subscrito</sub>.
+* `<sup>`: Texto <sup>sobrescrito</sup>.
 
 ### PRÁTICA: formating
 
@@ -484,16 +502,6 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 A tabela a seguir traz um resumo de atributos da tag `<form>` e uma relação de elementos HTML subordinados à tag `<form>`, que são campos de entrada.
 
 > **Figura 13:** HTML forms. Fonte: Autora (2023).
-
----
-
-## SAIBA MAIS
-
-* [Tutorial HTML (W3Schools)](https://www.w3schools.com/html)
-* [HTML Forms (W3Schools)](https://www.w3schools.com/html/html_forms.asp)
-* [HTML Vídeo (W3Schools)](https://www.w3schools.com/html/html5_video.asp)
-* [HTML Áudio (W3Schools)](https://www.w3schools.com/html/html5_audio.asp)
-* [HTML YouTube (W3Schools)](https://www.w3schools.com/html/html_youtube.asp)
 
 ---
 
