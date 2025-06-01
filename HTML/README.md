@@ -426,71 +426,63 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 ![Figura 11: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/11.jpeg)
 
 > **Figura 11:** HTML tables.
+| HTML Tag | Description |
+|---|---|
+| `<html>` | defines the root of an HTML document |
+| `<head>` | contains meta information about the HTML document |
+| `<title>` | defines a title for the HTML document |
+| `<body>` | defines the document's body |
+| `<h1>` to `<h6>` | defines HTML headings |
+| `<p>` | defines a paragraph |
+| `<br>` | inserts a single line break |
+| `<hr>` | defines a thematic change in the content |
+| `` | defines a comment |
+| `<a>` | defines a hyperlink |
+| `<img>` | defines an image |
+| `<table>` | defines a table |
+| `<th>` | defines a header cell in a table |
+| `<tr>` | defines a row in a table |
+| `<td>` | defines a cell in a table |
+| `<ul>` | defines an unordered list |
+| `<ol>` | defines an ordered list |
+| `<li>` | defines a list item |
+| `<dl>` | defines a description list |
+| `<dt>` | defines a term/name in a description list |
+| `<dd>` | defines a description of a term/name in a description list |
+| `<form>` | defines an HTML form for user input |
+| `<input>` | defines an input control |
+| `<label>` | defines a label for an `<input>` element |
+| `<textarea>` | defines a multi-line input control (text area) |
+| `<button>` | defines a clickable button |
+| `<select>` | defines a drop-down list |
+| `<option>` | defines an option in a drop-down list |
 
+## HTML input types
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="2" style="text-align: left;">Alguns atributos da <em>tag</em> <code>form</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>action</code></td>
-      <td>Define a ação a ser executada quando o formulário for enviado</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><code>target</code></td>
-      <td><code>_self</code> : Abre o documento na mesma janela/guia em que foi clicado.</td>
-    </tr>
-    <tr>
-      <td><code>_blank</code> : Abre o documento em uma nova janela ou guia.</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><code>method</code></td>
-      <td><code>GET</code> : Os dados do formulário são enviados como variáveis de URL.</td>
-    </tr>
-    <tr>
-      <td><code>POST</code> : Os dados do formulário são enviados como transação de postagem HTTP.</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><code>autocomplete</code></td>
-      <td><code>on</code> : Ativa o preenchimento automático.</td>
-    </tr>
-    <tr>
-      <td><code>off</code> : Desativa o preenchimento automático.</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="2" style="text-align: left;">Alguns elementos subordinados à <em>tag</em> <code>form</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>&lt;input type="checkbox"&gt;</code></td><td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td></tr>
-    <tr><td><code>&lt;input type="color"&gt;</code></td><td>Define um campo de entrada para escolha de cor.</td></tr>
-    <tr><td><code>&lt;input type="date"&gt;</code></td><td>Define um campo de entrada do tipo data.</td></tr>
-    <tr><td><code>&lt;input type="datetime-local"&gt;</code></td><td>Define um campo de entrada do tipo data e hora.</td></tr>
-    <tr><td><code>&lt;input type="email"&gt;</code></td><td>Define um campo de entrada do tipo endereço de e-mail.</td></tr>
-    <tr><td><code>&lt;input type="file"&gt;</code></td><td>Define um campo de seleção de arquivo e um botão "Procurar".</td></tr>
-    <tr><td><code>&lt;input type="hidden"&gt;</code></td><td>Define um campo de entrada não visível ao usuário.</td></tr>
-    <tr><td><code>&lt;input type="image"&gt;</code></td><td>Define uma imagem como botão de envio.</td></tr>
-    <tr><td><code>&lt;input type="month"&gt;</code></td><td>Permite que o usuário selecione um mês e ano.</td></tr>
-    <tr><td><code>&lt;input type="number"&gt;</code></td><td>Campo de entrada do tipo número.</td></tr>
-    <tr><td><code>&lt;input type="password"&gt;</code></td><td>Campo de entrada de senha.</td></tr>
-    <tr><td><code>&lt;input type="radio"&gt;</code></td><td>Botão de escolha do tipo rádio (único valor).</td></tr>
-    <tr><td><code>&lt;input type="range"&gt;</code></td><td>Campo de entrada do tipo controle deslizante.</td></tr>
-    <tr><td><code>&lt;input type="reset"&gt;</code></td><td>Botão para limpar todos os campos do formulário.</td></tr>
-    <tr><td><code>&lt;input type="submit"&gt;</code></td><td>Botão para enviar dados do formulário.</td></tr>
-    <tr><td><code>&lt;input type="tel"&gt;</code></td><td>Campo de entrada para número de telefone.</td></tr>
-    <tr><td><code>&lt;input type="text"&gt;</code></td><td>Campo de entrada de texto de linha única.</td></tr>
-    <tr><td><code>&lt;input type="time"&gt;</code></td><td>Campo que permite ao usuário selecionar um horário.</td></tr>
-    <tr><td><code>&lt;input type="url"&gt;</code></td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
-  </tbody>
-</table>
+| Attribute | Description |
+|---|---|
+| `type="text"` | Displays a single-line text input field |
+| `type="radio"` | Displays a radio button (for selecting one of many choices) |
+| `type="checkbox"` | Displays a checkbox (for selecting zero or more of many choices) |
+| `type="submit"` | Displays a submit button (for submitting the form) |
+| `type="button"` | Displays a clickable button (for scripting) |
+| `type="color"` | For input fields that contain a color |
+| `type="date"` | For input fields that contain a date |
+| `type="datetime-local"` | For input fields that contain a date and time (no time zone) |
+| `type="email"` | For input fields that should contain an e-mail address |
+| `type="file"` | For a file-select field and a "Browse..." button |
+| `type="hidden"` | Defines a hidden input field |
+| `type="image"` | Defines an image as a submit button |
+| `type="month"` | For input fields that contain a month and year |
+| `type="number"` | For input fields that should contain a numeric value |
+| `type="password"` | Defines a password field |
+| `type="range"` | For input fields that contain a range of numbers |
+| `type="reset"` | Defines a reset button (resets all form values to their default values) |
+| `type="search"` | For search fields |
+| `type="tel"` | For input fields that should contain a telephone number |
+| `type="time"` | For input fields that contain a time |
+| `type="url"` | For input fields that should contain a URL address |
+| `type="week"` | For input fields that contain a week and year |
 
 ### Métodos para envio de dados de formulário
 
