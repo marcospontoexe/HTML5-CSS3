@@ -41,7 +41,7 @@ A Figura a seguir, apresenta a estrutura fundamental de um documento HTML, que n
 
 ![2](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/2.jpeg)
 
-> **Figura 3:** Estrutura fundamental de um documento HTML.
+> **Figura 2:** Estrutura fundamental de um documento HTML.
 
 Vamos comentar as tags iniciais da Figura apresentada:
 
