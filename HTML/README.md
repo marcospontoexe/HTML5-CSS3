@@ -347,9 +347,6 @@ O HTML define alguns elementos de formatação para exibir tipos especiais de te
 * `<sub>`: Texto <sub>subscrito</sub>.
 * `<sup>`: Texto <sup>sobrescrito</sup>.
 
-### PRÁTICA: formating
-
-1. Copie o texto a seguir para o seu arquivo `formating.html`. Após, abra o arquivo no navegador.
 
 ```html
 <!DOCTYPE html>
@@ -368,15 +365,15 @@ O HTML define alguns elementos de formatação para exibir tipos especiais de te
 </html>
 ```
 
+![Figura 10: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/10.jpeg)
+
+> **Figura 10:** HTML tables.
+
 ---
 
 ## HTML forms
 
 O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrada do usuário. Ele é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio etc.
-
-### PRÁTICA: forms
-
-1. Copie o texto a seguir para o seu arquivo `forms.html`. Após, abra o arquivo no navegador.
 
 ```html
 <!DOCTYPE html>
@@ -426,6 +423,9 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 </html>
 ```
 
+![Figura 11: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/11.jpeg)
+
+> **Figura 11:** HTML tables.
 ---
 
 ### Alguns atributos da tag `<form>`
@@ -468,7 +468,9 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 A tabela a seguir traz um resumo de atributos da tag `<form>` e uma relação de elementos HTML subordinados à tag `<form>`, que são campos de entrada.
 
-> **Figura 13:** HTML forms. Fonte: Autora (2023).
+![Figura 12: HTML tables](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/12.jpeg)
+
+> **Figura 12:** HTML tables.
 
 ---
 
