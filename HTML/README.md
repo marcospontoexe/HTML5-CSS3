@@ -45,14 +45,6 @@ A Figura a seguir, apresenta a estrutura fundamental de um documento HTML, que n
 
 Vamos comentar as tags iniciais da Figura apresentada:
 
-* `<!DOCTYPE html>`: o Document Type Definition (DTD, ou simplesmente Doctype) é uma tag que informa ao navegador qual é o tipo do documento em questão, e deve ser declarado antes da tag `<html>`.
-* `<html>` e `</html>`: respectivamente, abertura e fechamento do documento HTML; são tags que abrangem todas as demais tags do documento.
-* `<head>` e `</head>`: respectivamente, abertura e fechamento da seção de cabeçalho do documento HTML. A seção cabeçalho deve ser declarada após a tag `<html>`.
-* `<meta charset="utf-8">`: a tag de metadados indica informações a respeito da página e do conteúdo nela publicado no navegador, sendo invisíveis para os usuários. Todos os metadados ficam contidos dentro da seção de cabeçalho, delimitada pelas tags `<head>` e `</head>`. A metatag `charset` é usada para indicar o conjunto de caracteres que nossa página está utilizando. No caso, indicamos uma codificação de caracteres do tipo `utf-8`: ou UCS Transformation Format 8, a mais comum da web.
-* `<title>` e `</title>`: define o título da página, que é exibido na barra de título dos navegadores. Também é usada pelas ferramentas de busca da internet, para indexar e encontrar páginas web. São tags de metadados, logo ficam contidos nas tags `<head>` e `</head>`.
-* `<body>` e `</body>`: respectivamente, abertura e fechamento do corpo do documento HTML; a tag `</body>` deve ser declarada imediatamente antes da tag de fechamento de documento `</html>`.
-* `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -67,6 +59,14 @@ Vamos comentar as tags iniciais da Figura apresentada:
   </body>
 </html>
 ```
+
+* `<!DOCTYPE html>`: o Document Type Definition (DTD, ou simplesmente Doctype) é uma tag que informa ao navegador qual é o tipo do documento em questão, e deve ser declarado antes da tag `<html>`.
+* `<html>` e `</html>`: respectivamente, abertura e fechamento do documento HTML; são tags que abrangem todas as demais tags do documento.
+* `<head>` e `</head>`: respectivamente, abertura e fechamento da seção de cabeçalho do documento HTML. A seção cabeçalho deve ser declarada após a tag `<html>`.
+* `<meta charset="utf-8">`: a tag de metadados indica informações a respeito da página e do conteúdo nela publicado no navegador, sendo invisíveis para os usuários. Todos os metadados ficam contidos dentro da seção de cabeçalho, delimitada pelas tags `<head>` e `</head>`. A metatag `charset` é usada para indicar o conjunto de caracteres que nossa página está utilizando. No caso, indicamos uma codificação de caracteres do tipo `utf-8`: ou UCS Transformation Format 8, a mais comum da web.
+* `<title>` e `</title>`: define o título da página, que é exibido na barra de título dos navegadores. Também é usada pelas ferramentas de busca da internet, para indexar e encontrar páginas web. São tags de metadados, logo ficam contidos nas tags `<head>` e `</head>`.
+* `<body>` e `</body>`: respectivamente, abertura e fechamento do corpo do documento HTML; a tag `</body>` deve ser declarada imediatamente antes da tag de fechamento de documento `</html>`.
+* `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
 
 ---
 
