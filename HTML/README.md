@@ -107,6 +107,10 @@ Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `
 
 As imagens podem melhorar o design e a aparência de uma página da web. Elas são apresentadas em um documento web com a tag `<img>` e possuem alguns atributos, como exemplificado a seguir.
 
+![Figura 4: HTML imagem: formato](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/4.jpeg)
+
+> **Figura 4:** HTML imagem: formato.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -119,9 +123,9 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 </html>
 ```
 
-![Figura 4: HTML imagem: formato](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/4.jpeg)
+![Figura 5: HTML imagem: formato](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/5.jpeg)
 
-> **Figura 6:** HTML imagem: formato.
+> **Figura 5:** HTML imagem: formato.
 
 ---
 
@@ -130,6 +134,12 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 Links são elementos HTML que permitem a ligação com outros documentos web. Eles são definidos com a tag `<a>` de âncora, ou anchor, em inglês. Ao serem acionados ou clicados, os links redirecionam a página atual para outro documento referenciado na tag.
 
 A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
+
+| Atributo | Descrição |
+|----------|-----------|
+| `href`   | O mais importante da tag `<a>`, pois identifica o destino do link. |
+| `title`  | Texto “dica” que aparece quando o mouse se move sobre o elemento. |
+| `target` | Identifica onde abrir o documento vinculado. Pode ter os valores:<br>• `_self`: Abre o documento na mesma janela/guia em que foi clicado.<br>• `_blank`: Abre o documento em uma nova janela ou guia. |
 
 ```html
 <!DOCTYPE html>
@@ -147,9 +157,9 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 </html>
 ```
 
-![Figura 5: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/7.jpeg)
+![Figura 6: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
 
-> **Figura 5:** HTML links.
+> **Figura 6:** HTML links.
 
 ---
 
@@ -190,9 +200,9 @@ Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que
 </html>
 ```
 
-![Figura 6: HTML listas](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
+![Figura 7: HTML listas](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/6.jpeg)
 
-> **Figura 6:** HTML listas. 
+> **Figura 7:** HTML listas. 
 
 ---
 
