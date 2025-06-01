@@ -427,66 +427,42 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-<h2>Alguns atributos da <em>tag</em> <code>&lt;form&gt;</code></h2>
-<table>
-    <tbody>
-        <tr>
-            <td><code>action</code></td>
-            <td>Define a ação a ser executada quando o formulário for enviado</td>
-        </tr>
-        <tr>
-            <td rowspan="2"><code>target</code></td>
-            <td><code>_self</code> : Abre o documento na mesma janela/guia em que foi clicado.</td>
-        </tr>
-        <tr>
-            <td><code>_blank</code> : Abre o documento em uma nova janela ou guia.</td>
-        </tr>
-        <tr>
-            <td rowspan="2"><code>method</code></td>
-            <td><code>GET</code> : Os dados do formulário são enviados como variáveis de URL.</td>
-        </tr>
-        <tr>
-            <td><code>POST</code> : Os dados do formulário são enviados como transação de postagem HTTP.</td>
-        </tr>
-        <tr>
-            <td rowspan="2"><code>autocomplete</code></td>
-            <td><code>on</code> : Ativa o preenchimento automático.</td>
-        </tr>
-        <tr>
-            <td><code>off</code> : Desativa o preenchimento automático.</td>
-        </tr>
-    </tbody>
+<table style="width: 60%; border-collapse: collapse;">
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Itens/Mês</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Janeiro</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Fevereiro</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Usuários</th>
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">80</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">93</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Linhas</th>
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">3</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">9</td>
+  </tr>
 </table>
 
-<h2>Alguns elementos subordinados à <em>tag</em> <code>&lt;form&gt;</code></h2>
-<table>
-    <thead>
-        <tr>
-            <th>Elemento <code>&lt;input&gt;</code></th>
-            <th>Descrição</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr><td><code>type="checkbox"</code></td><td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td></tr>
-        <tr><td><code>type="color"</code></td><td>Define um campo de entrada para escolha de cor.</td></tr>
-        <tr><td><code>type="date"</code></td><td>Define um campo de entrada do tipo data.</td></tr>
-        <tr><td><code>type="datetime-local"</code></td><td>Define um campo de entrada do tipo data e hora.</td></tr>
-        <tr><td><code>type="email"</code></td><td>Define um campo de entrada do tipo endereço de e-mail.</td></tr>
-        <tr><td><code>type="file"</code></td><td>Define um campo de seleção de arquivo e um botão "Procurar".</td></tr>
-        <tr><td><code>type="hidden"</code></td><td>Define um campo de entrada não visível ao usuário.</td></tr>
-        <tr><td><code>type="image"</code></td><td>Define uma imagem como botão de envio.</td></tr>
-        <tr><td><code>type="month"</code></td><td>Permite que o usuário selecione um mês e ano.</td></tr>
-        <tr><td><code>type="number"</code></td><td>Campo de entrada do tipo número.</td></tr>
-        <tr><td><code>type="password"</code></td><td>Campo de entrada de senha.</td></tr>
-        <tr><td><code>type="radio"</code></td><td>Botão de escolha do tipo rádio (único valor).</td></tr>
-        <tr><td><code>type="range"</code></td><td>Campo de entrada do tipo controle deslizante.</td></tr>
-        <tr><td><code>type="reset"</code></td><td>Botão para limpar todos os campos do formulário.</td></tr>
-        <tr><td><code>type="submit"</code></td><td>Botão para enviar dados do formulário.</td></tr>
-        <tr><td><code>type="tel"</code></td><td>Campo de entrada para número de telefone.</td></tr>
-        <tr><td><code>type="text"</code></td><td>Campo de entrada de texto de linha única.</td></tr>
-        <tr><td><code>type="time"</code></td><td>Campo que permite ao usuário selecionar um horário.</td></tr>
-        <tr><td><code>type="url"</code></td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
-    </tbody>
+<table style="width: 30%; border-collapse: collapse;">
+  <tr style="border: 1px solid black;">
+    <th rowspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Meses</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Mês</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: left;">Economia</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">Janeiro</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">R$ 100,00</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">Fevereiro</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">R$ 80,00</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; padding: 8px; text-align: left;">Total</td>
+    <td colspan="2" style="border: 1px solid black; padding: 8px; text-align: left;">R$ 180,00</td>
+  </tr>
 </table>
 
 ### Métodos para envio de dados de formulário
