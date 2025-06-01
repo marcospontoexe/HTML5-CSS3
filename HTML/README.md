@@ -427,84 +427,67 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 
 > **Figura 11:** HTML tables.
 
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-  }
-  th, td {
-    border: 1px solid #888;
-    padding: 8px;
-    text-align: left;
-    vertical-align: top;
-  }
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-</style>
-
-<h3>Alguns atributos da tag &lt;form&gt;</h3>
+<h2>Alguns atributos da <em>tag</em> <code>&lt;form&gt;</code></h2>
 <table>
-  <tr><th>Atributo</th><th>Descrição</th></tr>
-  <tr><td><code>action</code></td><td>Define a ação a ser executada quando o formulário for enviado</td></tr>
-  <tr>
-    <td><code>target</code></td>
-    <td>
-      Identifica onde abrir o documento vinculado. Pode ter os valores:<br>
-      <strong>_self</strong> : Abre o documento na mesma janela/guia em que foi clicado.<br>
-      <strong>_blank</strong> : Abre o documento em uma nova janela ou guia.
-    </td>
-  </tr>
-  <tr>
-    <td><code>method</code></td>
-    <td>
-      Especifica qual método do protocolo HTTP será usado ao enviar os dados do formulário:<br>
-      <strong>GET</strong> Os dados do formulário são enviados como variáveis de URL.<br>
-      <strong>POST</strong> Os dados do formulário são enviados como transação de postagem HTTP.
-    </td>
-  </tr>
-  <tr>
-    <td><code>autocomplete</code></td>
-    <td>
-      Indica se formulário deve ter o preenchimento automático.<br>
-      <strong>on</strong> : Ativa o preenchimento automático.<br>
-      <strong>off</strong> : Desativa o preenchimento automático.
-    </td>
-  </tr>
+    <tbody>
+        <tr>
+            <td><code>action</code></td>
+            <td>Define a ação a ser executada quando o formulário for enviado</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><code>target</code></td>
+            <td><code>_self</code> : Abre o documento na mesma janela/guia em que foi clicado.</td>
+        </tr>
+        <tr>
+            <td><code>_blank</code> : Abre o documento em uma nova janela ou guia.</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><code>method</code></td>
+            <td><code>GET</code> : Os dados do formulário são enviados como variáveis de URL.</td>
+        </tr>
+        <tr>
+            <td><code>POST</code> : Os dados do formulário são enviados como transação de postagem HTTP.</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><code>autocomplete</code></td>
+            <td><code>on</code> : Ativa o preenchimento automático.</td>
+        </tr>
+        <tr>
+            <td><code>off</code> : Desativa o preenchimento automático.</td>
+        </tr>
+    </tbody>
 </table>
 
-
-<h3>Alguns elementos subordinados à tag &lt;form&gt;</h3>
+<h2>Alguns elementos subordinados à <em>tag</em> <code>&lt;form&gt;</code></h2>
 <table>
-  <tr>
-    <th>&lt;input&gt; - Elemento pode ser exibido de várias maneiras, dependendo do atributo type.</th>
-    <th>Descrição</th>
-  </tr>
-  <tr><td>&lt;input type="checkbox"&gt;</td><td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td></tr>
-  <tr><td>&lt;input type="color"&gt;</td><td>Define um campo de entrada para escolha de cor.</td></tr>
-  <tr><td>&lt;input type="date"&gt;</td><td>Define um campo de entrada do tipo data.</td></tr>
-  <tr><td>&lt;input type="datetime-local"&gt;</td><td>Define um campo de entrada do tipo data e hora.</td></tr>
-  <tr><td>&lt;input type="email"&gt;</td><td>Define um campo de entrada do tipo endereço de e-mail.</td></tr>
-  <tr><td>&lt;input type="file"&gt;</td><td>Define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos.</td></tr>
-  <tr><td>&lt;input type="hidden"&gt;</td><td>Define um campo de entrada não visível ao usuário.</td></tr>
-  <tr><td>&lt;input type="image"&gt;</td><td>Define uma imagem como botão de envio.</td></tr>
-  <tr><td>&lt;input type="month"&gt;</td><td>Permite que o usuário selecione um mês e ano.</td></tr>
-  <tr><td>&lt;input type="number"&gt;</td><td>Define um campo de entrada de número.</td></tr>
-  <tr><td>&lt;input type="password"&gt;</td><td>Define um campo de entrada de senha.</td></tr>
-  <tr><td>&lt;input type="radio"&gt;</td><td>Define um botão de escolha, do tipo rádio, para seleção de ÚNICO valor.</td></tr>
-  <tr><td>&lt;input type="range"&gt;</td><td>Define um campo de entrada do tipo deslizante.</td></tr>
-  <tr><td>&lt;input type="reset"&gt;</td><td>Define um botão para limpar todos os campos do formulário.</td></tr>
-  <tr><td>&lt;input type="submit"&gt;</td><td>Define um botão para enviar dados de formulário.</td></tr>
-  <tr><td>&lt;input type="search"&gt;</td><td>Define um campo de entrada de texto com finalidade de busca.</td></tr>
-  <tr><td>&lt;input type="tel"&gt;</td><td>Campo de entrada do tipo telefone.</td></tr>
-  <tr><td>&lt;input type="text"&gt;</td><td>Campo de entrada de texto de linha única.</td></tr>
-  <tr><td>&lt;input type="time"&gt;</td><td>Permite que o usuário selecione um horário.</td></tr>
-  <tr><td>&lt;input type="url"&gt;</td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
+    <thead>
+        <tr>
+            <th>Elemento <code>&lt;input&gt;</code></th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><code>type="checkbox"</code></td><td>Define um botão de escolha, do tipo caixa, para seleção de VÁRIOS valores.</td></tr>
+        <tr><td><code>type="color"</code></td><td>Define um campo de entrada para escolha de cor.</td></tr>
+        <tr><td><code>type="date"</code></td><td>Define um campo de entrada do tipo data.</td></tr>
+        <tr><td><code>type="datetime-local"</code></td><td>Define um campo de entrada do tipo data e hora.</td></tr>
+        <tr><td><code>type="email"</code></td><td>Define um campo de entrada do tipo endereço de e-mail.</td></tr>
+        <tr><td><code>type="file"</code></td><td>Define um campo de seleção de arquivo e um botão "Procurar".</td></tr>
+        <tr><td><code>type="hidden"</code></td><td>Define um campo de entrada não visível ao usuário.</td></tr>
+        <tr><td><code>type="image"</code></td><td>Define uma imagem como botão de envio.</td></tr>
+        <tr><td><code>type="month"</code></td><td>Permite que o usuário selecione um mês e ano.</td></tr>
+        <tr><td><code>type="number"</code></td><td>Campo de entrada do tipo número.</td></tr>
+        <tr><td><code>type="password"</code></td><td>Campo de entrada de senha.</td></tr>
+        <tr><td><code>type="radio"</code></td><td>Botão de escolha do tipo rádio (único valor).</td></tr>
+        <tr><td><code>type="range"</code></td><td>Campo de entrada do tipo controle deslizante.</td></tr>
+        <tr><td><code>type="reset"</code></td><td>Botão para limpar todos os campos do formulário.</td></tr>
+        <tr><td><code>type="submit"</code></td><td>Botão para enviar dados do formulário.</td></tr>
+        <tr><td><code>type="tel"</code></td><td>Campo de entrada para número de telefone.</td></tr>
+        <tr><td><code>type="text"</code></td><td>Campo de entrada de texto de linha única.</td></tr>
+        <tr><td><code>type="time"</code></td><td>Campo que permite ao usuário selecionar um horário.</td></tr>
+        <tr><td><code>type="url"</code></td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
+    </tbody>
 </table>
-
 
 ### Métodos para envio de dados de formulário
 
