@@ -450,14 +450,12 @@ O lado **servidor** da aplicação recebe solicitações via HTTP quando acionam
 Esses dados podem ser enviados de duas formas, denominadas **métodos GET** e **POST**.
 
 * O método **GET**: utilizado para enviar dados de **solicitação-resposta** de um *cliente* para um servidor. Os dados enviados na solicitação serão acrescentados no final do endereço da URL, no formato de pares *nome/valor*. 
-
 Veja o exemplo a seguir:
 `/test/demo_form.php?name1=value1&name2=value2`
-
   Algumas observações sobre solicitações **GET**:
-    * Permanecem no histórico do navegador.
-    * Nunca devem ser usadas ao lidar com dados confidenciais.
-    * Têm restrições de comprimento, pois devem caber na URL.
+  * Permanecem no histórico do navegador.
+  * Nunca devem ser usadas ao lidar com dados confidenciais.
+  * Têm restrições de comprimento, pois devem caber na URL.
 
 * Método **POST**: utilizado para enviar dados de **solicitação-resposta** de
 um *cliente* para um servidor. Os dados enviados na solicitação são
