@@ -22,7 +22,7 @@ Basicamente, o CSS é composto por regras que indicam como formatar elementos HT
 
 A composição de uma regra está exibida na Figura a seguir:
 
-![Figura: Sintaxe da Regra CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/1.jpeg)
+![Figura 1: Sintaxe da Regra CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/1.jpeg)
 
 ---
 
@@ -124,11 +124,7 @@ Siga os passos indicados a seguir para ver o CSS interno funcionando:
 </html>
 ```
 
-
-<div align="center">
 ![Figura 3: HTML com CSS interna](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/3.jpeg)
-</div>
-
 ---
 
 #### 3. Sintaxe: Regra CSS externa
@@ -145,24 +141,11 @@ Neste caso, precisamos ligar o arquivo `.css` ao arquivo `.html`, o que é reali
 
 **Esta é uma boa prática!** Ela separa os arquivos de HTML e CSS, permitindo o reuso do CSS, evitando duplicidade de código, o que torna a manutenção e evolução do código menos complexa.
 
-#### PRÁTICA: visualizando o CSS externo em um documento web
-
 Vamos criar um documento HTML formatado com folha de estilo CSS, para visualização em um navegador.
 
 Siga os passos indicados a seguir para ver o CSS externo funcionando:
 
-1. Na pasta de trabalho, por exemplo `C:/Teste-CSS`.
-2. Dentro da pasta, crie um documento `estiloExterno.html`, com o código exemplificado a seguir.
-3. Crie uma subpasta `css`, por exemplo `C:/Teste-CSS/css`.
-
-<div align="center">
-![Figura 3: HTML com CSS interno](sandbox:/mnt/data/image_page7_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**
-
-#### Arquivo C:/Teste-CSS/estiloExterno.html
-
+Arquivo HTML:
 ```html
 <!DOCTYPE html>
 <html>
@@ -179,8 +162,7 @@ Siga os passos indicados a seguir para ver o CSS externo funcionando:
 </html>
 ```
 
-#### Arquivo C:/Teste-CSS/css/style.css
-
+Arquivo CSS:
 ```css
 p {
     color: deepskyblue; 
@@ -193,6 +175,7 @@ h1 {
 }
 ```
 
+![Figura 4: HTML com CSS externo](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/4.jpeg)
 ---
 
 ## Seletores CSS
@@ -212,22 +195,12 @@ Vamos conhecer melhor cada um deles.
 ---
 
 ### Seletor de elemento CSS
-
-<div align="center">
-![Figura 4: HTML com CSS externo](sandbox:/mnt/data/image_page10_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
-
 Seleciona qual elemento HTML receberá o estilo, baseado no seu nome HTML, ou tag.
 
 #### Exemplos de seletores:
 
 - **`p`** serve para formatar um elemento HTML `<p>`.
 - **`*`** serve para formatar elementos HTML de qualquer tipo.
-
-#### PRÁTICA: Seletor de elemento CSS no navegador
 
 ```html
 <!DOCTYPE html>
