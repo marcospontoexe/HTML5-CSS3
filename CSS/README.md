@@ -24,7 +24,6 @@ A composição de uma regra está exibida na Figura a seguir:
 
 ![Figura: Sintaxe da Regra CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/1.jpeg)
 
-> **Figura 1:** Elemento HTML.
 ---
 
 ## Tipos de CSS
@@ -47,12 +46,7 @@ Vamos praticar cada uma dessas formas de definir estilo para os elementos HTML.
 #### 1. Sintaxe: Regra CSS inline
 
 Utiliza o atributo `style` do elemento HTML.  
-
-> **Fonte: Autor, 2023.**
-
-<div align="center">#ParaTodosVerem</div>
-
-O código CSS é adicionado diretamente no elemento HTML por meio do atributo `style`:  
+O código CSS é adicionado diretamente no elemento HTML por meio do atributo `style`: 
 
 ```html
 <p style="text-align: right;">texto</p>
