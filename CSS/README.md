@@ -54,17 +54,7 @@ O código CSS é adicionado diretamente no elemento HTML por meio do atributo `s
 
 **Evite usar esta prática!** Ela mistura o código HTML com CSS e não permite o reuso do CSS, tornando a manutenção e evolução do código mais complexa.
 
-#### PRÁTICA: visualizando o CSS inline em um documento web
-
 Vamos criar um documento HTML formatado com folha de estilo CSS, para visualização em um navegador. Também vamos utilizar a ferramenta de inspeção de página do navegador Google Chrome.
-
-Siga os passos indicados a seguir para ver o CSS inline funcionando:
-
-1. Defina uma pasta de trabalho, como por exemplo `C:/Teste-CSS`.
-2. Dentro da pasta, crie um documento `estiloInline.html`, com o código exemplificado a seguir:
-
-<details>
-<summary><strong>Arquivo C:/Teste-CSS/estiloInline.html</strong></summary>
 
 ```html
 <!DOCTYPE html>
@@ -80,11 +70,12 @@ Siga os passos indicados a seguir para ver o CSS inline funcionando:
 </body>
 </html>
 ```
-</details>
 
 > **Dica:** Você pode utilizar um ambiente integrado de desenvolvimento, ou IDE – do inglês *Integrated Development Environment* –, como o Visual Studio Code da Microsoft ([https://code.visualstudio.com/download](https://code.visualstudio.com/download)).
 
-3. Abra o seu `estiloInline.html` no navegador (browser): copie o caminho completo do arquivo e cole na barra de endereços.
+<div align="center">
+![Figura 2: HTML com CSS inline](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/2.jpeg)
+</div>
 
 ---
 
@@ -92,12 +83,6 @@ Siga os passos indicados a seguir para ver o CSS inline funcionando:
 
 O código CSS é inserido em um elemento `<style>`, que geralmente fica dentro da seção `<head>`:
 
-<div align="center">
-![Figura 2: HTML com CSS inline](sandbox:/mnt/data/image_page5_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
 
 Também evite usar esta prática! Ela deixa no mesmo arquivo o código HTML e o código CSS, o que não permite o reuso do CSS, podendo gerar duplicidade de código e tornar a manutenção e evolução do código mais complexa.
 
