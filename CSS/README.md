@@ -320,12 +320,6 @@ Uma **pseudoclasse** é usada para definir um estado especial de um elemento. Po
 selector:pseudo-class { property: value; }
 ```
 
-#### PRÁTICA: Seletor de pseudoclasse CSS no navegador
-
-<div align="center">
-![Figura 8: Seletor de pseudoclasse CSS](sandbox:/mnt/data/image_page14_1.jpeg)
-</div>
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -364,12 +358,6 @@ selector:pseudo-class { property: value; }
 
 Para minimizar o código, podemos agrupar os seletores, separando cada seletor com uma vírgula.
 
-#### PRÁTICA: Seletor de agrupamento CSS no navegador
-
-<div align="center">
-![Figura 9: Seletor de agrupamento CSS](sandbox:/mnt/data/image_page15_1.jpeg)
-</div>
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -388,6 +376,10 @@ Para minimizar o código, podemos agrupar os seletores, separando cada seletor c
 </body>
 </html>
 ```
+
+<div align="center">
+![Figura 9: Seletor de agrupamento CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/9.jpeg)
+</div>
 
 ---
 
@@ -408,15 +400,9 @@ A **box** que representa um elemento HTML tem algumas propriedades que definem o
 
 Veja como é compreendida a box de um elemento HTML, exibida na Figura a seguir:
 
-<div align="center">
-![Figura 10: Box do elemento HTML, formatada pelo CSS](sandbox:/mnt/data/image_page18_1.jpeg)
-</div>
+![Figura 10: Box do elemento HTML, formatada pelo CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/10.jpeg)
 
----
-
-### PRÁTICA: elemento HTML como uma box
-
-#### Tag HTML `<div>` e Tag HTML `<span>`
+### Tag HTML `<div>` e Tag HTML `<span>`
 
 As tags `<div>` e `<span>` definem uma divisão ou parte de um documento HTML. Qualquer tipo de conteúdo (elementos HTML) pode ser colocado dentro delas!
 
@@ -432,14 +418,7 @@ Ou seja, se você tem algum conteúdo em texto que precise ser agrupado e/ou des
 
 Veja no exemplo da Figura a seguir, em que a tag `<div>` é usada para estilizar elementos na página HTML:
 
-<div align="center">
-![Figura 11: Box de elemento HTML, exemplificado com a tag <div>](sandbox:/mnt/data/image_page18_2.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
-
-##### EXEMPLO
+![Figura 11: Box de elemento HTML, exemplificado com a tag <div>](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/11.jpeg)
 
 ```html
 <!DOCTYPE html>
