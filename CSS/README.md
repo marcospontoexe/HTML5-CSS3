@@ -532,10 +532,26 @@ Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, 
   </tbody>
 </table>
 
+```html
+<!DOCTYPE html>
+ <html>
+   <head>
+      <style>
+         div {
+         border: 1px solid black;
+         padding: 25px 50px 75px 100px;
+         background-color: lightgreen;
+         }
+      </style>
+   </head>
+   <body>
+      <h2>Propriedade Padding</h2>
+      <div>O elemento div tem padding superior = 25px, padding direito = 5
+   </body>
+ </html>
+```
 
-<div align="center">
-![Propriedade Padding](sandbox:/mnt/data/image_page18_3.jpeg)
-</div>
+![ Figura 12: Exemplos de utilização da propriedade padding](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/12.jpeg)
 
 Uma alternativa para configurar o `padding` é com suas propriedades específicas para cada lado, que podem ser utilizadas em conjunto ou individualmente:
 
@@ -544,59 +560,75 @@ Uma alternativa para configurar o `padding` é com suas propriedades específica
 - `padding-bottom`
 - `padding-left`
 
----
-
-<div align="center">
-![Figura 12: Exemplos de utilização da propriedade padding](sandbox:/mnt/data/image_page19_1.jpeg)
-</div>
 
 ---
 
 ## Propriedade `margin`
-
 Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, para a `margin`. Veja os exemplos nas figuras a seguir:
 
-**Exemplo 1:**
-
-```css
-div {
+<h3>Propriedade margin</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Exemplo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre><code>div {
     margin: 25px 50px 75px 100px;
-}
-```
-- `margin` superior é de 25px
-- `margin` direito é de 50px
-- `margin` inferior é de 75px
-- `margin` esquerdo é de 100px
-
-**Exemplo 2:**
-
-```css
-div {
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>margin superior</strong> é de <strong>25px</strong></li>
+          <li><strong>margin direito</strong> é de <strong>50px</strong></li>
+          <li><strong>margin inferior</strong> é de <strong>75px</strong></li>
+          <li><strong>margin esquerdo</strong> é de <strong>100px</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>div {
     margin: 25px 50px 75px;
-}
-```
-- `margin` superior é de 25px
-- `margin` direito e esquerdo são de 50px
-- `margin` inferior é de 75px
-
-**Exemplo 3:**
-
-```css
-div {
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>margin superior</strong> é de <strong>25px</strong></li>
+          <li><strong>margin direito e esquerdo</strong> são de <strong>50px</strong></li>
+          <li><strong>margin inferior</strong> é de <strong>75px</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>div {
     margin: 25px 50px;
-}
-```
-- `margin` superior e inferior são de 25px
-- `margin` direito e esquerdo são de 50px
-
-**Exemplo 4:**
-
-```css
-div {
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>margin superior e inferior</strong> são de <strong>25px</strong></li>
+          <li><strong>margin direito e esquerdo</strong> são de <strong>50px</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>div {
     margin: 25px;
-}
-```
-- `margin` de todos os lados são de 25px
+}</code></pre>
+      </td>
+      <td>
+        <p><strong>margin de todos os lados</strong> são de <strong>25px</strong></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <div align="center">
 ![Propriedade Margin](sandbox:/mnt/data/image_page20_1.jpeg)
