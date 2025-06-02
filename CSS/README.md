@@ -83,20 +83,23 @@ Vamos criar um documento HTML formatado com folha de estilo CSS, para visualiza�
 
 O código CSS é inserido em um elemento `<style>`, que geralmente fica dentro da seção `<head>`:
 
+```html
+<head>    
+   <title>Página HTML com CSS</title>
+   <style>
+      p {
+         color: blue; 
+         font-family: Verdana; 
+      }
+   </style>
+</head>
+```
 
 Também evite usar esta prática! Ela deixa no mesmo arquivo o código HTML e o código CSS, o que não permite o reuso do CSS, podendo gerar duplicidade de código e tornar a manutenção e evolução do código mais complexa.
-
-#### PRÁTICA: visualizando o CSS interno em um documento web
 
 Vamos criar um documento HTML formatado com folha de estilo CSS, para visualização em um navegador.
 
 Siga os passos indicados a seguir para ver o CSS interno funcionando:
-
-1. Na pasta de trabalho (por exemplo, `C:/Teste-CSS`).
-2. Dentro da pasta, crie um documento `estiloInterno.html`, com o código exemplificado a seguir:
-
-<details>
-<summary><strong>Arquivo C:/Teste-CSS/estiloInterno.html</strong></summary>
 
 ```html
 <!DOCTYPE html>
@@ -122,9 +125,11 @@ Siga os passos indicados a seguir para ver o CSS interno funcionando:
 </body>
 </html>
 ```
-</details>
 
-<div align="center">#ParaTodosVerem</div>
+
+<div align="center">
+![Figura 3: HTML com CSS interna](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/3.jpeg)
+</div>
 
 ---
 
