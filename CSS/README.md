@@ -1,10 +1,5 @@
 # CSS
-
-Olá!
-
-Continuando com o desenvolvimento front-end, o lado cliente da aplicação web, veremos o **CSS** (Cascading Style Sheets), uma linguagem que descreve como os elementos HTML devem ser formatados para exibição.
-
-Vamos começar a entender como usar o CSS. Confira a seguir os pontos de destaque dessa linguagem.
+**CSS** (Cascading Style Sheets), uma linguagem que descreve como os elementos HTML devem ser formatados para exibição.
 
 - **Não é linguagem de programação**, pois não conseguimos realizar comandos condicionais (_if/else_), nem laços de repetição (_for/while_) ou nem funções, por exemplo.
 - É uma linguagem descritiva para estilizar páginas web, visualizadas em navegadores.
@@ -21,23 +16,20 @@ Em resumo: **HTML + CSS**
 - O HTML estrutura o layout de um documento web, ou seja, organiza os elementos visuais de um documento.
 - O CSS formata a exibição dos elementos HTML.
 
-Antes de ler o material, vamos conhecer melhor que resultados podemos esperar ao trabalhar com CSS. Veja alguns exemplos apresentados neste vídeo:
-
-[![Criando páginas HTML com CSS](https://img.youtube.com/vi/_KMQ6-3cG9E/0.jpg)](https://www.youtube.com/watch?v=_KMQ6-3cG9E)
-
 Entendemos CSS por uma linguagem descritiva que permite a formatação visual de elementos de um documento HTML. Logo, não é uma linguagem de programação.
 
 Basicamente, o CSS é composto por regras que indicam como formatar elementos HTML. É o navegador que interpreta as regras de associação entre um documento HTML e seu CSS, e as aplica ao documento, modificando sua aparência.
 
 A composição de uma regra está exibida na Figura a seguir:
 
-![Figura: Sintaxe da Regra CSS](sandbox:/mnt/data/image_page3_1.jpeg)
+![Figura: Sintaxe da Regra CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/1.jpeg)
 
+> **Figura 1:** Elemento HTML.
 ---
 
-### Tipos de CSS
+## Tipos de CSS
 
-#### Sintaxe da regra CSS
+### Sintaxe da regra CSS
 
 - **SELETOR**: indica o elemento HTML que recebe o estilo definido no bloco de declarações.
 - **BLOCO DE DECLARAÇÃO**: delimitado por chaves `{ }`, mantém declarações separadas por `;`, onde temos: uma **PROPRIEDADE CSS** e seu **VALOR**, separados por `:`.
@@ -52,7 +44,7 @@ Vamos praticar cada uma dessas formas de definir estilo para os elementos HTML.
 
 ---
 
-### 1. Sintaxe: Regra CSS inline
+#### 1. Sintaxe: Regra CSS inline
 
 Utiliza o atributo `style` do elemento HTML.  
 
@@ -102,7 +94,7 @@ Siga os passos indicados a seguir para ver o CSS inline funcionando:
 
 ---
 
-### 2. Sintaxe: Regra CSS interna
+#### 2. Sintaxe: Regra CSS interna
 
 O código CSS é inserido em um elemento `<style>`, que geralmente fica dentro da seção `<head>`:
 
@@ -157,7 +149,7 @@ Siga os passos indicados a seguir para ver o CSS interno funcionando:
 
 ---
 
-### 3. Sintaxe: Regra CSS externa
+#### 3. Sintaxe: Regra CSS externa
 
 O código CSS é colocado em um arquivo `.css`, separadamente do arquivo `.html`.  
 
