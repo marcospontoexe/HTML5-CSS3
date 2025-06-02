@@ -227,6 +227,8 @@ Seleciona qual elemento HTML receberá o estilo, baseado no seu nome HTML, ou ta
 </html>
 ```
 
+![Figura 5: Seletor de elemento CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/5.jpeg)
+
 ---
 
 ### Seletor de id CSS
@@ -236,15 +238,6 @@ O seletor usa o atributo `id` (identificador) de um elemento HTML para seleciona
 O `id` de um elemento é único dentro de uma página HTML, logo o seletor de id é aplicado em um único elemento da página.
 
 **USO CORRETO:** escreva um caractere hash (`#`), seguido do `id` do elemento.
-
-#### PRÁTICA: Seletor de id CSS no navegador
-
-<div align="center">
-![Figura 5: Seletor de elemento CSS](sandbox:/mnt/data/image_page12_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
 
 ```html
 <!DOCTYPE html>
@@ -262,13 +255,13 @@ O `id` de um elemento é único dentro de uma página HTML, logo o seletor de id
    <p>Este parágrafo não é afetado pelo estilo.</p>
 ```
 
+![Figura 6: Seletor de id CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/6.jpeg)
+
 ---
 
 ### Seletor de classe CSS
 
 O seletor de classe seleciona elementos HTML com um atributo de `class` específico. Para selecionar elementos de uma classe, escrevemos um ponto (`.`), seguido do nome da classe.
-
-#### PRÁTICA: Seletor de classe CSS no navegador
 
 ```html
 <!DOCTYPE html>
@@ -288,11 +281,6 @@ O seletor de classe seleciona elementos HTML com um atributo de `class` específ
 </html>
 ```
 
-<div align="center">
-![Figura 7: Seletor de classe CSS](sandbox:/mnt/data/image_page13_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
+![Figura 7: Seletor de classe CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/7.jpeg)
 
 Elementos HTML também podem se referir a mais de uma classe.
