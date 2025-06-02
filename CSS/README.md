@@ -420,6 +420,11 @@ Veja no exemplo da Figura a seguir, em que a tag `<div>` é usada para estilizar
 
 ![Figura 11: Box de elemento HTML, exemplificado com a tag <div>](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/11.jpeg)
 
+As propriedades `padding`, `margin` e `border` são aplicadas aos quatro lados de um elemento HTML: superior, direita, inferior e esquerdo.
+
+No exemplo da Figura anterior, essas propriedades receberam apenas um valor, que foi aplicado a todos os lados do elemento:
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -456,59 +461,77 @@ Veja no exemplo da Figura a seguir, em que a tag `<div>` é usada para estilizar
 </html>
 ```
 
-As propriedades `padding`, `margin` e `border` são aplicadas aos quatro lados de um elemento HTML: superior, direita, inferior e esquerdo.
-
-No exemplo da Figura anterior, essas propriedades receberam apenas um valor, que foi aplicado a todos os lados do elemento:
-
 Contudo, podemos especificar um valor para cada lado do elemento. Detalhamos esse tratamento para `padding` e `margin` a seguir.
 
 ---
 
-## Propriedade `padding`
+### Propriedade `padding`
 
 Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, para o `padding`. Veja os exemplos na tabela e figura a seguir:
-
-**Exemplo 1:**
-
-```css
-div {
+<h3>Propriedade padding</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Exemplo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre><code>div {
     padding: 25px 50px 75px 100px;
-}
-```
-- `padding` superior é de 25px
-- `padding` direito é de 50px
-- `padding` inferior é de 75px
-- `padding` esquerdo é de 100px
-
-**Exemplo 2:**
-
-```css
-div {
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>padding superior</strong> é de <strong>25px</strong></li>
+          <li><strong>padding direito</strong> é de <strong>50px</strong></li>
+          <li><strong>padding inferior</strong> é de <strong>75px</strong></li>
+          <li><strong>padding esquerdo</strong> é de <strong>100px</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>div {
     padding: 25px 50px 75px;
-}
-```
-- `padding` superior é de 25px
-- `padding` direito e esquerdo são de 50px
-- `padding` inferior é de 75px
-
-**Exemplo 3:**
-
-```css
-div {
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>padding superior</strong> é de <strong>25px</strong></li>
+          <li><strong>padding direito e esquerdo</strong> são de <strong>50px</strong></li>
+          <li><strong>padding inferior</strong> é de <strong>75px</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>div {
     padding: 25px 50px;
-}
-```
-- `padding` superior e inferior são de 25px
-- `padding` direito e esquerdo são de 50px
-
-**Exemplo 4:**
-
-```css
-div {
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>padding superior e inferior</strong> são de <strong>25px</strong></li>
+          <li><strong>padding direito e esquerdo</strong> são de <strong>50px</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>div {
     padding: 25px;
-}
-```
-- `padding` de todos os lados são de 25px
+}</code></pre>
+      </td>
+      <td>
+        <p><strong>padding de todos os lados</strong> são de <strong>25px</strong></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 <div align="center">
 ![Propriedade Padding](sandbox:/mnt/data/image_page18_3.jpeg)
