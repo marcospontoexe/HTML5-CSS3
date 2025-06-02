@@ -73,9 +73,7 @@ Vamos criar um documento HTML formatado com folha de estilo CSS, para visualiza�
 
 > **Dica:** Você pode utilizar um ambiente integrado de desenvolvimento, ou IDE – do inglês *Integrated Development Environment* –, como o Visual Studio Code da Microsoft ([https://code.visualstudio.com/download](https://code.visualstudio.com/download)).
 
-<div align="center">
 ![Figura 2: HTML com CSS inline](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/2.jpeg)
-</div>
 
 ---
 
