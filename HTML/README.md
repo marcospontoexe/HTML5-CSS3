@@ -123,9 +123,9 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 <html>
    <body>
       <h2>HTML Image</h2>
-      <img src="figuras/cavalos.jpg" alt="Passeio a cavalo." width="289" height="">
+      <img src="figuras/cavalos.jpg" alt="Passeio a cavalo." width="289" height="192">
       <h2>HTML Image</h2>
-      <img src="figuras/praia.jpg" alt="Férias na praia." width="289" height="">
+      <img src="figuras/praia.jpg" alt="Férias na praia." width="289" height="192">
    </body>
 </html>
 ```
@@ -178,14 +178,21 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
   <body>
     <h2>URLs absolutas</h2>
     <p><a href="https://google.com/" target="_blank" title="Google">Site Google</a></p>
-    <p><a href="https://pucpr.br/" target="_blank" title="PUCPR">Site <u>PUCPR</u></a></p>
+    <p></p>
+    <a href="https://pucpr.br/"   target="_blank" title="PUCPR">Site PUCPR</a></p>
     <h2>URL relativas</h2>
-    <p><a href="images.html" title="Teste de imagens">Images</a></p>
-    <p><a href="headings.html" title="Teste de cabeçalhos">Headings</a></p>
+    <p></p>
+    <a href="images.html" title="Teste de imagens">Images</a></p>
+    <p></p>
+    <a href="headings.html" title="Teste de cabeçalhos">Headings</a></p>
     <h2>Link para e-mail</h2>
-    <p><a href="mailto:nome.sobrenome@site_exemplo.com">Envie um e-mail</a></p>
+    <p></p>
+    <a href="mailto:nome.sobrenome@site_examplo.com">Envie um e-mail</a></p>
   </body>
 </html>
+
+
+
 ```
 
 ![Figura 7: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/7.jpeg)
@@ -252,16 +259,13 @@ A formatação de tabelas HTML é feita com CSS. A formatação visual de tabela
 Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de CSS para desenhar bordas na cor preta e em linha cheia de 1 pixel de largura:
 
 ```html
-<head>
-  <!-- Comentário HTML: Abre seção <head> -->
-  <style>
-    /* Comentário CSS: tags "table", "th" e "td" */
-    table, th, td {
-      border: 1px solid black; /* borda de 1 pixel, em linha cheia e na cor preta */
+<head>    <!-- Comentário HTML: Abre seção <head> --> 
+  <style> /*   Comentário CSS: tags "table", "th" e "td" terão como formatação:  */ 
+    table, th, td {                        
+      border: 1px solid black; /* borda de 1 pixel, em linha cheia e na cor preta*/
     }
-  </style>
-  <!-- Fecha a seção </style> -->
-</head>
+  </style> <!-- Fecha a seção </style> -->
+</head> <!-- Fecha a seção </head> -->
 ```
 
 ### Exemplo de tabelas
@@ -269,55 +273,54 @@ Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Comentário HTML: Abre seção <head> -->
-  <style>
-    /* Comentário CSS: Formatação visual de uma tabela */
-    table, th, td {
-      border: 1px solid black; /* borda de 1 pixel, em linha cheia e na cor preta */
+<head>    <!-- Comentário HTML: SPOILER de CSS: formatando o visual de uma tabela --> 
+  <style> /*   Comentário CSS: Os elementos HTML: */ 
+    table,                     /* "table" (tag para iniciar tabela),   */
+    th,                        /* "th"    (tag para coluna cabeçalho) e */ 
+    td {                       /* "td     (tag para coluna), terão como formatação: */
+      border: 1px solid black; /* borda de 1 pixel, em linha cheia e na cor preta*/
     }
-  </style>
-  <!-- Fecha a seção </style>, dentro da seção de cabeçalho do HTML -->
+  </style> <!-- Fecha a seção </style>, dentro da seção de cabeçalho do HTM -->
 </head>
-<body>
-  <h2>Tabela Exemplo 1</h2>
-  <table width="60%">
-    <tr>
-      <th>Itens/Mês</th>
-      <th>Janeiro</th>
-      <th>Fevereiro</th>
-    </tr>
-    <tr>
-      <th>Usuarios</th>
-      <td>80</td>
-      <td>93</td>
-    </tr>
-    <tr>
-      <th>Linhas</th>
-      <td>3</td>
-      <td>9</td>
-    </tr>
-  </table>
-  <h2>Tabela Exemplo 2: atributos colspan e rowspan</h2>
-  <table>
-    <tr>
-      <th rowspan="3">Meses</th> <!-- Faz a união de 3 LINHAS (row) -->
-      <th>Mês</th>
-      <th>Economia</th>
-    </tr>
-    <tr>
-      <td>Janeiro</td>
-      <td>R$ 100,00</td>
-    </tr>
-    <tr>
-      <td>Fevereiro</td>
-      <td>R$ 80,00</td>
-    </tr>
-    <tr>
-      <td>Total</td>
-      <td colspan="2">R$ 180,00</td> <!-- Faz a união de 2 COLUNAS (col) -->
-    </tr>
-  </table>
+</table>
+<h2>Tabela Exemplo 1</h2>
+<table width="60%"> <!-- Atributo width (largura) = % da tela do navegador. -->
+  <tr>
+    <th>Itens/Mês</th>
+    <th>Janeiro</th>
+    <th>Fevereiro</th>
+  </tr>
+  <tr>
+    <th>Usuarios</th>
+    <td>80</td>
+    <td>93</td>
+  </tr>
+  <tr>
+    <th>Linhas</th>
+    <td>3</td>
+    <td>9</td>
+  </tr>
+</table>
+<h2>Tabela Exemplo 2: atributos colspan e rowspan</h2>
+<table>
+  <tr>
+    <th rowspan="3">Meses</th> <!-- Faz a união de 3 LINHAS (row)  --> 
+    <th>Mês</th>
+    <th>Economia</th>
+  </tr>
+  <tr>
+    <td>Janeiro</td>
+    <td>R$ 100,00</td>
+  </tr>
+  <tr>
+    <td>Fevereiro</td>
+    <td>R$ 80,0</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td colspan="2"> R$ 180,00</td> <!-- Faz a união de 2 COLUNAS (col) -->
+  </tr>
+</table>
 </body>
 </html>
 ```
@@ -381,14 +384,14 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
 <body>
     <h2>Campos de entrada do tipo TEXT</h2>
     <form>
-        <label for="pnome">Primeiro nome:</label><br>
+        <label for="pname">Primeiro nome:</label><br>
         <input type="text" id="pnome" name="pnome" value="João"><br>
-        <label for="unome">Último nome:</label><br>
+        <label for="uname">Último nome:</label><br>
         <input type="text" id="lnome" name="unome" value="Silva">
-    </form><br>
-    <b>Observe 1</b>: o formulário em si não é visível.<br>
-    <b>Observe 2</b>: a largura padrão do campo de texto = **20** caracteres.
-    <br><hr>
+    </form> <br>
+    <b>Observe 1</b>: o formulário em si não é visível. <br>
+    <b>Observe 2</b>: a largura padrão do campo de texto = <b>20</b> caracteres. <br>
+    <br> <hr>
     <h2>Campos de entrada do tipo RADIO BUTTON</h2>
     <p>Escolha sua linguagem web favorita:</p>
     <form>
@@ -399,7 +402,7 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
         <input type="radio" id="javascript" name="fav_linguagem" value="JavaScript">
         <label for="javascript">JavaScript</label>
     </form>
-    <br><hr>
+    <br> <hr>
     <h2>Campos de entrada do tipo CHECKBOX</h2>
     <form>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -409,16 +412,16 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
         <label for="vehicle3"> I have a boat</label>
     </form>
-    <br><hr>
+    <br> <hr>
     <h2>Campos de entrada do tipo SUBMIT BUTTON</h2>
-    <form action="https://www.w3schools.com/action_page.php" target="_self">
-        <label for="pnome">Primeiro nome:</label><br>
+    <form action="https://www.w3schools.com/action_page.php" target="_self" >
+        <label for="pname">Primeiro nome:</label><br>
         <input type="text" id="pnome" name="pnome" value="Maria"><br>
-        <label for="lnome">Último nome:</label><br>
-        <input type="text" id="lnome" name="lnome" value="Flores"><br><br>
+        <label for="uname">Último nome:</label><br>
+        <input type="text" id="lnome" name="unome" value="Flores"><br><br>
         <input type="submit" value="Submit">
     </form>
-    <p>Ao clicar no botão "Submit", os dados do formulário serão enviados.</p>
+    <p>Ao clicar no botão "Submit", os dados do formulário serão enviados para uma página do W3Schools: "action_page.php".</p>
 </body>
 </html>
 ```

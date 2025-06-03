@@ -65,8 +65,8 @@ Vamos criar um documento HTML formatado com folha de estilo CSS, para visualiza�
 </head>
 <body>
     <h1 style="color:rgb(17, 128, 35)">CSS inline</h1>
-    <p style="color:deepskyblue; font-family:Verdana; text-align:center">Texto 1.</p>
-    <p style="color:brown; font-family:'Courier New'; text-align:right">Texto 2.</p>
+    <p  style="color:deepskyblue; font-family:Verdana; text-align:center">Texto 1.</p>
+    <p  style="color:brown; font-family:'Courier New'; text-align:right">Texto 2. </p>
 </body>
 </html>
 ```
@@ -288,22 +288,22 @@ Elementos HTML também podem se referir a mais de uma classe.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-   <style>
-      p.center {
+   <head>
+      <style>
+         p.center {
          text-align: center;
          color: red;
-      }
-      p.large {
+         }
+         p.large {
          font-size: 300%;
-      }
-   </style>
-</head>
-<body>
-   <h1 class="center">Este cabeçalho não será afetado</h1>
-   <p class="center">Este parágrafo será vermelho e centralizado</p>
-   <p class="center large">Este parágrafo será vermelho e grande</p>
-</body>
+         }
+      </style>
+   </head>
+   <body>
+      <h1 class="center">Este cabeçalho não será afetado</h1>
+      <p class="center">Este parágrafo será vermelho e centralizado. </p>
+      <p class="center large">Este parágrafo será vermelho, centralizado e na fonte grande (large). </p>
+   </body>
 </html>
 ```
 
@@ -323,32 +323,36 @@ selector:pseudo-class { property: value; }
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-   <style>
-      a:link {    /* pseudo-classe para link NÃO VISITADO */
+   <head>
+      <style>
+         a:link {    /* pseudo-classe p/ link NÃO VISITADO */
          color: red;
-      }
-      a:visited { /* pseudo-classe para link VISITADO */
+         }
+         a:visited { /* pseudo-classe p/ link VISITADO*/
          color: green;
-      }
-      a:hover {   /* pseudo-classe para MOUSE SOBRE o link */
+         }
+         a:hover {   /* pseudo-classe p/ MOUSE SOBRE o link */
          color: hotpink;
-      }
-      a:active {  /* pseudo-classe para link SELECIONADO */
+         }
+         a:active {   /* pseudo-classe p/ link SELECIONADO*/
          color: blue;
-      }
-   </style>
-</head>
-<body>
-   <h2>Estilo para link, dependendo do seu estado</h2>
-   <p><b><a href="default.asp" target="_blank">Este é um link</a></b></p>
-   <dl>
-      <dt><p><b>Importante 1:</b></p></dt>
-      <dd><b>a:hover</b> DEVE vir depois de <b>a:link</b></dd>
-      <dt><p><b>Importante 2:</b></p></dt>
-      <dd><b>a:active</b> DEVE vir depois de <b>a:hover</b></dd>
-   </dl>
-</body>
+         }
+      </style>
+   </head>
+   <body>
+      <h2>Estilo para link, dependendo do seu estado</h2>
+      <p><b><a href="default.asp" target="_blank">Este é um link</a></b></p>
+      <dl>
+         <dt>
+            <p><b>Importante 1:</b>
+         </dt>
+         <dd><b>a:hover</b> DEVE vir depois de <b>a:link</b> e <b>a:visited</b>, para ser efetivo no CSS.</dd>
+         <dt>
+            <p><b>Importante 2:</b> 
+         </dt>
+         <dd><b>a:active</b> DEVE vir depois de <b>a:hover</b>, para ser efetivo no CSS.</dd>
+      </dl>
+   </body>
 </html>
 ```
 
@@ -534,7 +538,7 @@ Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, 
 
 ```html
 <!DOCTYPE html>
- <html>
+<html>
    <head>
       <style>
          div {
@@ -546,9 +550,9 @@ Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, 
    </head>
    <body>
       <h2>Propriedade Padding</h2>
-      <div>O elemento div tem padding superior = 25px, padding direito = 5
+      <div>O elemento div tem padding superior = 25px, padding direito = 50px, padding inferior = 75px, padding esquerdo = 100px. </div>
    </body>
- </html>
+</html>
 ```
 
 ![ Figura 12: Exemplos de utilização da propriedade padding](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/12.jpeg)
@@ -631,7 +635,7 @@ Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, 
 </table>
 
 ```html
-order: 1px solid black;
+border: 1px solid black;
 margin: 25px 50px 75px;
 background-color: lightgreen;
 }
@@ -639,7 +643,7 @@ background-color: lightgreen;
 </head>
 <body>
    <h2>Propriedade Margin</h2>
-   <div>O elemento div tem margin superior = 25px, margin direito e esquer
+   <div>O elemento div tem margin superior = 25px, margin direito e esquerdo = 50px, margin inferior = 75px. </div>
    <hr>
 </body>
 </html>
@@ -885,8 +889,6 @@ div {
     <select id="pais" name="pais">
       <option value="brasil">Brasil</option>
       <option value="eua">EUA</option>
-      <option value="argentina">Argentina</option>
-      <option value="outro">Outro</option>
     </select>
     <br><br>
     <input type="submit" value="Enviar">
@@ -938,29 +940,29 @@ Arquivo: form_action.html:
 Arquivo: form.html:
 ```html
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleForm1.css">
     <title>Formulário com CSS</title>
 </head>
+
 <body>
     <div class="formulario">
         <h2>Formatação de Formulário</h2>
         <form action="form_action.html">
             <div class="campo">
                 <span class="tag"><label for="nome">Nome:</label></span>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome.." required>
             </div>
             <div class="campo">
                 <span class="tag"><label for="s_name">Sobrenome:</label></span>
-                <input type="text" id="s_nome" name="s_nome" placeholder="Seu sobrenome..">
+                <input type="text" id="s_nome" name="s_nome" placeholder="Seu sobrenome.." required>
             </div>
             <div class="campo">
                 <span class="tag"><label for="pais">País:</label></span>
                 <select id="pais" name="pais" required>
-                    <option value="" disabled selected>Seu país..</option>
+                    <option value="" disabled selected>Seu país.. </option>
                     <option value="brasil">Brasil</option>
                     <option value="eua">EUA</option>
                     <option value="argentina">Argentina</option>
@@ -969,18 +971,20 @@ Arquivo: form.html:
             </div>
             <div class="campo">
                 <span class="tag"><label for="email">E-mail:</label></span>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail..">
+                <input type="e-mail" id="email" name="email" placeholder="nome@email.com" required>
             </div>
             <div class="campo">
                 <span class="tag"><label for="pwd">Senha:</label></span>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha..">
+                <input type="password" id="senha" name="senha" placeholder="Sua senha..." required>
             </div>
             <div class="campo">
                 <input type="submit" value="Enviar">
             </div>
         </form>
     </div>
+
 </body>
+
 </html>
 ```
 
