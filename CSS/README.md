@@ -838,12 +838,6 @@ Assim, podemos mudar totalmente a personalização da tabela, apenas editando o 
 
 Existem várias propriedades CSS para formatar um formulário. Veja alguns exemplos na imagem a seguir:
 
-<div align="center">
-![Figura 16: Exemplos de formatação de formulário](sandbox:/mnt/data/image_page31_1.jpeg)
-</div>
-
-#### PRÁTICA: Formatando formulário
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -902,6 +896,10 @@ div {
 </html>
 ```
 
+ Observe que o CSS foi aplicado ao seletor input e seus tipos e pseudo-classes
+
+![Figura 16: Exemplos de formatação de formulário](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/16.jpeg)
+
 ---
 
 ### Layout flexível: basta alterar o CSS
@@ -912,19 +910,11 @@ Vamos verificar na prática como facilitar a alteração de layout de uma págin
 
 Veja o exemplo na Figura a seguir:
 
-<div align="center">
-![Figura 17: Mesmo formulário HTML com 2 formatações diferentes de CSS](sandbox:/mnt/data/image_page41_1.jpeg)
-</div>
+![Figura 17: Mesmo formulário HTML com 2 formatações diferentes de CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/17.jpeg)
 
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
+![Figura 17: Mesmo formulário HTML com 2 formatações diferentes de CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/18.jpeg)
 
----
-
-#### Arquivos de exemplo para Formulário
-
-##### Arquivo: form_action.html
-
+Arquivo: form_action.html:
 ```html
 <!DOCTYPE html>
 <html>
@@ -945,8 +935,7 @@ Veja o exemplo na Figura a seguir:
 </html>
 ```
 
-##### Arquivo: form.html
-
+Arquivo: form.html:
 ```html
 <!DOCTYPE html>
 <html>
@@ -995,8 +984,7 @@ Veja o exemplo na Figura a seguir:
 </html>
 ```
 
-##### Arquivo: css/styleForm1.css
-
+Arquivo css:
 ```css
 * {
     margin: 2px;
@@ -1046,8 +1034,7 @@ input[type=submit] {
 }
 ```
 
-##### Arquivo: css/styleForm2.css
-
+Arquivo 2 css:
 ```css
 * {
     margin: 2px;
@@ -1113,47 +1100,4 @@ input[type=submit] {
     border-radius: 20px;
 }
 ```
-
 ---
-
-## ATIVIDADE FORMATIVA
-
-Execute o exercício proposto na videoaula-tutorial a seguir, para criar um curriculum vitae em HTML, estilizado com CSS. Nesta prática, além de exercitar diferentes maneiras de formatar elementos HTML, você poderá verificar como um ambiente de desenvolvimento adequado, como o VS Code ([https://code.visualstudio.com/download](https://code.visualstudio.com/download)), auxilia bastante na escrita dos códigos. Além disso, um navegador com janela de inspeção vai permitir até testes de layout para visualizar qual é o mais interessante para a sua página.
-
-<div align="center">
-![Figura: Atividade Formativa](sandbox:/mnt/data/image_page42_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
-
----
-
-## SAIBA MAIS
-
-### Conclusão
-
-Criando páginas HTML com CSS para definição de estilo.
-
-Vamos criar um curriculum vitae com um layout bem diferenciado, para treinar diferentes tipos de formatação possíveis. Observe que o HTML não tem formatação, que é feita totalmente em um arquivo `.css` em separado. Vamos também preparar nossa página para outros dispositivos, utilizando a responsividade do CSS, que é a capacidade de adaptar o tamanho das páginas web de acordo com o tamanho das telas em que elas são exibidas. Mãos à obra!
-
-- **Criando páginas HTML com CSS**
-- [Tutorial CSS (W3Schools)](https://www.w3schools.com/css)
-- [CSS Formulários (W3Schools)](https://www.w3schools.com/css/css_form.asp)
-- [CSS Fontes (W3Schools)](https://www.w3schools.com/css/css_font.asp)
-- [CSS Cores (W3Schools)](https://www.w3schools.com/css/css_colors.asp)
-- [CSS Avançado (W3Schools)](https://www.w3schools.com/css/css3_borders.asp)
-- [CSS Responsivo (W3Schools)](https://www.w3schools.com/css/css_rwd_intro.asp)
-- [Vídeo sobre Responsividade](https://www.youtube.com/watch?v=9TWmkfQeCX4)
-
-Até a próxima unidade, em que continuaremos no front-end, contudo com programação em JavaScript. Realize as práticas indicadas aqui para o HTML juntamente com CSS, pois assim você aproveitará melhor nossa próxima unidade!
-
----
-
-## Referências Bibliográficas
-
-- **ALVES, W. P.** _Desenvolvimento e design de sites_. São Paulo: Érica, 2014.
-- **MILETTO, E. M.; BERTAGNOLLI, S. C.** _Desenvolvimento de software II: Introdução ao desenvolvimento web com HTML, CSS, JavaScript e PHP_. Porto Alegre: Bookman, 2014.
-- **TERUEL, E. C.** _HTML 5: Guia prático_. 2. ed. Porto Alegre: Bookman, 2014.
-
-© PUCPR – Todos os direitos reservados.
