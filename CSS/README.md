@@ -630,8 +630,23 @@ Podemos atribuir valores diferentes para cada lado da **box** do elemento HTML, 
   </tbody>
 </table>
 
+```html
+order: 1px solid black;
+margin: 25px 50px 75px;
+background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+   <h2>Propriedade Margin</h2>
+   <div>O elemento div tem margin superior = 25px, margin direito e esquer
+   <hr>
+</body>
+</html>
+```
+
 <div align="center">
-![Propriedade Margin](sandbox:/mnt/data/image_page20_1.jpeg)
+![Figura 13: Exemplos de utilização da propriedade margin](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/13.jpeg)
 </div>
 
 Uma alternativa para configurar a `margin` é com suas propriedades específicas para cada lado, que podem ser utilizadas em conjunto ou individualmente:
@@ -643,38 +658,76 @@ Uma alternativa para configurar a `margin` é com suas propriedades específicas
 
 ---
 
-<div align="center">
-![Figura 13: Exemplos de utilização da propriedade margin](sandbox:/mnt/data/image_page23_1.jpeg)
-</div>
-
----
-
 ## CSS para texto
 
 Existem várias propriedades CSS para formatar um texto. Veja alguns exemplos na imagem a seguir:
 
-| Exemplo                                                   | Descrição                                                                                                                                              |
-|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ```css                                                    | `background-color`: cor de fundo do elemento<br>`color`: cor do texto                                                                                  |
-| h1 {<br>  background-color: black;<br>  color: white;<br>} |                                                                                                                                                        |
-|                                                           |                                                                                                                                                        |
-| ```css                                                    | `text-align`: alinhamento horizontal de um texto.<br>Pode assumir os valores: _center_, _right_, _left_ ou _justify_.                                                                        |
-| h2 {<br>  text-align: left;<br>}                           |                                                                                                                                                        |
-|                                                           |                                                                                                                                                        |
-| ```css                                                    | `text-decoration`: adiciona uma linha de decoração ao texto. Pode assumir os valores: _overline_, _line-through_ ou _underline_.                                                              |
-| h3 {<br>  text-decoration: underline;<br>}                |                                                                                                                                                        |
-|                                                           |                                                                                                                                                        |
-| ```css                                                    | `text-transform`: especifica letras maiúsculas e minúsculas em um texto. Pode assumir os valores: _uppercase_, _lowercase_ ou _capitalize_.                                                      |
-| p {<br>  text-transform: uppercase;<br>}                   |                                                                                                                                                        |
-|                                                           |                                                                                                                                                        |
-| ```css                                                    | `font-family`: especificar a fonte de um texto. Pode assumir os valores: _Arial_, _Helvetica_, _“Lucida Console”_, etc. Deve conter várias fontes para garantir compatibilidade entre diferentes navegadores. |
-| p {<br>  font-family: Arial, Helvetica, sans-serif;<br>}  |                                                                                                                                                        |
+<h3>Formatando texto</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Exemplo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre><code>h1 {
+  background-color: black;
+  color: white;
+}</code></pre>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><strong>background-color</strong>: cor de fundo do elemento</li>
+          <li><strong>color</strong>: cor do texto</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>h2 {
+  text-align: left;
+}</code></pre>
+      </td>
+      <td>
+        <p><strong>text-align</strong>: alinhamento horizontal de um texto. Pode assumir os valores: <em>center</em>, <em>right</em>, <em>left</em> ou <em>justify</em>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>h3 {
+  text-decoration: underline;
+}</code></pre>
+      </td>
+      <td>
+        <p><strong>text-decoration</strong>: adiciona uma linha de decoração ao texto. Pode assumir os valores: <em>overline</em>, <em>line-through</em> ou <em>underline</em>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>p {
+  text-transform: uppercase;
+}</code></pre>
+      </td>
+      <td>
+        <p><strong>text-transform</strong>: especifica letras maiúsculas e minúsculas em um texto. Pode assumir os valores: <em>uppercase</em>, <em>lowercase</em> ou <em>capitalize</em>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>p {
+  font-family: Arial, Helvetica, sans-serif;
+}</code></pre>
+      </td>
+      <td>
+        <p><strong>font-family</strong>: especifica a fonte de um texto. Pode assumir os valores: <em>Arial</em>, <em>Helvetica</em>, <em>“Lucida Console”</em>, etc. Deve conter várias fontes para garantir compatibilidade entre diferentes navegadores.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<div align="center">
-![Formatando texto](sandbox:/mnt/data/image_page25_1.jpeg)
-</div>
-
-#### PRÁTICA: Formatando texto no navegador
 
 ```html
 <!DOCTYPE html>
@@ -702,20 +755,13 @@ Existem várias propriedades CSS para formatar um texto. Veja alguns exemplos na
 </html>
 ```
 
+![Figura 14: Exemplos de utilização da formatação para texto](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/14.jpeg)
+
 ---
 
 ## CSS para tabela
 
 Existem várias propriedades CSS para formatar uma tabela. Veja alguns exemplos na imagem a seguir:
-
-<div align="center">
-![Figura 14: Exemplos de utilização da formatação para texto](sandbox:/mnt/data/image_page27_1.jpeg)
-</div>
-
-> **Fonte: A autora (2023).**  
-> **#ParaTodosVerem**
-
-#### PRÁTICA: Formatando tabela
 
 ```html
 <!DOCTYPE html>
@@ -775,9 +821,16 @@ Existem várias propriedades CSS para formatar uma tabela. Veja alguns exemplos 
 </html>
 ```
 
-<div align="center">
-![Figura 15: Exemplos de formatação de tabela](sandbox:/mnt/data/image_page29_1.jpeg)
-</div>
+Observe alguns pontos importantes nesta formatação:
+1. O identificador id="clientes" identifica a tabela que queremos formatar.
+2. Os seletores do identificador (#clientes td, #clientes tr:hover, ...) podem
+receber formatações exclusivas.
+3. As linhas pares (#clientes tr:nth-child(even)) também recebem formatação
+exclusiva.
+4. As demais tags de tabela (<tr>, <td>, etc.) não têm propriedade interna formatada.
+Assim, podemos mudar totalmente a personalização da tabela, apenas editando o CSS.
+
+![Figura 15: Exemplos de formatação de tabela](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/15.jpeg)
 
 ---
 
