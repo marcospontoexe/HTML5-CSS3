@@ -479,22 +479,26 @@ outra caixa, ele vai **ocupar 100%** da largura do **<body>**. O elemento block-
 modernas da HTML5, como **<main>**, **<section>**,** <aside>**, etc.
 
 Na lista a seguir, coloquei alguns elementos HTML que são block-level: 
+```html
 <address> <article> <aside> <blockquote> <canvas> <dd>
 <div> <dl> <dt> <fieldset> <figcaption> <figure>
 <footer> <form> <h1> - <h6> <header> <hr> <li>
 <main> <nav> <noscript> <ol> <p> <pre>
 <section> <table> <tfoot> <ul> <video>
+```
 
 ** Caixa do tipo **inline-level**: Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto 
 exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao 
 seu conteúdo. 
 
 Abaixo, listei alguns elementos inline-level usados pela HTML: 
+```html
 <a> <abbr> <acronym> <b> <bdo> <br>
 <button> <cite> <code> <dfn> <em> <i>
 <img> <input> <kbd> <label> <map> <object>
 <output> <q> <samp> <script> <select> <small>
 <span> <strong> <sub> <textarea> <tt> <var>
+```
 
 ### Tag HTML `<div>` e Tag HTML `<span>`
 
