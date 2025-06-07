@@ -471,6 +471,31 @@ Entre a margem e a borda, podemos determinar o contorno (**outline**) que é mui
 pouco utilizado, mas existe. Ele é um traçado visual que podemos criar fora da borda 
 e o cálculo da sua espessura faz parte da margem estabelecida. 
 
+### Tipos de Caixa 
+Dependendo do comportamento da caixa, podemos classificar um elemento em uma de duas categorias: 
+* Caixa do tipo **block-level**: Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a 
+largura total do elemento onde ele está contido. Se não estiver contido em nenhuma 
+outra caixa, ele vai **ocupar 100%** da largura do **<body>**. O elemento block-level mais conhecido é o** <div>** e suas variações semânticas 
+modernas da HTML5, como **<main>**, **<section>**,** <aside>**, etc.
+
+Na lista a seguir, coloquei alguns elementos HTML que são block-level: 
+<address> <article> <aside> <blockquote> <canvas> <dd>
+<div> <dl> <dt> <fieldset> <figcaption> <figure>
+<footer> <form> <h1> - <h6> <header> <hr> <li>
+<main> <nav> <noscript> <ol> <p> <pre>
+<section> <table> <tfoot> <ul> <video>
+
+** Caixa do tipo **inline-level**: Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto 
+exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao 
+seu conteúdo. 
+
+Abaixo, listei alguns elementos inline-level usados pela HTML: 
+<a> <abbr> <acronym> <b> <bdo> <br>
+<button> <cite> <code> <dfn> <em> <i>
+<img> <input> <kbd> <label> <map> <object>
+<output> <q> <samp> <script> <select> <small>
+<span> <strong> <sub> <textarea> <tt> <var>
+
 ### Tag HTML `<div>` e Tag HTML `<span>`
 
 As tags `<div>` e `<span>` definem uma divisão ou parte de um documento HTML. Qualquer tipo de conteúdo (elementos HTML) pode ser colocado dentro delas!
