@@ -564,37 +564,37 @@ Contudo, podemos especificar um valor para cada lado do elemento. Detalhamos ess
 ---
 
 ### Grouping Tags e Semantic Tags 
-A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a ```<div>``` 
-e a <span>. A diferença básica entre elas é que a primeira é um elemento agrupador 
-do tipo block-level e o segundo é inline-level. No mais, eles agem exatamente da 
+A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a ```<div>```(elemento agrupador do tipo **block-level**) e a ```<span>``` (elemento agrupador do tipo **inline-level**). No mais, eles agem exatamente da 
 mesma maneira, servindo para juntar vários outros elementos HTML. 
-Com o surgimento da HTML5, surgiram as tags semânticas de agrupamento. Isso não 
-significa que as <div> e <span> (agora chamadas de não-semânticas) deixaram de 
-existir ou ficaram obsoletas, mas seu uso agora faz menos sentido, pois temos tags 
+
+Com o surgimento da HTML5, surgiram as **tags semânticas de agrupamento**. Isso não 
+significa que as ```<div>``` e ```<span>``` (agora chamadas de não-semânticas) deixaram de 
+existir ou ficaram **obsoletas**, mas seu uso agora faz menos sentido, pois temos tags 
 para dividir as partes do nosso documento HTML. 
-Vamos compreender a partir de agora os principais agregadores semânticos da 
-HTML5. 
-Header 
-Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
-mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6> 
-e subtítulos. Podem também conter menus de navegação. 
-Nav 
-Define uma área que possui os links de navegação pela 
+
+Vamos compreender a partir de agora os principais agregadores semânticos da HTML5. 
+
+* **Header**: Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
+mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos ```<h1>``` - ```<h6>```
+e subtítulos. **Podem também conter menus de navegação**. 
+
+* **Nav**: Define uma área que possui os **links de navegação** pela 
 estrutura de páginas que vão compor o website. Um 
-<nav> pode estar dentro de um <header>. 
-Main  
-É um agrupador usado para delimitar o conteúdo 
-principal do nosso site. Normalmente concentra as 
-seções, artigos e conteúdos periféricos.  
-Section 
-Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou 
+```<nav>``` pode estar dentro de um ```<header>```. 
+
+* **Main**: É um agrupador usado para delimitar o** conteúdo 
+principal do nosso site**. Normalmente concentra as 
+*seções*, *artigos* e *conteúdos periféricos*. 
+
+* **Section**: **Cria seções para sua página**. Ela pode conter o conteúdo diretamente no seu corpo ou 
 dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação 
 oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente 
 com um cabeçalho”. 
-Article 
-Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma 
-independente e dizem respeito a um mesmo assunto. Podemos usar um <article> 
+
+* **Article**: Um artigo é um elemento que **vai conter um conteúdo** que pode ser lido de forma 
+independente e dizem respeito a um mesmo assunto. Podemos usar um ```<article>```
 para delimitar um post de blog ou fórum, uma notícia, etc. 
+
 ---
 
 ### Propriedade `padding`
@@ -789,6 +789,69 @@ Uma alternativa para configurar a `margin` é com suas propriedades específicas
 - `margin-left`
 
 ---
+
+## Claro! Vamos falar sobre **variáveis no CSS3**, também chamadas de **Custom Properties** (propriedades personalizadas).
+
+---
+
+## variáveis no CSS
+
+Variáveis no CSS permitem **armazenar valores reutilizáveis**, como cores, tamanhos, fontes etc., que podem ser usados em vários lugares do seu CSS. Se você precisar mudar algo depois, **basta alterar o valor da variável em um único lugar.**
+
+### Definindo uma variável:
+As variáveis são sempre definidas com **dois hífens (`--`)** e geralmente dentro do seletor `:root` para que fiquem disponíveis globalmente:
+
+```css
+:root {
+  --cor-principal: #3498db;
+  --tamanho-fonte: 16px;
+}
+```
+
+### Usando a variável:
+
+Use a função `var()` para aplicar o valor da variável:
+
+```css
+body {
+  background-color: var(--cor-principal);
+  font-size: var(--tamanho-fonte);
+}
+```
+
+#### Exemplo completo
+
+```css
+:root {
+  --fundo: #f0f0f0;
+  --texto: #333;
+  --padding: 20px;
+}
+
+.container {
+  background: var(--fundo);
+  color: var(--texto);
+  padding: var(--padding);
+}
+```
+
+Se você quiser mudar o tema, basta mudar os valores no `:root`.
+
+
+
+#### Valor padrão (fallback)
+
+Você pode definir um **valor padrão** se a variável não estiver definida:
+
+```css
+color: var(--cor-secundaria, blue);
+```
+
+Se `--cor-secundaria` não existir, será usado o `blue`.
+
+#### Compatibilidade
+
+As variáveis CSS funcionam bem na maioria dos navegadores modernos (Chrome, Firefox, Edge, Safari). Não funcionam no **Internet Explorer**.
 
 ## CSS para texto
 
