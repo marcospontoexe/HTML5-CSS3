@@ -446,11 +446,30 @@ A **box** que representa um elemento HTML tem algumas propriedades que definem o
 - `border`: linha que envolve o elemento.
 - `margin`: espaço externo ao elemento.
 - `padding`: espaço interno ao elemento, entre a borda e o conteúdo.
-- `background-color`: cor de fundo do elemento; é definida pelo nome em inglês da cor, ou no padrão hexadecimal RGB (Red-Green-Blue), como por exemplo `#3040AF`.
 
 Veja como é compreendida a box de um elemento HTML, exibida na Figura a seguir:
 
 ![Figura 10: Box do elemento HTML, formatada pelo CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/10.jpeg)
+
+Tudo começa a partir do conteúdo (content), que representamos acima com o bla 
+bla bla… Por padrão, toda caixa é composta apenas pelo conteúdo e não possui 
+padding, nem border, nem outline e nem margin. Uma exceção curiosa é o 
+elemento <body> que já vem com uma margin de 8px. 
+
+Todo conteúdo possui uma largura (**width**) e uma altura (**height**) e a esse conjunto 
+de propriedades, damos o nome de box-size (tamanho da caixa). O tamanho da 
+caixa não inclui as medidas de padding, border, outline e margin. 
+
+Depois do conteúdo e de seu tamanho, vamos nos focar na **borda** que fica em volta 
+dele. Ela pode ter uma espessura, uma cor e um formato. 
+
+Entre a borda e o conteúdo - da borda para dentro - temos o preenchimento 
+(**padding**) e da borda para fora, temos a margem (**margin**). 
+
+
+Entre a margem e a borda, podemos determinar o contorno (**outline**) que é muito 
+pouco utilizado, mas existe. Ele é um traçado visual que podemos criar fora da borda 
+e o cálculo da sua espessura faz parte da margem estabelecida. 
 
 ### Tag HTML `<div>` e Tag HTML `<span>`
 
