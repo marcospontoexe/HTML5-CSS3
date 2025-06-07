@@ -475,8 +475,8 @@ e o cálculo da sua espessura faz parte da margem estabelecida.
 Dependendo do comportamento da caixa, podemos classificar um elemento em uma de duas categorias: 
 * Caixa do tipo **block-level**: Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a 
 largura total do elemento onde ele está contido. Se não estiver contido em nenhuma 
-outra caixa, ele vai **ocupar 100%** da largura do **body**. O elemento block-level mais conhecido é o **div** e suas variações semânticas 
-modernas da HTML5, como **main**, **section**, **aside**, etc.
+outra caixa, ele vai **ocupar 100%** da largura do **```<body>```**. O elemento block-level mais conhecido é o **```<div>```** e suas variações semânticas 
+modernas da HTML5, como **```<main>```**, **```<section>```**, **```<aside>```**, etc.
 
 Na lista a seguir, coloquei alguns elementos HTML que são block-level: 
 ```html
