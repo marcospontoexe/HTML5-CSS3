@@ -188,7 +188,8 @@ Podemos organizar os seletores CSS nas seguintes categorias:
 2. **Seletor de id.**
 3. **Seletor de classe.**
 4. **Seletores de combinação** (agrupa elementos).
-5. **Seletores de pseudoclasse** (seleciona elementos com base em um determinado estado).
+5. **Seletores de pseudo classe** (seleciona elementos com base em um determinado estado).
+6. **Seletores de pseudo elemento** (Um pseudo-elemento permite estilizar partes específicas de um elemento que não podem ser acessadas diretamente no HTML.)
 
 Vamos conhecer melhor cada um deles.
 
@@ -357,6 +358,51 @@ selector:pseudo-class { property: value; }
 ```
 
 ---
+
+### Seletor de pseudo elemento CSS
+Um **pseudo-elemento** permite **estilizar partes específicas de um elemento** que não podem ser acessadas diretamente no HTML. Ele simula (ou "finge", daí o "pseudo") a existência de um elemento novo dentro de outro — **sem alterar o HTML**.
+
+Ele é escrito com **dois-pontos duplos `::`** (embora os navegadores aceitem um só por compatibilidade antiga).
+
+| Pseudo-elemento  | O que faz                                                 |
+| ---------------- | --------------------------------------------------------- |
+| `::before`       | Insere conteúdo antes do conteúdo real do elemento        |
+| `::after`        | Insere conteúdo depois do conteúdo real do elemento       |
+| `::first-letter` | Estiliza a **primeira letra** de um bloco de texto        |
+| `::first-line`   | Estiliza a **primeira linha** visível de um parágrafo     |
+| `::selection`    | Estiliza o texto selecionado pelo usuário                 |
+| `::placeholder`  | Estiliza o texto de dica (placeholder) dentro de um input |
+
+#### `::before` e `::after`
+
+```css
+p::before {
+  content: "→ ";
+  color: red;
+}
+```
+
+Isso adiciona uma setinha antes do conteúdo de todos os `<p>` (parágrafos), sem alterar o HTML.
+
+#### `::first-letter`
+
+```css
+p::first-letter {
+  font-size: 2em;
+  color: blue;
+}
+```
+
+Deixa a **primeira letra** de cada parágrafo grande e azul (como em livros antigos).
+
+#### `::selection`
+
+```css
+::selection {
+  background: yellow;
+  color: black;
+}
+```
 
 ### Seletor de agrupamento CSS
 
