@@ -449,7 +449,7 @@ A **box** que representa um elemento HTML tem algumas propriedades que definem o
 
 Veja como é compreendida a box de um elemento HTML, exibida na Figura a seguir:
 
-![Figura 10: Box do elemento HTML, formatada pelo CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/10.jpeg)
+![Figura 10: Box do elemento HTML, formatada pelo CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/10.jpg)
 
 Tudo começa a partir do conteúdo (content), que representamos acima com o bla 
 bla bla… Por padrão, toda caixa é composta apenas pelo conteúdo e não possui 
