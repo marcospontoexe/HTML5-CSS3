@@ -475,8 +475,8 @@ e o cálculo da sua espessura faz parte da margem estabelecida.
 Dependendo do comportamento da caixa, podemos classificar um elemento em uma de duas categorias: 
 * Caixa do tipo **block-level**: Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a 
 largura total do elemento onde ele está contido. Se não estiver contido em nenhuma 
-outra caixa, ele vai **ocupar 100%** da largura do **body**. O elemento block-level mais conhecido é o** div** e suas variações semânticas 
-modernas da HTML5, como **main**, **section**,** aside**, etc.
+outra caixa, ele vai **ocupar 100%** da largura do **body**. O elemento block-level mais conhecido é o **div** e suas variações semânticas 
+modernas da HTML5, como **main**, **section**, **aside**, etc.
 
 Na lista a seguir, coloquei alguns elementos HTML que são block-level: 
 ```html
@@ -561,6 +561,40 @@ No exemplo da Figura anterior, essas propriedades receberam apenas um valor, que
 
 Contudo, podemos especificar um valor para cada lado do elemento. Detalhamos esse tratamento para `padding` e `margin` a seguir.
 
+---
+
+### Grouping Tags e Semantic Tags 
+A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a ```<div>``` 
+e a <span>. A diferença básica entre elas é que a primeira é um elemento agrupador 
+do tipo block-level e o segundo é inline-level. No mais, eles agem exatamente da 
+mesma maneira, servindo para juntar vários outros elementos HTML. 
+Com o surgimento da HTML5, surgiram as tags semânticas de agrupamento. Isso não 
+significa que as <div> e <span> (agora chamadas de não-semânticas) deixaram de 
+existir ou ficaram obsoletas, mas seu uso agora faz menos sentido, pois temos tags 
+para dividir as partes do nosso documento HTML. 
+Vamos compreender a partir de agora os principais agregadores semânticos da 
+HTML5. 
+Header 
+Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
+mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6> 
+e subtítulos. Podem também conter menus de navegação. 
+Nav 
+Define uma área que possui os links de navegação pela 
+estrutura de páginas que vão compor o website. Um 
+<nav> pode estar dentro de um <header>. 
+Main  
+É um agrupador usado para delimitar o conteúdo 
+principal do nosso site. Normalmente concentra as 
+seções, artigos e conteúdos periféricos.  
+Section 
+Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou 
+dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação 
+oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente 
+com um cabeçalho”. 
+Article 
+Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma 
+independente e dizem respeito a um mesmo assunto. Podemos usar um <article> 
+para delimitar um post de blog ou fórum, uma notícia, etc. 
 ---
 
 ### Propriedade `padding`
