@@ -76,7 +76,9 @@ Vamos comentar as tags iniciais da Figura apresentada:
 * `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
 
 [Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/1-sintaxe).
+
 [Como usar emoji](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/3-emoji).
+
 [Como usar iFrame](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/10-Iframe).
 ---
 
