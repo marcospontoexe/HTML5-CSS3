@@ -75,8 +75,9 @@ Vamos comentar as tags iniciais da Figura apresentada:
 * `<body>` e `</body>`: respectivamente, abertura e fechamento do corpo do documento HTML; a tag `</body>` deve ser declarada imediatamente antes da tag de fechamento de documento `</html>`.
 * `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
 
-[Veja um exemplo](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/1-sintaxe/index.html).
-
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/1-sintaxe).
+[Como usar emoji](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/3-emoji).
+[Como usar iFrame](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/10-Iframe).
 ---
 
 # HTML básico
@@ -90,7 +91,6 @@ Como acabamos de mencionar, um documento HTML é um arquivo-texto, que pode ser 
 ## HTML headings
 
 Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `<h1>` ao `<h6>`. Sendo que o `<h1>` define o cabeçalho de maior nível, ou mais importante, e o `<h6>` define o cabeçalho de menor nível, ou o menos importante.
-
 
 ```html
 <!DOCTYPE html>
@@ -109,6 +109,8 @@ Headings são elementos HTML para cabeçalhos. Eles são definidos com as tags `
 ![Figura 3: HTML headings](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/3.jpeg)
 
 > **Figura 3:** HTML headings.
+
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/4-T%C3%ADtulos).
 
 ---
 
@@ -136,6 +138,8 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 
 > **Figura 5:** HTML imagem: formato.
 
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/2-imagens).
+[Veja como inserir **imagens dinâmicas**, **audio** e **vídeo**](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/8-m%C3%ADdias).
 ---
 
 ## HTML Links
@@ -192,15 +196,13 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
     <a href="mailto:nome.sobrenome@site_examplo.com">Envie um e-mail</a></p>
   </body>
 </html>
-
-
-
 ```
 
 ![Figura 7: HTML links](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/7.jpeg)
 
 > **Figura 7:** HTML links.
 
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/7-Links).
 ---
 
 ## HTML lists
@@ -243,6 +245,8 @@ Podemos agrupar um conjunto de itens relacionados em uma estrutura de lista, que
 ![Figura 8: HTML listas](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/imagens/8.jpeg)
 
 > **Figura 8:** HTML listas. 
+
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/6-listas).
 
 ---
 
@@ -338,9 +342,11 @@ Para formatar as bordas das nossas tabelas-exemplo, usamos um pequeno trecho de 
 | `colspan="valor"` | Define quantas células uma **coluna** poderá ter.                |
 | `rowspan="valor"` | Define quantas células uma **linha** poderá ter.                 |
 
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/9-tabela).
+
 ---
 
-## HTML formating
+## HTML formating (semantica)
 
 O HTML define alguns elementos de formatação para exibir tipos especiais de textos:
 
@@ -351,7 +357,7 @@ O HTML define alguns elementos de formatação para exibir tipos especiais de te
 * `<small>`: Texto <small>menor</small>.
 * `<sub>`: Texto <sub>subscrito</sub>.
 * `<sup>`: Texto <sup>sobrescrito</sup>.
-
+* `<address>`: Usando para endereço, no celular abre o maps.
 
 ```html
 <!DOCTYPE html>
@@ -374,6 +380,7 @@ O HTML define alguns elementos de formatação para exibir tipos especiais de te
 
 > **Figura 10:** HTML tables.
 
+[Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/5-sem%C3%A2ntica%20(formata%C3%A7%C3%A3o)).
 ---
 
 ## HTML forms
@@ -490,6 +497,7 @@ O elemento HTML `<form>` é utilizado para criar um formulário HTML para entrad
   <tr><td>&lt;input type="url"&gt;</td><td>Campo de entrada que deve conter um endereço de URL.</td></tr>
 </table>
 
+[Veja mais exemplos para formulário](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/11-formulario).
 
 ### Métodos para envio de dados de formulário
 
