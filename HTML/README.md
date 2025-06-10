@@ -76,10 +76,9 @@ Vamos comentar as tags iniciais da Figura apresentada:
 * `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
 
 [Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/1-sintaxe).
-
 [Como usar emoji](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/3-emoji).
-
 [Como usar iFrame](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/10-Iframe).
+
 ---
 
 # HTML básico
@@ -142,6 +141,7 @@ As imagens podem melhorar o design e a aparência de uma página da web. Elas s�
 
 [Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/2-imagens).
 [Veja como inserir **imagens dinâmicas**, **audio** e **vídeo**](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/8-m%C3%ADdias).
+
 ---
 
 ## HTML Links
@@ -205,6 +205,7 @@ A tag `<a>` também possui alguns atributos, como exemplificado a seguir.
 > **Figura 7:** HTML links.
 
 [Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/7-Links).
+
 ---
 
 ## HTML lists
@@ -383,6 +384,7 @@ O HTML define alguns elementos de formatação para exibir tipos especiais de te
 > **Figura 10:** HTML tables.
 
 [Veja mais exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/5-sem%C3%A2ntica%20(formata%C3%A7%C3%A3o)).
+
 ---
 
 ## HTML forms
