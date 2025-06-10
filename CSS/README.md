@@ -24,6 +24,13 @@ A composição de uma regra está exibida na Figura a seguir:
 
 ![Figura 1: Sintaxe da Regra CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/1.jpeg)
 
+* [Veja como configurar cores](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/02-cores).
+* [Vejam mais sobre tipografia (fontes)](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/03-tipografia(fontes)).
+* [Veja como fazer alinhamento](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/04-alinhamento).
+* [Resposividade](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/08-responsividade).
+* [Imagens de fundo](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/09-imagens-fundo).
+* [Mediaquery](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/10-mediaquery).
+
 ---
 
 ## Tipos de CSS
@@ -176,6 +183,9 @@ h1 {
 ```
 
 ![Figura 4: HTML com CSS externo](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/4.jpeg)
+
+[Veja mais exemplos sobre regra de estilo](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/01-estilos).
+
 ---
 
 ## Seletores CSS
@@ -229,6 +239,8 @@ Seleciona qual elemento HTML receberá o estilo, baseado no seu nome HTML, ou ta
 ```
 
 ![Figura 5: Seletor de elemento CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/5.jpeg)
+
+[Veja mais exemplos de uso com seletores](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/05-seletores).
 
 ---
 
@@ -427,9 +439,7 @@ Para minimizar o código, podemos agrupar os seletores, separando cada seletor c
 </html>
 ```
 
-<div align="center">
 ![Figura 9: Seletor de agrupamento CSS](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/9.jpeg)
-</div>
 
 ---
 
@@ -499,6 +509,8 @@ Abaixo, listei alguns elementos inline-level usados pela HTML:
 <output> <q> <samp> <script> <select> <small>
 <span> <strong> <sub> <textarea> <tt> <var>
 ```
+
+[Veja mais exemplos sobre o uso de caixas HTML](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/06-caixas).
 
 ### Tag HTML `<div>` e Tag HTML `<span>`
 
@@ -798,6 +810,8 @@ Uma alternativa para configurar a `margin` é com suas propriedades específicas
 
 Variáveis no CSS permitem **armazenar valores reutilizáveis**, como cores, tamanhos, fontes etc., que podem ser usados em vários lugares do seu CSS. Se você precisar mudar algo depois, **basta alterar o valor da variável em um único lugar.**
 
+[Veja alguns exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/07-vari%C3%A1veis).
+
 ### Definindo uma variável:
 As variáveis são sempre definidas com **dois hífens (`--`)** e geralmente dentro do seletor `:root` para que fiquem disponíveis globalmente:
 
@@ -836,8 +850,6 @@ body {
 ```
 
 Se você quiser mudar o tema, basta mudar os valores no `:root`.
-
-
 
 #### Valor padrão (fallback)
 
@@ -1296,3 +1308,4 @@ input[type=submit] {
 }
 ```
 ---
+
