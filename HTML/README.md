@@ -75,6 +75,8 @@ Vamos comentar as tags iniciais da Figura apresentada:
 * `<body>` e `</body>`: respectivamente, abertura e fechamento do corpo do documento HTML; a tag `</body>` deve ser declarada imediatamente antes da tag de fechamento de documento `</html>`.
 * `<p>` e `</p>`: respectivamente, abertura e fechamento de um parágrafo no documento HTML.
 
+[Veja um exemplo](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/1-sintaxe/index.html).
+
 ---
 
 # HTML básico
