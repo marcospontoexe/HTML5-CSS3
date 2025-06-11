@@ -802,13 +802,9 @@ Uma alternativa para configurar a `margin` é com suas propriedades específicas
 
 ---
 
-## Claro! Vamos falar sobre **variáveis no CSS3**, também chamadas de **Custom Properties** (propriedades personalizadas).
-
----
-
 ## variáveis no CSS
 
-Variáveis no CSS permitem **armazenar valores reutilizáveis**, como cores, tamanhos, fontes etc., que podem ser usados em vários lugares do seu CSS. Se você precisar mudar algo depois, **basta alterar o valor da variável em um único lugar.**
+Também chamadas de **Custom Properties** (propriedades personalizadas), as variáveis no CSS permitem **armazenar valores reutilizáveis**, como cores, tamanhos, fontes etc., que podem ser usados em vários lugares do seu CSS. Se você precisar mudar algo depois, **basta alterar o valor da variável em um único lugar.**
 
 [Veja alguns exemplos](https://github.com/marcospontoexe/HTML5-CSS3/tree/main/CSS/material_didatico/Curso_em_V%C3%ADdeo/07-vari%C3%A1veis).
 
