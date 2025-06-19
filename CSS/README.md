@@ -788,9 +788,8 @@ background-color: lightgreen;
 </html>
 ```
 
-<div align="center">
 ![Figura 13: Exemplos de utilização da propriedade margin](https://github.com/marcospontoexe/HTML5-CSS3/blob/main/CSS/imgens/13.jpeg)
-</div>
+
 
 Uma alternativa para configurar a `margin` é com suas propriedades específicas para cada lado, que podem ser utilizadas em conjunto ou individualmente:
 
