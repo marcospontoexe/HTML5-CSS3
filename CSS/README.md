@@ -594,8 +594,7 @@ e subtítulos. **Podem também conter menus de navegação**.
 estrutura de páginas que vão compor o website. Um 
 ```<nav>``` pode estar dentro de um ```<header>```. 
 
-* **Main**: É um agrupador usado para delimitar o** conteúdo 
-principal do nosso site**. Normalmente concentra as 
+* **Main**: É um agrupador usado para delimitar o **conteúdo principal do nosso site**. Normalmente concentra as 
 *seções*, *artigos* e *conteúdos periféricos*. 
 
 * **Section**: **Cria seções para sua página**. Ela pode conter o conteúdo diretamente no seu corpo ou 
