@@ -582,11 +582,11 @@ A propriedade **position** no CSS define como um elemento HTML é posicionado na
 
 | Valor      | O que faz                                                                                                                                      |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `static`   | **Padrão**. O elemento é posicionado conforme o fluxo normal do HTML.** Não responde** ao top, right, bottom, left   |
-| `relative` | Move o elemento **relativamente à sua posição original**.                                                                                      |
-| `absolute` | Move o elemento **relativamente ao elemento pai com `position: relative`**, ou ao `<body>` se não houver pai posicionado. Sai do fluxo normal. |
-| `fixed`    | Fixa o elemento **em relação à janela do navegador** (viewport).                                                                               |
-| `sticky`   | O elemento fica entre `relative` e `fixed`: **rola com a página até um ponto e depois fixa**.                                                  |
+| `static`   | **Padrão**. O elemento é posicionado conforme o fluxo normal do HTML. **Não responde** ao top, right, bottom, left   |
+| `relative` | O elemento permanece no fluxo, mas pode ser deslocado em relação à sua posição original usando top, right, bottom, left.  Também ativa o uso de **z-index** e pode servir como referência para elementos **absolute** filhos             |
+| `absolute` | Remove completamente o elemento do fluxo da página, e os demais se comportam como se ele não existisse. Move o elemento relativamente ao elemento pai com **`position: relative`**, ou ao `<body>` se não houver pai posicionado. Sai do fluxo normal. |
+| `fixed`    | Também remove o elemento do fluxo, mas posiciona-o em relação à janela de visualização (viewport). Fica fixo mesmo quando a página é rolada, ideal para navbars ou botão “voltar ao topo”.                         |
+| `sticky`   | O elemento fica entre `relative` e `fixed`: **rola com a página até um ponto e depois fixa**. Útil para headers que aparecem somente após rolar até certo ponto. Requer que o elemento esteja dentro de um container com overflow apropriado e tenha pelo menos uma das posições definidas.           |
 
 
 
