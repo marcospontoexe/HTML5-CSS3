@@ -588,75 +588,17 @@ A propriedade **position** no CSS define como um elemento HTML é posicionado na
 | `fixed`    | Também remove o elemento do fluxo, mas posiciona-o em relação à janela de visualização (viewport). Fica fixo mesmo quando a página é rolada, ideal para navbars ou botão “voltar ao topo”.                         |
 | `sticky`   | O elemento fica entre `relative` e `fixed`: **rola com a página até um ponto e depois fixa**. Útil para headers que aparecem somente após rolar até certo ponto. Requer que o elemento esteja dentro de um container com overflow apropriado e tenha pelo menos uma das posições definidas.           |
 
+* O uso de `top`, `right`, `bottom` e `left` só tem efeito quando o elemento está *posicionado*.
+* A posição `absolute` retira o elemento do fluxo, permitindo sobreposição sem alterar o layout dos outros elementos por estar “fora da estrutura”. 
+* Já o `relative` apenas move visualmente o elemento, mantendo seu espaço original reservado para evitar mudanças drásticas no layout.
+* `fixed` é posicionado em relação à janela, ideal para elementos que devem ficar sempre visíveis (como headers fixos). 
 
-
-
-
-
-1. **`static`**
-
-   * Valor padrão.
-   * O elemento segue o fluxo normal da página.
-   * Propriedades como `top`, `left`, etc., não têm efeito. ([w3schools.com][1])
-
-2. **`relative`**
-
-   * Mantém-se no fluxo, mas pode ser deslocado em relação à sua posição original usando `top`, `left`, etc.
-   * O espaço original do elemento é preservado.
-   * Cria contexto para uso de `absolute` em elementos filhos e permite `z-index`. ([css-tricks.com][2])
-
-3. **`absolute`**
-
-   * Remove o elemento do fluxo; os demais agem como se ele não existisse.
-   * Posiciona-se em relação ao ancestral posicionado mais próximo (`relative`, `absolute`, `fixed`) ou ao *initial containing block* (normalmente o `body`). ([en.wikipedia.org][3], [developer.mozilla.org][4])
-
-4. **`fixed`**
-
-   * Também desconecta o elemento do fluxo.
-   * Posiciona-o em relação à viewport, mantendo-o visível mesmo durante o scroll. ([w3schools.com][1])
-
-5. **`sticky`**
-
-   * Híbrido entre `relative` e `fixed`.
-   * Funciona como `relative` até que atinja um limite de rolagem (e.g. `top: 0`), momento em que “cola” à viewport enquanto estiver visível. ([youtube.com][5])
-
----
-
-## 🔎 Um pouco de teoria
-
-* **Elementos *posicionados*** são aqueles com `position` diferente de `static` – ou seja, `relative`, `absolute`, `fixed` ou `sticky`. ([developer.mozilla.org][4])
-* O uso de `top`, `right`, `bottom` e `left` só tem efeito quando o elemento está *posicionado*. ([developer.mozilla.org][4])
-* A posição `absolute` retira o elemento do fluxo, permitindo sobreposição sem alterar o layout dos outros elementos por estar “fora da estrutura”. ([css-tricks.com][2])
-* Já o `relative` apenas move visualmente o elemento, mantendo seu espaço original reservado para evitar mudanças drásticas no layout.&#x20;
-* `fixed` é posicionado em relação à janela, ideal para elementos que devem ficar sempre visíveis (como headers fixos). ([css-tricks.com][2])
-* `sticky` combina o comportamento normal com o fixo após o scroll alcançar um certo ponto – perfeito para menus e cabeçalhos que “grudam” ao rolar. ([css-tricks.com][2])
-
----
-
-## 📹 Vídeo recomendado
-
-Para visualizar na prática, esse vídeo do canal W3Schools é excelente: uma comparação animada entre os cinco valores de `position` no CSS:
-
-[CSS positions explained | static, relative, absolute, fixed and sticky](https://www.youtube.com/watch?v=Sb4oI8vU2FU&utm_source=chatgpt.com)
-
----
-
-### 🧠 Dicas rápidas
+##### Dicas rápidas
 
 * Use `relative` para criar contexto ou pequenos deslocamentos sem romper o fluxo.
 * Use `absolute` para sobreposição precisa, respeitando um ancestral posicionado.
 * Use `fixed` para elementos que ficam visíveis durante o scroll.
 * Use `sticky` para “grudar” elementos no scroll sem sair do fluxo inicialmente.
-
----
-
-Quer ver exemplos em código, casos de uso reais ou até exercícios? Posso criar também! É só dizer 😊
-
-[1]: https://www.w3schools.com/css/css_positioning.asp?utm_source=chatgpt.com "CSS Layout - The position Property - W3Schools"
-[2]: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/?utm_source=chatgpt.com "Absolute, Relative, Fixed Positioning: How Do They Differ?"
-[3]: https://en.wikipedia.org/wiki/CSS?utm_source=chatgpt.com "CSS"
-[4]: https://developer.mozilla.org/en-US/docs/Web/CSS/position?utm_source=chatgpt.com "position - CSS - MDN Web Docs - Mozilla"
-[5]: https://www.youtube.com/watch?v=FNsn0pBmrKs&utm_source=chatgpt.com "Absolute, Relative, Fixed & Sticky Position | CSS Tutorial - YouTube"
 
 ---
 
