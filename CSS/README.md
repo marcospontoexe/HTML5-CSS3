@@ -575,6 +575,91 @@ Contudo, podemos especificar um valor para cada lado do elemento. Detalhamos ess
 
 ---
 
+### Posicionando elementos
+A propriedade **position** no CSS define como um elemento HTML é posicionado na página. Ela determina o comportamento do elemento em relação ao seu contêiner ou à janela (viewport).
+
+#### Valores principais de `position`:
+
+| Valor      | O que faz                                                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `static`   | **Padrão**. O elemento é posicionado conforme o fluxo normal do HTML.** Não responde** ao top, right, bottom, left   |
+| `relative` | Move o elemento **relativamente à sua posição original**.                                                                                      |
+| `absolute` | Move o elemento **relativamente ao elemento pai com `position: relative`**, ou ao `<body>` se não houver pai posicionado. Sai do fluxo normal. |
+| `fixed`    | Fixa o elemento **em relação à janela do navegador** (viewport).                                                                               |
+| `sticky`   | O elemento fica entre `relative` e `fixed`: **rola com a página até um ponto e depois fixa**.                                                  |
+
+
+
+
+
+
+1. **`static`**
+
+   * Valor padrão.
+   * O elemento segue o fluxo normal da página.
+   * Propriedades como `top`, `left`, etc., não têm efeito. ([w3schools.com][1])
+
+2. **`relative`**
+
+   * Mantém-se no fluxo, mas pode ser deslocado em relação à sua posição original usando `top`, `left`, etc.
+   * O espaço original do elemento é preservado.
+   * Cria contexto para uso de `absolute` em elementos filhos e permite `z-index`. ([css-tricks.com][2])
+
+3. **`absolute`**
+
+   * Remove o elemento do fluxo; os demais agem como se ele não existisse.
+   * Posiciona-se em relação ao ancestral posicionado mais próximo (`relative`, `absolute`, `fixed`) ou ao *initial containing block* (normalmente o `body`). ([en.wikipedia.org][3], [developer.mozilla.org][4])
+
+4. **`fixed`**
+
+   * Também desconecta o elemento do fluxo.
+   * Posiciona-o em relação à viewport, mantendo-o visível mesmo durante o scroll. ([w3schools.com][1])
+
+5. **`sticky`**
+
+   * Híbrido entre `relative` e `fixed`.
+   * Funciona como `relative` até que atinja um limite de rolagem (e.g. `top: 0`), momento em que “cola” à viewport enquanto estiver visível. ([youtube.com][5])
+
+---
+
+## 🔎 Um pouco de teoria
+
+* **Elementos *posicionados*** são aqueles com `position` diferente de `static` – ou seja, `relative`, `absolute`, `fixed` ou `sticky`. ([developer.mozilla.org][4])
+* O uso de `top`, `right`, `bottom` e `left` só tem efeito quando o elemento está *posicionado*. ([developer.mozilla.org][4])
+* A posição `absolute` retira o elemento do fluxo, permitindo sobreposição sem alterar o layout dos outros elementos por estar “fora da estrutura”. ([css-tricks.com][2])
+* Já o `relative` apenas move visualmente o elemento, mantendo seu espaço original reservado para evitar mudanças drásticas no layout.&#x20;
+* `fixed` é posicionado em relação à janela, ideal para elementos que devem ficar sempre visíveis (como headers fixos). ([css-tricks.com][2])
+* `sticky` combina o comportamento normal com o fixo após o scroll alcançar um certo ponto – perfeito para menus e cabeçalhos que “grudam” ao rolar. ([css-tricks.com][2])
+
+---
+
+## 📹 Vídeo recomendado
+
+Para visualizar na prática, esse vídeo do canal W3Schools é excelente: uma comparação animada entre os cinco valores de `position` no CSS:
+
+[CSS positions explained | static, relative, absolute, fixed and sticky](https://www.youtube.com/watch?v=Sb4oI8vU2FU&utm_source=chatgpt.com)
+
+---
+
+### 🧠 Dicas rápidas
+
+* Use `relative` para criar contexto ou pequenos deslocamentos sem romper o fluxo.
+* Use `absolute` para sobreposição precisa, respeitando um ancestral posicionado.
+* Use `fixed` para elementos que ficam visíveis durante o scroll.
+* Use `sticky` para “grudar” elementos no scroll sem sair do fluxo inicialmente.
+
+---
+
+Quer ver exemplos em código, casos de uso reais ou até exercícios? Posso criar também! É só dizer 😊
+
+[1]: https://www.w3schools.com/css/css_positioning.asp?utm_source=chatgpt.com "CSS Layout - The position Property - W3Schools"
+[2]: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/?utm_source=chatgpt.com "Absolute, Relative, Fixed Positioning: How Do They Differ?"
+[3]: https://en.wikipedia.org/wiki/CSS?utm_source=chatgpt.com "CSS"
+[4]: https://developer.mozilla.org/en-US/docs/Web/CSS/position?utm_source=chatgpt.com "position - CSS - MDN Web Docs - Mozilla"
+[5]: https://www.youtube.com/watch?v=FNsn0pBmrKs&utm_source=chatgpt.com "Absolute, Relative, Fixed & Sticky Position | CSS Tutorial - YouTube"
+
+---
+
 ### Grouping Tags e Semantic Tags 
 A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a ```<div>```(elemento agrupador do tipo **block-level**) e a ```<span>``` (elemento agrupador do tipo **inline-level**). No mais, eles agem exatamente da 
 mesma maneira, servindo para juntar vários outros elementos HTML. 
@@ -587,7 +672,7 @@ para dividir as partes do nosso documento HTML.
 Vamos compreender a partir de agora os principais agregadores semânticos da HTML5. 
 
 * **Header**: Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
-mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos ```<h1>``` - ```<h6>```
+mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos `<h1>` - `<h6>`, busca, menu, apresentação, configuração, login
 e subtítulos. **Podem também conter menus de navegação**. 
 
 * **Nav**: Define uma área que possui os **links de navegação** pela 
@@ -605,6 +690,13 @@ com um cabeçalho”.
 * **Article**: Um artigo é um elemento que **vai conter um conteúdo** que pode ser lido de forma 
 independente e dizem respeito a um mesmo assunto. Podemos usar um ```<article>```
 para delimitar um post de blog ou fórum, uma notícia, etc. 
+
+* **aside**: Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo `<aside>` está posicionado ao lado de um determinado texto ou até mesmo no meio dele.
+
+* **footer**: Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte 
+diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um 
+`<aside>`), mas possui informações sobre autoria do conteúdo, links adicionais, mapa 
+do site, documentos relacionados. 
 
 ---
 
