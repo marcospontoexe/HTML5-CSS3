@@ -12,11 +12,11 @@
             padding: 10px;
             width: 800px;
         }
-        ol#subMenu{
+        ol.subMenu{
             padding-left: 15px;
             width: 96%;
         }
-        ol#menu{
+        ol.menu{
             padding-left: 0px;
             width: 50%;
         }
@@ -24,12 +24,12 @@
             list-style: none;           /* apaga os marcadores*/
            
         }
-        ol#menu>li{
+        ol.menu>li{
             margin-bottom: 5px;
 
         }
 
-        ol#menu>li>a{           /* configura apenas os links contidos dentro das listas pertencentes ao ol#menu*/
+        ol.menu>li>a{           /* configura apenas os links contidos dentro das listas pertencentes ao ol#menu*/
             display: block;        /* a tag 'a' é do tipo inline-block, ao mudar para block-level a tag 'a' vai ocupar a
 largura total do elemento onde ele está contido, permitindo selecionar o opção mesmo com o mouse fora da palavra*/
             text-decoration: none;      /* tira o sublinhado*/
@@ -40,7 +40,7 @@ largura total do elemento onde ele está contido, permitindo selecionar o opçã
             border-radius: 5px;
         }
 
-        ol#subMenu>li>a{           /* configura apenas os links contidos dentro das listas pertencentes ao ol#menu*/
+        ol.subMenu>li>a{           /* configura apenas os links contidos dentro das listas pertencentes ao ol#menu*/
             display: block;        /* a tag 'a' é do tipo inline-block, ao mudar para block-level a tag 'a' vai ocupar a
 largura total do elemento onde ele está contido, permitindo selecionar o opção mesmo com o mouse fora da palavra*/
             text-decoration: none;      /* tira o sublinhado*/
@@ -51,14 +51,14 @@ largura total do elemento onde ele está contido, permitindo selecionar o opçã
             border-radius: 5px;
         }
 
-        ol#menu>li>a:hover, ol#subMenu>li>a:hover{
+        ol.menu>li>a:hover, ol.subMenu>li>a:hover{
             background-color: rgb(101, 101, 255);
         }
         
-        ol#subMenu{
+        ol.subMenu{
             display: none;
         }
-        li:hover ol#subMenu{
+        li:hover ol.subMenu{
             display: inline-block;
         }
 
@@ -67,35 +67,33 @@ largura total do elemento onde ele está contido, permitindo selecionar o opçã
 <body>
     <section>
         <h1>Menu 1</h1>        
-            <ol id="menu">               
+            <ol class="menu">               
                 <li><a href="#">OPÇÃO I</a>
-                    <ol id="subMenu">
+                    <ol class="subMenu">
                         <li><a href="#">Sub-Menu A</a>
                         <li><a href="#">Sub-Menu B</a>
                         <li><a href="#">Sub-Menu C</a>
                     </ol>
                 <li><a href="#">OPÇÃO II</a>
-                    <ol id="subMenu">
+                    <ol class="subMenu">
                         <li><a href="#">Sub-Menu A</a>
                             <li><a href="#">Sub-Menu B</a>
                             <li><a href="#">Sub-Menu C</a>
                     </ol>  
                 <li><a href="#">OPÇÃO III</a>
-                    <ol id="subMenu">
+                    <ol class="subMenu">
                         <li><a href="#">Sub-Menu A</a>
                         <li><a href="#">Sub-Menu B</a>
                         <li><a href="#">Sub-Menu C</a>
                     </ol>
                 <li><a href="#">OPÇÃO IV</a>
-                    <ol id="subMenu">
+                    <ol class="subMenu">
                         <li><a href="#">Sub-Menu A</a>
                             <li><a href="#">Sub-Menu B</a>
                             <li><a href="#">Sub-Menu C</a>
                     </ol>           
             </ol>   
                                     
-                
-
 
     </section>
     

@@ -248,7 +248,7 @@ Seleciona qual elemento HTML receberá o estilo, baseado no seu nome HTML, ou ta
 
 O seletor usa o atributo `id` (identificador) de um elemento HTML para selecionar um elemento específico.
 
-O `id` de um elemento é único dentro de uma página HTML, logo o seletor de id é aplicado em um único elemento da página.
+O `id` de um elemento **é único dentro de uma página HTML**, logo o seletor de id é aplicado em um único elemento da página.
 
 **USO CORRETO:** escreva um caractere hash (`#`), seguido do `id` do elemento.
 
@@ -497,7 +497,7 @@ Na lista a seguir, coloquei alguns elementos HTML que são block-level:
 <section> <table> <tfoot> <ul> <video>
 ```
 
-** Caixa do tipo **inline-level**: Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto 
+* Caixa do tipo **inline-level**: Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto 
 exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao 
 seu conteúdo. 
 
