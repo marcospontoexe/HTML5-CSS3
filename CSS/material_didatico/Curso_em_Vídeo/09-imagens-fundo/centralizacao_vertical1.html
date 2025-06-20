@@ -7,7 +7,7 @@
     <title>Centralização vertical de imagens.</title>
     <style>
         #container{
-            position: relative;         /* por padrão todo posicionamento de uma box é relativo*/
+            position: relative;         /* serve como referência para elementos absolute filhos*/
             height: 96vh;
 
             border: 2px solid black;
@@ -16,7 +16,7 @@
         }
 
         #conteudo{
-            position: absolute;     /* posicionamneto absoluto*/
+            position: absolute;     /* Move o elemento relativamente ao elemento pai com position: relative*/
             height: 200px;
             width: 200px;
             border: 2px solid black;
