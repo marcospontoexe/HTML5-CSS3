@@ -1,3 +1,4 @@
-1 - https://www.whatfontis.com/
-2 - https://www.fontsquirrel.com/
-3 - https://www.myfonts.com/?gclid=CjwKCAiAgbiQBhAHEiwAuQ6BkidfwXRXmF2UbmYV8Wj-70E4TABNPkpEMbRrCOhNZq0Ov9XmrP6uBBoC5icQAvD_BwE
+https://www.w3schools.com/cssref/css_websafe_fonts.php#gsc.tab=0
+https://www.whatfontis.com/
+https://www.fontsquirrel.com/
+https://www.myfonts.com/?gclid=CjwKCAiAgbiQBhAHEiwAuQ6BkidfwXRXmF2UbmYV8Wj-70E4TABNPkpEMbRrCOhNZq0Ov9XmrP6uBBoC5icQAvD_BwE
