@@ -9,7 +9,7 @@ Repositório **pessoal de estudos** de HTML5 e CSS3, em **português (pt-BR)**. 
 1. **Dois documentos-apostila** — são o "produto" principal do repositório:
    - [HTML/README.md](HTML/README.md) (~26 KB) — sintaxe, headings, imagens, links, listas, tabelas, semântica, formulários.
    - [CSS/README.md](CSS/README.md) (~44 KB) — regra CSS, tipos de CSS, seletores, box model, `padding`/`margin`, variáveis, texto, tabelas, formulários.
-2. **Exemplos executáveis** em [HTML/Material didático/](HTML/Material%20didático/) e [CSS/material_didatico/](CSS/material_didatico/), organizados por curso de origem (Curso em Vídeo, Udemy, Origamid) e numerados por tópico (`01-estilos`, `02-cores`, …, `10-mediaquery`), mais pastas `desafios`/`Desafios` e `PROJETOS`.
+2. **Exemplos executáveis** em [HTML/Material didático/](HTML/Material%20didático/) e [CSS/material_didatico/](CSS/material_didatico/), organizados por curso de origem (Curso em Vídeo, Udemy) e numerados por tópico (`01-estilos`, `02-cores`, …, `10-mediaquery`), mais pastas `desafios`/`Desafios` e `PROJETOS`.
 
 Os READMEs **linkam para as pastas de exemplo** correspondentes. Ao adicionar um exemplo novo, adicione também o link no README do tópico — esse é o índice de navegação do repositório.
 
