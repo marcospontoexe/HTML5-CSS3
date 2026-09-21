@@ -115,12 +115,16 @@ aside p {
     padding-left: 30px;  
 }
 
-footer{ 
+footer{
     width: 947px;
-    margin:0 auto; 
-    font-size:0.75em; 
-    text-align:center; 
-    background-color: var(--cor_1); 
+    margin:0 auto;
+    font-size:0.75em;
+    text-align:center;
+    background-color: var(--cor_1);
     color: white;
     padding:5px
+}
+
+footer address{      /* o <address> vem em itálico por padrão no navegador*/
+    font-style: normal;
 }
