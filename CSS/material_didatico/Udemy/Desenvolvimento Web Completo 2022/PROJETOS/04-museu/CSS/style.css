@@ -192,5 +192,181 @@ footer a{
 footer a:hover{
     color: var(--cor_2);
     border-bottom: 1px solid var(--cor_2);
+}
 
 /*FIM FOOTER*/
+
+/*INÍCIO PÁGINAS INTERNAS*/
+/* os seletores abaixo começam com #conteudo para vencer as regras
+   de id já declaradas acima (#conteudo img, #conteudo ul, #conteudo a)*/
+
+#conteudo .pagina{
+    padding-right: 25px;
+}
+
+#conteudo .pagina h1{
+    color: var(--cor_0);
+    font-size: 1.8em;
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+#conteudo .pagina .chamada{     /* linha de apoio logo abaixo do título*/
+    color: #86521a;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+#conteudo .pagina h2{
+    color: var(--cor_2);
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin: 25px 0px 10px 0px;
+}
+
+#conteudo .pagina h3{
+    color: #86521a;
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+#conteudo .pagina p{
+    margin-bottom: 12px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#conteudo .pagina ul,
+#conteudo .pagina ol{
+    list-style-position: outside;   /* volta o marcador para fora, ao contrário do #conteudo ul*/
+    margin: 0px 0px 12px 20px;
+    line-height: 1.6;
+}
+
+/* cartão usado nas listas de exposições e de acervo*/
+#conteudo .cartao{
+    border-bottom: 1px solid #cdc8b1;
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+    overflow: hidden;       /* faz o cartão conter a miniatura flutuada*/
+}
+
+#conteudo .cartao img{
+    width: 93px;        /* tamanho original da miniatura; anula o #conteudo img*/
+    float: left;
+    margin-right: 15px;
+    border: 3px solid #ebe7dd;
+}
+
+#conteudo .cartao p{
+    margin-bottom: 0px;
+}
+
+/* grade da galeria de fotos, com a mesma moldura da barra lateral*/
+#conteudo .galeria{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#conteudo .galeria figure{
+    float: left;
+    width: 126px;
+    margin: 0px 12px 12px 0px;
+    text-align: center;
+}
+
+#conteudo .galeria .moldura{
+    height: 93px;
+    width: 93px;
+    display: block;
+    background-image: url(../img/fundo-foto.png);
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+#conteudo .galeria img{
+    width: 93px;
+}
+
+#conteudo .galeria figcaption{
+    font-size: 0.8em;
+    color: #86521a;
+    line-height: 1.3;
+    padding: 0px 4px;
+}
+
+/* números do acervo*/
+#conteudo .numeros{
+    overflow: hidden;
+    margin: 0px 0px 10px 0px;
+}
+
+#conteudo .numeros li{
+    float: left;
+    width: 31%;
+    margin: 0px 2% 10px 0px;
+    padding: 12px;
+    box-sizing: border-box;     /* a largura passa a incluir padding e borda*/
+    list-style: none;
+    background-color: #ebe7dd;
+    text-align: center;
+}
+
+#conteudo .numeros strong{
+    display: block;
+    font-size: 1.5em;
+    color: var(--cor_2);
+}
+
+/* vídeo em destaque e mapa ocupam toda a largura do conteúdo*/
+#conteudo .moldura-video iframe,
+#conteudo .mapa iframe{
+    width: 100%;
+    height: 320px;
+    border: 0px;
+}
+
+/* formulário da página de contato*/
+#conteudo .formulario{
+    background-color: #ebe7dd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#conteudo .formulario label{
+    display: block;
+    margin-bottom: 4px;
+    color: #86521a;
+}
+
+#conteudo .formulario input[type="text"],
+#conteudo .formulario input[type="email"],
+#conteudo .formulario input[type="tel"],
+#conteudo .formulario select,
+#conteudo .formulario textarea{
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #cdc8b1;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+#conteudo .formulario textarea{
+    height: 110px;
+}
+
+#conteudo .formulario input[type="submit"]{
+    background-color: #9b9271;      /* mesma cor do botão da barra lateral*/
+    color: white;
+    border: 0px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+#conteudo .formulario input[type="submit"]:hover{
+    background-color: var(--cor_2);
+}
+
+/*FIM PÁGINAS INTERNAS*/

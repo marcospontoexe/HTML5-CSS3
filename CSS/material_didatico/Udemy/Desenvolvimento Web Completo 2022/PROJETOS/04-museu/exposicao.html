@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposições - Museu Nacional</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">      <!--normalize-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <div id="logo">
+                <h1>Museu Nacional</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="exposicao.html">EXPOSIÇÃO</a></li>
+                    <li><a href="pesquisa.html">PESQUISA</a></li>
+                    <li><a href="acervo.html">ACERVO</a></li>
+                    <li><a href="videos.html">VÍDEOS</a></li>
+                    <li><a href="fotos.html">FOTOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <article class="pagina">
+                <h1>Exposições</h1>
+                <p class="chamada">O que está em cartaz nas nossas seis salas expositivas.</p>
+
+                <h2>Em cartaz</h2>
+
+                <div class="cartao">
+                    <img src="img/imagem1.jpg" alt="Sala escura com vitrines iluminadas.">
+                    <h3>Os assustadores insetos</h3>
+                    <p>Mais de 1.200 exemplares da coleção entomológica em vitrines de baixa luminosidade, com lupas fixas para observação de detalhes. A mostra percorre a anatomia, o disfarce e o papel ecológico dos insetos da Mata Atlântica. <strong>Até 30 de novembro</strong> - Sala 1.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem3.jpg" alt="Traje de época exposto em manequim.">
+                    <h3>Colonos</h3>
+                    <p>Trajes, ferramentas e documentos das famílias que chegaram ao estado entre 1870 e 1920. O centro da sala reúne peças de vestuário restauradas, acompanhadas das cartas trocadas com os parentes que ficaram na Europa. <strong>Em cartaz por tempo indeterminado</strong> - Sala 2.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem5.jpg" alt="Parede de armários de madeira com portas de vidro.">
+                    <h3>Medicina indígena</h3>
+                    <p>Plantas, preparados e instrumentos usados pelos povos Guarani e Kaingang, organizados no mobiliário original de 1912. A curadoria foi feita em conjunto com lideranças das duas comunidades. <strong>Até 15 de março</strong> - Sala 3.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem4.jpg" alt="Painel com documentos e fotografias históricas.">
+                    <h3>Arte escrava</h3>
+                    <p>Painel documental sobre a produção artística de africanos escravizados e seus descendentes: talha, ferraria, cerâmica e imaginária religiosa, apresentadas ao lado dos registros de compra e venda que as acompanham. <strong>Até 28 de fevereiro</strong> - Sala 4.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem6.jpg" alt="Carruagem antiga exposta em sala do museu.">
+                    <h3>Transportes de outrora</h3>
+                    <p>A coleção de veículos de tração animal do museu, com destaque para a carruagem de 1887 restaurada em 2019. A sala mostra também arreios, lanternas e os registros de oficinas que funcionavam na cidade. <strong>Em cartaz por tempo indeterminado</strong> - Sala 5.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem2.jpg" alt="Salão expositivo com peças suspensas e vitrines.">
+                    <h3>Fauna paranaense</h3>
+                    <p>Diorama de grande porte com as espécies de aves e mamíferos registradas no estado, montado a partir da coleção zoológica reunida desde 1876. Inclui um módulo dedicado às espécies hoje ameaçadas. <strong>Em cartaz por tempo indeterminado</strong> - Sala 6.</p>
+                </div>
+
+                <h2>Como visitar</h2>
+                <p>A entrada é gratuita e não exige agendamento para o público individual. Grupos com mais de dez pessoas devem agendar pelo formulário da barra lateral ou pela página de <a href="contato.html">contato</a>, com pelo menos uma semana de antecedência.</p>
+                <ul>
+                    <li>Terça a sexta, das 9h às 17h30</li>
+                    <li>Sábados, domingos e feriados, das 10h às 16h</li>
+                    <li>Visitas mediadas: terças e quintas, às 10h e às 15h</li>
+                    <li>Segundas-feiras fechado para manutenção das salas</li>
+                </ul>
+
+                <h2>Exposições itinerantes</h2>
+                <p>Parte do acervo circula por escolas e museus do interior do estado em módulos montados sobre carretas expositivas. O calendário do semestre e as condições para receber um módulo estão descritos na página de <a href="pesquisa.html">pesquisa</a>.</p>
+            </article>
+        </section>
+
+        <aside>
+            <img src="img/depoimento.png" alt="depoimento">
+            <section id="visita">
+                <h2>Faça uma visita</h2>
+                <form action="" style="width: 100%;">
+                    <fieldset>
+                        <legend>Agende uma visita</legend>
+                        <input type="date" name="data" id="data">
+                        <label for="quantidade">Visitantes:</label>
+                        <input type="number" name="quantidade" id="quantidade" min="1" value="1" style="width: 30px;">
+                    </fieldset>
+                    <input type="submit" value="Agendar" style="background-color: #9b9271; width: 100%;">
+
+                </form>
+            </section>
+            <section id="fotos">
+                <h2>Galeria de fotos</h2>
+                <a href="fotos.html">
+                    <img src="img/imagem1.jpg" alt="imagem 1">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem2.jpg" alt="imagem 2">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem3.jpg" alt="imagem 3">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem4.jpg" alt="imagem 4">
+                </a>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">home</a>
+            <a href="exposicao.html">exposições</a>
+            <a href="pesquisa.html">pesquisa</a>
+            <a href="acervo.html">acervo</a>
+            <a href="videos.html">vídeos</a>
+            <a href="fotos.html">fotos</a>
+            <a href="contato.html">contato</a>
+        </p>
+        <p>Museu Nacional - todos os direitos reservado</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa - Museu Nacional</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">      <!--normalize-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <div id="logo">
+                <h1>Museu Nacional</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="exposicao.html">EXPOSIÇÃO</a></li>
+                    <li><a href="pesquisa.html">PESQUISA</a></li>
+                    <li><a href="acervo.html">ACERVO</a></li>
+                    <li><a href="videos.html">VÍDEOS</a></li>
+                    <li><a href="fotos.html">FOTOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <article class="pagina">
+                <h1>Pesquisa</h1>
+                <p class="chamada">O museu é também um centro de estudo: o acervo está aberto a pesquisadores, estudantes e professores.</p>
+
+                <h2>Linhas de pesquisa</h2>
+                <ul>
+                    <li><strong>Cultura material e vida cotidiana</strong> - objetos domésticos e de trabalho como fonte para a história social dos séculos XIX e XX.</li>
+                    <li><strong>Arqueologia regional</strong> - ocupação pré-colonial do litoral e do planalto, em cooperação com universidades do estado.</li>
+                    <li><strong>Coleções etnográficas e protagonismo indígena</strong> - revisão da catalogação junto às comunidades de origem.</li>
+                    <li><strong>Biodiversidade e coleções zoológicas</strong> - uso das séries históricas para estudar mudanças na fauna regional.</li>
+                    <li><strong>Conservação preventiva</strong> - métodos de guarda para madeira, papel e têxteis em clima úmido.</li>
+                </ul>
+
+                <h2>Biblioteca e arquivo</h2>
+
+                <div class="cartao">
+                    <img src="img/imagem5.jpg" alt="Parede de armários de madeira com portas de vidro.">
+                    <p>A biblioteca reúne cerca de 18 mil volumes, com destaque para periódicos científicos do século XIX e para os relatórios de expedição que originaram boa parte do acervo. O arquivo institucional guarda a correspondência, os livros de tombo e as fotografias de montagem das exposições desde 1923.</p>
+                </div>
+
+                <p>A consulta é gratuita e feita na sala de leitura, de terça a sexta, das 9h às 16h. Não há empréstimo domiciliar. Obras raras e documentos originais exigem pedido prévio e são consultados sob acompanhamento.</p>
+
+                <h2>Como solicitar acesso ao acervo</h2>
+                <ol>
+                    <li>Envie o pedido pela página de <a href="contato.html">contato</a>, indicando o tema, o período pretendido e a instituição de vínculo.</li>
+                    <li>Anexe uma carta de apresentação do orientador ou da instituição, quando houver vínculo acadêmico.</li>
+                    <li>Aguarde o parecer da curadoria da área, normalmente em até dez dias úteis.</li>
+                    <li>Agende as datas de consulta com o setor de documentação.</li>
+                </ol>
+                <p>Pedidos que envolvam manuseio de peças, medição, amostragem ou fotografia técnica passam por análise do setor de conservação e podem exigir prazo maior.</p>
+
+                <h2>Bolsas e residência</h2>
+                <p>Todo ano o museu abre vagas de iniciação científica para estudantes de graduação e duas vagas de residência técnica em conservação, com duração de doze meses. As chamadas são publicadas no primeiro semestre e divulgadas também nas universidades parceiras.</p>
+                <ul>
+                    <li>Iniciação científica - seis vagas, uma por área de curadoria</li>
+                    <li>Residência em conservação - duas vagas, com bolsa e supervisão do laboratório</li>
+                    <li>Estágio em educação em museus - quatro vagas por semestre</li>
+                </ul>
+
+                <h2>Publicações</h2>
+                <p>Os resultados de pesquisa saem nos <i>Cadernos do Museu</i>, de periodicidade semestral, e nos catálogos que acompanham as exposições de longa duração. Números anteriores podem ser consultados na biblioteca ou solicitados em formato digital.</p>
+
+                <h2>Exposições itinerantes em escolas</h2>
+                <p>Escolas públicas do estado podem receber um módulo expositivo por um período de até quatro semanas, sem custo, incluindo a formação dos professores que vão acompanhar a visita. O calendário é definido no início de cada semestre; a solicitação segue pelo mesmo formulário da página de <a href="contato.html">contato</a>.</p>
+            </article>
+        </section>
+
+        <aside>
+            <img src="img/depoimento.png" alt="depoimento">
+            <section id="visita">
+                <h2>Faça uma visita</h2>
+                <form action="" style="width: 100%;">
+                    <fieldset>
+                        <legend>Agende uma visita</legend>
+                        <input type="date" name="data" id="data">
+                        <label for="quantidade">Visitantes:</label>
+                        <input type="number" name="quantidade" id="quantidade" min="1" value="1" style="width: 30px;">
+                    </fieldset>
+                    <input type="submit" value="Agendar" style="background-color: #9b9271; width: 100%;">
+
+                </form>
+            </section>
+            <section id="fotos">
+                <h2>Galeria de fotos</h2>
+                <a href="fotos.html">
+                    <img src="img/imagem1.jpg" alt="imagem 1">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem2.jpg" alt="imagem 2">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem3.jpg" alt="imagem 3">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem4.jpg" alt="imagem 4">
+                </a>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">home</a>
+            <a href="exposicao.html">exposições</a>
+            <a href="pesquisa.html">pesquisa</a>
+            <a href="acervo.html">acervo</a>
+            <a href="videos.html">vídeos</a>
+            <a href="fotos.html">fotos</a>
+            <a href="contato.html">contato</a>
+        </p>
+        <p>Museu Nacional - todos os direitos reservado</p>
+
+    </footer>
+</body>
+</html>
