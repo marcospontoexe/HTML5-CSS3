@@ -2,3 +2,4 @@
 
 * no projeto Chalé Hotel, criar a paginas das abas historia, imprensa, gastronomia e contato
 * o projeto Blog esta vazio, retire da lista de projetos
+
