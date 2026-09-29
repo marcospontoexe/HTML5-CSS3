@@ -247,3 +247,66 @@ footer{
     padding: 5px;
 }
 /*FIM FOOTER*/
+/*************/
+/*INÍCIO PÁGINAS INTERNAS*/
+#principal h2{
+    margin-top: 10px;
+}
+
+#principal ul{
+    margin: 0px 0px 10px 20px;      /* devolve o recuo que o '* { padding: 0 }' removeu dos marcadores*/
+    line-height: 1.5;
+}
+
+#principal li{
+    padding-bottom: 4px;
+}
+
+/* formulário da página de contato*/
+.formulario{
+    background-color: var(--cor_11);
+    border-top: 1px solid var(--cor_3);
+    border-bottom: 1px solid var(--cor_3);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario label{
+    display: block;
+    color: var(--cor_4);
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario select,
+.formulario textarea{
+    width: 100%;
+    box-sizing: border-box;     /* a largura passa a incluir padding e borda*/
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid var(--cor_2);
+    background-color: var(--cor_0);
+    font-family: var(--fonte_padrão);
+    font-size: 1em;
+}
+
+.formulario textarea{
+    height: 100px;
+}
+
+.formulario input[type="submit"]{
+    background-color: var(--cor_5);     /* mesmas cores do botão RESERVAR do cabeçalho*/
+    color: var(--cor_6);
+    border: 0px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: var(--cor_7);
+}
+/*FIM PÁGINAS INTERNAS*/
