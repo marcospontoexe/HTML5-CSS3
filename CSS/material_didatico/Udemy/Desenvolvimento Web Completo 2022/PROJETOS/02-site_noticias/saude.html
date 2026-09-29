@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias Cidade</title>
+    <title>Saúde - Notícias Cidade</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <div id="cabecalho">
             <div id="letra">
-                
+
             </div>
 
             <div id="imagem">
-                
+
             </div>
-            
+
             <nav>
                 <ul>
                     <li id="primeiro"><a href="home.html" rel="author">Home</a></li>
@@ -29,29 +29,81 @@
                     <li><a href="fotos.html" rel="author">Fotos</a></li>
                 </ul>
             </nav>
-        </div>   
-             
+        </div>
 
-    </header>       
+
+    </header>
 
     <main>
-        <div id="janela1">  
-            <p>janela 1</p>
-        </div>
+        <aside id="janela1">                      <!-- O navegador começa lendo de baixo para cima, colocando o conteudo principal no topo, fica melhor para mecanismos de busca-->
+            <article>
+                <h1>ENTREVISTAS</h1>
+                <a href="#">José Almeida</a>
+                <a href="#">Felipe Silva</a>
+                <a href="#">Renato ROdrigues</a>
+                <a href="#">Abelardo Silveira</a>
+                <a href="#">Andre Carlos</a>
+                <a href="#">Marcio Mello</a>
+                <a href="#">João Pedro</a>
+                <a href="#">Marcos Daniel</a>
+            </article>
+            <article>
+                <h1>NEWS</h1>
+                <form>
+                    <fieldset>      <!-- Agrupa dados semelhantes-->
+                        <legend>Cadastro</legend>   <!-- legenda do field set-->
+                        <label for="email">E-mail:</label>  <!-- o 'for' recebe o 'id', e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'email'. Se clicar em cima do 'label' o input é selecionado-->
+                        <input class="email" type="email" name="mail" id="email" autocomplete="on" placeholder="E-mail" type="url">    <!-- o 'autocomplete=off' não permite autocompletar o campo. type="email" quando usado pelo celular é incluido o @ no teclado do celular.
+                        'type="url"' quando acessado pelo celular, o teclado do mostra caracteres para url (.com)-->
+                        <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+                        <input class="enviar" type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
 
-        <div id="janela2">
-            <p>janela 2</p>
-        </div>
+                    </fieldset>
 
-        <div id="janela3">
-            <p>janela 3</p>
-        </div>
+                </form>
+            </article>
+        </aside>
+
+        <section id="janela2">
+            <article>
+                <h1>SAÚDE</h1>
+                <h2>Hospital municipal faz mutirão para zerar a fila de cirurgias</h2>
+                <img src="imgens/doutor.jpg" alt="Médico de touca e roupa cirúrgica azul, de braços cruzados, numa sala de cirurgia">
+                <p>Durante quatro fins de semana seguidos, as seis salas cirúrgicas do hospital municipal vão funcionar em horário estendido para atender pacientes que aguardam procedimentos eletivos, como retirada de vesícula, correção de hérnia e catarata. A meta é realizar 900 cirurgias até o fim do mês.</p>
+                <p>Os pacientes serão chamados por telefone pela unidade de saúde que fez o encaminhamento. A secretaria alerta que não adianta ir ao hospital sem agendamento: quem chegar sem ter sido chamado não será atendido no mutirão.</p>
+            </article>
+            <article>
+                <h1>PREVENÇÃO</h1>
+                <h3>Unidades de bairro ganham horário noturno</h3>
+                <p>Três unidades básicas passam a atender até as 21h, de segunda a sexta, para quem não consegue se consultar durante o expediente.</p>
+                <h3>Triagem de visão nas escolas municipais</h3>
+                <p>Alunos do ensino fundamental passam por exame de vista neste semestre. Quem precisar de correção recebe os óculos sem custo.</p>
+                <h3>Caminhadas orientadas nos parques</h3>
+                <p>Educadores físicos acompanham grupos de caminhada às terças e quintas, às 7h, em quatro parques da cidade. Não é preciso se inscrever.</p>
+            </article>
+        </section>
+
+        <section id="janela3">
+            <article>
+                <h1>TECNOLOGIA</h1>
+                <h2>Consultas por vídeo chegam às unidades de bairro</h2>
+                <img src="imgens/tecnologia.jpg" alt="Mesa de trabalho com notebook, caderno, caneta e xícara de café">
+                <p>Pacientes das unidades básicas de saúde já podem fazer o retorno das consultas por videochamada, sem sair de casa. O serviço vale para o acompanhamento de doenças crônicas, como hipertensão e diabetes, e para a leitura de resultados de exames.</p>
+                <p>A primeira consulta continua sendo presencial. Segundo o médico de família Ricardo Pires, a teleconsulta reduz as faltas e libera horários para quem precisa ser examinado: "Muita gente perdia meio dia de trabalho para ouvir que o exame estava normal".</p>
+            </article>
+            <article>
+                <h1>EM NÚMEROS</h1>
+                <p><strong>900</strong> cirurgias previstas no mutirão.</p>
+                <p><strong>6</strong> salas cirúrgicas em horário estendido.</p>
+                <p><strong>3</strong> unidades de bairro abertas até as 21h.</p>
+            </article>
+        </section>
 
     </main>
 
     <footer>
-        <p>Desenvolvido por Marcos</p>
+        <h1>Desenvolvido por Marcos</h1>
     </footer>
-    
+
 </body>
 </html>

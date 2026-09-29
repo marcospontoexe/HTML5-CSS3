@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias Cidade</title>
+    <title>Economia - Notícias Cidade</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <div id="cabecalho">
             <div id="letra">
-                
+
             </div>
 
             <div id="imagem">
-                
+
             </div>
 
             <nav>
@@ -28,31 +28,83 @@
                     <li><a href="ciencias.html" rel="author">Ciência</a></li>
                     <li><a href="fotos.html" rel="author">Fotos</a></li>
                 </ul>
-            </nav> 
-            
-        </div>   
-            
+            </nav>
 
-    </header>       
+        </div>
+
+
+    </header>
 
     <main>
-        <div id="janela1">  
-            <p>janela 1</p>
-        </div>
+        <aside id="janela1">                      <!-- O navegador começa lendo de baixo para cima, colocando o conteudo principal no topo, fica melhor para mecanismos de busca-->
+            <article>
+                <h1>ENTREVISTAS</h1>
+                <a href="#">José Almeida</a>
+                <a href="#">Felipe Silva</a>
+                <a href="#">Renato ROdrigues</a>
+                <a href="#">Abelardo Silveira</a>
+                <a href="#">Andre Carlos</a>
+                <a href="#">Marcio Mello</a>
+                <a href="#">João Pedro</a>
+                <a href="#">Marcos Daniel</a>
+            </article>
+            <article>
+                <h1>NEWS</h1>
+                <form>
+                    <fieldset>      <!-- Agrupa dados semelhantes-->
+                        <legend>Cadastro</legend>   <!-- legenda do field set-->
+                        <label for="email">E-mail:</label>  <!-- o 'for' recebe o 'id', e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'email'. Se clicar em cima do 'label' o input é selecionado-->
+                        <input class="email" type="email" name="mail" id="email" autocomplete="on" placeholder="E-mail" type="url">    <!-- o 'autocomplete=off' não permite autocompletar o campo. type="email" quando usado pelo celular é incluido o @ no teclado do celular.
+                        'type="url"' quando acessado pelo celular, o teclado do mostra caracteres para url (.com)-->
+                        <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+                        <input class="enviar" type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
 
-        <div id="janela2">
-            <p>janela 2</p>
-        </div>
+                    </fieldset>
 
-        <div id="janela3">
-            <p>janela 3</p>
-        </div>
+                </form>
+            </article>
+        </aside>
+
+        <section id="janela2">
+            <article>
+                <h1>ECONOMIA</h1>
+                <h2>Nova lei dos táxis: o que muda no bolso do passageiro</h2>
+                <img src="imgens/taxi.jpg" alt="Táxis amarelos numa avenida entre prédios altos">
+                <p>A nova legislação para o transporte individual, destaque da nossa página inicial, entra em vigor no dia 1º do próximo mês e altera a forma de cálculo das corridas. A bandeirada fica mais barata, mas o valor por quilômetro rodado sobe, o que favorece os trajetos curtos e encarece os longos.</p>
+                <p>Pelas simulações de uma associação de defesa do consumidor, uma corrida de 5 km deve ficar cerca de 4% mais barata, enquanto uma viagem de 20 km até o aeroporto tende a subir perto de 7%. Os aplicativos de transporte não são afetados pela mudança.</p>
+            </article>
+            <article>
+                <h1>MERCADO</h1>
+                <h3>Feira de emprego oferece 1.200 vagas</h3>
+                <p>Empresas de comércio, logística e tecnologia participam do evento, que acontece no sábado, no centro de convenções. É preciso levar documento com foto e currículo impresso.</p>
+                <h3>Preço da cesta básica recua pelo segundo mês</h3>
+                <p>A queda foi puxada por tomate, batata e arroz. Carne e café, por outro lado, seguem acima da média do ano passado.</p>
+                <h3>Comércio do centro amplia horário no fim de ano</h3>
+                <p>As lojas das ruas comerciais vão abrir até as 22h a partir de 1º de dezembro e, aos domingos, das 10h às 18h.</p>
+            </article>
+        </section>
+
+        <section id="janela3">
+            <article>
+                <h1>NEGÓCIOS</h1>
+                <h2>Pequenos negócios digitais já são um terço das empresas abertas no ano</h2>
+                <img src="imgens/tecnologia.jpg" alt="Mesa de trabalho com notebook, caderno, caneta e xícara de café">
+                <p>Das empresas registradas na cidade desde janeiro, uma em cada três funciona sem ponto comercial: são consultorias, lojas virtuais e prestadores de serviço que atendem os clientes pelo computador. A maior parte tem um único dono, que trabalha de casa.</p>
+                <p>Para a economista Beatriz Lemos, o movimento reflete o preço do aluguel no centro. "Abrir uma loja física exige um capital que o pequeno empreendedor não tem. Começar pela internet é o caminho possível", afirma.</p>
+            </article>
+            <article>
+                <h1>EM NÚMEROS</h1>
+                <p><strong>1.200</strong> vagas na feira de emprego.</p>
+                <p><strong>1 em 3</strong> empresas abertas no ano não tem ponto comercial.</p>
+                <p><strong>7%</strong> de aumento estimado na corrida de táxi até o aeroporto.</p>
+            </article>
+        </section>
 
     </main>
 
     <footer>
-        <p>Desenvolvido por Marcos</p>
+        <h1>Desenvolvido por Marcos</h1>
     </footer>
-    
+
 </body>
 </html>
