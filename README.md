@@ -1,6 +1,6 @@
 # HTML5 & CSS3
 
-Repositório de estudos de **HTML5** e **CSS3**: material didático organizado por tópico, exercícios e **projetos completos** desenvolvidos ao longo de três cursos.
+Repositório de estudos de **HTML5** e **CSS3**: material didático organizado por tópico, exercícios e **projetos** desenvolvidos ao longo de três cursos.
 
 🌐 **Todos os projetos estão publicados e podem ser abertos no navegador:** <https://marcospontoexe.github.io/HTML5-CSS3/>
 
@@ -18,14 +18,13 @@ Repositório de estudos de **HTML5** e **CSS3**: material didático organizado p
 
 ## Projetos desenvolvidos
 
-### Sites completos (CSS puro)
+### Sites em CSS puro
 
 | Projeto | Descrição | Técnicas | Código | Demo |
 |---|---|---|---|---|
 | **Museu Nacional** | Site de museu com **7 páginas**: home, exposições, pesquisa, acervo, vídeos, fotos e contato, com vídeo do YouTube e mapa incorporados. | Flexbox, float, variáveis CSS, formulários, `<iframe>` | [04-museu](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu/index.html) |
 | **Chalé Hotel** | Site de uma rede de hotéis com **5 páginas**: home, história, imprensa, gastronomia e contato, com formulário. | Posicionamento absoluto/relativo, variáveis CSS, float, formulário | [03-Site_Chale](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale/home.html) |
-| **Notícias Cidade** | Portal de notícias com **7 editorias** (Brasil, Internacional, Economia, Ciências, Saúde, Fotos). | Layout em colunas, float, grid editorial | [02-site_noticias](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias/home.html) |
-| **Blog** | Layout de blog com barra lateral e listagem de posts. | Box model, posicionamento | [01-blog](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/01-blog) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/01-blog/index.html) |
+| **Notícias Cidade** | Página inicial de portal de notícias, com destaques, entrevistas e notícias recentes. As páginas de editoria ainda estão em construção. | Layout em colunas com float, variáveis CSS | [02-site_noticias](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias/home.html) |
 | **Café Fontenebleu** | Site de restaurante com **7 páginas**: home, info, eventos, DVD, localização, menu e avaliações. | Variáveis CSS, `@font-face`, float, layout com sidebar | [01-Restaurante](HTML/Material%20did%C3%A1tico/Udemy/Desenvolvedor%20web%20completo/PROJETOS/01-Restaurante) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/HTML/Material%20did%C3%A1tico/Udemy/Desenvolvedor%20web%20completo/PROJETOS/01-Restaurante/home.html) |
 
 ### Projetos com Bootstrap 4
@@ -34,16 +33,14 @@ Repositório de estudos de **HTML5** e **CSS3**: material didático organizado p
 |---|---|---|---|---|
 | **Spotify (landing page)** | Página promocional "Música para todos", responsiva. | Bootstrap 4, media queries, float | [03-spotify](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/03-spotify) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/03-spotify/index.html) |
 | **Finans** | Landing page de app de finanças pessoais. | Bootstrap 4, grid, componentes | [02-finans](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/02-finans) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/02-finans/index.html) |
-| **Projeto padrão** | Estrutura base (boilerplate) para iniciar projetos Bootstrap. | Bootstrap 4, grid | [01-projeto-padrao](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/01-projeto-padrao) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/01-projeto-padrao/index.html) |
-
 ### Desafios do Curso em Vídeo
 
 | Projeto | Descrição | Técnicas | Código | Demo |
 |---|---|---|---|---|
 | **Como surgiu o mascote do Android** | Artigo com tipografia customizada, favicon e navegação semântica. | `@font-face`, HTML semântico, tipografia | [01-android](CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/01-android) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/01-android/android.html) |
 | **Cordel Moderno** | Página com imagens de fundo e estilização de texto poético. | `background-image`, tipografia | [03-cordel](CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/03-cordel) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/03-cordel/index.html) |
-| **Astronauta** | Composição de imagens sobrepostas com fundo espacial. | Posicionamento, camadas | [02-astronauta](CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/02-astronauta) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/02-astronauta/index.html) |
-| **Rede social (iframes)** | Página que carrega Facebook, Instagram, GitHub e YouTube em `<iframe>`. | `<iframe>`, navegação interna | [13-iframe](HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/Desafios/13-iframe) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/Desafios/13-iframe/index.html) |
+| **Astronauta** | Composição de imagens sobrepostas com fundo espacial. | `background-image`, `background-size`, `background-attachment` | [02-astronauta](CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/02-astronauta) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/02-astronauta/index.html) |
+| **Rede social (iframes)** | Menu que troca o conteúdo de um `<iframe>` entre páginas locais, cada uma com o link para uma das minhas redes. | `<iframe>`, atributo `target`, navegação interna | [13-iframe](HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/Desafios/13-iframe) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/HTML/Material%20did%C3%A1tico/Curso%20em%20v%C3%ADdeo/Desafios/13-iframe/index.html) |
 
 ---
 
