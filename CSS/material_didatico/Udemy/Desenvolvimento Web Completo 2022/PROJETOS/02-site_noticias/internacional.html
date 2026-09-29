@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias Cidade</title>
+    <title>Internacional - Notícias Cidade</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <div id="cabecalho">
             <div id="letra">
-                
+
             </div>
 
             <div id="imagem">
-                
+
             </div>
 
             <nav>
@@ -29,30 +29,82 @@
                     <li><a href="fotos.html" rel="author">Fotos</a></li>
                 </ul>
             </nav>
-            
-        </div>   
-             
 
-    </header>       
+        </div>
+
+
+    </header>
 
     <main>
-        <div id="janela1">  
-            <p>janela 1</p>
-        </div>
+        <aside id="janela1">                      <!-- O navegador começa lendo de baixo para cima, colocando o conteudo principal no topo, fica melhor para mecanismos de busca-->
+            <article>
+                <h1>ENTREVISTAS</h1>
+                <a href="#">José Almeida</a>
+                <a href="#">Felipe Silva</a>
+                <a href="#">Renato ROdrigues</a>
+                <a href="#">Abelardo Silveira</a>
+                <a href="#">Andre Carlos</a>
+                <a href="#">Marcio Mello</a>
+                <a href="#">João Pedro</a>
+                <a href="#">Marcos Daniel</a>
+            </article>
+            <article>
+                <h1>NEWS</h1>
+                <form>
+                    <fieldset>      <!-- Agrupa dados semelhantes-->
+                        <legend>Cadastro</legend>   <!-- legenda do field set-->
+                        <label for="email">E-mail:</label>  <!-- o 'for' recebe o 'id', e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'email'. Se clicar em cima do 'label' o input é selecionado-->
+                        <input class="email" type="email" name="mail" id="email" autocomplete="on" placeholder="E-mail" type="url">    <!-- o 'autocomplete=off' não permite autocompletar o campo. type="email" quando usado pelo celular é incluido o @ no teclado do celular.
+                        'type="url"' quando acessado pelo celular, o teclado do mostra caracteres para url (.com)-->
+                        <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+                        <input class="enviar" type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
 
-        <div id="janela2">
-            <p>janela 2</p>
-        </div>
+                    </fieldset>
 
-        <div id="janela3">
-            <p>janela 3</p>
-        </div>
+                </form>
+            </article>
+        </aside>
+
+        <section id="janela2">
+            <article>
+                <h1>INTERNACIONAL</h1>
+                <h2>Cidades costeiras apresentam plano conjunto contra a alta do mar</h2>
+                <img src="imgens/cidade.jpg" alt="Vista de uma metrópole à beira-mar, com arranha-céus refletidos na água">
+                <p>Representantes de 40 cidades litorâneas de quatro continentes encerraram nesta semana um encontro de três dias dedicado à adaptação climática. O documento final propõe metas comuns para proteger bairros baixos, reforçar diques e recuperar áreas de mangue e restinga, que funcionam como barreira natural contra ressacas.</p>
+                <p>A delegação da nossa cidade apresentou o programa de drenagem da orla, citado no relatório como exemplo de obra de baixo custo. Para a coordenadora do grupo técnico, Helena Duarte, o desafio agora é o financiamento: "Todo mundo sabe o que precisa ser feito. A discussão é quem paga e em que prazo".</p>
+            </article>
+            <article>
+                <h1>PELO MUNDO</h1>
+                <h3>Estudantes da rede municipal vencem olimpíada internacional de robótica</h3>
+                <p>A equipe de cinco alunos, com idades entre 14 e 16 anos, superou 60 escolas na final disputada online. O robô do grupo separa resíduos recicláveis por cor e peso.</p>
+                <h3>Trem noturno volta a ligar capitais europeias</h3>
+                <p>Depois de quase vinte anos fora dos trilhos, a rota noturna foi retomada com vagões-leito reformados, e as passagens da primeira semana esgotaram em poucas horas.</p>
+                <h3>Feira do livro recebe autores de 18 países</h3>
+                <p>O evento dedica este ano um pavilhão inteiro à literatura em língua portuguesa produzida fora do Brasil, com debates traduzidos simultaneamente.</p>
+            </article>
+        </section>
+
+        <section id="janela3">
+            <article>
+                <h1>INTERCÂMBIO</h1>
+                <h2>Urbanistas da cidade visitam projetos de revitalização à beira-rio</h2>
+                <img src="imgens/mundo.jpg" alt="Edifícios modernos com fachadas de vidro às margens de um rio">
+                <p>Uma comitiva de oito técnicos da secretaria de planejamento passou duas semanas conhecendo antigos portos fluviais europeus que viraram bairros de escritórios, moradia e lazer. O foco da viagem foi entender como essas cidades financiaram a recuperação das margens sem expulsar os moradores antigos.</p>
+                <p>O relatório da visita será apresentado em audiência pública no próximo mês e vai servir de base para o projeto de requalificação do cais do porto velho.</p>
+            </article>
+            <article>
+                <h1>EM NÚMEROS</h1>
+                <p><strong>40</strong> cidades assinaram o plano de adaptação costeira.</p>
+                <p><strong>4</strong> continentes estiveram representados no encontro.</p>
+                <p><strong>18</strong> países participam da feira do livro.</p>
+            </article>
+        </section>
 
     </main>
 
     <footer>
-        <p>Desenvolvido por Marcos</p>
+        <h1>Desenvolvido por Marcos</h1>
     </footer>
-    
+
 </body>
 </html>

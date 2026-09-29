@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias Cidade</title>
+    <title>Ciência - Notícias Cidade</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <div id="cabecalho">
             <div id="letra">
-                
+
             </div>
 
             <div id="imagem">
-                
+
             </div>
 
             <nav>
@@ -28,31 +28,83 @@
                     <li style="background-color: rgb(255, 67, 67);"><a href="#" rel="author">Ciência</a></li>
                     <li><a href="fotos.html" rel="author">Fotos</a></li>
                 </ul>
-            </nav> 
-            
-        </div>   
-            
+            </nav>
 
-    </header>       
+        </div>
+
+
+    </header>
 
     <main>
-        <div id="janela1">  
-            <p>janela 1</p>
-        </div>
+        <aside id="janela1">                      <!-- O navegador começa lendo de baixo para cima, colocando o conteudo principal no topo, fica melhor para mecanismos de busca-->
+            <article>
+                <h1>ENTREVISTAS</h1>
+                <a href="#">José Almeida</a>
+                <a href="#">Felipe Silva</a>
+                <a href="#">Renato ROdrigues</a>
+                <a href="#">Abelardo Silveira</a>
+                <a href="#">Andre Carlos</a>
+                <a href="#">Marcio Mello</a>
+                <a href="#">João Pedro</a>
+                <a href="#">Marcos Daniel</a>
+            </article>
+            <article>
+                <h1>NEWS</h1>
+                <form>
+                    <fieldset>      <!-- Agrupa dados semelhantes-->
+                        <legend>Cadastro</legend>   <!-- legenda do field set-->
+                        <label for="email">E-mail:</label>  <!-- o 'for' recebe o 'id', e indica para qual campo o label está selecionado. Leitores de tela informam que o conteudo do label está associado ao input 'email'. Se clicar em cima do 'label' o input é selecionado-->
+                        <input class="email" type="email" name="mail" id="email" autocomplete="on" placeholder="E-mail" type="url">    <!-- o 'autocomplete=off' não permite autocompletar o campo. type="email" quando usado pelo celular é incluido o @ no teclado do celular.
+                        'type="url"' quando acessado pelo celular, o teclado do mostra caracteres para url (.com)-->
+                        <!-- ao apertar o botão, as informações são enviadas para a página 'destino.html'-->
+                        <input class="enviar" type="submit" value="Cadastrar" name="botao" id="botao">  <!-- cria um botão-->
 
-        <div id="janela2">
-            <p>janela 2</p>
-        </div>
+                    </fieldset>
 
-        <div id="janela3">
-            <p>janela 3</p>
-        </div>
+                </form>
+            </article>
+        </aside>
+
+        <section id="janela2">
+            <article>
+                <h1>CIÊNCIA</h1>
+                <h2>Estudo mapeia as ilhas de calor da cidade</h2>
+                <img src="imgens/mundo.jpg" alt="Torres com fachadas de vidro às margens de um rio">
+                <p>Pesquisadores da universidade estadual cruzaram imagens de satélite com medições feitas em 120 pontos da cidade e encontraram diferenças de até 6 °C entre bairros, no mesmo horário. As áreas mais quentes concentram prédios com fachada de vidro, pouca arborização e grandes estacionamentos asfaltados.</p>
+                <p>O levantamento indica que o plantio de árvores em ruas estreitas e o uso de telhados claros podem baixar a temperatura local em até 2 °C. O mapa completo foi entregue à prefeitura e deve orientar o plano de arborização dos próximos cinco anos.</p>
+            </article>
+            <article>
+                <h1>DESCOBERTAS</h1>
+                <h3>Nova espécie de sapo é descrita na serra</h3>
+                <p>O anfíbio, de pouco mais de dois centímetros, foi encontrado por biólogos numa área de mata preservada a 40 km do centro.</p>
+                <h3>Observatório abre as portas nas noites de sábado</h3>
+                <p>Com o céu limpo, o público pode usar os telescópios para observar a Lua e os planetas visíveis na época. A entrada é gratuita.</p>
+                <h3>Feira de ciências reúne 80 escolas</h3>
+                <p>Os projetos premiados vão de um filtro de água feito com carvão de casca de coco a um aplicativo que avisa quando o ônibus está chegando ao ponto.</p>
+            </article>
+        </section>
+
+        <section id="janela3">
+            <article>
+                <h1>MEIO AMBIENTE</h1>
+                <h2>Sensores medem a qualidade do ar nas principais avenidas</h2>
+                <img src="imgens/taxi.jpg" alt="Avenida movimentada com táxis e prédios altos">
+                <p>Vinte sensores de baixo custo, instalados em postes das avenidas de maior movimento, passaram a medir a cada cinco minutos a concentração de partículas finas e de dióxido de nitrogênio. Os dados ficam abertos na internet para qualquer pessoa consultar.</p>
+                <p>Os primeiros resultados mostram que a poluição dobra nos horários de pico e cai pela metade aos domingos. Para o engenheiro ambiental Tiago Moura, responsável pelo projeto, a informação ajuda a decidir onde plantar árvores e criar faixas exclusivas de ônibus.</p>
+            </article>
+            <article>
+                <h1>EM NÚMEROS</h1>
+                <p><strong>6 °C</strong> de diferença entre o bairro mais quente e o mais fresco.</p>
+                <p><strong>120</strong> pontos de medição de temperatura.</p>
+                <p><strong>20</strong> sensores de qualidade do ar nas avenidas.</p>
+            </article>
+        </section>
 
     </main>
 
     <footer>
-        <p>Desenvolvido por Marcos</p>
+        <h1>Desenvolvido por Marcos</h1>
     </footer>
-    
+
 </body>
 </html>
