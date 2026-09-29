@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos - Museu Nacional</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">      <!--normalize-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <div id="logo">
+                <h1>Museu Nacional</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="exposicao.html">EXPOSIÇÃO</a></li>
+                    <li><a href="pesquisa.html">PESQUISA</a></li>
+                    <li><a href="acervo.html">ACERVO</a></li>
+                    <li><a href="videos.html">VÍDEOS</a></li>
+                    <li><a href="fotos.html">FOTOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <article class="pagina">
+                <h1>Galeria de fotos</h1>
+                <p class="chamada">As salas expositivas fotografadas durante a montagem da temporada.</p>
+
+                <h2>Salas expositivas</h2>
+
+                <div class="galeria">
+                    <figure>
+                        <span class="moldura"><img src="img/imagem1.jpg" alt="Corredor escuro com vitrines iluminadas ao longo da parede."></span>
+                        <figcaption>Sala 1 - vitrines da mostra de entomologia</figcaption>
+                    </figure>
+                    <figure>
+                        <span class="moldura"><img src="img/imagem2.jpg" alt="Salão expositivo com peças suspensas e vitrines laterais."></span>
+                        <figcaption>Sala 6 - diorama da fauna paranaense</figcaption>
+                    </figure>
+                    <figure>
+                        <span class="moldura"><img src="img/imagem3.jpg" alt="Vestido de época montado em manequim."></span>
+                        <figcaption>Sala 2 - indumentária dos colonos</figcaption>
+                    </figure>
+                    <figure>
+                        <span class="moldura"><img src="img/imagem4.jpg" alt="Painel com documentos e fotografias históricas."></span>
+                        <figcaption>Sala 4 - painel documental da mostra Arte escrava</figcaption>
+                    </figure>
+                    <figure>
+                        <span class="moldura"><img src="img/imagem5.jpg" alt="Parede de armários de madeira com portas de vidro."></span>
+                        <figcaption>Sala 3 - mobiliário original de 1912</figcaption>
+                    </figure>
+                    <figure>
+                        <span class="moldura"><img src="img/imagem6.jpg" alt="Carruagem antiga exposta sob iluminação quente."></span>
+                        <figcaption>Sala 5 - carruagem de 1887 restaurada</figcaption>
+                    </figure>
+                </div>
+
+                <h2>Sobre as imagens</h2>
+                <p>As fotografias foram feitas pela equipe de documentação do museu durante a montagem das salas, antes da abertura ao público. Registros em alta resolução podem ser solicitados para fins didáticos ou de pesquisa pela página de <a href="contato.html">contato</a>, com indicação do uso pretendido.</p>
+                <p>A reprodução é liberada para uso educacional, desde que citada a fonte. Para uso comercial ou editorial é necessária autorização prévia do setor de documentação.</p>
+
+                <h2>Fotografar durante a visita</h2>
+                <ul>
+                    <li>Fotografia sem flash é permitida em todas as salas</li>
+                    <li>Tripés e equipamentos de iluminação exigem autorização prévia</li>
+                    <li>A Sala 3 não permite fotografia, por restrição acordada com as comunidades de origem das peças</li>
+                    <li>Ensaios e filmagens profissionais são agendados fora do horário de visitação</li>
+                </ul>
+
+                <p>Quer ver as salas em movimento? A página de <a href="videos.html">vídeos</a> reúne os registros audiovisuais do museu.</p>
+            </article>
+        </section>
+
+        <aside>
+            <img src="img/depoimento.png" alt="depoimento">
+            <section id="visita">
+                <h2>Faça uma visita</h2>
+                <form action="" style="width: 100%;">
+                    <fieldset>
+                        <legend>Agende uma visita</legend>
+                        <input type="date" name="data" id="data">
+                        <label for="quantidade">Visitantes:</label>
+                        <input type="number" name="quantidade" id="quantidade" min="1" value="1" style="width: 30px;">
+                    </fieldset>
+                    <input type="submit" value="Agendar" style="background-color: #9b9271; width: 100%;">
+
+                </form>
+            </section>
+            <section id="fotos">
+                <h2>Galeria de fotos</h2>
+                <a href="fotos.html">
+                    <img src="img/imagem1.jpg" alt="imagem 1">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem2.jpg" alt="imagem 2">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem3.jpg" alt="imagem 3">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem4.jpg" alt="imagem 4">
+                </a>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">home</a>
+            <a href="exposicao.html">exposições</a>
+            <a href="pesquisa.html">pesquisa</a>
+            <a href="acervo.html">acervo</a>
+            <a href="videos.html">vídeos</a>
+            <a href="fotos.html">fotos</a>
+            <a href="contato.html">contato</a>
+        </p>
+        <p>Museu Nacional - todos os direitos reservado</p>
+
+    </footer>
+</body>
+</html>

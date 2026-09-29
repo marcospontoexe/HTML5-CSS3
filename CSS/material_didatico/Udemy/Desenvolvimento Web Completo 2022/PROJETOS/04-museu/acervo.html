@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo - Museu Nacional</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">      <!--normalize-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <div id="logo">
+                <h1>Museu Nacional</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="exposicao.html">EXPOSIÇÃO</a></li>
+                    <li><a href="pesquisa.html">PESQUISA</a></li>
+                    <li><a href="acervo.html">ACERVO</a></li>
+                    <li><a href="videos.html">VÍDEOS</a></li>
+                    <li><a href="fotos.html">FOTOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <article class="pagina">
+                <h1>Acervo</h1>
+                <p class="chamada">Duzentos anos de coleta, guarda e estudo reunidos em seis áreas de curadoria.</p>
+
+                <ul class="numeros">
+                    <li><strong>412 mil</strong> peças catalogadas</li>
+                    <li><strong>6</strong> áreas de curadoria</li>
+                    <li><strong>1876</strong> ano da primeira doação</li>
+                </ul>
+
+                <h2>Áreas de curadoria</h2>
+
+                <h3>Arqueologia</h3>
+                <p>Material lítico, cerâmico e ósseo proveniente de sítios do litoral e do planalto, boa parte resgatada em escavações de emergência. É a área que mais cresce, com cerca de três mil peças incorporadas por ano.</p>
+
+                <h3>Etnologia</h3>
+                <p>Objetos de uso cotidiano, ritual e de trabalho dos povos Guarani, Kaingang e Xetá. A catalogação é revista periodicamente com lideranças das comunidades de origem, e parte das peças tem acesso restrito por decisão delas.</p>
+
+                <h3>História</h3>
+                <p>Mobiliário, indumentária, documentos e equipamentos que registram a vida urbana e rural dos últimos dois séculos, incluindo a coleção de veículos de tração animal.</p>
+
+                <h3>Numismática</h3>
+                <p>Moedas, cédulas, medalhas e selos, com destaque para as emissões provinciais do século XIX e para o conjunto de moedas de necessidade usadas em períodos de escassez.</p>
+
+                <h3>Zoologia</h3>
+                <p>Coleção de referência com aves, mamíferos, répteis e uma extensa seção entomológica, utilizada tanto na exposição de longa duração quanto em pesquisa comparativa.</p>
+
+                <h3>Paleontologia</h3>
+                <p>Fósseis do Paraná e de estados vizinhos, com ênfase em invertebrados marinhos e em vegetais permineralizados.</p>
+
+                <h2>Destaques do acervo</h2>
+
+                <div class="cartao">
+                    <img src="img/imagem6.jpg" alt="Carruagem antiga exposta em sala do museu.">
+                    <h3>Carruagem de 1887</h3>
+                    <p>Veículo de quatro lugares, fabricado na cidade e usado por três gerações da mesma família. Passou por restauro integral em 2019, com recuperação do forro interno e do sistema de suspensão de molas.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem3.jpg" alt="Traje de época exposto em manequim.">
+                    <h3>Vestido de baile, c. 1890</h3>
+                    <p>Peça em seda e algodão, com aplicações manuais preservadas. É o item mais frágil em exposição permanente e permanece sob iluminação controlada e rodízio de seis meses.</p>
+                </div>
+
+                <div class="cartao">
+                    <img src="img/imagem5.jpg" alt="Parede de armários de madeira com portas de vidro.">
+                    <h3>Mobiliário original de 1912</h3>
+                    <p>Os armários de madeira e vidro que guardam a coleção botânica são, eles próprios, item tombado: foram desenhados para o prédio e nunca saíram de uso.</p>
+                </div>
+
+                <h2>Conservação e reserva técnica</h2>
+                <p>Cerca de 94% do acervo está na reserva técnica, fora da exposição. O setor mantém controle contínuo de temperatura e umidade, faz higienização periódica e opera um laboratório próprio de restauro para papel, madeira e têxteis.</p>
+                <p>A visita à reserva técnica é possível mediante pedido justificado, e é comum entre estudantes de graduação. O procedimento está descrito na página de <a href="pesquisa.html">pesquisa</a>.</p>
+
+                <h2>200 anos de história</h2>
+                <p>O museu nasceu de um gabinete de curiosidades reunido por naturalistas que percorreram a província no século XIX. A primeira doação formal, em 1876, trouxe uma coleção de aves; nas décadas seguintes vieram os conjuntos de etnologia e de numismática que ainda hoje formam o núcleo do acervo.</p>
+                <p>A instituição ocupou três endereços antes de se instalar no prédio atual, e passou por duas grandes campanhas de catalogação, uma nos anos 1950 e outra iniciada em 2014, esta última responsável pela digitalização que permite a consulta pública do inventário.</p>
+                <p>Consultas ao inventário digital podem ser feitas presencialmente na biblioteca ou solicitadas pela página de <a href="contato.html">contato</a>.</p>
+            </article>
+        </section>
+
+        <aside>
+            <img src="img/depoimento.png" alt="depoimento">
+            <section id="visita">
+                <h2>Faça uma visita</h2>
+                <form action="" style="width: 100%;">
+                    <fieldset>
+                        <legend>Agende uma visita</legend>
+                        <input type="date" name="data" id="data">
+                        <label for="quantidade">Visitantes:</label>
+                        <input type="number" name="quantidade" id="quantidade" min="1" value="1" style="width: 30px;">
+                    </fieldset>
+                    <input type="submit" value="Agendar" style="background-color: #9b9271; width: 100%;">
+
+                </form>
+            </section>
+            <section id="fotos">
+                <h2>Galeria de fotos</h2>
+                <a href="fotos.html">
+                    <img src="img/imagem1.jpg" alt="imagem 1">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem2.jpg" alt="imagem 2">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem3.jpg" alt="imagem 3">
+                </a>
+                <a href="fotos.html">
+                    <img src="img/imagem4.jpg" alt="imagem 4">
+                </a>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">home</a>
+            <a href="exposicao.html">exposições</a>
+            <a href="pesquisa.html">pesquisa</a>
+            <a href="acervo.html">acervo</a>
+            <a href="videos.html">vídeos</a>
+            <a href="fotos.html">fotos</a>
+            <a href="contato.html">contato</a>
+        </p>
+        <p>Museu Nacional - todos os direitos reservado</p>
+
+    </footer>
+</body>
+</html>
