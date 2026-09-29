@@ -4,11 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Contato - Chalé Hotel</title>
 </head>
 <body>
-    <h1>Contato</h1>
-    <a href="home.html" target="_self" rel="prev">Voltar</a>
-    
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="imagens/logo.png" alt="chalé hotel">
+            </a>
+
+        </div>
+        <nav>
+            <section id="conteudo">
+                <p>
+                    <span>
+                        <a href="rg.html" target="_blank" rel="external">Rio Grande do Sul</a> |
+                        <a href="sc.html" target="_blank" rel="external">Santa Catarina</a> |
+                        <a href="pr.html" target="_blank" rel="external">Paraná</a></span>
+                    <a href="reserva.html" target="_self" rel="next" id="reserva">RESERVAR</a>
+                </p>
+                <ul id="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="hist.html">História</a></li>
+                    <li><a href="imprensa.html">Imprensa</a></li>
+                    <li><a href="gast.html">Gastronomia</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <img src="imagens/depoimento.png" alt="depoimento">
+            </section>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <article id="principal">
+            <h1>Contato</h1>
+            <p>Fale com a gente sobre reservas, eventos ou qualquer dúvida a respeito da sua estadia. Respondemos todas as mensagens em até um dia útil.</p>
+
+            <form class="formulario" action="" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+
+                <label for="unidade">Unidade</label>
+                <select name="unidade" id="unidade">
+                    <option value="rs">Rio Grande do Sul - Gramado</option>
+                    <option value="sc">Santa Catarina - Bombinhas</option>
+                    <option value="pr">Paraná - Curitiba</option>
+                    <option value="indefinida">Ainda não decidi</option>
+                </select>
+
+                <label for="assunto">Assunto</label>
+                <select name="assunto" id="assunto">
+                    <option value="reserva">Reserva</option>
+                    <option value="eventos">Eventos e grupos</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="outro">Outro assunto</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+
+                <input type="submit" value="Enviar mensagem">
+            </form>
+
+            <h2>Central de reservas</h2>
+            <p>
+                (54) 3000-0000 - todos os dias, das 8h às 22h<br>
+                reservas@chalehotel.exemplo.br
+            </p>
+            <p>Jornalistas encontram o contato da assessoria na página de <a href="imprensa.html">imprensa</a>.</p>
+        </article>
+
+        <article id="anexo">
+            <ul>
+                <li>
+                    <img src="imagens/apartamento.jpg" alt="Sala de estar com móveis de época e estufa de ferro">
+                    <h2>Rio Grande do Sul.</h2>
+                    <p>A casa original, na serra.<br>Rua das Araucárias, 1924 - Gramado<br>(54) 3000-0001</p>
+                 </li>
+                 <li>
+                    <img src="imagens/piscina.jpg" alt="Piscina externa com guarda-sol de palha e espreguiçadeiras">
+                    <h2>Santa Catarina.</h2>
+                    <p>A casa do litoral.<br>Rua dos Coqueiros, 88 - Bombinhas<br>(47) 3000-0002</p>
+                 </li>
+                 <li>
+                    <img src="imagens/restaurante.jpg" alt="Prato de legumes assados servido no restaurante">
+                    <h2>Paraná.</h2>
+                    <p>A casa da capital.<br>Rua das Hortênsias, 350 - Curitiba<br>(41) 3000-0003</p>
+                 </li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <h2>&copy;Copyright desde 2000</h2>
+    </footer>
+
 </body>
 </html>

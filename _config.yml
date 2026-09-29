@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+
+# arquivos de trabalho que ficam no repositório, mas não viram páginas do site
+exclude:
+  - CLAUDE.md
+  - CONTEXTO.md
+  - rascunho.md

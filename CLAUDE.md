@@ -44,9 +44,11 @@ Não existe "rodar um teste": a verificação é visual, abrindo a página e red
 
 ## GitHub Pages
 
-Há duas configurações Jekyll: [_config.yml](_config.yml) na raiz (`jekyll-theme-minimal`) e [docs/_config.yml](docs/_config.yml) (`jekyll-theme-cayman`). O conteúdo de [docs/index.md](docs/index.md) ainda é o **template padrão do GitHub Pages**, não conteúdo do projeto.
+O site é publicado a partir da **raiz da branch `main`** (<https://marcospontoexe.github.io/HTML5-CSS3/>), com o tema definido em [_config.yml](_config.yml) (`jekyll-theme-minimal`). Consequências:
 
-> ⚠️ **Não escreva em [docs/](docs/)** para notas de trabalho. Essa pasta é publicada como site. Ver a adaptação de `DOCS/` na regra de handoff abaixo.
+- **A `main` é o site no ar.** Todo `.html` do repositório tem URL pública, e os `.md` da raiz viram páginas. Trabalho grande vai por branch + PR.
+- Os arquivos de trabalho da raiz (`CLAUDE.md`, `CONTEXTO.md`, `rascunho.md`) estão no `exclude:` do [_config.yml](_config.yml). **Ao criar outro `.md` de trabalho na raiz, acrescente-o lá.**
+- O Jekyll ignora pastas que começam com ponto, como [.claude/](.claude/). Por isso as notas detalhadas ficam em [.claude/docs/](.claude/docs/).
 
 ## Artefatos pré-existentes que não devem ser "limpos"
 
@@ -81,7 +83,7 @@ Execute o procedimento de salvamento abaixo **antes de continuar qualquer tarefa
 4. Confirme ao usuário que o contexto foi salvo e informe o caminho do arquivo.
 5. **Gestão do CONTEXTO.md:** Mantenha este arquivo enxuto. Adicione a ele apenas um **índice** que aponte para ficheiros com o contexto detalhado de cada tópico. O objetivo é não sobrecarregar a janela de contexto ao ler o [CONTEXTO.md](CONTEXTO.md) no diretório raiz; caso precise de mais informações sobre um tópico, aceda ao ficheiro específico.
 
-   > **Adaptação obrigatória neste projeto:** a regra original manda guardar os detalhes em `DOCS/`. Aqui isso **não funciona** — o Windows não diferencia maiúsculas de minúsculas, então `DOCS/` é a mesma pasta que [docs/](docs/), que é publicada pelo GitHub Pages. Neste repositório, grave os ficheiros detalhados em **[.claude/docs/](.claude/docs/)** (ignorada pelo Jekyll, não vai para o site).
+   > **Adaptação obrigatória neste projeto:** a regra original manda guardar os detalhes em `DOCS/`. Aqui isso publicaria as notas, porque o GitHub Pages serve a raiz inteira do repositório. Neste repositório, grave os ficheiros detalhados em **[.claude/docs/](.claude/docs/)**: o Jekyll ignora pastas que começam com ponto, então elas não vão para o site.
 
 ---
 
