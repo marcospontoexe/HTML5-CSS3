@@ -85,10 +85,13 @@
             <img src="img/depoimento.png" alt="depoimento">
             <section id="visita">
                 <h2>Faça uma visita</h2>
-                <form action="" style="width: 100%;">
+                <div id="agendado">     <!-- só aparece depois do envio, quando o endereço da página termina em #agendado (pseudoclasse :target no CSS)-->
+                    <p><strong>Visita agendada!</strong> Este é um site de estudo, então nenhuma visita foi marcada de verdade.</p>
+                </div>
+                <form action="#agendado" method="get" style="width: 100%;">     <!-- 'get' porque o GitHub Pages não aceita 'post'; a âncora faz o envio voltar para a própria página, qualquer que seja ela-->
                     <fieldset>
                         <legend>Agende uma visita</legend>
-                        <input type="date" name="data" id="data">
+                        <input type="date" name="data" id="data" required>
                         <label for="quantidade">Visitantes:</label>
                         <input type="number" name="quantidade" id="quantidade" min="1" value="1" style="width: 30px;">
                     </fieldset>
