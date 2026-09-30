@@ -192,4 +192,110 @@ footer{
     margin: 10px 0px 0px 0px;
     padding: 5px 0px;
 }
+
+/*INÍCIO PÁGINAS INTERNAS*/
+a[aria-current="page"]{     /* destaca no menu a página em que o visitante está (seletor de atributo). Tem especificidade menor que 'nav > a:hover', então o efeito de hover continua funcionando*/
+    background-color: var(--cor_2);
+}
+
+/* notícias: data de cada manchete*/
+section p.data{
+    margin: 5px 0px -10px 0px;
+    text-indent: 0px;           /* anula a indentação herdada da section*/
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--cor_3);
+}
+
+/* curiosidades: numeração automática dos títulos com contador CSS*/
+article.curiosidades{
+    counter-reset: curiosidade;         /* cria o contador e começa do zero neste artigo*/
+}
+
+article.curiosidades > h2::before{
+    counter-increment: curiosidade;     /* soma 1 a cada título*/
+    content: counter(curiosidade) ". ";
+}
+
+/* fale conosco: formulário*/
+.formulario{
+    text-indent: 0px;           /* anula a indentação herdada da section*/
+}
+
+.formulario fieldset{
+    border: 1px solid var(--cor_2);
+    border-radius: 10px;
+    padding: 5px 15px 15px 15px;
+    margin: 15px 0px;
+}
+
+.formulario legend{
+    font: normal 700 1em var(--fonte_android), sans-serif;
+    color: var(--cor_3);
+    padding: 0px 5px;
+}
+
+.formulario label{
+    display: block;
+    margin-top: 10px;
+    color: var(--cor_3);
+}
+
+.formulario label.opcao{        /* rótulo da caixa de seleção fica na mesma linha que ela*/
+    display: inline;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea{
+    width: 100%;
+    box-sizing: border-box;     /* a largura passa a incluir padding e borda*/
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid var(--cor_4);
+    border-radius: 5px;
+    font: normal 400 1em var(--fonte_padrão);
+}
+
+.formulario textarea{
+    height: 120px;
+    resize: vertical;           /* o visitante só pode aumentar a altura*/
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus{
+    outline: 2px solid var(--cor_1);
+}
+
+.formulario input[type="submit"]{
+    background-image: linear-gradient(to bottom, var(--cor_1), var(--cor_3));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-image: none;
+    background-color: var(--cor_3);
+}
+
+/* aviso de confirmação: só aparece quando o endereço termina em #enviado (pseudoclasse :target)*/
+#enviado{
+    display: none;
+    background-color: var(--cor_2);
+    border-left: 5px solid var(--cor_3);
+    border-radius: 5px;
+    padding: 0px 15px;
+    text-indent: 0px;
+}
+
+#enviado:target{
+    display: block;
+}
+/*FIM PÁGINAS INTERNAS*/
  
