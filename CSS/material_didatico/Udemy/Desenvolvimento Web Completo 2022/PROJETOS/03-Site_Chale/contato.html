@@ -43,7 +43,12 @@
             <h1>Contato</h1>
             <p>Fale com a gente sobre reservas, eventos ou qualquer dúvida a respeito da sua estadia. Respondemos todas as mensagens em até um dia útil.</p>
 
-            <form class="formulario" action="" method="post">
+            <div id="enviado">      <!-- só aparece depois do envio, quando o endereço da página termina em #enviado (pseudoclasse :target no CSS)-->
+                <p><strong>Obrigado pelo contato!</strong> Este é um site de estudo, então a sua mensagem não foi enviada de verdade: o formulário demonstra a estrutura de um formulário em HTML5.</p>
+            </div>
+
+            <!-- o GitHub Pages não aceita o método 'post' (responde com erro 405), por isso o envio usa 'get' e volta para esta mesma página, na âncora #enviado-->
+            <form class="formulario" action="contato.html#enviado" method="get">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required>
 
@@ -73,6 +78,7 @@
                 <textarea name="mensagem" id="mensagem" required></textarea>
 
                 <input type="submit" value="Enviar mensagem">
+                <p><small>Site de estudo: este formulário é demonstrativo e não envia mensagens.</small></p>
             </form>
 
             <h2>Central de reservas</h2>
