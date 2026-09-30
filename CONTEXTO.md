@@ -1,6 +1,6 @@
 # CONTEXTO DA SESSÃO
 
-- **Última atualização:** 2026-09-29 21:05
+- **Última atualização:** 2026-09-29 21:40
 - **Sessão nº:** 2
 - **Status geral:** em andamento
 
@@ -12,7 +12,7 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 - [README.md](README.md): vitrine com demos ao vivo; as descrições foram auditadas contra o conteúdo real.
 - Na `main`: Café Fontenebleu (7 páginas), Museu Nacional (7), Chalé Hotel (5 com conteúdo) e Notícias Cidade (home + 4 editorias; PR fundido em `eb54634`).
 - [_config.yml](_config.yml) com `exclude:`: `/CLAUDE.html` e `/rascunho.html` respondem 404 no site.
-- Curiosidades de Tecnologia (projeto 01-android): `noticias.html`, `curiosidades.html` e `fale-conosco.html` criadas, e o menu de `android.html` ligado a elas (**não commitado**).
+- Curiosidades de Tecnologia (projeto 01-android): `noticias.html`, `curiosidades.html` e `fale-conosco.html` criadas, e o menu de `android.html` ligado a elas. Os erros antigos do `android.html` foram corrigidos, e a fonte Bebas Neue passou a ser carregada por `@import` no `style.css` (**tudo não commitado**).
 - Estado e restrições de cada projeto: [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md).
 
 ## 3. Em andamento 🔧
@@ -22,11 +22,10 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 ## 4. Próximos passos (planejado) 📋
 1. Commits e PR do projeto Android.
 2. **Corrigir os formulários de contato do Museu e do Chalé**: usam `method="post"`, e o GitHub Pages responde 405 ao envio. Seguir o modelo do `fale-conosco.html` (`get` + `:target`). Fazer numa branch `fix/` própria.
-3. Android: corrigir os erros do conteúdo original do `android.html` ("3.0 - Eclair", "Lolipop", "tavez", "a a", tag `<en>`) e carregar a fonte 'Bebas Neue' do cabeçalho.
-4. Notícias: corrigir "Renato ROdrigues" nas 6 páginas; completar `brasil.html` e `fotos.html` (rodapé em `<p>` fica preto sobre azul).
-5. Chalé: criar `reserva.html`, `rg.html`, `sc.html` e `pr.html`.
-6. Blog e Projeto padrão: desenvolver ou deixar fora da vitrine.
-7. Montar o portfólio usando as URLs do Pages.
+3. Notícias: corrigir "Renato ROdrigues" nas 6 páginas; completar `brasil.html` e `fotos.html` (rodapé em `<p>` fica preto sobre azul).
+4. Chalé: criar `reserva.html`, `rg.html`, `sc.html` e `pr.html`.
+5. Blog e Projeto padrão: desenvolver ou deixar fora da vitrine.
+6. Montar o portfólio usando as URLs do Pages.
 
 ## 5. Decisões e raciocínio 🧠
 - O Pages publica a partir de `main` / (root), então **a `main` é o site no ar**: trabalho grande passa por branch + PR.
@@ -45,7 +44,7 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 
 ## 7. Bloqueios e pendências ⚠️
 - O projeto 13-iframe expõe links do Facebook e do Instagram pessoais na vitrine. A decisão é do usuário.
-- Os itens 2 a 4 da seção 4 aguardam o usuário decidir quando fazer.
+- Os itens 2 e 3 da seção 4 aguardam o usuário decidir quando fazer.
 
 ## 8. Comandos úteis
 - Servir um projeto localmente (embeds do YouTube falham em `file://`):
