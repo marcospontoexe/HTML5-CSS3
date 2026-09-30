@@ -6,14 +6,15 @@ Verificado em 2026-09-28 contando as palavras visíveis de cada página (script 
 
 | Projeto | Pasta | Páginas com conteúdo | Pendências |
 |---|---|---|---|
-| Museu Nacional | [04-museu](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu) | 7/7 | nenhuma (PR fundido) |
+| Museu Nacional | [04-museu](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu) | 7/7 | o formulário de `contato.html` usa `method="post"`, e o GitHub Pages responde **405** ao envio (ver Convenções) |
 | Café Fontenebleu | [01-Restaurante](../../HTML/Material%20did%C3%A1tico/Udemy/Desenvolvedor%20web%20completo/PROJETOS/01-Restaurante) | 7/7 | nenhuma |
-| Chalé Hotel | [03-Site_Chale](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale) | 5/9 | `reserva.html`, `rg.html`, `sc.html`, `pr.html` são esqueletos (1 a 4 palavras). O botão RESERVAR do cabeçalho leva a uma página vazia |
-| Notícias Cidade | [02-site_noticias](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias) | home + `internacional`, `economia`, `saude`, `ciencias` (cerca de 300 palavras cada, fora a lateral; feitas em 2026-09-29) | `brasil` e `fotos` repetem basicamente a lateral e têm o rodapé em `<p>`, que fica preto sobre a barra azul. Erros de digitação no conteúdo original: "Nova legistação" (destaque da home) e "Renato ROdrigues" (lateral, replicado nas 6 páginas) |
+| Chalé Hotel | [03-Site_Chale](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale) | 5/9 | `reserva.html`, `rg.html`, `sc.html`, `pr.html` são esqueletos (1 a 4 palavras). O botão RESERVAR do cabeçalho leva a uma página vazia. O formulário de `contato.html` usa `method="post"`: envio dá erro **405** no GitHub Pages |
+| Notícias Cidade | [02-site_noticias](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias) | home + `internacional`, `economia`, `saude`, `ciencias` (cerca de 300 palavras cada, fora a lateral; feitas em 2026-09-29) | `brasil` e `fotos` repetem basicamente a lateral e têm o rodapé em `<p>`, que fica preto sobre a barra azul. Erro de digitação no conteúdo original: "Renato ROdrigues" (lateral, replicado nas 6 páginas). O "Nova legistação" da home já foi corrigido pelo usuário |
 | Blog | [01-blog](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/01-blog) | 0 | vazio; **fora da vitrine** |
 | Projeto padrão (Bootstrap) | [01-projeto-padrao](../../CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/BOOTSTRAP-4/PROJETOS/01-projeto-padrao) | 0 | página em branco; **fora da vitrine** |
 | Spotify, Finans | BOOTSTRAP-4/PROJETOS | com conteúdo (152 e 176 palavras) | nenhuma conhecida |
-| Android, Cordel | Curso_em_Vídeo/desafios | com conteúdo | nenhuma |
+| Curiosidades de Tecnologia (Android) | [01-android](../../CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/01-android) | 4/4: `android.html` (artigo), `noticias.html`, `curiosidades.html`, `fale-conosco.html` (as três últimas feitas em 2026-09-29) | Erros no conteúdo original do `android.html`: "3.0 - Eclair" (o certo é 2.0, e o 3.0 aparece duas vezes), "Lolipop", "tavez", "a a sua equipe", tag inexistente `<en>` no rodapé. A fonte 'Bebas Neue' do cabeçalho nunca é carregada, então o título cai na fonte genérica `cursive` |
+| Cordel | Curso_em_Vídeo/desafios | com conteúdo | nenhuma |
 | Astronauta | Curso_em_Vídeo/desafios | 0 palavras **de propósito**: é só composição de imagens de fundo | nenhuma |
 | Rede social (iframes) | HTML/.../Desafios/13-iframe | o `<iframe>` troca entre páginas locais de 1 palavra, cada uma com um link para as redes pessoais do usuário | links pessoais (Facebook e Instagram) ficam públicos na vitrine; a decisão é do usuário |
 
@@ -40,9 +41,17 @@ Verificado em 2026-09-28 contando as palavras visíveis de cada página (script 
 **Café Fontenebleu**
 - O rodapé usa `<address>` fora do `<p>` (é elemento de bloco). A regra `footer address { font-style: normal }` mantém a aparência.
 
+**Curiosidades de Tecnologia (Android)**
+- A `section` aplica `text-indent: 30px`, e isso é herdado por tudo que está dentro dela. Blocos que não são parágrafo de texto (formulário, data das notícias, aviso) precisam de `text-indent: 0px`.
+- O menu marca a página atual com `aria-current="page"`, estilizado por `a[aria-current="page"]`. A especificidade é menor que a de `nav > a:hover` de propósito, para o hover continuar funcionando.
+- `curiosidades.html` numera os títulos com contador CSS (`counter-reset` no `article.curiosidades`, `counter-increment` no `h2::before`).
+- O formulário de `fale-conosco.html` envia por `get` para `fale-conosco.html#enviado`, e a confirmação aparece pela pseudoclasse `:target`, sem JavaScript.
+- As notícias e as curiosidades são **fatos reais** e verificáveis, com data (`<time datetime>`). Não inventar notícias sobre empresas reais.
+
 ## Convenções combinadas com o usuário
 
 - Branch: `tipo/descricao-curta`, só ASCII e minúsculas (`feat/`, `fix/`, `docs/`, `chore/`).
 - Commits no padrão Conventional Commits, no imperativo. Título e descrição de PR **em inglês**.
 - Trabalho grande vai por branch + PR (a `main` é o site no ar). Squash só quando os commits da branch tiverem mensagens ruins.
-- Conteúdo das páginas é fictício: e-mails `@<projeto>.exemplo.br`, telefones `3000-000X` e nenhum veículo de imprensa real.
+- Conteúdo das páginas é fictício: e-mails `@<projeto>.exemplo.br`, telefones `3000-000X` e nenhum veículo de imprensa real. A exceção são páginas sobre fatos reais (como as do Android), que só podem trazer fatos verificáveis.
+- **Formulários:** o GitHub Pages responde `405 Method Not Allowed` a `POST` (testado em 2026-09-29). Use `method="get"`, de preferência com uma âncora de confirmação via `:target` (modelo: `fale-conosco.html` do Android).
