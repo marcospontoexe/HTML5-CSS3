@@ -1,6 +1,6 @@
 # Projetos da vitrine: estado real e restrições de layout
 
-Verificado em 2026-09-28 contando as palavras visíveis de cada página (script em PowerShell, removendo as tags do `<body>`). **O README só deve afirmar o que foi conferido assim.** Duas vezes o README descreveu projetos sem que ninguém abrisse os arquivos (Blog e Chalé), e as descrições estavam erradas.
+Verificado em 2026-09-28 contando as palavras visíveis de cada página (script em PowerShell, removendo as tags do `<body>`). Reauditado em 2026-09-29: contagem de páginas, técnicas citadas, links de código e demo (todos 200 no site) e âncoras do índice no site publicado. **O README só deve afirmar o que foi conferido assim.** Duas vezes o README descreveu projetos sem que ninguém abrisse os arquivos (Blog e Chalé), e as descrições estavam erradas.
 
 ## Estado por projeto
 

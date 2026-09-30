@@ -22,8 +22,8 @@ Repositório de estudos de **HTML5** e **CSS3**: material didático organizado p
 
 | Projeto | Descrição | Técnicas | Código | Demo |
 |---|---|---|---|---|
-| **Museu Nacional** | Site de museu com **7 páginas**: home, exposições, pesquisa, acervo, vídeos, fotos e contato, com vídeo do YouTube e mapa incorporados. | Flexbox, float, variáveis CSS, formulários, `<iframe>` | [04-museu](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu/index.html) |
-| **Chalé Hotel** | Site de uma rede de hotéis com **5 páginas**: home, história, imprensa, gastronomia e contato, com formulário. | Posicionamento absoluto/relativo, variáveis CSS, float, formulário | [03-Site_Chale](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale/home.html) |
+| **Museu Nacional** | Site de museu com **7 páginas**: home, exposições, pesquisa, acervo, vídeos, fotos e contato, com vídeo do YouTube e mapa incorporados. | Flexbox, float, variáveis CSS, formulários com confirmação via `:target`, `<iframe>` | [04-museu](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu/index.html) |
+| **Chalé Hotel** | Site de uma rede de hotéis com **5 páginas**: home, história, imprensa, gastronomia e contato, com formulário. | Posicionamento absoluto/relativo, variáveis CSS, float, formulário com confirmação via `:target` | [03-Site_Chale](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale/home.html) |
 | **Notícias Cidade** | Portal de notícias em 3 colunas: página inicial e as editorias Internacional, Economia, Saúde e Ciência. | Layout em colunas com float, variáveis CSS | [02-site_noticias](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/02-site_noticias/home.html) |
 | **Café Fontenebleu** | Site de restaurante com **7 páginas**: home, info, eventos, DVD, localização, menu e avaliações. | Variáveis CSS, `@font-face`, float, layout com sidebar | [01-Restaurante](HTML/Material%20did%C3%A1tico/Udemy/Desenvolvedor%20web%20completo/PROJETOS/01-Restaurante) | [Abrir](https://marcospontoexe.github.io/HTML5-CSS3/HTML/Material%20did%C3%A1tico/Udemy/Desenvolvedor%20web%20completo/PROJETOS/01-Restaurante/home.html) |
 
@@ -96,10 +96,10 @@ Cada pasta de lição é **autocontida**: traz seu próprio HTML, CSS, imagens e
 Os projetos são estáticos — basta abrir o arquivo `.html` no navegador:
 
 ```powershell
-Start-Process "CSS\material_didatico\Curso_em_Vídeo\desafios\01-android\android.html"
+Start-Process "CSS\material_didatico\Udemy\Desenvolvimento Web Completo 2022\PROJETOS\03-Site_Chale\home.html"
 ```
 
-Para projetos que usam fontes locais ou recursos que o protocolo `file://` bloqueia, sirva a pasta por HTTP:
+Alguns recursos não funcionam quando a página é aberta direto do disco (`file://`): os **vídeos do YouTube** incorporados no Museu Nacional e no Curiosidades de Tecnologia não carregam, e fontes locais podem ser bloqueadas. Nesses casos, sirva a pasta por HTTP:
 
 ```powershell
 python -m http.server 8000

@@ -1,6 +1,6 @@
 # CONTEXTO DA SESSÃO
 
-- **Última atualização:** 2026-09-29 21:53
+- **Última atualização:** 2026-09-29 22:08
 - **Sessão nº:** 2
 - **Status geral:** em andamento
 
@@ -9,20 +9,18 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 
 ## 2. Já feito ✅
 - [CLAUDE.md](CLAUDE.md): guia do repositório + regra de handoff adaptada.
-- [README.md](README.md): vitrine com demos ao vivo; as descrições foram auditadas contra o conteúdo real.
-- Na `main`: Café Fontenebleu (7 páginas), Museu Nacional (7), Chalé Hotel (5 com conteúdo), Notícias Cidade (home + 4 editorias) e Curiosidades de Tecnologia, o projeto 01-android (4 páginas, com os erros antigos do artigo corrigidos; PR fundido em `28ff80a`).
+- Na `main` (`2758851`): Café Fontenebleu (7 páginas), Museu Nacional (7), Chalé Hotel (5 com conteúdo), Notícias Cidade (home + 4 editorias) e Curiosidades de Tecnologia (projeto 01-android, 4 páginas).
+- Formulários: contato do Museu e do Chalé e agendamento de visita do Museu usam `get` + confirmação via `:target` (PR fundido). Nenhum `post` restante nos projetos da vitrine.
 - [_config.yml](_config.yml) com `exclude:`: `/CLAUDE.html` e `/rascunho.html` respondem 404 no site.
-- Formulários de contato do Museu e do Chalé corrigidos: passaram de `post` (erro 405 no GitHub Pages) para `get` + confirmação via `:target` (commitado, ainda não enviado).
-- Formulário "Agende uma visita", na lateral das 7 páginas do Museu: ganhou confirmação via `:target` (`action="#agendado"`) e data obrigatória (**não commitado**).
+- [README.md](README.md) reauditado em 2026-09-29: links, contagem de páginas e técnicas conferidos. Atualizados a coluna de técnicas do Museu e do Chalé (`:target`) e a seção "Como executar localmente" (vídeos do YouTube não carregam em `file://`) (**não commitado**).
 - Estado e restrições de cada projeto: [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md).
 
 ## 3. Em andamento 🔧
-- Branch `fix/broken-form-submission` (criada da `main` em `28ff80a`), com 2 commits locais **ainda não enviados**: `fix: submit contact forms with GET...` e `docs: update handoff notes`.
-- Arquivos não commitados: as 7 páginas HTML e o `CSS/style.css` do [Museu](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu) (formulário de visita), [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md) e este arquivo.
-- Próximo passo imediato: commitar o formulário de visita, enviar a branch e abrir o PR.
+- Na `main`, sem branch de trabalho aberta. Arquivos não commitados: [README.md](README.md), [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md) e este arquivo.
+- Próximo passo imediato: commitar a atualização do README (direto na `main`, por ser pequena e isolada, ou numa branch `docs/`).
 
 ## 4. Próximos passos (planejado) 📋
-1. Commit, envio e PR dos formulários (contato do Museu e do Chalé + agendamento de visita do Museu).
+1. Commitar a atualização do README.
 2. Notícias: corrigir "Renato ROdrigues" nas 6 páginas; completar `brasil.html` e `fotos.html` (o rodapé em `<p>` fica preto sobre azul).
 3. Chalé: criar `reserva.html`, `rg.html`, `sc.html` e `pr.html`.
 4. Blog e Projeto padrão: desenvolver ou deixar fora da vitrine.
@@ -30,14 +28,14 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 
 ## 5. Decisões e raciocínio 🧠
 - O Pages publica a partir de `main` / (root), então **a `main` é o site no ar**: trabalho grande passa por branch + PR.
-- O README só afirma o que foi verificado pela contagem de palavras visíveis.
+- O README só afirma o que foi verificado (contagem de palavras visíveis, técnicas encontradas no código, links testados).
 - Os detalhes ficam em [.claude/docs/](.claude/docs/), não em `DOCS/`: o Jekyll ignora pastas que começam com ponto.
 - Conteúdo fictício nos sites de empresas inventadas. Nas páginas sobre tecnologia real (Android), só fatos verificáveis.
-- Formulários usam `get`: o GitHub Pages responde 405 a `post`. Os formulários de lições de curso que usam `post` ficam como estão, porque são o assunto da aula.
+- Formulários usam `get` + `:target`: o GitHub Pages responde 405 a `post`. Os formulários de lições de curso ficam como estão.
 - PRs em inglês. Squash só quando os commits da branch tiverem mensagens ruins; com commits bem separados, Rebase and merge.
 
 ## 6. Estado do projeto / ambiente
-- Branch atual: `fix/broken-form-submission`, local em `7e3a194` (2 commits à frente da `main`, não enviados). `main` = `origin/main` = `28ff80a`.
+- Branch atual: `main` = `origin/main` = `2758851`.
 - Arquivos não commitados: ver seção 3.
 - `git` **fora do PATH**: commits e PRs são feitos pela IDE e pelo GitHub web; o estado do git é lido direto em `.git`.
 - Python 3.14 disponível; node/npx não.
@@ -45,7 +43,7 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 
 ## 7. Bloqueios e pendências ⚠️
 - O projeto 13-iframe expõe links do Facebook e do Instagram pessoais na vitrine. A decisão é do usuário.
-- Os itens 2 a 4 da seção 4 aguardam o usuário decidir quando fazer (o antigo item opcional do formulário de visita foi feito).
+- Os itens 2 a 4 da seção 4 aguardam o usuário decidir quando fazer.
 
 ## 8. Comandos úteis
 - Servir um projeto localmente (embeds do YouTube falham em `file://`):
@@ -56,4 +54,4 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 - **Atenção:** trocar de branch na IDE troca os arquivos do disco. Confira `.git\HEAD` antes de concluir que algo "sumiu".
 
 ## 9. Como retomar
-Leia este arquivo e [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md), confirme a branch atual em `.git\HEAD` e continue a partir da seção 3 (commits e PR da correção dos formulários).
+Leia este arquivo e [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md), confirme a branch atual em `.git\HEAD` e continue a partir da seção 3 (commit da atualização do README).
