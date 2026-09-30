@@ -1,6 +1,6 @@
 # CONTEXTO DA SESSÃO
 
-- **Última atualização:** 2026-09-29 21:40
+- **Última atualização:** 2026-09-29 21:37
 - **Sessão nº:** 2
 - **Status geral:** em andamento
 
@@ -10,20 +10,20 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 ## 2. Já feito ✅
 - [CLAUDE.md](CLAUDE.md): guia do repositório + regra de handoff adaptada.
 - [README.md](README.md): vitrine com demos ao vivo; as descrições foram auditadas contra o conteúdo real.
-- Na `main`: Café Fontenebleu (7 páginas), Museu Nacional (7), Chalé Hotel (5 com conteúdo) e Notícias Cidade (home + 4 editorias; PR fundido em `eb54634`).
+- Na `main`: Café Fontenebleu (7 páginas), Museu Nacional (7), Chalé Hotel (5 com conteúdo), Notícias Cidade (home + 4 editorias) e Curiosidades de Tecnologia, o projeto 01-android (4 páginas, com os erros antigos do artigo corrigidos; PR fundido em `28ff80a`).
 - [_config.yml](_config.yml) com `exclude:`: `/CLAUDE.html` e `/rascunho.html` respondem 404 no site.
-- Curiosidades de Tecnologia (projeto 01-android): `noticias.html`, `curiosidades.html` e `fale-conosco.html` criadas, e o menu de `android.html` ligado a elas. Os erros antigos do `android.html` foram corrigidos, e a fonte Bebas Neue passou a ser carregada por `@import` no `style.css` (**tudo não commitado**).
+- Formulários de contato do Museu e do Chalé corrigidos: passaram de `post` (erro 405 no GitHub Pages) para `get` + confirmação via `:target` (**não commitado**).
 - Estado e restrições de cada projeto: [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md).
 
 ## 3. Em andamento 🔧
-- Branch `feature/new-pages-android-history` (criada da `main` em `eb54634`, ainda sem commits). Arquivos não commitados: os 3 HTML novos, `android.html` e `style/style.css` em [01-android](CSS/material_didatico/Curso_em_V%C3%ADdeo/desafios/01-android), mais [README.md](README.md), [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md) e este arquivo.
+- Branch `fix/broken-form-submission` (criada da `main` em `28ff80a`, ainda sem commits). Arquivos não commitados: `contato.html` e `CSS/style.css` do [Museu](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/04-museu), `contato.html` e `estilo/style.css` do [Chalé](CSS/material_didatico/Udemy/Desenvolvimento%20Web%20Completo%202022/PROJETOS/03-Site_Chale), [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md) e este arquivo.
 - Próximo passo imediato: commitar e abrir o PR.
 
 ## 4. Próximos passos (planejado) 📋
-1. Commits e PR do projeto Android.
-2. **Corrigir os formulários de contato do Museu e do Chalé**: usam `method="post"`, e o GitHub Pages responde 405 ao envio. Seguir o modelo do `fale-conosco.html` (`get` + `:target`). Fazer numa branch `fix/` própria.
-3. Notícias: corrigir "Renato ROdrigues" nas 6 páginas; completar `brasil.html` e `fotos.html` (rodapé em `<p>` fica preto sobre azul).
-4. Chalé: criar `reserva.html`, `rg.html`, `sc.html` e `pr.html`.
+1. Commits e PR da correção dos formulários.
+2. Notícias: corrigir "Renato ROdrigues" nas 6 páginas; completar `brasil.html` e `fotos.html` (o rodapé em `<p>` fica preto sobre azul).
+3. Chalé: criar `reserva.html`, `rg.html`, `sc.html` e `pr.html`.
+4. (Opcional) Museu: o formulário "Agende uma visita" da lateral recarrega a página sem retorno; pode ganhar a mesma confirmação via `:target`.
 5. Blog e Projeto padrão: desenvolver ou deixar fora da vitrine.
 6. Montar o portfólio usando as URLs do Pages.
 
@@ -31,12 +31,12 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 - O Pages publica a partir de `main` / (root), então **a `main` é o site no ar**: trabalho grande passa por branch + PR.
 - O README só afirma o que foi verificado pela contagem de palavras visíveis.
 - Os detalhes ficam em [.claude/docs/](.claude/docs/), não em `DOCS/`: o Jekyll ignora pastas que começam com ponto.
-- Conteúdo fictício nos sites de empresas inventadas. No Android (site sobre tecnologia real), Notícias e Curiosidades trazem **só fatos reais e verificáveis**; inventar notícia sobre empresa real seria desinformação.
-- Formulários usam `get`: o GitHub Pages responde 405 a `post`.
-- PRs em inglês. Squash quando os commits da branch tiverem mensagens ruins.
+- Conteúdo fictício nos sites de empresas inventadas. Nas páginas sobre tecnologia real (Android), só fatos verificáveis.
+- Formulários usam `get`: o GitHub Pages responde 405 a `post`. Os formulários de lições de curso que usam `post` ficam como estão, porque são o assunto da aula.
+- PRs em inglês. Squash só quando os commits da branch tiverem mensagens ruins; com commits bem separados, Rebase and merge.
 
 ## 6. Estado do projeto / ambiente
-- Branch atual: `feature/new-pages-android-history` = `main` = `origin/main` = `eb54634`.
+- Branch atual: `fix/broken-form-submission` = `main` = `origin/main` = `28ff80a`.
 - Arquivos não commitados: ver seção 3.
 - `git` **fora do PATH**: commits e PRs são feitos pela IDE e pelo GitHub web; o estado do git é lido direto em `.git`.
 - Python 3.14 disponível; node/npx não.
@@ -44,7 +44,7 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 
 ## 7. Bloqueios e pendências ⚠️
 - O projeto 13-iframe expõe links do Facebook e do Instagram pessoais na vitrine. A decisão é do usuário.
-- Os itens 2 e 3 da seção 4 aguardam o usuário decidir quando fazer.
+- Os itens 2 a 4 da seção 4 aguardam o usuário decidir quando fazer.
 
 ## 8. Comandos úteis
 - Servir um projeto localmente (embeds do YouTube falham em `file://`):
@@ -55,4 +55,4 @@ Transformar este repositório de estudos numa vitrine de portfólio: completar o
 - **Atenção:** trocar de branch na IDE troca os arquivos do disco. Confira `.git\HEAD` antes de concluir que algo "sumiu".
 
 ## 9. Como retomar
-Leia este arquivo e [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md), confirme a branch atual em `.git\HEAD` e continue a partir da seção 3 (commits e PR do projeto Android).
+Leia este arquivo e [.claude/docs/projetos-portfolio.md](.claude/docs/projetos-portfolio.md), confirme a branch atual em `.git\HEAD` e continue a partir da seção 3 (commits e PR da correção dos formulários).
