@@ -369,4 +369,21 @@ footer a:hover{
     background-color: var(--cor_2);
 }
 
+/* aviso de confirmação do formulário de contato: só aparece quando o endereço da página termina em #enviado (pseudoclasse :target)*/
+#enviado{
+    display: none;
+    background-color: #ebe7dd;
+    border-left: 5px solid var(--cor_2);
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+#enviado:target{
+    display: block;
+}
+
+#conteudo #enviado p{
+    margin-bottom: 0px;     /* anula o espaçamento dos parágrafos da página*/
+}
+
 /*FIM PÁGINAS INTERNAS*/
