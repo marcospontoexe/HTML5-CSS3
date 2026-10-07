@@ -31,7 +31,7 @@ Não existe "rodar um teste": a verificação é visual, abrindo a página e red
 
 ## Restrições do ambiente (importantes)
 
-- **`git` não está no PATH** desta máquina. Comandos `git ...` pelo PowerShell falham com `CommandNotFoundException`. Use as operações de git da IDE/interface, ou peça ao usuário. Não tente descobrir histórico via shell.
+- **`git` não está no PATH** desta máquina: `git ...` puro no PowerShell falha com `CommandNotFoundException`. O usuário trabalha com o **GitHub Desktop**, que traz um `git` embutido em `C:\Users\marcos\AppData\Local\GitHubDesktop\app-<versão>\resources\app\git\cmd\git.exe` (a versão muda nas atualizações; procure a pasta `app-*` mais recente). Comandos só de leitura (`status`, `log`, `diff`, `check-ignore`) podem ser usados livremente. Qualquer comando que altere o índice ou o histórico, só com o pedido do usuário. Commits, pushes e PRs são feitos pelo usuário no GitHub Desktop/GitHub web.
 - **Caminhos com acentos, espaços e parênteses** são a norma (`Material didático`, `Curso_em_Vídeo`, `03-tipografia(fontes)`, `05-semântica (formatação)`). Sempre coloque os caminhos entre aspas duplas no PowerShell.
 - Nos links de Markdown, esses caracteres precisam ser **URL-encoded** (`Curso_em_V%C3%ADdeo`, `%20` para espaço) — é o padrão já usado nos READMEs.
 
@@ -47,12 +47,12 @@ Não existe "rodar um teste": a verificação é visual, abrindo a página e red
 O site é publicado a partir da **raiz da branch `main`** (<https://marcospontoexe.github.io/HTML5-CSS3/>), com o tema definido em [_config.yml](_config.yml) (`jekyll-theme-minimal`). Consequências:
 
 - **A `main` é o site no ar.** Todo `.html` do repositório tem URL pública, e os `.md` da raiz viram páginas. Trabalho grande vai por branch + PR.
-- Os arquivos de trabalho da raiz (`CLAUDE.md`, `CONTEXTO.md`, `rascunho.md`) estão no `exclude:` do [_config.yml](_config.yml). **Ao criar outro `.md` de trabalho na raiz, acrescente-o lá.**
-- O Jekyll ignora pastas que começam com ponto, como [.claude/](.claude/). Por isso as notas detalhadas ficam em [.claude/docs/](.claude/docs/).
+- O `CLAUDE.md` está no `exclude:` do [_config.yml](_config.yml), para não virar página do site.
+- O Jekyll ignora pastas que começam com ponto, como [.claude/](.claude/). Por isso **notas de trabalho ficam em `.claude/`**, e não na raiz: o [.claude/CONTEXTO.md](.claude/CONTEXTO.md) e os detalhes em [.claude/docs/](.claude/docs/). Além disso, essas notas estão no [.gitignore](.gitignore): existem **só neste computador** e não vão para o repositório público. Ao criar uma nota nova em `.claude/docs/`, acrescente-a ao `.gitignore`. Se algum `.md` de trabalho precisar mesmo ficar na raiz, acrescente-o ao `exclude:`.
 
 ## Artefatos pré-existentes que não devem ser "limpos"
 
-Já estão commitados e não há `.gitignore` na raiz: `HTML/Material didático/Curso em vídeo/2-imagens/.vs/` (estado do Visual Studio), vários `.DS_Store`, `meulivro.zip`, `HandBrake-1.4.2-x86_64-Win_GUI.exe` e `destino.php` (alvo de exemplo de formulário, sem backend). Não remova nem adicione `.gitignore` sem pedir ao usuário.
+Já estão commitados: `HTML/Material didático/Curso em vídeo/2-imagens/.vs/` (estado do Visual Studio), vários `.DS_Store`, `meulivro.zip`, `HandBrake-1.4.2-x86_64-Win_GUI.exe` e `destino.php` (alvo de exemplo de formulário, sem backend). Não remova esses arquivos. O [.gitignore](.gitignore) existe só para as notas de trabalho locais; não acrescente outras regras a ele sem pedir ao usuário.
 
 ---
 
@@ -76,12 +76,14 @@ Execute o procedimento de salvamento abaixo **antes de continuar qualquer tarefa
 ## Procedimento de salvamento
 
 1. **Termine** a tarefa atual.
-2. Crie ou atualize o arquivo **[CONTEXTO.md](CONTEXTO.md)** na raiz do projeto.
+2. Crie ou atualize o arquivo **[.claude/CONTEXTO.md](.claude/CONTEXTO.md)**.
+
+   > **Adaptação neste projeto:** a regra original manda criar o arquivo na raiz. Aqui ele fica em `.claude/` para tirar notas de trabalho da raiz do portfólio. Os links dentro dele são relativos à pasta `.claude/` (ex.: `../README.md`, `docs/projetos-portfolio.md`).
    - Se já existir, **atualize** as seções em vez de duplicar (mantenha o histórico relevante, remova o que já foi superado).
    - Sempre atualize o campo de data/hora e o número da sessão.
 3. Preencha **todas** as seções do template abaixo. Não deixe seções vazias — escreva "nenhum" quando não houver conteúdo.
 4. Confirme ao usuário que o contexto foi salvo e informe o caminho do arquivo.
-5. **Gestão do CONTEXTO.md:** Mantenha este arquivo enxuto. Adicione a ele apenas um **índice** que aponte para ficheiros com o contexto detalhado de cada tópico. O objetivo é não sobrecarregar a janela de contexto ao ler o [CONTEXTO.md](CONTEXTO.md) no diretório raiz; caso precise de mais informações sobre um tópico, aceda ao ficheiro específico.
+5. **Gestão do CONTEXTO.md:** Mantenha este arquivo enxuto. Adicione a ele apenas um **índice** que aponte para ficheiros com o contexto detalhado de cada tópico. O objetivo é não sobrecarregar a janela de contexto ao ler o [.claude/CONTEXTO.md](.claude/CONTEXTO.md); caso precise de mais informações sobre um tópico, aceda ao ficheiro específico.
 
    > **Adaptação obrigatória neste projeto:** a regra original manda guardar os detalhes em `DOCS/`. Aqui isso publicaria as notas, porque o GitHub Pages serve a raiz inteira do repositório. Neste repositório, grave os ficheiros detalhados em **[.claude/docs/](.claude/docs/)**: o Jekyll ignora pastas que começam com ponto, então elas não vão para o site.
 
@@ -139,12 +141,12 @@ da seção 3 / passo X."
 
 No início de qualquer nova sessão, o agente deve:
 
-1. Verificar se existe o ficheiro [CONTEXTO.md](CONTEXTO.md) na raiz do projeto.
+1. Verificar se existe o ficheiro [.claude/CONTEXTO.md](.claude/CONTEXTO.md).
 2. Se existir, **lê-lo por completo antes de qualquer outra ação**.
 3. Resumir ao utilizador em 2–3 linhas onde o trabalho parou e qual é o próximo passo, e então continuar.
 
 > Comando sugerido para o utilizador iniciar um novo chat:
-> **"Leia o `CONTEXTO.md` e continue de onde a sessão anterior parou."**
+> **"Leia o `.claude/CONTEXTO.md` e continue de onde a sessão anterior parou."**
 
 ---
 
@@ -154,6 +156,6 @@ No início de qualquer nova sessão, o agente deve:
 - **Caminhos absolutos ou relativos à raiz**, nunca referências vagas ("aquele arquivo").
 - **Não salve segredos** (tokens, senhas, chaves) no `CLAUDE.md` nem no `CONTEXTO.md`.
 - **Um arquivo por projeto:** mantenha o `CONTEXTO.md` enxuto; arquive versões antigas em `CONTEXTO.arquivo.md` se necessário.
-- **Commit opcional:** se o usuário usar git, ofereça commitar o `CONTEXTO.md` para que ele persista entre máquinas. (Neste repo, lembre-se: `git` não está no PATH — ver "Restrições do ambiente" acima.)
+- **Commit opcional:** neste repositório, **não**. O `.claude/CONTEXTO.md` está no [.gitignore](.gitignore) por decisão do usuário, para não ficar público; ele existe só neste computador.
 - **Feedback de alterações:** Caso algum ficheiro seja alterado durante a sessão, informe sempre qual o ficheiro e o que foi alterado no final de cada mensagem.
 - **Referenciar diretórios e arquivos através de links:** Sempre que se referir a um diretório ou arquivo local, use link e não backticks.
